@@ -1,0 +1,100 @@
+{% style %}
+  /* Manthrope - Regular */
+  @font-face {
+    font-family: manrope;
+    src: url('{{ "Manrope-Regular.ttf" | asset_url }}') format('truetype'),
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Manthrope - Medium */
+  @font-face {
+    font-family: manrope-medium;
+    src: url('{{ "Manrope-Medium.ttf" | asset_url }}') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+    /* Canela Light */
+    @font-face {
+    font-family: canela;
+    src: url('{{ "Canela-Light-Trial.ttf" | asset_url }}') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+  }
+
+
+  /* Plus Jakarta Sans */
+  @font-face {
+    font-family: jakarta;
+    src: url('{{ "PlusJakartaSans-Regular.ttf" | asset_url }}') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Plus Jakarta Sans Medium */
+  @font-face {
+    font-family: jakarta-medium;
+    src: url('{{ "PlusJakartaSans-Medium.ttf" | asset_url }}') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+
+  /* Plus Jakarta Sans Bold */
+  @font-face {
+    font-family: jakarta-bold;
+    src: url('{{ "PlusJakartaSans-Bold.ttf" | asset_url }}') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  :root {
+    --navy: #0D2244;
+    --blue: #46BD50;
+    --cream: #FAF5F1;
+    --pink: #F87A7A;
+    --purple: #B195D0;
+
+    --header-height: 52px;
+    --mobile-header-height: 52px;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+
+  body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100%;
+    margin: 0;
+    font-family: sans-serif;
+    color: {{ settings.text_color }};
+    background: {{ settings.background_color }};
+  }
+
+  a {
+    text-decoration: none;
+    color: {{ settings.text_color }};
+  }
+
+  button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    color: {{ settings.text_color }};
+  }
+{% endstyle %}

@@ -212,85 +212,124 @@ h5,
 .h3,
 .h4,
 .h5 {
-  
+  font-family: manrope-medium, sans-serif;
 }
 
 
 h1,
 .h1 {
-  font-size: 60px;
+  font-size: 120px;
+  line-height: 130px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
   h1,
   .h1 {
-    font-size: 40px;
   }
 }
 
 h2,
 .h2 {
-  font-size: 48px;
+  font-size: 55px;
+  line-height: 58px;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
   h2,
   .h2 {
-    font-size: 32px;
   }
 }
 
 h3,
 .h3 {
-  font-size: 36px;
+  font-size: 45px;
+  line-height: 52px;
+  letter-spacing: -2%;
+  letter-spacing: -0.02em;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
   h3,
   .h3 {
-    font-size: 26px;
   }
 }
 
 h4,
 .h4 {
-  font-size: 28px;
+  font-size: 35px;
+  line-height: 38px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
   h4,
   .h4 {
-    font-size: 20px;
   }
 }
 
 h5,
 .h5 {
   font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
   h5,
   .h5 {
-    font-size: 20px;
   }
 }
 
 h6,
 .h6 {
-  font-size: 18px;
+  font-family: manthrope;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
 }
 
 @media only screen and (max-width: 768px) {
-  h5,
-  .h5 {
-    font-size: 20px;
+  h6,
+  .h6 {
   }
 }
 
+.stylize {
+  font-family: canela;
+  font-weight: 300;
+}
+
 p {
+  font-family: jakarta;
+  font-size: 16px;
+}
+
+.body-lg {
+  font-size: 18px;
+}
+
+.body-sm {
   font-size: 14px;
-  line-height: 1.5;
+}
+
+.body-xs {
+  font-size: 12px;
+}
+
+.body-medium-weight {
+  font-family: jakarta-medium
+}
+
+.body-bold-weight {
+  font-family: jakarta-bold;
 }
 
 @media only screen and (max-width: 768px) {
