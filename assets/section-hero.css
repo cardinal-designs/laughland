@@ -27,3 +27,7 @@
 .homepage-hero .hero__title:not(.show){
   opacity: 0;
 }
+
+.homepage-hero .hero__title {
+  margin-bottom: 0;
+}

@@ -1133,6 +1133,19 @@ deferred-media {
 }
 
 /* =========== Homepage Header ========== */
+.homepage-hero {
+  position: relative;
+}
+
+.homepage-hero .outer-header-wrapper {
+  position: fixed;
+}
+
+.homepage-hero #shopify-section-homepage-hero {
+  /* position: relative;
+  top: calc(var(--simple-header-height) * -1); */
+}
+
 .homepage-hero .header__svg-logo {
   opacity: 0;
 }

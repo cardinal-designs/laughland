@@ -757,8 +757,8 @@ customElements.define('add-to-cart', AddToCart);
       })
     },
     {
-      rootMargin: `-${(header.clientHeight - 47)}px`,
-      threshold: 1
+      rootMargin: `-${(header.clientHeight - 20)}px`,
+      threshold: 0
     }
   )
 
@@ -776,7 +776,8 @@ customElements.define('add-to-cart', AddToCart);
       pin: false,
       
       start: "50% 50%",
-      end: "+=50%",
+      end: "-=67px%",
+      markers: true
     }
   })
   

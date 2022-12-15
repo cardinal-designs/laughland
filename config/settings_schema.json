@@ -8,6 +8,17 @@
     "theme_support_url": "https:\/\/cardinalco.agency\/"
   },
   {
+    "name": "Announcement Bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement",
+        "label": "Show Announcement Bar",
+        "default": false
+      }
+    ]
+  },
+  {
     "name": "Colors", 
     "settings": [
       {

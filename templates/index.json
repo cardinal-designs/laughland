@@ -7,9 +7,23 @@
         "button_label": "Shop Now",
         "button_link": ""
       }
+    },
+    "35fea743-355a-419d-b32e-a7b006872904": {
+      "type": "page-header",
+      "settings": {
+        "title": ""
+      }
+    },
+    "74f4c2b4-8be0-4f53-8623-39fba8a9e0aa": {
+      "type": "page-header",
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
-    "16587824044cd3c400"
+    "16587824044cd3c400",
+    "35fea743-355a-419d-b32e-a7b006872904",
+    "74f4c2b4-8be0-4f53-8623-39fba8a9e0aa"
   ]
 }

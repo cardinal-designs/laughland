@@ -54,14 +54,18 @@
     {% if template == 'index' %}
       <div class="homepage-hero">
         <div class="outer-header-wrapper">
-          {% section 'announcement-bar' %}
+          {% if settings.show_announcement %}
+            {% section 'announcement-bar' %}
+          {% endif %}
           {% section 'header' %}
         </div>
         {% section 'homepage-hero' %}
       </div>
     {% else %}
       <div class="outer-header-wrapper">
-        {% section 'announcement-bar' %}
+        {% if settings.show_announcement %}
+          {% section 'announcement-bar' %}
+        {% endif %}
         {% section 'header' %}
       </div>
     {% endif %}
