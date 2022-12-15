@@ -295,6 +295,10 @@ function setCookie(name, value, days) {
   document.cookie = name + "=" + value + ";path=/;expires=" + d.toGMTString();
 }
 
+/* ================================
+    Animation
+  ================================= */
+
 function slideUp(target, duration = 500) {
   target.style.transitionProperty = 'height, margin, padding';
   target.style.transitionDuration = duration + 'ms';
@@ -386,7 +390,11 @@ function fadeOut(target, duration = 500) {
     }
   };
   tick();
-}
+
+
+/* ================================
+    Section Rendering
+  ================================= */}
 
 function getSectionInnerHTML(html, selector) {
   return new DOMParser()
@@ -440,7 +448,7 @@ const serializeForm = form => {
   return JSON.stringify(obj);
 };
 
-/*================ Initialize ================*/
+/*================ Micromodal Initialize ================*/
 // Micromodal
 MicroModal.init({
   openClass: 'is-open',
@@ -731,3 +739,48 @@ var AddToCart = class extends HTMLElement {
 }
 
 customElements.define('add-to-cart', AddToCart);
+
+/* ================================
+    Inerseciton observer
+  ================================= */
+
+  const hero = document.querySelector(".homepage-hero")
+  const heroLogo = hero.querySelector(".hero__title")
+  const header = document.querySelector(".outer-header-wrapper")
+
+  const observer = new IntersectionObserver(
+    entries => {
+      entries.forEach( entry => {
+        console.log(entry.isIntersecting)
+          entry.target.classList.toggle("show", entry.isIntersecting)
+          header.querySelector(".header__svg-logo").classList.toggle("show", !entry.isIntersecting)
+      })
+    },
+    {
+      rootMargin: `-${(header.clientHeight - 47)}px`,
+      threshold: 1
+    }
+  )
+
+  observer.observe(heroLogo)
+
+  /* ========================
+  scroll trigger
+  ========================= */
+  gsap.registerPlugin(ScrollTrigger);
+
+  const tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: hero,
+      scrub: true,
+      pin: false,
+      
+      start: "50% 50%",
+      end: "+=50%",
+    }
+  })
+  
+  .to(heroLogo, {
+    scale: 0.134, 
+    ease: "linear"
+  })

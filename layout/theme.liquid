@@ -26,6 +26,7 @@
     {% render 'meta-tags' %}
 
     <script src="{{ 'gsap.min.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'scroll-trigger.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'lazysizes.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'micromodal.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
@@ -50,10 +51,20 @@
 
     <div class="page-overlay"></div>
 
-    <div class="outer-header-wrapper">
-      {% section 'announcement-bar' %}
-      {% section 'header' %}
-    </div>
+    {% if template == 'index' %}
+      <div class="homepage-hero">
+        <div class="outer-header-wrapper">
+          {% section 'announcement-bar' %}
+          {% section 'header' %}
+        </div>
+        {% section 'homepage-hero' %}
+      </div>
+    {% else %}
+      <div class="outer-header-wrapper">
+        {% section 'announcement-bar' %}
+        {% section 'header' %}
+      </div>
+    {% endif %}
 
     {% section 'mobile-menu' %}
 
@@ -61,7 +72,7 @@
       {% section 'cart-drawer' %}
     {% endif %}
 
-    <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
+    <main id="MainContent" class="content-for-layout {{ template }} focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 

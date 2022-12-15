@@ -1,17 +1,25 @@
 {% style %}
-  /* Manthrope - Regular */
+  /* Manrope - Regular */
   @font-face {
     font-family: manrope;
-    src: url('{{ "Manrope-Regular.ttf" | asset_url }}') format('truetype'),
+    src: url('{{ "Manrope-Regular.ttf" | asset_url }}') format('truetype');
     font-weight: 400;
     font-style: normal;
   }
 
-  /* Manthrope - Medium */
+  /* Manrope - Medium */
   @font-face {
     font-family: manrope-medium;
     src: url('{{ "Manrope-Medium.ttf" | asset_url }}') format('truetype');
     font-weight: 500;
+    font-style: normal;
+  }
+
+  /* Manrope - Bold */
+  @font-face {
+    font-family: manrope-bold;
+    src: url('{{ "Manrope-Bold.ttf" | asset_url }}') format('truetype');
+    font-weight: 700;
     font-style: normal;
   }
 
@@ -58,6 +66,7 @@
 
     --header-height: 52px;
     --mobile-header-height: 52px;
+    --simple-header-height: 52px;
   }
 
   *,
@@ -84,7 +93,7 @@
 
   a {
     text-decoration: none;
-    color: {{ settings.text_color }};
+    color: inherit;
   }
 
   button {
