@@ -26,7 +26,7 @@
     /* Canela Light */
     @font-face {
     font-family: canela;
-    src: url('{{ "Canela-Light-Trial.ttf" | asset_url }}') format('opentype');
+    src: url('{{ "Canela-Light-Trial.otf" | asset_url }}') format('opentype');
     font-weight: 300;
     font-style: normal;
   }
@@ -59,10 +59,23 @@
 
   :root {
     --navy: #0D2244;
-    --blue: #46BD50;
+    --blue: #46BDF0;
     --cream: #FAF5F1;
     --pink: #F87A7A;
     --purple: #B195D0;
+
+    /* TINTS */
+    --navy-tint-80: #3D4E69;
+    --navy-tint-60: #6E7A8F;
+    --navy-tint-40: #9EA7B4;
+    --navy-tint-20: #CFD3DA;
+
+    --blue-tint-80: #6BCAF3;
+    --blue-tint-60: #90D7F6;
+    --blue-tint-40: #B5E5F9;
+    --blue-tint-20: #DAF2FC;
+    --blue-tint-10: #ECF8FE;
+    --blue-transparent: #46BDF000;
 
     --header-height: 67px;
     --mobile-header-height: 52px;

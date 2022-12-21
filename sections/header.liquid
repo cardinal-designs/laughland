@@ -170,7 +170,7 @@
     {% if shop.customer_accounts_enabled %}
       <a
         href="{% if customer %}{{ routes.account_url }}{% else %}{{ routes.account_login_url }}{% endif %}"
-        {% comment %} class="header__icon header__icon--account hide-mobile" {% endcomment %}
+        class="{% comment %} header__icon header__icon--account {% endcomment %} hide-mobile"
       >
         {% comment %} {% render 'icon' icon: 'account' %} {% endcomment %}
         <span class="">

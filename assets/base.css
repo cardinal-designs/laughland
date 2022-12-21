@@ -212,9 +212,16 @@ h5,
 .h3,
 .h4,
 .h5 {
-  font-family: manrope-medium, sans-serif;
+  font-family: manrope, sans-serif;
 }
 
+.h-medium {
+  font-family: manrope-medium, san-serif;
+}
+
+.h-bold {
+  font-family: manrope-body, san-serif;
+}
 
 h1,
 .h1 {
@@ -241,6 +248,8 @@ h2,
 @media only screen and (max-width: 768px) {
   h2,
   .h2 {
+    font-size: 35px;
+    line-height: 38px;
   }
 }
 
@@ -302,9 +311,10 @@ h6,
   }
 }
 
-.stylize {
+.stylized {
   font-family: canela;
   font-weight: 300;
+  font-style: italic;
 }
 
 p {
@@ -356,18 +366,42 @@ blockquote {
 /*================ Button ================*/
 .button,
 .shopify-challenge__button {
-  padding: 15px 40px;
-  background: black;
-  color: white;
+  padding: 16.5px 34px 17.5px;
+  background: var(--blue);
+  color: var(--cream);
   text-align: center;
   cursor: pointer;
+  font-family: jakarta-bold;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 40px;
+  box-shadow: 0px 0px 32px var(--blue-transparent);
+  transition: all .5s ease;
+  display: inline-block;
 }
 
-
 /* Button - hover */
-.button:not([disabled]):hover,
+.button:not([disabled]):not(.button--secondary):hover,
 .shopify-challenge__button:hover {
-  
+  color: var(--blue);
+  background: var(--cream);
+  box-shadow: 0px 0px 32px var(--blue);
+}
+
+/* Secondary Button Style */
+
+.button--secondary {
+  box-shadow: none;
+  background: transparent;
+  color: var(--navy);
+  border: 1px solid var(--navy);
+}
+
+/* Secondary Button - hover */
+.button--secondary:not([disabled]):hover {
+  background: var(--blue-tint-20);
+  box-shadow: none;
+  color: var(--navy);
 }
 
 /* Button - other */
@@ -383,6 +417,18 @@ blockquote {
 
 .button--full {
   width: 100%;
+}
+
+.button--lg {
+  padding: 21.5px 53px 22.5px;
+}
+
+.button--sm {
+  padding: 14px 25px 15px;
+}
+
+.button--xs {
+  padding: 8px 16px 9px;
 }
 
 .button.loading {
@@ -900,7 +946,13 @@ deferred-media {
   top: 0;
   z-index: 5;
   font-family: manrope-bold;
+  color: white;
+  transition: all .3s ease;
+}
+
+.outer-header-wrapper.scrolled {
   color: var(--navy);
+  background: var(--cream);
 }
 
 /*================ Announcement Bar ================*/
@@ -953,6 +1005,7 @@ deferred-media {
 .header__logo {
   grid-area: logo;
   justify-self: center;
+  padding-top: 5px;
 }
 
 .header__svg-logo {

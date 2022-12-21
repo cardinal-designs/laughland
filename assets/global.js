@@ -745,7 +745,7 @@ customElements.define('add-to-cart', AddToCart);
   ================================= */
 
   const hero = document.querySelector(".homepage-hero")
-  const heroLogo = hero.querySelector(".hero__title")
+  const heroLogo = hero.querySelector(".hero__logo")
   const header = document.querySelector(".outer-header-wrapper")
 
   const observer = new IntersectionObserver(
@@ -754,6 +754,7 @@ customElements.define('add-to-cart', AddToCart);
         console.log(entry.isIntersecting)
           entry.target.classList.toggle("show", entry.isIntersecting)
           header.querySelector(".header__svg-logo").classList.toggle("show", !entry.isIntersecting)
+          header.classList.toggle("scrolled", !entry.isIntersecting)
       })
     },
     {
@@ -776,8 +777,8 @@ customElements.define('add-to-cart', AddToCart);
       pin: false,
       
       start: "50% 50%",
-      end: "-=67px%",
-      markers: true
+      end: "+=50%",
+      markers: false
     }
   })
   
