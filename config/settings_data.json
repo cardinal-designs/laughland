@@ -73,7 +73,6 @@
         "type": "homepage-hero",
         "settings": {
           "add_overlay": true,
-          "image": "shopify:\/\/shop_images\/MP4.png",
           "title": "{Personalized}\nTeeth Whitening",
           "button_label": "Find Your Formula",
           "button_link": "",
