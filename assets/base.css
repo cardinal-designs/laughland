@@ -24,6 +24,7 @@ html.no-js .no-js-hidden {
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: antialiased;
+  font-family: manrope;
 }
 
 /*================ Layout ================*/
@@ -1447,22 +1448,84 @@ deferred-media {
   Footer
 ==============================================================================*/
 .footer {
-  border-top: 1px solid black;
+  background: var(--cream);
+  padding: 0 32px 0;
+  color: var(--navy);
+}
+
+.footer__sections {
+  padding: 60px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--navy);
+}
+
+.footer__section {
+  flex: 1;
+  text-align: center;
+  max-width: 418px;
+}
+
+.footer__heading {
+  font-family: manrope-medium;
+  font-weight: 500;
+  margin: 0 0 20px;
+}
+
+.footer__text {
+  margin-bottom: 20px;
+}
+
+.footer__section .button {
+  margin: 0 5px;
 }
 
 /*================ Top ================*/
-.footer__top {
-  padding: 100px 0;
+.footer__menus {
+  padding: 30px 0 60px;
   display: flex;
   justify-content: space-between;
 }
 
-.footer__blocks {
+.footer__menu-blocks {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 55px;
 }
 
-.footer__block {
-  padding-right: 80px;
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.footer__social-menu .footer__menu,
+.footer__policies .footer__menu {
+  flex-direction: row;
+  gap: 55px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__menu-link, .footer__copy {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.footer__copy {
+  margin: 0;
 }
 
 .newsletter-form {
@@ -1488,8 +1551,8 @@ deferred-media {
 
 /*================ Bottom ================*/
 .footer__bottom {
-  padding: 10px 0;
-  border-top: 1px solid black;
+  padding: 16px 0;
+  border-top: 1px solid var(--navy);
 }
 
 /*============================================================================
