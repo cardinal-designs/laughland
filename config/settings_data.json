@@ -42,25 +42,47 @@
           "a2055792-f809-40d0-9556-a6ffeb11fb3b": {
             "type": "link_list",
             "settings": {
-              "heading": "Menu",
-              "menu": "footer"
+              "menu": "cardinal-nav"
             }
           },
           "80e0641c-25ee-4aa9-a52f-d3c8f62ba7f8": {
             "type": "link_list",
             "settings": {
-              "heading": "Menu",
-              "menu": "footer"
+              "menu": "footer-links"
+            }
+          },
+          "9b886c9a-4a94-436f-922e-c5f9d377600a": {
+            "type": "content",
+            "settings": {
+              "heading": "How Can We Help?",
+              "text": "We’re here for the hard questions, the easy questions, and everything in between.",
+              "btn_one": "\/",
+              "btn_one_text": "Ask Our Team",
+              "btn_two": "\/",
+              "btn_two_text": "Explore FAQs"
+            }
+          },
+          "95d125c9-69c8-4784-96ab-ed9eeaf87d7d": {
+            "type": "content",
+            "settings": {
+              "heading": "Already A Customer?",
+              "text": "Sign in to your account to edit your formula, view or track your most recent order, or purchase refills.",
+              "btn_one": "\/",
+              "btn_one_text": "Account Log In",
+              "btn_two": "",
+              "btn_two_text": ""
             }
           }
         },
         "block_order": [
           "a2055792-f809-40d0-9556-a6ffeb11fb3b",
-          "80e0641c-25ee-4aa9-a52f-d3c8f62ba7f8"
+          "80e0641c-25ee-4aa9-a52f-d3c8f62ba7f8",
+          "9b886c9a-4a94-436f-922e-c5f9d377600a",
+          "95d125c9-69c8-4784-96ab-ed9eeaf87d7d"
         ],
         "settings": {
-          "newsletter_heading": "Newsletter",
-          "newsletter_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          "policy_menu": "policies",
+          "social_menu": "follow-us-on-social"
         }
       },
       "mobile-menu": {
