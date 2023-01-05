@@ -9,7 +9,7 @@
 
   /* Manrope - Medium */
   @font-face {
-    font-family: manrope-medium;
+    font-family: manrope;
     src: url('{{ "Manrope-Medium.ttf" | asset_url }}') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -17,7 +17,7 @@
 
   /* Manrope - Bold */
   @font-face {
-    font-family: manrope-bold;
+    font-family: manrope;
     src: url('{{ "Manrope-Bold.ttf" | asset_url }}') format('truetype');
     font-weight: 700;
     font-style: normal;
@@ -42,7 +42,7 @@
 
   /* Plus Jakarta Sans Medium */
   @font-face {
-    font-family: jakarta-medium;
+    font-family: jakarta;
     src: url('{{ "PlusJakartaSans-Medium.ttf" | asset_url }}') format('truetype');
     font-weight: 500;
     font-style: normal;
@@ -51,7 +51,7 @@
 
   /* Plus Jakarta Sans Bold */
   @font-face {
-    font-family: jakarta-bold;
+    font-family: jakarta;
     src: url('{{ "PlusJakartaSans-Bold.ttf" | asset_url }}') format('truetype');
     font-weight: 600;
     font-style: normal;
@@ -100,6 +100,7 @@
     min-height: 100%;
     margin: 0;
     font-family: manrope, sans-serif;
+    font-weight: 400;
     color: {{ settings.text_color }};
     background: {{ settings.background_color }};
   }
@@ -119,6 +120,6 @@
     -webkit-appearance: none;
     appearance: none;
     cursor: pointer;
-    color: {{ settings.text_color }};
+    color: inherit;
   }
 {% endstyle %}

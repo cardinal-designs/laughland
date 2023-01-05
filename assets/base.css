@@ -214,14 +214,17 @@ h5,
 .h4,
 .h5 {
   font-family: manrope, sans-serif;
+  font-weight: 400;
 }
 
 .h-medium {
-  font-family: manrope-medium, san-serif;
+  font-family: manrope, san-serif;
+  font-weight: 500;
 }
 
 .h-bold {
-  font-family: manrope-body, san-serif;
+  font-family: manrope-bold, san-serif;
+  font-weight: 700;
 }
 
 h1,
@@ -318,8 +321,10 @@ h6,
   font-style: italic;
 }
 
-p {
+p,
+.p {
   font-family: jakarta;
+  font-weight: 400;
   font-size: 16px;
 }
 
@@ -336,11 +341,13 @@ p {
 }
 
 .body-medium-weight {
-  font-family: jakarta-medium
+  font-family: jakarta;
+  font-weight: 500;
 }
 
 .body-bold-weight {
-  font-family: jakarta-bold;
+  font-family: jakarta;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
@@ -372,7 +379,8 @@ blockquote {
   color: var(--cream);
   text-align: center;
   cursor: pointer;
-  font-family: jakarta-bold;
+  font-family: jakarta;
+  font-weight: 600;
   font-size: 14px;
   line-height: 17px;
   border-radius: 40px;
@@ -946,7 +954,8 @@ deferred-media {
   position: sticky;
   top: 0;
   z-index: 5;
-  font-family: manrope-bold;
+  font-family: manrope;
+  font-weight: 700;
   color: white;
   transition: all .3s ease;
 }
@@ -1465,11 +1474,20 @@ deferred-media {
 .footer__section {
   flex: 1;
   text-align: center;
+  padding: 0 20px;
+}
+
+.footer__section:not(:last-of-type){
+  border-right: 1px solid var(--navy);
+}
+
+.footer__section-inner {
   max-width: 418px;
+  margin: auto;
 }
 
 .footer__heading {
-  font-family: manrope-medium;
+  font-family: manrope;
   font-weight: 500;
   margin: 0 0 20px;
 }
@@ -1741,4 +1759,23 @@ deferred-media {
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: transform;
+}
+
+.page-transition {
+  position: fixed;
+  z-index: 9999;
+  width: calc(100% - 60px);
+  height: 150vh;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 50%) scaleX(1);
+  -webkit-box-pack: center;
+  background: var(--blue);
+  border-radius: 10%;
+  transition: transform .8s ease-in, border-radius .8s ease;
+}
+
+.page-transition.visible {
+  transform: translate(-50%, -50%) scaleX(1.08);
+  border-radius: 10%;
 }

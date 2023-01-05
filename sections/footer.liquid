@@ -9,18 +9,20 @@
   <div class="footer__sections">
     {% for block in footer_sections %}
       <div class="footer__section">
-        <h4 class="footer__heading">{{ block.settings.heading }}</h4>
-        <p class="footer__text">{{ block.settings.text }}</p>
-        {% if block.settings.btn_one != blank and block.settings.btn_one_text != blank %}
-          <a class="button button--secondary button--sm" href="{{ block.settings.btn_one }}">
-            {{- block.settings.btn_one_text -}}
-          </a>
-        {% endif %}
-        {% if block.settings.btn_two != blank and block.settings.btn_two_text != blank %}
-          <a class="button button--secondary button--sm" href="{{ block.settings.btn_two }}">
-            {{- block.settings.btn_two_text -}}
-          </a>
-        {% endif %}
+        <div class="footer__section-inner">
+          <h4 class="footer__heading">{{ block.settings.heading }}</h4>
+          <p class="footer__text">{{ block.settings.text }}</p>
+          {% if block.settings.btn_one != blank and block.settings.btn_one_text != blank %}
+            <a class="button button--secondary button--sm" href="{{ block.settings.btn_one }}">
+              {{- block.settings.btn_one_text -}}
+            </a>
+          {% endif %}
+          {% if block.settings.btn_two != blank and block.settings.btn_two_text != blank %}
+            <a class="button button--secondary button--sm" href="{{ block.settings.btn_two }}">
+              {{- block.settings.btn_two_text -}}
+            </a>
+          {% endif %}
+        </div>
       </div>
     {% endfor %}
   </div>

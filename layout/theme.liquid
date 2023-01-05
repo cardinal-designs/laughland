@@ -49,6 +49,8 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
+    <div class="page-transition"></div>
+
     <div class="page-overlay"></div>
 
     {% if template == 'index' %}
@@ -80,6 +82,7 @@
       {{ content_for_layout }}
     </main>
 
+    {% section 'sticky-footer' %}
     {% section 'footer' %}
 
     <ul hidden>
