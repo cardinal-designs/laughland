@@ -49,7 +49,14 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-    <div class="page-transition"></div>
+    <div class="page-transition">
+      {% if settings.transition_svg_logo != blank %}
+        <div class="page-transition__svg-logo">
+          {{ settings.transition_svg_logo }}
+        </div>
+      {% endif %}
+      <div class="page-transition__content"></div>
+    </div>
 
     <div class="page-overlay"></div>
 

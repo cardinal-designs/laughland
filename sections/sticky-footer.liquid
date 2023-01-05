@@ -16,7 +16,8 @@
 {% javascript %}
   document.querySelector('.sticky-footer__button').addEventListener('click', (e) => {
     e.preventDefault();
-    document.querySelector('.page-transition').classList.add('visible');
+    e.target.classList.toggle('hide');
+    document.querySelector('.page-transition').classList.toggle('visible');
   });
 {% endjavascript %}
 

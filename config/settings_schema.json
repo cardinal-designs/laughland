@@ -24,13 +24,13 @@
       {
         "type": "color",
         "id": "background_color",
-        "default": "#FFFFFF",
+        "default": "#FAF5F1",
         "label": "Background Color"
       },
       {
         "type": "color",
         "id": "text_color",
-        "default": "#000000",
+        "default": "#0D2244",
         "label": "Text Color"
       }
     ]
@@ -149,6 +149,16 @@
         "id": "currency_code_enabled",
         "label": "t:settings_schema.currency_format.settings.currency_code_enabled.label",
         "default": true
+      }
+    ]
+  },
+  {
+    "name": "Page Transition",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "transition_svg_logo",
+        "label": "SVG Logo"
       }
     ]
   }

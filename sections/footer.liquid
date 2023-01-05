@@ -114,7 +114,7 @@
       </div>
     {% endcomment %}
     {% if section.settings.social_menu != blank %}
-      <div class="footer__social-menu">
+      <div class="footer__social-menu hide-mobile">
         <ul class="footer__menu list-unstyled">
           {% for link in section.settings.social_menu.links %}
             <li>
@@ -132,6 +132,23 @@
   </div>
 
   <div class="footer__bottom">
+    {% if section.settings.social_menu != blank %}
+      <div class="footer__social-menu hide-desktop">
+        <ul class="footer__menu list-unstyled">
+          {% for link in section.settings.social_menu.links %}
+            <li>
+              <a
+                href="{{ link.url }}"
+                class="footer__menu-link{% if link.active %} footer__menu-link--active{% endif %}"
+              >
+                {{ link.title }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+
     {% if section.settings.policy_menu != blank %}
       <div class="footer__policies">
         <ul class="footer__menu list-unstyled">
@@ -148,7 +165,7 @@
         </ul>
       </div>
     {% endif %}
-    <div class="footer__copyrigt">
+    <div class="footer__copyright">
       <p class="footer__copy">
         &copy; {{ shop.name | link_to: routes.root_url }}
         {{ 'now' | date: '%Y' }}. All rights reserved.

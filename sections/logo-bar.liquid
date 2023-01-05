@@ -1,0 +1,78 @@
+{{ 'section-logo-bar.css' | asset_url | stylesheet_tag }}
+
+<section class="logo-bar">
+  <div class="page-width">
+    <div class="logo-bar__inner">
+      <ul class="logo-bar__list list-unstyled">
+        {% for block in section.blocks %}
+          <li class="logo-bar__list-item">
+            {% if block.settings.svg != blank %}
+              {{ block.settings.svg }}
+            {% elsif block.settings.png != blank %}
+              <img
+                srcset="{{ block.settings.png | image_url: width: 300 }} 1x, {{ block.settings.png | image_url: width: 300, scale: 2 }} 2x"
+                src="{{ block.settings.png | image_url: width: 300}}"
+                loading="lazy"
+                class="header__heading-logo"
+                width="{{ block.settings.png.width }}"
+                height="{{ block.settings.png.height }}"
+                alt="{{ block.settings.png.alt }}"
+              >
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% comment %} Duplicate for mobile marquee {% endcomment %}
+      <ul class="logo-bar__list list-unstyled hide-desktop">
+        {% for block in section.blocks %}
+          <li class="logo-bar__list-item">
+            {% if block.settings.svg != blank %}
+              {{ block.settings.svg }}
+            {% elsif block.settings.png != blank %}
+              <img
+                srcset="{{ block.settings.png | image_url: width: 300 }} 1x, {{ block.settings.png | image_url: width: 300, scale: 2 }} 2x"
+                src="{{ block.settings.png | image_url: width: 300}}"
+                loading="lazy"
+                class="header__heading-logo"
+                width="{{ block.settings.png.width }}"
+                height="{{ block.settings.png.height }}"
+                alt="{{ block.settings.png.alt }}"
+              >
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Logo Bar",
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "svg",
+          "label": "SVG Logo"
+        },
+        {
+          "type": "image_picker",
+          "id": "png",
+          "label": "PNG Logo",
+          "info": "SVG is preferred, but PNG can be used instead"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo Bar"
+    }
+  ]
+}
+{% endschema %}

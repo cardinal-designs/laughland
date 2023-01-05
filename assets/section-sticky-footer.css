@@ -7,6 +7,7 @@
   margin-right: auto;
   margin-left: auto;
   width: calc(100% - 60px);
+  overflow: hidden;
 }
 
 .sticky-footer__button {
@@ -24,6 +25,15 @@
   transition: all .3s ease;
 }
 
+.sticky-footer__button > * {
+  pointer-events: none;
+}
+
 .sticky-footer__button:hover {
   padding-bottom: 25px;
+}
+
+.sticky-footer__button.hide {
+  transform: translateY(100%);
+
 }
