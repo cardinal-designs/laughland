@@ -38,9 +38,41 @@
       ],
       "settings": {
       }
+    },
+    "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7": {
+      "type": "image-text",
+      "blocks": {
+        "3021148b-0789-47cc-b421-9518a12f5d19": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Laughland_79214_1.jpg",
+            "text": "Medium Sensitivity\nWine Drinker\nYears of Stains",
+            "sm_text": "Joe Shmoe"
+          }
+        },
+        "bc97ed44-a594-4120-be5e-93766641037f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Laughland_79214_1.jpg",
+            "text": "Mild Sensitivity\nCoffee Stains",
+            "sm_text": "Joe Low"
+          }
+        }
+      },
+      "block_order": [
+        "3021148b-0789-47cc-b421-9518a12f5d19",
+        "bc97ed44-a594-4120-be5e-93766641037f"
+      ],
+      "settings": {
+        "heading": "Made For {Your Smile}",
+        "text": "Your smile deserves better than a one size fits all solution. \nWe take factors like sensitivity, cavity history, and your diet into account in order to create the fastest, most effective and sensitivity-free formula for your smile. A generic formula could never!",
+        "btn": "\/",
+        "btn_text": "Find Your Formula"
+      }
     }
   },
   "order": [
-    "a4dc9a5e-61ad-4581-a9c9-118ff319166b"
+    "a4dc9a5e-61ad-4581-a9c9-118ff319166b",
+    "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7"
   ]
 }
