@@ -326,6 +326,7 @@ p,
   font-family: jakarta;
   font-weight: 400;
   font-size: 16px;
+  margin: 0;
 }
 
 .body-lg {
@@ -1454,8 +1455,32 @@ deferred-media {
 }
 
 /*============================================================================
+  Main
+==============================================================================*/
+
+#MainContent {
+  margin-bottom: 120px;
+}
+
+/*============================================================================
   Footer
 ==============================================================================*/
+
+#shopify-section-footer {
+  position: relative;
+}
+
+#shopify-section-footer:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  transform: translate(0, -100%);
+  height: 200px;
+  background: linear-gradient(180deg, rgba(250, 245, 241, 0) 0%, #B5E5F9 100%);
+  z-index: 0;
+}
+
 .footer {
   background: var(--cream);
   padding: 0 32px 0;
