@@ -43,11 +43,17 @@
         {% else %}
           {% unless imageBlocks.size == 0 %}
             {% comment %} single image {% endcomment %}
-            <div class="image-text__image-wrapper">
-              <div class="image-text__image">
-                {{ imageBlocks[0].settings.image | image_url: width: 300 | image_tag }}
+            {% if imageBlocks[0].settings.video != blank %}
+              <div class="image-text__image-wrapper">
+                {{ imageBlocks[0].settings.video }}
               </div>
-            </div>
+            {% else %}
+              <div class="image-text__image-wrapper">
+                <div class="image-text__image">
+                  {{ imageBlocks[0].settings.image | image_url: width: 300 | image_tag }}
+                </div>
+              </div>
+            {% endif %}
           {% endunless %}
         {% endif %}
       </div>
@@ -192,6 +198,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
         },
         {
           "type": "textarea",
