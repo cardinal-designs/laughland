@@ -69,10 +69,65 @@
         "btn": "\/",
         "btn_text": "Find Your Formula"
       }
+    },
+    "35483501-7869-4816-b0c4-888b808586a6": {
+      "type": "image-text",
+      "blocks": {
+        "a581beb9-c944-4f8b-ae50-1aec73653106": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MP4_dd1165d5-4283-4226-9e3b-f81ba196527b.png",
+            "text": "",
+            "sm_text": ""
+          }
+        },
+        "9cb853b6-328f-48e7-ac98-cef73608d95c": {
+          "type": "bullet",
+          "settings": {
+            "title": "🦷",
+            "heading": "7+ shade brighter in 6 days"
+          }
+        },
+        "ee8f4252-b264-4ecd-9115-9e8ba1fb4d1b": {
+          "type": "bullet",
+          "settings": {
+            "title": "🪥",
+            "heading": "Quick & simple 10 minute routine"
+          }
+        },
+        "34f06037-4acd-497e-a580-db06ac9eeffb": {
+          "type": "bullet",
+          "settings": {
+            "title": "👌",
+            "heading": "Tweak your formula anytime, for free"
+          }
+        },
+        "0f590308-08c2-4dc3-9247-e64a1c5570fe": {
+          "type": "bullet",
+          "settings": {
+            "title": "💸",
+            "heading": "Start for just {$19}"
+          }
+        }
+      },
+      "block_order": [
+        "a581beb9-c944-4f8b-ae50-1aec73653106",
+        "9cb853b6-328f-48e7-ac98-cef73608d95c",
+        "ee8f4252-b264-4ecd-9115-9e8ba1fb4d1b",
+        "34f06037-4acd-497e-a580-db06ac9eeffb",
+        "0f590308-08c2-4dc3-9247-e64a1c5570fe"
+      ],
+      "settings": {
+        "heading": "A Bright Smile Shouldn't Be A {Luxury}",
+        "text": "",
+        "btn": "\/",
+        "btn_text": "Find Your Formula"
+      }
     }
   },
   "order": [
     "a4dc9a5e-61ad-4581-a9c9-118ff319166b",
-    "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7"
+    "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7",
+    "35483501-7869-4816-b0c4-888b808586a6"
   ]
 }
