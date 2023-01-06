@@ -478,6 +478,12 @@ blockquote {
   display: flex;
 }
 
+.text-link {
+  color: var(--blue);
+  text-decoration: underline;
+  line-height: 4em;
+}
+
 /*================ Form ================*/
 .field__input,
 .select__select,

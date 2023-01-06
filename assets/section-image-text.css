@@ -1,3 +1,7 @@
+.image-text {
+  margin-bottom: 50px;
+}
+
 .image-text__inner {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -57,8 +61,14 @@
   align-items: flex-start;
 }
 
-.image-text__paragraph + .button,
-.image-text__bullet-list + .button {
+.image-text__text-container-right {
+  order: -1;
+  padding-left: 0;
+  padding-right: 113px;
+}
+
+.image-text__paragraph + .image-text__button-wrapper,
+.image-text__bullet-list + .image-text__button-wrapper {
   margin-top: 50px;
 }
 
@@ -73,6 +83,14 @@
 
 .bullet-emoji {
   font-size: 30px;
+}
+
+.image-text__button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
 }
 
 /* PROGRESS INDICATORS */
