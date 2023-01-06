@@ -81,7 +81,10 @@
                 | replace: '$', "<span class='money'>$</span>"
               %}
               <li class="image-text__bullet body">
-                <span class="bullet-emoji">{{ bullet.settings.title }}</span>
+                {% assign isReversed = forloop.index | modulo: 2 %}
+                <span class="bullet-emoji float {% if isReversed == 0 %} is-reversed{% endif %}">
+                  {{- bullet.settings.title -}}
+                </span>
                 {{ formatted_bullet }}
               </li>
             {% endfor %}
