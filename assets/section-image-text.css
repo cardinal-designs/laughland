@@ -1,6 +1,6 @@
 .image-text__inner {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, auto));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 13px;
   /* display: flex;
   flex-direction: row; */
@@ -57,9 +57,25 @@
   align-items: flex-start;
 }
 
-.image-text__paragraph + .button {
+.image-text__paragraph + .button,
+.image-text__bullet-list + .button {
   margin-top: 50px;
 }
+
+.image-text__bullet {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.bullet-emoji {
+  font-size: 30px;
+}
+
+/* PROGRESS INDICATORS */
 
 .image-text__progress {
   position: absolute;
