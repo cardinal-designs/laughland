@@ -213,6 +213,7 @@ h5,
 .h3,
 .h4,
 .h5 {
+  margin: 0 0 30px;
   font-family: manrope, sans-serif;
   font-weight: 400;
 }

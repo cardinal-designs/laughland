@@ -13,27 +13,28 @@
           <div class="image-text__images swiper">
             <div class="swiper-wrapper">
               {% for block in section.blocks %}
-                <div class="image-text__image-container swiper-slide" data-slide-id="{{ block.id }}">
-                  <div class="image-text__image">{{ block.settings.image | image_url: width: 300 | image_tag }}</div>
-                  {% if block.settings.text != blank or block.settings.sm_text != blank %}
-                    <div class="image-text__image-overlay">
-                      {% if block.settings.text != blank %}
-                        <p class="body body-medium-weight">{{ block.settings.text | newline_to_br }}</p>
-                      {% endif %}
-                      {% if block.settings.sm_text != blank %}
-                        <p class="body body-xs">{{ block.settings.sm_text }}</p>
-                      {% endif %}
-                    </div>
-                  {% endif %}
+                <div class="image-text__slide-content swiper-slide" data-slide-id="{{ block.id }}">
+                  <div class="image-text__image-container">
+                    <div class="image-text__image">{{ block.settings.image | image_url: width: 300 | image_tag }}</div>
+                    {% if block.settings.text != blank or block.settings.sm_text != blank %}
+                      <div class="image-text__image-overlay">
+                        {% if block.settings.text != blank %}
+                          <p class="body body-medium-weight image-text__overlay-text">
+                            {{ block.settings.text | newline_to_br }}
+                          </p>
+                        {% endif %}
+                        {% if block.settings.sm_text != blank %}
+                          <p class="body body-xs body-bold-weight image-text__overlay-text-sm">
+                            {{ block.settings.sm_text }}
+                          </p>
+                        {% endif %}
+                      </div>
+                    {% endif %}
+                  </div>
                 </div>
               {% endfor %}
             </div>
-            <div class="image-text__progress">
-              {% for block in section.blocks %}
-                <div class="image-text__progress-bar" data-slide-id="{{ block.id }}"></div>
-                <div class="image-text__progress-bar-fill"></div>
-              {% endfor %}
-            </div>
+            <div class="image-text__progress"></div>
           </div>
         {% else %}
           {% unless section.blocks.size == 0 %}
@@ -52,7 +53,7 @@
           <h2 class="image-text__heading">{{ formatted_heading }}</h2>
         {% endif %}
         {% if section.settings.text != blank %}
-          <p class="body">{{ section.settings.text }}</p>
+          <p class="body image-text__paragraph">{{ section.settings.text }}</p>
         {% endif %}
 
         {% if section.settings.btn != blank and section.settings.btn_text != blank %}
@@ -62,6 +63,31 @@
     </div>
   </div>
 </section>
+
+{% javascript %}
+  const imageSlider = document.querySelector('.image-text__images');
+
+  // IMPORTANT! If autoplay delay timing is changed,
+  // update the animation timing for the progress dots as well
+  // in the section-image-text.css file
+  if (imageSlider) {
+    const imageSwiper = new Swiper(imageSlider, {
+      slidesPerView: 1,
+      effect: 'fade',
+      autoplay: {
+        delay: 5000,
+      },
+      pagination: {
+        el: '.image-text__progress',
+        renderBullet: function (index, className) {
+          return `<div class="image-text__bullet-wrapper ${className}" data-slide-id="${index}">
+                  <div class="image-text__progress-bar"><div class="image-text__progress-bar-fill"></div></div>
+                </div>`;
+        },
+      },
+    });
+  }
+{% endjavascript %}
 
 {% schema %}
 {
