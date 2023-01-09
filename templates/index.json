@@ -129,11 +129,61 @@
         "link": "\/",
         "link_text": "Learn More"
       }
+    },
+    "3d279213-0242-4d5a-a815-2cec3d9951bb": {
+      "type": "testimonials",
+      "blocks": {
+        "d72e9876-916a-4c74-9565-fd6298f135b0": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Allison",
+            "before_photo": "shopify:\/\/shop_images\/Placeholder_before_image.jpg",
+            "after_photo": "shopify:\/\/shop_images\/Image_11.jpg",
+            "profile": "{😣} Medium Sensitivity\n{🍷} Wine Drinker\n{🦷} Years of Stains",
+            "review": "“I had to come here to say something. Normally I have excruciating pain with crest white strips and this other brand I got from the dentist. Both of which didn’t whiten my teeth very much. So, I had low hopes for Laughland. I got the formula made for highest sensitivity, and I left it on for I think 12 minutes. Just after the first day my teeth look 2 shades whiter. I’m actually really shocked. Usually the sensitivity hits me several hours after whitening my teeth, and it’s now the next morning and I guess I’m all clear. Thanks Laughland!”"
+          }
+        },
+        "bdf1cbb1-4dc2-4236-acff-575a671a5132": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Alana",
+            "profile": "",
+            "review": ""
+          }
+        },
+        "0ba257cf-9d91-4d23-8f8e-343095862724": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Julia",
+            "profile": "",
+            "review": ""
+          }
+        },
+        "70d296fe-44de-4557-9cda-834702c16668": {
+          "type": "testimonial",
+          "settings": {
+            "heading": "Abby",
+            "profile": "",
+            "review": ""
+          }
+        }
+      },
+      "block_order": [
+        "d72e9876-916a-4c74-9565-fd6298f135b0",
+        "bdf1cbb1-4dc2-4236-acff-575a671a5132",
+        "0ba257cf-9d91-4d23-8f8e-343095862724",
+        "70d296fe-44de-4557-9cda-834702c16668"
+      ],
+      "settings": {
+        "heading": "The {Perfect Smile} Starts Today",
+        "text": "Our dentist approved, clinically backed ingredients work to whiten teeth by 7+ shades in your initial 6 day treatment.  But whitening is like skincare - a continuous, ongoing process. See how others use Laughland in their routine."
+      }
     }
   },
   "order": [
     "a4dc9a5e-61ad-4581-a9c9-118ff319166b",
     "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7",
-    "35483501-7869-4816-b0c4-888b808586a6"
+    "35483501-7869-4816-b0c4-888b808586a6",
+    "3d279213-0242-4d5a-a815-2cec3d9951bb"
   ]
 }

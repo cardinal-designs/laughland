@@ -1,0 +1,213 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_heading = section.settings.heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<section class="testimonials">
+  <div class="page-width">
+    <div class="testimonials__inner">
+      <h2 class="testimonials__heading">{{ formatted_heading }}</h2>
+      <p class="testimonials__text">{{ section.settings.text }}</p>
+
+      <div class="testimonials__container">
+        <div class="testimonials__images">
+          <div class="testimonials__image-swiper swiper">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+                <div class="testimonial__image-wrapper swiper-slide">
+                  {% if block.settings.before_photo != blank and block.settings.after_photo != blank %}
+                    <div class="testimonial__before-photo testimonial__image">
+                      {{ block.settings.before_photo | image_url: width: 300 | image_tag }}
+                    </div>
+                    <div class="testimonial__after-photo testimonial__image active">
+                      {{ block.settings.after_photo | image_url: width: 300 | image_tag }}
+                    </div>
+                    <button class="testimonial__photo-button"></button>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials__info">
+          <div class="testimonials__swiper-pagination">
+            {% for block in section.blocks %}
+              <button
+                class="testimonial__swiper-button body-sm {% if forloop.first %}active{% endif %}"
+                data-swiper-slide="{{ forloop.index0 }}"
+              >
+                {{ block.settings.heading }}
+              </button>
+            {% endfor %}
+          </div>
+
+          <div class="testimonial__info-swiper swiper">
+            <div class="swiper-wrapper">
+              {% for block in section.blocks %}
+                <div class="testimonial__item swiper-slide">
+                  <div class="testimonial__customer-profile-wrapper">
+                    <p class="testimonial__customer-info p body-medium-weight">{{ block.settings.customer_info }}</p>
+                    <dl class="p">
+                      <dt class="h6">{{ section.settings.profile_label }}</dt>
+                      <dd>
+                        {% assign formatted_profile = block.settings.profile
+                          | replace: '{', '<span class="emoji">'
+                          | replace: '}', '</span>'
+                          | newline_to_br
+                        %}
+                        {{ formatted_profile }}
+                      </dd>
+
+                      <dt class="h6">{{ section.settings.formula_label }}</dt>
+                      <dd>{{ block.settings.formula }}</dd>
+
+                      <dt class="h6">{{ section.settings.review_label }}</dt>
+                      <dd class="body-sm">{{ block.settings.review }}</dd>
+                    </dl>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% javascript %}
+  const photoToggle = document.querySelectorAll('.testimonial__photo-button');
+
+  photoToggle.forEach((button) => {
+    button.addEventListener('click', function (e) {
+      const container = e.target.closest('.testimonial__image-wrapper');
+      if (container) {
+        container.querySelectorAll('.testimonial__image').forEach((b) => {
+          b.classList.toggle('active');
+        });
+      }
+    });
+  });
+
+  const testimonialImageSwiper = new Swiper('.testimonials__image-swiper', {
+    slidesPerView: 1,
+    allowTouchMove: false,
+  });
+
+  const testimonialContentSwiper = new Swiper('.testimonial__info-swiper', {
+    slidesPerView: 1,
+    allowTouchMove: false,
+    controller: {
+      by: 'slide',
+      control: testimonialImageSwiper,
+    },
+  });
+
+  const testimonialControls = document.querySelectorAll('.testimonial__swiper-button');
+
+  if (testimonialControls) {
+    testimonialControls.forEach((button) => {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (!e.target.classList.contains('active')) {
+          document.querySelector('.testimonial__swiper-button.active').classList.remove('active');
+          testimonialContentSwiper.slideTo(e.target.dataset.swiperSlide);
+          e.target.classList.add('active');
+        }
+      });
+    });
+  }
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap italized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Testimonial section labels"
+    },
+    {
+      "type": "text",
+      "id": "profile_label",
+      "label": "Profile label",
+      "default": "Customer Profile"
+    },
+    {
+      "type": "text",
+      "id": "formula_label",
+      "label": "Formula label",
+      "default": "Personalized Whitening Formula"
+    },
+    {
+      "type": "text",
+      "id": "review_label",
+      "label": "Review label",
+      "default": "Review"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "before_photo",
+          "label": "Before photo"
+        },
+        {
+          "type": "image_picker",
+          "id": "after_photo",
+          "label": "After photo"
+        },
+        {
+          "type": "textarea",
+          "id": "customer_info",
+          "label": "Customer info"
+        },
+        {
+          "type": "textarea",
+          "id": "profile",
+          "label": "Customer profile",
+          "info": "Return between points. Wrap emojis in {}"
+        },
+        {
+          "type": "textarea",
+          "id": "formula",
+          "label": "Formula"
+        },
+        {
+          "type": "textarea",
+          "id": "review",
+          "label": "Review"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials"
+    }
+  ]
+}
+{% endschema %}
