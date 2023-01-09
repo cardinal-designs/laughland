@@ -139,7 +139,9 @@
             "heading": "Allison",
             "before_photo": "shopify:\/\/shop_images\/Placeholder_before_image.jpg",
             "after_photo": "shopify:\/\/shop_images\/Image_11.jpg",
+            "customer_info": "User Since December 2020",
             "profile": "{😣} Medium Sensitivity\n{🍷} Wine Drinker\n{🦷} Years of Stains",
+            "formula": "Formula 8-16, Hydrogen Peroxide 8%",
             "review": "“I had to come here to say something. Normally I have excruciating pain with crest white strips and this other brand I got from the dentist. Both of which didn’t whiten my teeth very much. So, I had low hopes for Laughland. I got the formula made for highest sensitivity, and I left it on for I think 12 minutes. Just after the first day my teeth look 2 shades whiter. I’m actually really shocked. Usually the sensitivity hits me several hours after whitening my teeth, and it’s now the next morning and I guess I’m all clear. Thanks Laughland!”"
           }
         },
@@ -147,7 +149,9 @@
           "type": "testimonial",
           "settings": {
             "heading": "Alana",
+            "customer_info": "",
             "profile": "",
+            "formula": "",
             "review": ""
           }
         },
@@ -155,7 +159,9 @@
           "type": "testimonial",
           "settings": {
             "heading": "Julia",
+            "customer_info": "",
             "profile": "",
+            "formula": "",
             "review": ""
           }
         },
@@ -163,7 +169,9 @@
           "type": "testimonial",
           "settings": {
             "heading": "Abby",
+            "customer_info": "",
             "profile": "",
+            "formula": "",
             "review": ""
           }
         }
@@ -176,7 +184,10 @@
       ],
       "settings": {
         "heading": "The {Perfect Smile} Starts Today",
-        "text": "Our dentist approved, clinically backed ingredients work to whiten teeth by 7+ shades in your initial 6 day treatment.  But whitening is like skincare - a continuous, ongoing process. See how others use Laughland in their routine."
+        "text": "Our dentist approved, clinically backed ingredients work to whiten teeth by 7+ shades in your initial 6 day treatment.  But whitening is like skincare - a continuous, ongoing process. See how others use Laughland in their routine.",
+        "profile_label": "Customer Profile",
+        "formula_label": "Personalized Whitening Formula",
+        "review_label": "Review"
       }
     }
   },
