@@ -1,0 +1,132 @@
+{{ 'section-tooltips.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_heading = section.settings.heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<section class="tooltips">
+  <div class="page-width">
+    <div class="tooltips__inner">
+      <h2 class="tooltips__heading">{{ formatted_heading }}</h2>
+      <p class="tooltips__text">{{ section.settings.text }}</p>
+
+      <a href="{{ section.settings.url }}" class="text-link">{{ section.settings.link_text }}</a>
+
+      <div class="tooltips__container">
+        <div class="tooltips__image">{{ section.settings.image | image_url: width: 900 | image_tag }}</div>
+
+        {% for block in section.blocks %}
+          {% assign formatted_tooltip = block.settings.heading
+            | replace: '{', "<span class='stylized'>"
+            | replace: '}', '</span>'
+          %}
+
+          <div
+            class="tooltip"
+            style="bottom: {{ block.settings.vertical_tooltip }}%; left: {{ block.settings.horizontal_tooltip }}%;"
+          >
+            <h4 class="tooltip__label">{{ formatted_tooltip }}</h4>
+          </div>
+
+          <div
+            class="tooltip__dot"
+            style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
+          ></div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" async></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js" async></script>
+
+{% schema %}
+{
+  "name": "Tooltips",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap italized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Link"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tooltip",
+      "name": "Tooltip",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Label",
+          "info": "Wrap stylized text in {}"
+        },
+        {
+          "type": "header",
+          "content": "Tooltip position"
+        },
+        {
+          "type": "number",
+          "id": "vertical_tooltip",
+          "label": "Tooltop vertical position",
+          "info": "Percentage value. 0 = bottom, 100 = top",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "horizontal_tooltip",
+          "label": "Tooltop horizontal position",
+          "info": "Percentage value. 0 = left, 100 = right",
+          "default": 50
+        },
+        {
+          "type": "header",
+          "content": "Arrow position"
+        },
+        {
+          "type": "number",
+          "id": "vertical_arrow",
+          "label": "Arrow vertical position",
+          "info": "Percentage value. 0 = bottom, 100 = top",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "horizontal_arrow",
+          "label": "Arrow horizontal position",
+          "info": "Percentage value. 0 = left, 100 = right",
+          "default": 50
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Tooltips"
+    }
+  ]
+}
+{% endschema %}

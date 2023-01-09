@@ -1875,3 +1875,9 @@ deferred-media {
 .page-transition.visible .page-transition__content{
   transform: translate(-50%, -50%);
 }
+
+/*================ Section Spacing ================*/
+
+section {
+  margin-bottom: 50px;
+}
