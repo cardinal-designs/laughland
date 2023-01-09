@@ -189,12 +189,60 @@
         "formula_label": "Personalized Whitening Formula",
         "review_label": "Review"
       }
+    },
+    "f79e1094-2bf6-4ce9-9d39-1c2b9ac2a080": {
+      "type": "tooltips",
+      "blocks": {
+        "eac659ee-ea69-4150-9a71-9c2309b5111a": {
+          "type": "tooltip",
+          "settings": {
+            "heading": "Lab {Innovation}",
+            "vertical_tooltip": 80,
+            "horizontal_tooltip": 0,
+            "vertical_arrow": 50,
+            "horizontal_arrow": 36
+          }
+        },
+        "bcec259a-c478-4684-81dc-93bf16ad0954": {
+          "type": "tooltip",
+          "settings": {
+            "heading": "{Natural} Ingredients",
+            "vertical_tooltip": 60,
+            "horizontal_tooltip": 90,
+            "vertical_arrow": 29,
+            "horizontal_arrow": 65
+          }
+        },
+        "02a6f280-d780-4471-9cd3-59966e787f61": {
+          "type": "tooltip",
+          "settings": {
+            "heading": "Proven {Performance}",
+            "vertical_tooltip": 0,
+            "horizontal_tooltip": 15,
+            "vertical_arrow": 31,
+            "horizontal_arrow": 34
+          }
+        }
+      },
+      "block_order": [
+        "eac659ee-ea69-4150-9a71-9c2309b5111a",
+        "bcec259a-c478-4684-81dc-93bf16ad0954",
+        "02a6f280-d780-4471-9cd3-59966e787f61"
+      ],
+      "settings": {
+        "heading": "Science, {Not Gimmicks}",
+        "text": "Better ingredients that actually work. We were tired of whitening products that claimed to be pain-free and effective but were neither. Our dental advisory board hand-selects ingredients and formulas to make your smile shine.",
+        "url": "\/",
+        "link_text": "Learn More",
+        "image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_4_4f7f704f-2161-436f-b57a-f67a8118967b.png"
+      }
     }
   },
   "order": [
     "a4dc9a5e-61ad-4581-a9c9-118ff319166b",
     "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7",
     "35483501-7869-4816-b0c4-888b808586a6",
-    "3d279213-0242-4d5a-a815-2cec3d9951bb"
+    "3d279213-0242-4d5a-a815-2cec3d9951bb",
+    "f79e1094-2bf6-4ce9-9d39-1c2b9ac2a080"
   ]
 }
