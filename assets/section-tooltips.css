@@ -132,3 +132,13 @@
   background-color: var(--blue);
   color: white;
 }
+
+@media screen and (max-width: 768px) {
+  .tooltips__inner {
+    padding:60px 0;
+  }
+
+  .tooltip {
+    display: none;
+  }
+}

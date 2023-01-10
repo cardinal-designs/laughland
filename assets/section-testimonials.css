@@ -155,3 +155,16 @@
   font-size: 25px;
   margin-right: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .testimonials__inner {
+    padding: 60px 25px;
+  }
+  .testimonials__container {
+    display: block;
+  }
+
+  .testimonials__inner {
+    margin-top: 40px;
+  }
+}

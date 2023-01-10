@@ -42,7 +42,9 @@
             <div
               class="tooltip__dot"
               style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
-            ></div>
+            >
+              <div class="tooltip__trigger hide-desktop">{% render 'tooltip-trigger' %}</div>
+            </div>
 
             <svg class="tooltip__line">
               <line></line>
