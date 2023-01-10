@@ -19,7 +19,14 @@
 
       <div class="tooltips__container">
         <div class="tooltips__container-content">
-          <div class="tooltips__image">{{ section.settings.image | image_url: width: 900 | image_tag }}</div>
+          <div class="tooltips__image">
+            {% if section.settings.mobile_image != blank %}
+              {{ section.settings.mobile_image | image_url: width: 500 | image_tag: class: 'hide-desktop' }}
+              {{ section.settings.image | image_url: width: 1440 | image_tag: class: 'hide-mobile' }}
+            {% else %}
+              {{ section.settings.image | image_url: width: 1440 | image_tag }}
+            {% endif %}
+          </div>
 
           {% for block in section.blocks %}
             {% assign formatted_tooltip = block.settings.heading
@@ -42,9 +49,7 @@
             <div
               class="tooltip__dot"
               style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
-            >
-              <div class="tooltip__trigger hide-desktop">{% render 'tooltip-trigger' %}</div>
-            </div>
+            ></div>
 
             <svg class="tooltip__line">
               <line></line>
@@ -84,6 +89,11 @@
     {
       "type": "image_picker",
       "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
       "label": "Image"
     }
   ],
@@ -136,6 +146,24 @@
           "type": "number",
           "id": "horizontal_arrow",
           "label": "Arrow horizontal position",
+          "info": "Percentage value. 0 = left, 100 = right",
+          "default": 50
+        },
+        {
+          "type": "header",
+          "content": "Mobile Tooltip position"
+        },
+        {
+          "type": "number",
+          "id": "vertical_mobile",
+          "label": "Tooltip vertical position",
+          "info": "Percentage value. 0 = bottom, 100 = top",
+          "default": 50
+        },
+        {
+          "type": "number",
+          "id": "horizontal_mobile",
+          "label": "Tooltip horizontal position",
           "info": "Percentage value. 0 = left, 100 = right",
           "default": 50
         }

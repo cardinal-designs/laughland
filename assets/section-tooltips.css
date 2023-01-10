@@ -138,6 +138,10 @@
     padding:60px 0;
   }
 
+  .tooltips__container {
+    padding-bottom: 100%;
+  }
+
   .tooltip {
     display: none;
   }
