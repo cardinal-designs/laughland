@@ -52,11 +52,17 @@ class Tooltip extends HTMLElement {
     })
   }
   initializeTippy(x){
-    tippy(this.querySelector(".tooltip__trigger"), {
-      content: this.dataset.tooltipContent,
-      placement: x,
-      theme: 'laughland-blue',
-    })
+    if ( tippy == undefined ){
+      setTimeout(() => {
+        this.initializeTippy(x)
+      }, 1000)
+    } else {
+      tippy(this.querySelector(".tooltip__trigger"), {
+        content: this.dataset.tooltipContent,
+        placement: x,
+        theme: 'laughland-blue',
+      })
+    }
   }
   getLineCoordinates() {
     // if dataset.verticalStart < 50, start line above label
