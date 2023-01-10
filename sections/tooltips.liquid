@@ -1,4 +1,8 @@
 {{ 'section-tooltips.css' | asset_url | stylesheet_tag }}
+<script src="https://unpkg.com/@popperjs/core@2" defer></script>
+<script src="https://unpkg.com/tippy.js@6" defer></script>
+
+<script src="{{ 'tooltips.js' | asset_url }}" async></script>
 
 {% assign formatted_heading = section.settings.heading
   | replace: '{', "<span class='stylized'>"
@@ -14,33 +18,41 @@
       <a href="{{ section.settings.url }}" class="text-link">{{ section.settings.link_text }}</a>
 
       <div class="tooltips__container">
-        <div class="tooltips__image">{{ section.settings.image | image_url: width: 900 | image_tag }}</div>
+        <div class="tooltips__container-content">
+          <div class="tooltips__image">{{ section.settings.image | image_url: width: 900 | image_tag }}</div>
 
-        {% for block in section.blocks %}
-          {% assign formatted_tooltip = block.settings.heading
-            | replace: '{', "<span class='stylized'>"
-            | replace: '}', '</span>'
-          %}
+          {% for block in section.blocks %}
+            {% assign formatted_tooltip = block.settings.heading
+              | replace: '{', "<span class='stylized'>"
+              | replace: '}', '</span>'
+            %}
 
-          <div
-            class="tooltip"
-            style="bottom: {{ block.settings.vertical_tooltip }}%; left: {{ block.settings.horizontal_tooltip }}%;"
-          >
-            <h4 class="tooltip__label">{{ formatted_tooltip }}</h4>
-          </div>
+            <tool-tip
+              class="tooltip"
+              style="bottom: {{ block.settings.vertical_tooltip }}%; left: {{ block.settings.horizontal_tooltip }}%;"
+              data-vertical-start="{{ block.settings.vertical_tooltip }}"
+              data-tooltip-content="{{ block.settings.text }}"
+            >
+              <h4 class="tooltip__label">
+                {{ formatted_tooltip }}
+                <div class="tooltip__trigger">{% render 'tooltip-trigger' %}</div>
+              </h4>
+            </tool-tip>
 
-          <div
-            class="tooltip__dot"
-            style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
-          ></div>
-        {% endfor %}
+            <div
+              class="tooltip__dot"
+              style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
+            ></div>
+
+            <svg class="tooltip__line">
+              <line></line>
+            </svg>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
 </section>
-
-<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js" async></script>
-<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js" async></script>
 
 {% schema %}
 {
@@ -83,6 +95,11 @@
           "id": "heading",
           "label": "Label",
           "info": "Wrap stylized text in {}"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
         },
         {
           "type": "header",

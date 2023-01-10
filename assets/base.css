@@ -333,12 +333,31 @@ h6,
   padding: 5px 18px 3px 14px;
   font-size: 2em;
   margin: 0 8px;
+  animation: slow-glow 3s ease infinite;
 }
 
 .glow .money {
   font-size: .5em;
   vertical-align: top;
   margin-right: -3px;
+}
+
+@keyframes slow-glow {
+  0% {
+    box-shadow: 0px 0px 30px 4px #46BDF0;
+  }
+  25% {
+    box-shadow: 0px 0px 30px 2px #46BDF0;
+  }
+  50% {
+    box-shadow: 0px 0px 30px 4px #46BDF0;
+  }
+  75% {
+    box-shadow: 0px 0px 30px 8px #46BDF0;
+  }
+  100% {
+    box-shadow: 0px 0px 30px 4px #46BDF0;
+  }
 }
 
 p,
