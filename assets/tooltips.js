@@ -52,11 +52,12 @@ class Tooltip extends HTMLElement {
     })
   }
   initializeTippy(x){
-    if ( tippy == undefined ){
+    if ( typeof tippy == 'undefined' ){
       setTimeout(() => {
         this.initializeTippy(x)
       }, 1000)
     } else {
+      console.log("Tippy is now available")
       tippy(this.querySelector(".tooltip__trigger"), {
         content: this.dataset.tooltipContent,
         placement: x,
