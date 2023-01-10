@@ -502,6 +502,12 @@ blockquote {
   color: var(--blue);
   text-decoration: underline;
   line-height: 4em;
+  font-family: jakarta;
+  font-weight: 600;
+}
+
+.text-link__dark {
+  color: var(--navy);
 }
 
 /*================ Form ================*/

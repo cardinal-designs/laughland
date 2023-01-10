@@ -13,11 +13,43 @@ class Tooltip extends HTMLElement {
     }
 
     this.getLineCoordinates();
+    this.animateTooltip();
 
     window.addEventListener("resize", (e) => {
       this.getLineCoordinates();
     })
   
+  }
+  animateTooltip() {
+    const lineLength = this.tooltipLine.getTotalLength()
+    this.tooltipLine.style.strokeDasharray = lineLength + " " + lineLength
+    this.tooltipLine.style.strokeDashoffset = lineLength
+    this.tooltipLine.getBoundingClientRect();
+
+    gsap.from(this, {
+      y: 20,
+      opacity: 0,
+      duration: 1,
+      ease: 'sine',
+      stagger: {
+        each: 0.5,
+        from: 'end',
+      },
+      scrollTrigger: {
+        trigger: this,
+        start: 'top 65%',
+      },
+    });
+
+    gsap.to(this.tooltipLine, {
+      strokeDashoffset: 0,
+      ease: "none",
+      duration: 1,
+      scrollTrigger: {
+        trigger: this,
+        start: 'top 70%',
+      },
+    })
   }
   initializeTippy(x){
     tippy(this.querySelector(".tooltip__trigger"), {
