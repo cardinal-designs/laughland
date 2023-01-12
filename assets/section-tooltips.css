@@ -149,10 +149,8 @@
   }
 
   .tooltips__container {
-    padding-bottom: 100%;
-  }
-
-  .tooltip {
-    /* display: none; */
+    padding-bottom: 133%;
+    width: calc(100% + 40px);
+    margin: 0 -20px;
   }
 }
