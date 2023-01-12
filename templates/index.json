@@ -201,7 +201,9 @@
             "vertical_tooltip": 80,
             "horizontal_tooltip": 0,
             "vertical_arrow": 50,
-            "horizontal_arrow": 36
+            "horizontal_arrow": 36,
+            "vertical_mobile": 56,
+            "horizontal_mobile": 30
           }
         },
         "bcec259a-c478-4684-81dc-93bf16ad0954": {
@@ -212,7 +214,9 @@
             "vertical_tooltip": 60,
             "horizontal_tooltip": 90,
             "vertical_arrow": 29,
-            "horizontal_arrow": 65
+            "horizontal_arrow": 65,
+            "vertical_mobile": 69,
+            "horizontal_mobile": 66
           }
         },
         "02a6f280-d780-4471-9cd3-59966e787f61": {
@@ -223,7 +227,9 @@
             "vertical_tooltip": 0,
             "horizontal_tooltip": 15,
             "vertical_arrow": 30,
-            "horizontal_arrow": 32
+            "horizontal_arrow": 32,
+            "vertical_mobile": 23,
+            "horizontal_mobile": 18
           }
         }
       },
