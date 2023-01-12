@@ -35,25 +35,36 @@
             %}
 
             <tool-tip
-              class="tooltip"
-              style="bottom: {{ block.settings.vertical_tooltip }}%; left: {{ block.settings.horizontal_tooltip }}%;"
-              data-vertical-start="{{ block.settings.vertical_tooltip }}"
               data-tooltip-content="{{ block.settings.text }}"
             >
-              <h4 class="tooltip__label">
-                {{ formatted_tooltip }}
-                <div class="tooltip__trigger">{% render 'tooltip-trigger' %}</div>
-              </h4>
+              <div
+                class="tooltip hide-mobile"
+                style="bottom: {{ block.settings.vertical_tooltip }}%; left: {{ block.settings.horizontal_tooltip }}%;"
+                data-vertical-start="{{ block.settings.vertical_tooltip }}"
+              >
+                <h4 class="tooltip__label">
+                  {{ formatted_tooltip }}
+                  <div class="tooltip__trigger">{% render 'tooltip-trigger' %}</div>
+                </h4>
+              </div>
+
+              <div
+                class="tooltip-mobile hide-desktop"
+                style="bottom: {{ block.settings.vertical_mobile }}%; left: {{ block.settings.horizontal_mobile }}%;"
+                data-vertical-start="{{ block.settings.vertical_mobile }}"
+              >
+                <div class="tooltip__trigger-mobile">{% render 'tooltip-trigger' %}</div>
+              </div>
+
+              <div
+                class="tooltip__dot hide-mobile"
+                style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
+              ></div>
+
+              <svg class="tooltip__line hide-mobile">
+                <line></line>
+              </svg>
             </tool-tip>
-
-            <div
-              class="tooltip__dot"
-              style="bottom: {{ block.settings.vertical_arrow }}%; left: {{ block.settings.horizontal_arrow }}%;"
-            ></div>
-
-            <svg class="tooltip__line">
-              <line></line>
-            </svg>
           {% endfor %}
         </div>
       </div>
