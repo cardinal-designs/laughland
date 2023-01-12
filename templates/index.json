@@ -202,8 +202,8 @@
             "horizontal_tooltip": 0,
             "vertical_arrow": 50,
             "horizontal_arrow": 36,
-            "vertical_mobile": 56,
-            "horizontal_mobile": 30
+            "vertical_mobile": 57,
+            "horizontal_mobile": 29
           }
         },
         "bcec259a-c478-4684-81dc-93bf16ad0954": {
@@ -212,11 +212,11 @@
             "heading": "{Natural} Ingredients",
             "text": "Our dental advisory board hand-selects ingredients and formulas to make your smile shine.",
             "vertical_tooltip": 60,
-            "horizontal_tooltip": 90,
+            "horizontal_tooltip": 76,
             "vertical_arrow": 29,
             "horizontal_arrow": 65,
-            "vertical_mobile": 69,
-            "horizontal_mobile": 66
+            "vertical_mobile": 74,
+            "horizontal_mobile": 71
           }
         },
         "02a6f280-d780-4471-9cd3-59966e787f61": {
@@ -228,8 +228,8 @@
             "horizontal_tooltip": 15,
             "vertical_arrow": 30,
             "horizontal_arrow": 32,
-            "vertical_mobile": 23,
-            "horizontal_mobile": 18
+            "vertical_mobile": 29,
+            "horizontal_mobile": 13
           }
         }
       },
@@ -244,7 +244,7 @@
         "url": "\/",
         "link_text": "Learn More",
         "image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_4_4f7f704f-2161-436f-b57a-f67a8118967b.png",
-        "mobile_image": "shopify:\/\/shop_images\/BG.jpg"
+        "mobile_image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_5.png"
       }
     }
   },
