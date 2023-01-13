@@ -50,8 +50,12 @@
                 <div class="testimonial__item swiper-slide">
                   <div class="testimonial__customer-profile-wrapper">
                     <p class="testimonial__customer-info p body-medium-weight">{{ block.settings.customer_info }}</p>
+
                     <dl class="p">
-                      <dt class="h6">{{ section.settings.profile_label }}</dt>
+                      <dt class="h6 hide-mobile">{{ section.settings.profile_label }}</dt>
+                      <button class="testimonial__info-button hide-desktop">
+                        <dt class="p">{{ section.settings.profile_label }}</dt>
+                      </button>
                       <dd>
                         {% assign formatted_profile = block.settings.profile
                           | replace: '{', '<span class="emoji">'
@@ -60,11 +64,21 @@
                         %}
                         {{ formatted_profile }}
                       </dd>
+                    </dl>
 
-                      <dt class="h6">{{ section.settings.formula_label }}</dt>
+                    <dl class="p">
+                      <dt class="h6 hide-mobile">{{ section.settings.formula_label }}</dt>
+                      <button class="testimonial__info-button hide-desktop">
+                        <dt class="p">{{ section.settings.formula_label }}</dt>
+                      </button>
                       <dd>{{ block.settings.formula }}</dd>
+                    </dl>
 
-                      <dt class="h6">{{ section.settings.review_label }}</dt>
+                    <dl class="p">
+                      <dt class="h6 hide-mobile">{{ section.settings.review_label }}</dt>
+                      <button class="testimonial__info-button hide-desktop">
+                        <dt class="p">{{ section.settings.review_label }}</dt>
+                      </button>
                       <dd class="body-sm">{{ block.settings.review }}</dd>
                     </dl>
                   </div>
@@ -120,6 +134,23 @@
       });
     });
   }
+
+  // Mobile dropdowns
+  const headerItems = document.querySelectorAll('.testimonial__info-button');
+  headerItems.forEach((header) => {
+    header.addEventListener('click', (event) => {
+      const parent = header.parentElement;
+      const content = header.nextElementSibling;
+
+      if (parent.classList.contains('active')) {
+        parent.classList.remove('active');
+        slideUp(content, 400);
+      } else {
+        parent.classList.add('active');
+        slideDown(content, 400);
+      }
+    });
+  });
 {% endjavascript %}
 
 {% schema %}

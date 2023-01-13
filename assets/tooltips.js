@@ -54,7 +54,7 @@ class Tooltip extends HTMLElement {
 
     if ( typeof tippy == 'undefined' ){
       setTimeout(() => {
-        this.initializeTippy(x)
+        this.initializeTippy()
       }, 1000)
     } else {
 

@@ -129,6 +129,12 @@
   color: white;
 }
 
+.testimonial__info-button {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
 .testimonial__customer-profile-wrapper dt {
   border-top: 1px solid var(--navy);
   padding-top: 8px;
@@ -150,7 +156,7 @@
 
   
   .testimonial__customer-profile-wrapper .emoji:not(:first-of-type) {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 
@@ -188,11 +194,27 @@
     margin-top: 30px;
   }
 
+  .testimonial__customer-profile-wrapper dl {
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--navy);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+  }
+
   .testimonial__customer-profile-wrapper dt {
-    margin-top: 30px;
+    border-top: none;
+    margin: 0;
+  }
+  .testimonial__customer-profile-wrapper dl.active dt {
+    opacity: 0.3;
   }
 
   .testimonial__customer-profile-wrapper dd {
+    display: none;
     line-height: 2em;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
   }
 }

@@ -17,7 +17,7 @@
 
 .tooltips__container {
   position: relative;
-  width: 100%;
+  width: calc(100% - 40px);
   height: 0;
   padding-bottom: 56.25%;
   max-width: 1440px;
