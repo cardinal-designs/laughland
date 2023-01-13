@@ -1,0 +1,36 @@
+.carousel {
+  margin: 100px 0;
+}
+.carousel__inner{
+  display: grid;
+  grid-template-columns: 50px minmax(0, 1fr) 50px;
+}
+
+.carousel-instance {
+  grid-column: 2/3;
+  width: 100%;
+}
+
+.carousel__slide-text {
+  padding: 40px 0 64px;
+  max-width: 660px;
+  margin: auto;
+}
+
+.carousel__slide-content {
+  text-align: center;
+}
+
+.carousel__slide-content svg,
+.carousel__slide-content img {
+  height: 22px;
+  width: auto;
+}
+
+.carousel-instance .swiper-button-prev {
+  grid-column: 1/2;
+}
+
+.carousel-instance .swiper-button-next {
+  grid-column: 3/4;
+}

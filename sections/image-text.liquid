@@ -8,7 +8,7 @@
 {% assign imageBlocks = section.blocks | where: 'type', 'image' %}
 {% assign bulletBlocks = section.blocks | where: 'type', 'bullet' %}
 
-<section class="image-text">
+<section class="image-text {% if section.settings.margin_bottom %}with-spacing{% endif %}">
   <div class="page-width">
     <div class="image-text__inner">
       <div class="image-text__image-wrapper">
@@ -146,6 +146,12 @@
       "type": "checkbox",
       "id": "layout",
       "label": "Text on right",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
       "default": true
     },
     {

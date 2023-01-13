@@ -1,5 +1,5 @@
 .tooltips {
-  background: #F7E9E2;
+  background: linear-gradient(to bottom, rgba(250,245,241,1) 0%, rgba(247,233,226,1) 0%, rgba(250,245,241,1) 100%);
   margin-bottom: 0;
 }
 
@@ -165,7 +165,7 @@
   .tooltips__container {
     width: 100%;
   }
-  
+
   .tooltips__inner {
     padding:60px 0 0;
   }

@@ -1,0 +1,90 @@
+{{ 'section-carousel.css' | asset_url | stylesheet_tag }}
+
+<section class="carousel">
+  <div class="page-width">
+    <div class="carousel__inner">
+      <div class="carousel-instance swiper">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="swiper-slide">
+              <div class="carousel__slide-content">
+                {% if block.settings.svg != blank %}
+                  {{ block.settings.svg }}
+                {% elsif block.settings.png != blank %}
+                  <img
+                    srcset="{{ block.settings.png | image_url: width: 300 }} 1x, {{ block.settings.png | image_url: width: 300, scale: 2 }} 2x"
+                    src="{{ block.settings.png | image_url: width: 300}}"
+                    loading="lazy"
+                    class="header__heading-logo"
+                    width="{{ block.settings.png.width }}"
+                    height="{{ block.settings.png.height }}"
+                    alt="{{ block.settings.png.alt }}"
+                  >
+                {% endif %}
+
+                <h3 class="carousel__slide-text">{{ block.settings.text }}</h3>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="swiper-pagination carousel-pagination"></div>
+      </div>
+      <div class="swiper-button-prev carousel-prev"></div>
+      <div class="swiper-button-next carousel-next"></div>
+    </div>
+  </div>
+</section>
+
+{% javascript %}
+  const carousel = new Swiper('.carousel-instance', {
+    slidesPerView: 1,
+    autoplay: {
+      speed: 5000,
+    },
+    loop: true,
+    navigation: {
+      nextEl: '.carousel-next',
+      prevEl: '.carousel-prev',
+    },
+    pagination: {
+      el: '.carousel-pagination',
+      type: 'bullets',
+    },
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Carousel",
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "logo",
+          "label": "SVG Logo"
+        },
+        {
+          "type": "image_picker",
+          "id": "png",
+          "label": "PNG Logo",
+          "info": "SVG is preferred, but PNG can be used instead"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Carousel"
+    }
+  ]
+}
+{% endschema %}
