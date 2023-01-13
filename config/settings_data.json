@@ -43,13 +43,15 @@
           "a2055792-f809-40d0-9556-a6ffeb11fb3b": {
             "type": "link_list",
             "settings": {
-              "menu": "cardinal-nav"
+              "menu": "cardinal-nav",
+              "menu_title": "Menu"
             }
           },
           "80e0641c-25ee-4aa9-a52f-d3c8f62ba7f8": {
             "type": "link_list",
             "settings": {
-              "menu": "footer-links"
+              "menu": "footer-links",
+              "menu_title": "Menu"
             }
           },
           "9b886c9a-4a94-436f-922e-c5f9d377600a": {
