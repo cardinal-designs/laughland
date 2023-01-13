@@ -146,6 +146,19 @@
   background-color: var(--blue);
   color: white;
 }
+.tippy-box[data-theme~='laughland-blue'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--blue);
+}
+.tippy-box[data-theme~='laughland-blue'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--blue);
+}
+.tippy-box[data-theme~='laughland-blue'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--blue);
+}
+.tippy-box[data-theme~='laughland-blue'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--blue);
+}
+
 
 @media screen and (max-width: 768px) {
   .tooltips__inner {

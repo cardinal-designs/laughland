@@ -8,18 +8,7 @@ class Tooltip extends HTMLElement {
     this.tooltipDot = this.querySelector(".tooltip__dot")
     this.tooltipLine = this.querySelector(".tooltip__line line")
 
-    if (this.tooltip.dataset.verticalStart > 50 ) {
-      this.initializeTippy('bottom');
-    } else {
-      this.initializeTippy('top');
-    }
-
-    if (this.tooltipMobile?.dataset.verticalStart > 50 ) {
-      this.initializeMobileTippy('bottom');
-    } else {
-      this.initializeMobileTippy('top');
-    }
-
+    this.initializeTippy();
     this.getLineCoordinates();
     this.animateTooltip();
 
@@ -45,7 +34,7 @@ class Tooltip extends HTMLElement {
       },
       scrollTrigger: {
         trigger: this.tooltip,
-        start: 'top 65%',
+        start: 'top 75%',
       },
     });
 
@@ -59,35 +48,32 @@ class Tooltip extends HTMLElement {
       },
     })
   }
-  initializeTippy(x){
+  initializeTippy(){
+    const tooltipDesktop = this.tooltip?.dataset.verticalStart > 50 ? 'bottom' : 'top'
+    const tooltipMobile= this.tooltipMobile?.dataset.verticalStart > 50 ? 'bottom' : 'top'
+
     if ( typeof tippy == 'undefined' ){
       setTimeout(() => {
         this.initializeTippy(x)
       }, 1000)
     } else {
-      console.log("Tippy is now available")
+
+      // Create desktop tooltip
       tippy(this.querySelector(".tooltip__trigger"), {
         content: this.dataset.tooltipContent,
-        placement: x,
+        placement: tooltipDesktop,
         theme: 'laughland-blue',
       })
-    }
-  }
-  initializeMobileTippy(x){
-    if ( typeof tippy == 'undefined' ){
-      setTimeout(() => {
-        this.initializeMobileTippy(x)
-      }, 1000)
-    } else {
-      const button = this.querySelector('.tooltip__trigger-mobile');
 
+      // Create mobile tooltip
+      const button = this.querySelector('.tooltip__trigger-mobile');
       button.addEventListener('click', (e) => {
         e.preventDefault();
       });
       
       tippy(button, {
         content: this.dataset.tooltipContent,
-        placement: x,
+        placement: tooltipMobile,
         trigger: "click",
         touch: true,
         theme: 'laughland-blue'
