@@ -76,16 +76,22 @@ class Tooltip extends HTMLElement {
   initializeMobileTippy(x){
     if ( typeof tippy == 'undefined' ){
       setTimeout(() => {
-        this.initializeTippy(x)
+        this.initializeMobileTippy(x)
       }, 1000)
     } else {
-      console.log("Tippy is now available")
-      tippy(this.querySelector(".tooltip__trigger-mobile"), {
+      const button = this.querySelector('.tooltip__trigger-mobile');
+
+      button.addEventListener('click', (e) => {
+        e.preventDefault();
+      });
+      
+      tippy(button, {
         content: this.dataset.tooltipContent,
         placement: x,
         trigger: "click",
-        theme: 'laughland-blue',
-      })
+        touch: true,
+        theme: 'laughland-blue'
+      });
     }
   }
   getLineCoordinates() {

@@ -1,9 +1,10 @@
 .tooltips {
   background: #F7E9E2;
+  margin-bottom: 0;
 }
 
 .tooltips__inner {
-  padding: 100px 50px;
+  padding: 100px 0;
   text-align: center;
 }
 
@@ -19,6 +20,8 @@
   width: 100%;
   height: 0;
   padding-bottom: 56.25%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .tooltips__container-content {
@@ -40,6 +43,7 @@
   object-fit: contain;
   display: block;
   object-position: center;
+  pointer-events: none;
 }
 
 .tooltip {
@@ -145,12 +149,10 @@
 
 @media screen and (max-width: 768px) {
   .tooltips__inner {
-    padding:60px 0;
+    padding:60px 0 0;
   }
 
   .tooltips__container {
-    padding-bottom: 133%;
-    width: calc(100% + 40px);
-    margin: 0 -20px;
+    padding-bottom: 111%;
   }
 }
