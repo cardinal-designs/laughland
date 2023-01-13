@@ -4,6 +4,7 @@
 .carousel__inner{
   display: grid;
   grid-template-columns: 50px minmax(0, 1fr) 50px;
+  position: relative;
 }
 
 .carousel-instance {

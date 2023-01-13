@@ -1,0 +1,108 @@
+{{ 'section-benefit-cards.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_heading = section.settings.heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<section class="benefit-cards {% if section.settings.margin_bottom %}with-spacing{% endif %}">
+  <div class="page-width">
+    <div class="benefit-cards__inner">
+      <div class="benefit__header-column">
+        {% if formatted_heading != blank %}
+          <h4 class="benefit__heading m-h4">{{ formatted_heading }}</h4>
+        {% endif %}
+        {% if section.settings.text != blank %}
+          <p class="body benefit__paragraph">{{ section.settings.text }}</p>
+        {% endif %}
+      </div>
+
+      <div class="benefit__cards-column">
+        <div class="benefit__card-carousel swiper">
+          <div class="swiper-wrapper">
+            {% for block in section.blocks %}
+              <div class="swiper-slide">
+                {% assign formatted_card_heading = block.settings.heading
+                  | replace: '{', "<span class='stylized'>"
+                  | replace: '}', '</span>'
+                %}
+                <div class="benefit__card">
+                  {% if formatted_heading != blank %}
+                    <h4 class="benefit__card-heading m-h4">{{ formatted_card_heading }}</h4>
+                  {% endif %}
+                  {% if block.settings.text != blank %}
+                    <p class="body benefit__card-paragraph">{{ block.settings.text }}</p>
+                  {% endif %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="benefit__navigation-wrapper">
+          <div class="swiper-button-prev benefit-prev"></div>
+          <div class="swiper-button-next benefit-next"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% javascript %}
+  const benefitsSwiper = new Swiper('.benefit__card-carousel', {
+    slidesPerView: 2.75,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.benefit-next',
+      prevEl: '.benefit-prev',
+    },
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Benefits Cards",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap italized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "checkbox",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Card",
+      "type": "card",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Heading",
+          "info": "Wrap italized text in {}"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits Cards"
+    }
+  ]
+}
+{% endschema %}
