@@ -55,6 +55,7 @@
                       <dt class="h6 hide-mobile">{{ section.settings.profile_label }}</dt>
                       <button class="testimonial__info-button hide-desktop">
                         <dt class="p">{{ section.settings.profile_label }}</dt>
+                        <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
                       </button>
                       <dd>
                         {% assign formatted_profile = block.settings.profile
@@ -70,6 +71,7 @@
                       <dt class="h6 hide-mobile">{{ section.settings.formula_label }}</dt>
                       <button class="testimonial__info-button hide-desktop">
                         <dt class="p">{{ section.settings.formula_label }}</dt>
+                        <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
                       </button>
                       <dd>{{ block.settings.formula }}</dd>
                     </dl>
@@ -78,6 +80,7 @@
                       <dt class="h6 hide-mobile">{{ section.settings.review_label }}</dt>
                       <button class="testimonial__info-button hide-desktop">
                         <dt class="p">{{ section.settings.review_label }}</dt>
+                        <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
                       </button>
                       <dd class="body-sm">{{ block.settings.review }}</dd>
                     </dl>

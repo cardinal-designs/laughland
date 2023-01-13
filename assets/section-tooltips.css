@@ -161,6 +161,11 @@
 
 
 @media screen and (max-width: 768px) {
+
+  .tooltips__container {
+    width: 100%;
+  }
+  
   .tooltips__inner {
     padding:60px 0 0;
   }
