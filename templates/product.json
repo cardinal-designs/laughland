@@ -2,17 +2,89 @@
   "sections": {
     "main": {
       "type": "main-product",
+      "disabled": true,
       "settings": {
       }
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false
+      }
+    },
+    "d7a83216-e232-4258-9705-5edf54558f0b": {
+      "type": "image-text",
+      "blocks": {
+        "08f82279-8d20-4992-a74f-f3500388ef05": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MP4_dd1165d5-4283-4226-9e3b-f81ba196527b.png",
+            "text": "",
+            "sm_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "08f82279-8d20-4992-a74f-f3500388ef05"
+      ],
+      "settings": {
+        "layout": true,
+        "margin_bottom": true,
+        "heading": "A Brighter Smile\n{Starts Today}",
+        "text": "While our personalized formulas have proven to whiten teeth by 7+ shades in under a week, whitening is like skincare - a continuous, ongoing process. Daily habits + natural aging will bring back those unwanted stains back.\nThe only way to a consistent bright smile is ritual. We’ll be with you every shade of the way!",
+        "btn": "",
+        "btn_text": "",
+        "link": "",
+        "link_text": ""
+      }
+    },
+    "6916709c-578f-4b73-afd1-d8e53aa1db15": {
+      "type": "carousel",
+      "blocks": {
+        "2eb920b4-1221-4501-a6a1-ee053e46bb0d": {
+          "type": "slide",
+          "settings": {
+            "logo": "",
+            "png": "shopify:\/\/shop_images\/2560px-Womenshealthlogo_blue_2bc1baf4-cd78-4578-a6d0-94c86b9800a3.png",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        },
+        "9bbf2b6f-692a-4a71-b44c-e91ac56d2c31": {
+          "type": "slide",
+          "settings": {
+            "logo": "<svg width=\"127\" height=\"20\" viewbox=\"0 0 127 20\" fill=\"none\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\">\n<path d=\"M0.384766 19.2769V0.374902H7.40733C10.7714 0.374902 13.0212 1.67994 13.0212 5.27933C13.0212 6.9843 12.4745 8.37353 10.9396 9.15234V9.21549C13.6309 9.53122 14.7873 11.3625 14.7873 14.0147C14.7873 17.9719 11.4022 19.2769 7.954 19.2769H0.384766ZM5.28374 7.78416H5.83041C7.134 7.78416 8.47964 7.55262 8.47964 5.95289C8.47964 4.22687 6.94477 4.12163 5.62015 4.12163H5.26271V7.78416H5.28374ZM5.28374 15.5092H5.91451C7.36528 15.5092 9.82528 15.5933 9.82528 13.5095C9.82528 11.2362 7.3863 11.4467 5.78835 11.4467H5.28374V15.5092ZM20.7796 0.353851H26.6668L30.1991 5.48982L33.7314 0.353851H39.6186L32.6591 10.1837V19.2559H27.7391V10.1837L20.7796 0.353851ZM64.4709 19.2769H58.3525L53.7268 11.994H53.6848V19.2769H48.7648V0.374902H56.1027C59.8453 0.374902 62.6627 2.16407 62.6627 6.18443C62.6627 8.79451 61.2119 11.0468 58.5207 11.5309L64.4709 19.2769ZM53.6637 8.83661H54.1263C55.7243 8.83661 57.5325 8.54192 57.5325 6.47912C57.5325 4.41631 55.7243 4.12163 54.1263 4.12163H53.6637V8.83661ZM73.8063 0.353851H80.7658C86.0222 0.353851 90.3535 4.50051 90.3535 9.80487C90.3535 15.1092 86.0012 19.2559 80.7658 19.2559H73.8063V0.353851ZM78.7053 15.1092H79.7986C82.7212 15.1092 85.2232 13.5095 85.2232 9.82592C85.2232 6.43702 82.9945 4.54261 79.8407 4.54261H78.7053V15.1092ZM105.071 19.2769H100.151V0.374902H105.071V19.2769ZM120.715 4.52156V7.67891H126.244V11.8466H120.715V15.1092H126.539V19.2769H115.795V0.374902H126.539V4.54261H120.715V4.52156Z\" fill=\"#0D2244\" fill-opacity=\"0.2\"><\/path>\n<\/svg>",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        },
+        "a6324188-9e54-4a74-90d0-cc2c1e550053": {
+          "type": "slide",
+          "settings": {
+            "logo": "",
+            "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue.png",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        }
+      },
+      "block_order": [
+        "2eb920b4-1221-4501-a6a1-ee053e46bb0d",
+        "9bbf2b6f-692a-4a71-b44c-e91ac56d2c31",
+        "a6324188-9e54-4a74-90d0-cc2c1e550053"
+      ],
       "settings": {
       }
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "product-recommendations",
+    "d7a83216-e232-4258-9705-5edf54558f0b",
+    "6916709c-578f-4b73-afd1-d8e53aa1db15"
   ]
 }
