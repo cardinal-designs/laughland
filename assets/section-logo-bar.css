@@ -22,13 +22,19 @@
 .logo-bar__list-item > * {
   width: 126px;
   height: auto;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 768px) {
+  section.logo-bar {
+    margin-bottom: 0;
+  }
+  
   .logo-bar .page-width {
     padding: 0;
   }
   .logo-bar__list {
     animation: marquee 35s linear infinite;
+    padding: 35px 0;
   }
 }

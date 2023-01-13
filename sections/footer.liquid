@@ -30,6 +30,11 @@
     <div class="footer__menu-blocks">
       {% for block in footer_menus %}
         <div class="footer__block" {{ block.shopify_attributes }}>
+          <button class="footer__mobile-header hide-desktop p">
+            {{ block.settings.menu_title | default: block.settings.menu.title }}
+            <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
+          </button>
+
           {% if block.settings.menu != blank %}
             <ul class="footer__menu list-unstyled">
               {% for link in block.settings.menu.links %}
@@ -174,6 +179,25 @@
   </div>
 </footer>
 
+{% javascript %}
+  // Mobile dropdowns
+  const headerItems = document.querySelectorAll('.footer__mobile-header');
+  headerItems.forEach((header) => {
+    header.addEventListener('click', (event) => {
+      const parent = header.parentElement;
+      const content = header.nextElementSibling;
+
+      if (parent.classList.contains('active')) {
+        parent.classList.remove('active');
+        slideUp(content, 400);
+      } else {
+        parent.classList.add('active');
+        slideDown(content, 400);
+      }
+    });
+  });
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "Footer",
@@ -231,6 +255,12 @@
           "id": "menu",
           "default": "footer",
           "label": "Menu"
+        },
+        {
+          "type": "text",
+          "id": "menu_title",
+          "label": "Menu name",
+          "info": "Visibile on mobile"
         }
       ]
     }

@@ -321,6 +321,9 @@ function slideUp(target, duration = 500) {
         target.style.removeProperty('overflow');
         target.style.removeProperty('transition-duration');
         target.style.removeProperty('transition-property');
+        if( target.style.display == "none") {
+          target.style.removeProperty('display');
+        }
         //alert("!");
   }, duration);
 }
@@ -350,7 +353,7 @@ function slideDown(target, duration = 500) {
     target.style.removeProperty('height');
     target.style.removeProperty('overflow');
     target.style.removeProperty('transition-duration');
-    target.style.removeProperty('transition-property');
+    target.style.removeProperty('transition-property');    
   }, duration);
 }
 
