@@ -10,7 +10,7 @@
     {% for block in footer_sections %}
       <div class="footer__section">
         <div class="footer__section-inner">
-          <h4 class="footer__heading">{{ block.settings.heading }}</h4>
+          <h4 class="footer__heading m-h5">{{ block.settings.heading }}</h4>
           <p class="footer__text">{{ block.settings.text }}</p>
           {% if block.settings.btn_one != blank and block.settings.btn_one_text != blank %}
             <a class="button button--secondary button--sm" href="{{ block.settings.btn_one }}">

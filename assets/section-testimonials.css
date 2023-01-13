@@ -176,7 +176,7 @@
 @media screen and (max-width: 768px) {
 
   .testimonials {
-    border-radius: none;
+    margin-bottom: 0;
   }
 
   .testimonials .page-width {
@@ -185,6 +185,7 @@
 
   .testimonials__inner {
     padding: 60px 25px;
+    border-radius: 0;
   }
   .testimonials__container {
     display: block;

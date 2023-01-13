@@ -50,14 +50,14 @@
   }
 }
 
-.homepage-hero {
+.hero.homepage-hero {
   height: 100vh;
   min-height: 600px;
 }
 
 @media screen and (max-width: 768px) {
-  .homepage-hero {
-    height: 85vh;
+  .hero.homepage-hero {
+    height: calc(100vh - 110px);
   }
 }
 
@@ -70,6 +70,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .homepage-hero .hero__logo-container {
+    padding-top: 0;
+  }
   .homepage-hero .hero__logo-container svg {
     width: 340px;
   }
@@ -81,4 +84,14 @@
 
 .homepage-hero .hero__logo {
   margin-bottom: 0;
+}
+
+.hero__overlay {
+  background: linear-gradient(180deg, rgba(13, 34, 68, 0) 20.31%, rgba(13, 34, 68, 0.5) 100%);
+mix-blend-mode: multiply;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+position: absolute;
+top: 0;
+left: 0;
+width: 100%; height: 100%;
 }

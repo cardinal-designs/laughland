@@ -6,7 +6,7 @@
 %}
 
 <div
-  class="hero homepage-hero {% if section.settings.add_overlay %} add-overlay{% endif %}"
+  class="hero homepage-hero {% if section.settings.add_overlay %}add-overlay{% endif %}"
 >
   {% if section.settings.video != blank %}
     {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
@@ -31,6 +31,7 @@
       <source src="{{'Laughland_Homepage_Lilac.mp4' | asset_url}}" type="video/mp4">
     </video>
   {% endif %}
+  <div class="hero__overlay"></div>
   <div class="page-width hero__inner">
     <div class="hero__logo-container">
       <svg
@@ -52,6 +53,11 @@
     </div>
   </div>
 </div>
+
+{% javascript %}
+  const homepageHero = document.querySelector('.hero.homepage-hero');
+  homepageHero.style.height = `${window.innerHeight}px`;
+{% endjavascript %}
 
 {% schema %}
 {

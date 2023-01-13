@@ -2,3 +2,16 @@
   padding: 70px 0;
   text-align: center;
 }
+
+.section__heading {
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .text-section {
+    padding: 20px 0;
+  }
+}

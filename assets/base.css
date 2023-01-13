@@ -218,6 +218,21 @@ h5,
   font-weight: 400;
 }
 
+@media screen and (max-width: 768px) {
+  h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+  margin-bottom: 20px;
+}
+}
+ 
 .h-medium {
   font-family: manrope, san-serif;
   font-weight: 500;
@@ -285,6 +300,11 @@ h4,
   h4,
   .h4 {
   }
+  .m-h4 {
+    font-size: 35px;
+    line-height: 38px;
+    font-weight: 500;
+  }
 }
 
 h5,
@@ -298,6 +318,12 @@ h5,
 @media only screen and (max-width: 768px) {
   h5,
   .h5 {
+
+  }
+
+  .m-h5 {
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 
@@ -395,9 +421,9 @@ p,
 }
 
 @media only screen and (max-width: 768px) {
-  p {
+  /* p {
     font-size: 14px;
-  }
+  } */
 }
 
 blockquote {
@@ -435,7 +461,9 @@ blockquote {
 
 /* Button - hover */
 .button:not([disabled]):not(.button--secondary):hover,
-.shopify-challenge__button:hover {
+.shopify-challenge__button:hover,
+.button:not([disabled]):not(.button--secondary):active,
+.shopify-challenge__button:active {
   color: var(--blue);
   background: var(--cream);
   box-shadow: 0px 0px 32px var(--blue);
@@ -451,7 +479,8 @@ blockquote {
 }
 
 /* Secondary Button - hover */
-.button--secondary:not([disabled]):hover {
+.button--secondary:not([disabled]):hover,
+.button--secondary:not([disabled]):active {
   background: var(--blue-tint-20);
   box-shadow: none;
   color: var(--navy);
