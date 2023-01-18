@@ -23,6 +23,18 @@
         </div>
         <div class="product__media-pagination swiper-pagination"></div>
       </ul>
+
+      <div class="product__media-thumbnails">
+        {% for media in product.media %}
+          <button
+            class="product__media-thumbnail-item"
+            data-media-id="{{ section.id }}-{{ media.id }}"
+            data-loop-position="{{ forloop.index0 }}"
+          >
+            {{ media | image_url: width: 200 | image_tag }}
+          </button>
+        {% endfor %}
+      </div>
     </div>
 
     <div class="product__info-wrapper">
@@ -56,10 +68,21 @@
           {% endfor %}
         </dl>
 
-        {% comment %}<div class="product-subscription-wrapper"></div> {% endcomment %}
+        <div class="subscription-wrapper">
+          <div class="loading-overlay__spinner">
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              role="presentation"
+              class="spinner"
+              viewBox="0 0 66 66"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+            </svg>
+          </div>
 
-        <div>
-          {% form 'product', product, id: 'product-form-installment', class: 'installment' %}
+          {% form 'product', product, id: 'product-form-installment', class: 'installment visually-hidden' %}
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
             {{ form | payment_terms }}
           {% endform %}
@@ -254,7 +277,7 @@
             </div>
           {% endform %}
 
-          <div class="visibility-hidden subscription-details__wrapper">
+          <div class="visually-hidden subscription-details__wrapper">
             <div class="subscription-details">
               <dl>
                 <dt>Personalized Whitening Kit</dt>
@@ -267,6 +290,35 @@
             </div>
           </div>
         </product-form>
+
+        {% if product.metafields.custom.details != blank %}
+          <div class="product__details product__accordion active">
+            <button class="product__accordion-button p">
+              Details <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
+            </button>
+            <div class="product__accordion--inner" style="display: block">
+              <div class="product__details-inner">
+                {% for detail in product.metafields.custom.details.value %}
+                  {% assign formatted_emoji = detail | replace: '{', "<span class='emoji'>" | replace: '}', '</span>' %}
+                  <div class="product__detail-item p">{{ formatted_emoji }}</div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% if product.metafields.custom.how_to_use != blank %}
+          <div class="product__how-to-use product__accordion">
+            <button class="product__accordion-button p">
+              How To Use <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
+            </button>
+            <div class="product__accordion--inner">
+              <p>
+                {{ product.metafields.custom.how_to_use.value | newline_to_br -}}
+              </p>
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   </div>
@@ -277,10 +329,32 @@
   const productSlider = new Swiper('.product__media-list', {
     slidesPerView: 1,
     loop: false,
-    spaceBetween: 20,
-    pagination: {
-      el: '.product__media-pagination',
-    },
+  });
+
+  const productSliderThumbnails = document.querySelectorAll('.product__media-thumbnail-item');
+
+  productSliderThumbnails.forEach((thumbnail) => {
+    thumbnail.addEventListener('click', function (e) {
+      e.preventDefault();
+      console.log(e.target.dataset.loopPosition);
+      productSlider.slideTo(e.target.dataset.loopPosition);
+    });
+  });
+
+  const accordionItems = document.querySelectorAll('.product__accordion-button');
+  accordionItems.forEach((accordion) => {
+    accordion.addEventListener('click', (event) => {
+      const parent = accordion.parentElement;
+      const content = accordion.nextElementSibling;
+
+      if (parent.classList.contains('active')) {
+        parent.classList.remove('active');
+        slideUp(content, 400);
+      } else {
+        parent.classList.add('active');
+        slideDown(content, 400);
+      }
+    });
   });
 {% endjavascript %}
 

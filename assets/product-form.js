@@ -24,7 +24,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     // document.cookie = "lastname=Valori"
     const first_name = getCookie('firstname') || ""
     const last_name = getCookie('lastname') || ""
-    const storedProductName = this.container.querySelector('#product__title_id')?.innerHTML
+    const storedProductName = this.container?.querySelector('#product__title_id')?.innerHTML
 
     const name = `${first_name}${ last_name != "" ? ' ' + last_name : ''}`
 
@@ -43,6 +43,10 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       }
       window.ReChargeWidget.createWidget(config);
       this.modifySubscriptionWidget();
+
+      //remove loading circle when ready
+      this.container.querySelector(".subscription-wrapper .loading-overlay__spinner").classList.add("hidden")
+      this.container.querySelector(".subscription-wrapper form.visually-hidden").classList.remove("visually-hidden")
     } else {
       console.log("waiting on ReCharge")
       setTimeout(() => {
@@ -66,7 +70,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         textEl.innerHTML = "&#8212;"
         option.querySelector(".rc_widget__option__selector label").insertBefore(textEl, option.querySelector(".rc_widget__option__selector label > span:nth-of-type(2)"))
 
-        option.querySelector(".rc-selling-plans__label").classList.remove("visually-hidden");
+        option.querySelector(".rc-selling-plans__label")?.classList.remove("visually-hidden");
 
         if( option.querySelector(".rc-selling-plans")) {
           // grab from page then inject subscription details

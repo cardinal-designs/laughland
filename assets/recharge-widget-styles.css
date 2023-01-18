@@ -59,6 +59,7 @@
   line-height: normal;
   min-height: 27.5px;
   margin-left: 0;
+  cursor: pointer;
 }
 
 [data-label-subsave] {
@@ -112,4 +113,8 @@
 
 .rc-option dl:last-of-type {
   border-radius: 0 0 17px 17px;
+}
+
+.rc_popup {
+  display: none !important;
 }

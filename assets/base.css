@@ -1828,7 +1828,7 @@ deferred-media {
   stroke-dasharray: 280;
   stroke-dashoffset: 0;
   transform-origin: center;
-  stroke: rgb(var(--color-foreground));
+  stroke: var(--blue);
   animation: dash 1.4s ease-in-out infinite;
 }
 
