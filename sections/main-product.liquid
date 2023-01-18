@@ -2,17 +2,17 @@
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'recharge-widget-styles.css' | asset_url | stylesheet_tag }}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-<section class="page-width">
+<section>
   <div class="product">
     <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
-      {{ "accessibility.skip_to_product_info" | t }}
+      {{ 'accessibility.skip_to_product_info' | t }}
     </a>
 
     <div class="product__media-wrapper">
-
       <ul class="product__media-list list-unstyled swiper" role="list">
         <div class="swiper-wrapper">
           {% for media in product.media %}
@@ -23,20 +23,40 @@
         </div>
         <div class="product__media-pagination swiper-pagination"></div>
       </ul>
-
     </div>
 
     <div class="product__info-wrapper">
       <div id="ProductInfo-{{ section.id }}" class="product__info-container">
         {% assign product_form_id = 'product-form-' | append: section.id %}
 
-        <h1 class="product__title">
+        <h3 class="product__title" id="product__title_id">
           {{ product.title | escape }}
-        </h1>
+        </h3>
 
-        <div class="no-js-hidden" id="price-{{ section.id }}" role="status">
+        <div class="no-js-hidden visibility-hidden visually-hidden" id="price-{{ section.id }}" role="status">
           {% render 'price', product: product, use_variant: true, show_badges: true, price_class: '' %}
         </div>
+
+        <dl class="product-info">
+          <dt class="h6">Your Whitening Formula</dt>
+          <dd class="p">
+            {{
+              product.selected_or_first_available_variant.metafields.custom.formula_details
+              | default: product.selected_or_first_available_variant.title
+            }}
+          </dd>
+        </dl>
+
+        <dl class="product-info">
+          <dt class="h6">Includes</dt>
+          {% for item in product.metafields.custom.includes.value %}
+            <dd class="p">
+              <span>{% render 'icon', icon: 'checkmark' %} </span>{{ item }}
+            </dd>
+          {% endfor %}
+        </dl>
+
+        {% comment %}<div class="product-subscription-wrapper"></div> {% endcomment %}
 
         <div>
           {% form 'product', product, id: 'product-form-installment', class: 'installment' %}
@@ -45,13 +65,15 @@
           {% endform %}
         </div>
 
-        {% if product.description != blank %}
-          <div class="product__description rte">
-            {{ product.description }}
-          </div>
-        {% endif %}
+        {% comment %}
+          {% if product.description != blank %}
+            <div class="product__description rte">
+              {{ product.description }}
+            </div>
+          {% endif %}
+        {% endcomment %}
 
-        <product-form class="product-form">
+        <product-form class="product-form" data-product-id="{{ product.id }}">
           <div class="product-form__error-message-wrapper" role="alert" hidden>
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
               <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -62,22 +84,36 @@
             <span class="product-form__error-message"></span>
           </div>
 
-          {% form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' %}
+          {% form 'product',
+            product,
+            id: product_form_id,
+            class: 'form',
+            novalidate: 'novalidate',
+            data-type: 'add-to-cart-form'
+          %}
             <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
 
             {% unless product.has_only_default_variant %}
               {% assign picker_type = 'button' %}
               {% if picker_type == 'button' %}
-                <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}">
+                <variant-radios
+                  class="no-js-hidden visually-hidden"
+                  data-section="{{ section.id }}"
+                  data-url="{{ product.url }}"
+                >
                   {% for option in product.options_with_values %}
                     <fieldset class="js product-form__input">
                       <legend class="form__label">{{ option.name }}</legend>
                       {% for value in option.values %}
-                        <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                              name="{{ option.name }}"
-                              value="{{ value | escape }}"
-                              form="{{ product_form_id }}"
-                              {% if option.selected_value == value %}checked{% endif %}
+                        <input
+                          type="radio"
+                          id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                          name="{{ option.name }}"
+                          value="{{ value | escape }}"
+                          form="{{ product_form_id }}"
+                          {% if option.selected_value == value %}
+                            checked
+                          {% endif %}
                         >
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                           {{ value }}
@@ -97,18 +133,24 @@
                         {{ option.name }}
                       </label>
                       <div class="select">
-                        <select id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                        <select
+                          id="Option-{{ section.id }}-{{ forloop.index0 }}"
                           class="select__select"
                           name="options[{{ option.name | escape }}]"
                           form="{{ product_form_id }}"
                         >
                           {% for value in option.values %}
-                            <option value="{{ value | escape }}" {% if option.selected_value == value %}selected="selected"{% endif %}>
+                            <option
+                              value="{{ value | escape }}"
+                              {% if option.selected_value == value %}
+                                selected="selected"
+                              {% endif %}
+                            >
                               {{ value }}
                             </option>
                           {% endfor %}
                         </select>
-                        {% render 'icon' icon: 'caret' %}
+                        {% render 'icon', icon: 'caret' %}
                       </div>
                     </div>
                   {% endfor %}
@@ -122,13 +164,19 @@
 
             <noscript class="product-form__noscript-wrapper-{{ section.id }}">
               <div class="product-form__input{% if product.has_only_default_variant %} hidden{% endif %}">
-                <label class="form__label" for="Variants-{{ section.id }}">{{ 'products.product.product_variants' | t }}</label>
+                <label class="form__label" for="Variants-{{ section.id }}">
+                  {{- 'products.product.product_variants' | t -}}
+                </label>
                 <div class="select">
                   <select name="id" id="Variants-{{ section.id }}" class="select__select" form="{{ product_form_id }}">
                     {% for variant in product.variants %}
                       <option
-                        {% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}
-                        {% if variant.available == false %}disabled{% endif %}
+                        {% if variant == product.selected_or_first_available_variant %}
+                          selected="selected"
+                        {% endif %}
+                        {% if variant.available == false %}
+                          disabled
+                        {% endif %}
                         value="{{ variant.id }}"
                       >
                         {{ variant.title }}
@@ -137,66 +185,91 @@
                       </option>
                     {% endfor %}
                   </select>
-                  {% render 'icon' icon: 'caret' %}
+                  {% render 'icon', icon: 'caret' %}
                 </div>
               </div>
             </noscript>
 
-            <div class="product-form__input product-form__quantity">
+            <div class="product-form__input product-form__quantity visually-hidden">
               <label class="form__label" for="Quantity-{{ section.id }}">
                 {{ 'products.product.quantity.label' | t }}
               </label>
               <quantity-input class="quantity">
                 <button class="quantity__button no-js-hidden" name="minus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}</span>
-                  {% render 'icon' icon: 'minus' %}
+                  <span class="visually-hidden">
+                    {{- 'products.product.quantity.decrease' | t: product: product.title | escape -}}
+                  </span>
+                  {% render 'icon', icon: 'minus' %}
                 </button>
-                <input class="quantity__input"
-                    type="number"
-                    name="quantity"
-                    id="Quantity-{{ section.id }}"
-                    min="1"
-                    value="1"
-                    form="{{ product_form_id }}"
-                  >
+                <input
+                  class="quantity__input"
+                  type="number"
+                  name="quantity"
+                  id="Quantity-{{ section.id }}"
+                  min="1"
+                  value="1"
+                  form="{{ product_form_id }}"
+                >
                 <button class="quantity__button no-js-hidden" name="plus" type="button">
-                  <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: product.title | escape }}</span>
-                  {% render 'icon' icon: 'plus' %}
+                  <span class="visually-hidden">
+                    {{- 'products.product.quantity.increase' | t: product: product.title | escape -}}
+                  </span>
+                  {% render 'icon', icon: 'plus' %}
                 </button>
               </quantity-input>
             </div>
-            
+
             <div class="product-form__buttons">
               <button
                 type="submit"
                 name="add"
                 class="product-form__submit button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
-              {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                {% if product.selected_or_first_available_variant.available == false %}
+                  disabled
+                {% endif %}
               >
-                  <span>
-                    {% if product.selected_or_first_available_variant.available %}
-                      {{ 'products.product.add_to_cart' | t }}
-                    {% else %}
-                      {{ 'products.product.sold_out' | t }}
-                    {% endif %}
-                  </span>
-                  <div class="loading-overlay__spinner hidden">
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg>
-                  </div>
+                <span>
+                  {% if product.selected_or_first_available_variant.available %}
+                    {{ 'products.product.add_to_cart' | t }}
+                  {% else %}
+                    {{ 'products.product.sold_out' | t }}
+                  {% endif %}
+                </span>
+                <div class="loading-overlay__spinner hidden">
+                  <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="spinner"
+                    viewBox="0 0 66 66"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                  </svg>
+                </div>
               </button>
               {% if block.settings.show_dynamic_checkout %}
                 {{ form | payment_button }}
               {% endif %}
             </div>
           {% endform %}
-        </product-form>
 
+          <div class="visibility-hidden subscription-details__wrapper">
+            <div class="subscription-details">
+              <dl>
+                <dt>Personalized Whitening Kit</dt>
+                <dd>1-2 Months Supply</dd>
+              </dl>
+              <dl>
+                <dt>Recurring Cost</dt>
+                <dd>$19.00</dd>
+              </dl>
+            </div>
+          </div>
+        </product-form>
       </div>
     </div>
   </div>
-
 </section>
 
 {% javascript %}
@@ -206,29 +279,33 @@
     loop: false,
     spaceBetween: 20,
     pagination: {
-      el: '.product__media-pagination'
-    }
+      el: '.product__media-pagination',
+    },
   });
 {% endjavascript %}
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener('DOMContentLoaded', function () {
     function isIE() {
       const ua = window.navigator.userAgent;
       const msie = ua.indexOf('MSIE ');
       const trident = ua.indexOf('Trident/');
 
-      return (msie > 0 || trident > 0);
+      return msie > 0 || trident > 0;
     }
 
     if (!isIE()) return;
     const hiddenInput = document.querySelector('#{{ product_form_id }} input[name="id"]');
     const noScriptInputWrapper = document.createElement('div');
-    const variantSwitcher = document.querySelector('variant-radios[data-section="{{ section.id }}"]') || document.querySelector('variant-selects[data-section="{{ section.id }}"]');
-    noScriptInputWrapper.innerHTML = document.querySelector('.product-form__noscript-wrapper-{{ section.id }}').textContent;
+    const variantSwitcher =
+      document.querySelector('variant-radios[data-section="{{ section.id }}"]') ||
+      document.querySelector('variant-selects[data-section="{{ section.id }}"]');
+    noScriptInputWrapper.innerHTML = document.querySelector(
+      '.product-form__noscript-wrapper-{{ section.id }}'
+    ).textContent;
     variantSwitcher.outerHTML = noScriptInputWrapper.outerHTML;
 
-    document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function(event) {
+    document.querySelector('#Variants-{{ section.id }}').addEventListener('change', function (event) {
       hiddenInput.value = event.currentTarget.value;
     });
   });
@@ -280,15 +357,11 @@
 </script>
 
 {% schema %}
-  {
-    "name": "Product",
-    "tag": "section",
-    "class": "product-section",
-    "blocks": [
-
-    ],
-    "settings": [
-
-    ]
-  }
+{
+  "name": "Product",
+  "tag": "section",
+  "class": "product-section",
+  "blocks": [],
+  "settings": []
+}
 {% endschema %}

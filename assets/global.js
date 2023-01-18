@@ -747,17 +747,23 @@ customElements.define('add-to-cart', AddToCart);
     Inerseciton observer
   ================================= */
 
+  // Homepage
   const hero = document.querySelector(".homepage-hero")
-  const heroLogo = hero.querySelector(".hero__logo")
+  const heroLogo = hero?.querySelector(".hero__logo")
   const header = document.querySelector(".outer-header-wrapper")
+
+  // Other pages
+  const firstSection = document.querySelector("#MainContent .shopify-section:first-of-type")
 
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach( entry => {
-        console.log(entry.isIntersecting)
-          entry.target.classList.toggle("show", entry.isIntersecting)
+        console.log(entry)
+        entry.target.classList.toggle("show", entry.isIntersecting)
+        if(heroLogo){
           header.querySelector(".header__svg-logo").classList.toggle("show", !entry.isIntersecting)
-          header.classList.toggle("scrolled", !entry.isIntersecting)
+        }
+        header.classList.toggle("scrolled", !entry.isIntersecting)
       })
     },
     {
@@ -766,7 +772,7 @@ customElements.define('add-to-cart', AddToCart);
     }
   )
 
-  observer.observe(heroLogo)
+  heroLogo != undefined ? observer.observe(heroLogo) : observer.observe(firstSection)
 
   /* ========================
   scroll trigger

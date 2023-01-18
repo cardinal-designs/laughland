@@ -89,7 +89,11 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'sticky-footer' %}
+    {% if template == 'product' %}
+      {% section 'sticky-product-bar' %}
+    {% elsif template == 'index' %}
+      {% section 'sticky-footer' %}
+    {% endif %}
     {% section 'footer' %}
 
     <ul hidden>

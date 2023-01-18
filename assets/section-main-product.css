@@ -12,8 +12,31 @@
 
 /*================ Media ================*/
 .product__media {
-  padding-bottom: 100%;
+  /* padding-bottom: 100%; */
   position: relative;
+  aspect-ratio: .85/1;
 }
 
 /*================ Info ================*/
+
+.product__info-wrapper {
+  max-width: calc( 1440 / 2 );
+  margin-right: 50px;
+}
+
+.product-info {
+  border-top: 1px solid var(--navy);
+  padding-top: 8px;
+}
+
+.product-info dt {
+  margin-bottom: 16px;
+}
+
+.product-info dd {
+  display: inline-block;
+}
+
+.product-info dd span {
+  vertical-align: middle;
+}

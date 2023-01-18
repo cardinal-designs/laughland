@@ -1036,7 +1036,8 @@ deferred-media {
 /*================ Header Group ================*/
 .outer-header-wrapper {
   width: 100%;
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   top: 0;
   z-index: 5;
   font-family: manrope;
