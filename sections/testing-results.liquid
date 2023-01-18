@@ -13,7 +13,7 @@
 
         <h5 class="test-results__subhead">{{ section.settings.title }}</h5>
 
-        <ul class="list-unstyled">
+        <ul class="list-unstyled test-results__list">
           {% for block in section.blocks %}
             <li class="test-results__item">
               <h3 class="stylized test-results__item-percent">{{ block.settings.title }}</h3>
@@ -22,8 +22,8 @@
           {% endfor %}
         </ul>
 
-        {% if section.setting.link != blank and section.settings.link_text != blank %}
-          <a href="{{ section.settings.link }}" class="text-link">{{ section.settings.text_link }}</a>
+        {% if section.settings.link != blank and section.settings.link_text != blank %}
+          <a href="{{ section.settings.link }}" class="text-link text-link__dark">{{ section.settings.link_text }}</a>
         {% endif %}
       </div>
 

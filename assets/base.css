@@ -530,7 +530,8 @@ blockquote {
 .text-link {
   color: var(--blue);
   text-decoration: underline;
-  line-height: 4em;
+  text-underline-offset: .5em;
+  line-height: normal;
   font-family: jakarta;
   font-weight: 600;
 }

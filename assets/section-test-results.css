@@ -10,6 +10,14 @@
   overflow: hidden;
 }
 
+.test-results__heading {
+  margin-bottom: 60px;
+}
+
+.test-results__subhead {
+  margin-bottom: 25px;
+}
+
 .test-results__text {
   padding: 90px 50px;
 }
@@ -20,12 +28,34 @@
   object-fit: cover;
 }
 
+.test-results__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 12px;
+}
+
 .test-results__item {
   background: white;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 134px 1fr;
   align-items: center;
-  justify-content: flex-start;
-  padding: 21px 20px;
+  padding: 0 20px;
   border-radius: 12px;
+}
+
+.test-results__item-percent {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.test-results__item-details {
+  padding: 20px 0 20px 20px;
+  border-left: 1px solid var(--blue-tint-20);
+}
+
+.test-results .text-link {
+  margin-top: 30px;
+  display: inline-block;
 }
