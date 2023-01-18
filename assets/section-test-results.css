@@ -1,0 +1,31 @@
+.test-results {
+  margin-bottom: 50px;
+}
+
+.test-results__inner {
+  background: var(--blue-tint-20);
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+.test-results__text {
+  padding: 90px 50px;
+}
+
+.test-results__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.test-results__item {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 21px 20px;
+  border-radius: 12px;
+}

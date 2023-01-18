@@ -2,6 +2,7 @@
   background: var(--blue-tint-20);
   padding: 100px 50px;
   border-radius: 12px;
+  margin-bottom: 50px;
 }
 
 .testimonials__heading, .testimonials__text {

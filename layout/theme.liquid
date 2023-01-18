@@ -90,7 +90,7 @@
     </main>
 
     {% if template == 'product' %}
-      {% section 'sticky-product-bar' %}
+      {% comment %} {% section 'sticky-product-bar' %} {% endcomment %}
     {% elsif template == 'index' %}
       {% section 'sticky-footer' %}
     {% endif %}
