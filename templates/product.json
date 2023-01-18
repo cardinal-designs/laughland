@@ -58,7 +58,8 @@
       ],
       "settings": {
         "heading": "Ingredients That Work {For You}",
-        "text": "Clinically tested ingredients backed by science."
+        "text": "Clinically tested ingredients backed by science.",
+        "margin_bottom": true
       }
     },
     "d7a83216-e232-4258-9705-5edf54558f0b": {
@@ -122,6 +123,44 @@
       "settings": {
       }
     },
+    "a4ec3822-cf26-400b-a01b-564ae2a93dfc": {
+      "type": "testing-results",
+      "blocks": {
+        "01a7a700-2a02-45e1-9bcf-ae1fd13faeb0": {
+          "type": "card",
+          "settings": {
+            "title": "100%",
+            "heading": "100% of clinical participants reported whiter teeth after only 6 treatments."
+          }
+        },
+        "fa6ec1b7-630e-491d-b3c8-1ca189421f07": {
+          "type": "card",
+          "settings": {
+            "title": "74%",
+            "heading": "Clinical participants reported, on average, a 74% increase in teeth brightness."
+          }
+        },
+        "f2199093-20a4-42b3-b99d-52d12d69cff1": {
+          "type": "card",
+          "settings": {
+            "title": "0%",
+            "heading": "0% of clinical participants reported an increase in sensitivity after whitening."
+          }
+        }
+      },
+      "block_order": [
+        "01a7a700-2a02-45e1-9bcf-ae1fd13faeb0",
+        "fa6ec1b7-630e-491d-b3c8-1ca189421f07",
+        "f2199093-20a4-42b3-b99d-52d12d69cff1"
+      ],
+      "settings": {
+        "heading": "Believe {The Hype}",
+        "title": "Consumer Testing Results",
+        "image": "shopify:\/\/shop_images\/Laughland_79400_1.jpg",
+        "link": "\/",
+        "link_text": "Learn More"
+      }
+    },
     "1673651615075cdcd1": {
       "type": "apps",
       "blocks": {
@@ -145,6 +184,7 @@
     "30a71a58-b5ad-472f-9d70-97379fc62b74",
     "d7a83216-e232-4258-9705-5edf54558f0b",
     "6916709c-578f-4b73-afd1-d8e53aa1db15",
+    "a4ec3822-cf26-400b-a01b-564ae2a93dfc",
     "1673651615075cdcd1"
   ]
 }
