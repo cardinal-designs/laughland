@@ -126,25 +126,25 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
 
     switch(subscriptionCookie[0]) {
       case 'redirect_ut':
-        subPrice = '$9 USD'
+        subPrice = '$9'
         break;
       case 'redirect_ut_direct':
-        subPrice = '$9 USD'
+        subPrice = '$9'
         break
       case 'redirect_paceline':
-        subPrice = '$29 USD'
+        subPrice = '$29'
         break
       case 'redirect_sweatcoin':
-        subPrice = '$9.95 USD'
+        subPrice = '$9.95'
         break
       case 'redirect_miles':
-        subPrice = '$9 USD'
+        subPrice = '$9'
         break
       case 'redirect_studentbeans':
-        subPrice = '$9 USD'
+        subPrice = '$9'
         break
       default:
-        subPrice = '$19 USD'
+        subPrice = '$19'
         break
     }
 
