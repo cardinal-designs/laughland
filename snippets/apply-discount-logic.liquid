@@ -1,0 +1,63 @@
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    function isIE() {
+      const ua = window.navigator.userAgent;
+      const msie = ua.indexOf('MSIE ');
+      const trident = ua.indexOf('Trident/');
+
+      return msie > 0 || trident > 0;
+    }
+
+    if (!isIE()) return;
+    const cartSubmitInput = document.createElement('input');
+    cartSubmitInput.setAttribute('name', 'checkout');
+    cartSubmitInput.setAttribute('type', 'hidden');
+    document.querySelector('#cart').appendChild(cartSubmitInput);
+    document.querySelector('#checkout').addEventListener('click', function (event) {
+      try {
+        console.log('in trying');
+        paceline_automatic = getCookie('redirect_paceline');
+        sweatcoin_automatic = getCookie('redirect_sweatcoin');
+        redirect_ut_direct = getCookie('redirect_ut_direct');
+        redirect_ut = getCookie('redirect_ut');
+        redirect_miles = getCookie('redirect_miles');
+        url_params = [];
+        if (paceline_automatic == 'true') {
+          url_params = url_params.concat(['discount=PACELINE_AUTOMATIC']);
+        } else if (sweatcoin_automatic == 'true') {
+          url_params = url_params.concat(['discount=SWEATCOIN_AUTOMATIC']);
+        } else if (redirect_ut_direct == 'true') {
+          url_params = url_params.concat(['discount=SUB-N-SAVE']);
+        } else if (redirect_ut == 'true') {
+          url_params = url_params.concat(['discount=UTM_GEN_AUTOMATIC']);
+        } else if (redirect_miles == 'true') {
+          url_params = url_params.concat(['discount=MILES_AUTOMATIC']);
+        } else {
+          url_params = url_params.concat(['discount=SUB-N-SAVE']);
+        }
+        console.log('heres params');
+        console.log(url_params);
+
+        window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
+        //document.querySelector('#cart').submit();
+      } catch (err) {
+        window.location.href = 'https://mylaughland.com/checkout?discount=SUB-N-SAVE';
+      }
+    });
+  });
+
+  function getCookie(name) {
+    value = `; ${document.cookie}`;
+    parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  paceline = getCookie('redirect_paceline');
+  sweatcoin = getCookie('redirect_sweatcoin');
+
+  if (paceline == 'true') {
+    $('.announcement-bar__message').first().html('PACELINE SALE! DISCOUNT AUTOMATICALLY APPLIED AT CHECKOUT');
+  } else if (sweatcoin == 'true') {
+    $('.announcement-bar__message').first().html('SWEATCOIN SALE! DISCOUNT AUTOMATICALLY APPLIED AT CHECKOUT');
+  }
+</script>

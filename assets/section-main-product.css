@@ -140,8 +140,10 @@
 
 .product__accordion {
   margin-top: 16px;
+  padding-top: 18px;
   border-bottom: 1px solid var(--navy);
-  padding-bottom: 18px
+  padding-bottom: 18px;
+  border-top: 1px solid var(--navy);
 }
 
 .product__accordion .product__accordion-button {

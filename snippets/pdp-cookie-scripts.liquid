@@ -1,0 +1,62 @@
+<script>
+  var date = new Date();
+  date.setTime(date.getTime() + 3600 * 24 * 1000);
+  var expires = '; expires=' + date.toUTCString();
+  document.cookie = 'directcheckout=true' + expires + '; path=/;';
+
+  const ut = getCookie('redirect_ut');
+  const ut_direct = getCookie('redirect_ut_direct');
+  const shareasale = getCookie('shareasaleShopifySSCID');
+  const paceline = getCookie('redirect_paceline');
+  const sweatcoin = getCookie('redirect_sweatcoin');
+  const miles = getCookie('redirect_miles');
+  const studentbeans = getCookie('redirect_studentbeans');
+
+  {% comment %} Update displayed price based on Product Handle and Cookie {% endcomment %}
+
+  {% if product.handle == "at-home-whitening-kit" %}
+    if (paceline == 'true'){
+      {% comment %} $('.price-item--regular').first().html('<span class = "cross-red"><span class = "dark-blue">$100</span></span> $29 USD') {% endcomment %}
+    } else if (sweatcoin == 'true') {
+      {% comment %} $('.price-item--regular').first().html('<span class = "cross-red"><span class = "dark-blue">$100</span></span> $9.95 USD') {% endcomment %}
+    } else if (miles == 'true') {
+      {% comment %} $('.price-item--regular').first().html('<span class = "cross-red"><span class = "dark-blue">$100</span></span> $9 USD') {% endcomment %}
+    } else if (ut == 'true') {
+      {% comment %} $('.price-item--regular').first().html('<span class = "cross-red"><span class = "dark-blue">$100</span></span> $9 USD') {% endcomment %}
+    } else if (studentbeans == 'true') {
+      {% comment %} $('.price-item--regular').first().html('<span class = "cross-red"><span class = "dark-blue">$100</span></span> $9 USD') {% endcomment %}
+    } else {
+      {% comment %} $('.rc_widget__option__label').first().html('<span class = "cross-red"><span class = "dark-blue">$100</span></span> $19 USD') {% endcomment %}
+    }
+  {% endif %}
+
+  {% if product.handle == "to-go-pen" %}
+    {% comment %} $('.price-item--regular').first().html('<span class = "cross-red"><span class = "dark-blue">$30</span></span> $9 USD') {% endcomment %}
+  {% endif %}
+
+
+  {% comment %} Set strength variant  {% endcomment %}
+
+  window.addEventListener('load', function () {
+    const strength_cookie = getCookie('strength')
+    {% comment %} if (strength_cookie == 'weak') {
+      elem = document.evaluate("//input[@value = '🍃 Gentle (ID: 19-2)']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+      id = elem.id
+      e = $('#'+id)
+      e.click()
+    //   document.cookie = "strength=expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+    } else if (strength_cookie == 'medium') {
+      elem = document.evaluate("//input[@value = '✨ Everyday (ID: 8-16)']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+      id = elem.id
+      e = $('#'+id)
+      e.click()
+    //   document.cookie = "strength=expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/";
+    } else if (strength_cookie == 'strong') {
+      elem = document.evaluate("//input[@value = '🔥 Super Strength (ID: 8-17)']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+      id = elem.id
+      e = $('#'+id)
+      e.click()
+    } {% endcomment %}
+
+  })
+</script>

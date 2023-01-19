@@ -1,0 +1,25 @@
+<script>
+  var date = new Date();
+  date.setTime(date.getTime()+(3600*24*1000));
+  var expires = "; expires="+date.toUTCString();
+  document.cookie = "redirect_sweatcoin=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_paceline=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_miles=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_studentbeans=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_ut=true" + expires + "; path=/;"
+  document.cookie = "redirect_ut_direct=true" + expires + "; path=/;"
+  var d = Math.random();
+
+  // if (d <= .5) {
+  //   document.cookie = "shareasaleShopifySSCID=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  // }
+
+  
+  if (d <= .9) {
+    document.cookie = "utm_term=utm-gen-product" + expires + "; path=/;"
+    window.location = '/products/at-home-whitening-kit/?utm_term=utm-gen-product&utm_content=utm-gen-product'
+  } else {
+    document.cookie = "utm_term=utm-gen-direct" + expires + "; path=/;"
+    window.location = '/?utm_term=utm-gen-direct&utm_content=utm-gen-direct'
+  }
+</script>

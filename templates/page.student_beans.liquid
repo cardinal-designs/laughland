@@ -1,0 +1,15 @@
+<script>
+  $('.paceline_show_announcement').hide()
+  $('.miles_show_announcement').hide()
+  $('.sweatcoin_show_announcement').hide()
+  $('.default_show_announcement').hide()
+  var date = new Date();
+  date.setTime(date.getTime()+(3600*24*1000));
+  var expires = "; expires="+date.toUTCString();
+  document.cookie = "redirect_paceline=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_miles=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_sweatcoin=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+  document.cookie = "redirect_ut=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;"
+</script>
+
+<script data-iframe='https://connect.studentbeans.com/v4/laughland/us' data-load='connect' id='stb_root' src='https://cdn.studentbeans.com/third-party/all.js'></script>;

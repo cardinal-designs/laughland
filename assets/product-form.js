@@ -12,10 +12,24 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     this.createSubscriptionWidget();
   }
 
-  getCookie(name) {
-    const value = `; ${document.cookie}`;
-    const parts = value.split(`; ${name}=`);
-    if (parts.length === 2) return parts.pop().split(';').shift();
+  getCookie(cname) {
+    // const value = `; ${document.cookie}`;
+    // const parts = value.split(`; ${name}=`);
+    // if (parts.length === 2) return parts.pop().split(';').shift();
+
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return null;
   }
 
   setName() {
@@ -37,11 +51,12 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
   createSubscriptionWidget() {
     if( typeof window.ReChargeWidget != 'undefined' ) {
       console.log("ReCharge widget is available!")
-      const config = {
-        productId: Number(this.dataset.productId),
-        injectionParent: ".product-sticky-bar__inner",
-      }
-      window.ReChargeWidget.createWidget(config);
+      // const config = {
+      //   productId: Number(this.dataset.productId),
+      //   injectionParent: ".product-sticky-bar__inner",
+      // }
+      // window.ReChargeWidget.createWidget(config);
+      
       this.modifySubscriptionWidget();
 
       //remove loading circle when ready
@@ -49,6 +64,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       this.container.querySelector(".subscription-wrapper form.visually-hidden").classList.remove("visually-hidden")
     } else {
       console.log("waiting on ReCharge")
+      
       setTimeout(() => {
         this.createSubscriptionWidget()
       }, 2000)
@@ -60,8 +76,11 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     
     subWidget.forEach(widget => {
       const widgetOptions = widget.querySelectorAll(".rc_widget__option")
+      console.log(widget)
 
       widgetOptions.forEach((option) => {
+
+        // Global widget changes
         const customEl = document.createElement("div")
         customEl.setAttribute('class', 'rc-custom-radio-button')
         option.querySelector(".rc_widget__option__selector label").appendChild(customEl)
@@ -69,6 +88,12 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         const textEl = document.createElement("span")
         textEl.innerHTML = "&#8212;"
         option.querySelector(".rc_widget__option__selector label").insertBefore(textEl, option.querySelector(".rc_widget__option__selector label > span:nth-of-type(2)"))
+
+        // Subscription option only changes
+        // Exit if this is the One Time option
+        if (option.getAttribute("data-option-onetime") != null) {
+          return
+        }
 
         option.querySelector(".rc-selling-plans__label")?.classList.remove("visually-hidden");
 
@@ -81,9 +106,48 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
           option.insertBefore(firstEl, option.querySelector(".rc-selling-plans"))
           option.appendChild(secondEl)
         }
+
+        const subOfferPrice = this.getSubPrice()
+        console.log(subOfferPrice)
+        // option.querySelector("[data-price-subsave]").innerHTML = subOfferPrice
+        console.log(option.querySelector("[data-price-subsave]"))
+        option.querySelector("[data-price-subsave]").innerHTML = `${subOfferPrice}`
       })  
     })
 
+  }
+
+  getSubPrice() {
+    const cookies = ['redirect_ut', 'redirect_ut_direct', 'shareasaleShopifySSCID', 'redirect_paceline', 'redirect_sweatcoin', 'redirect_miles', 'redirect_studentbeans']
+
+    let subscriptionCookie = cookies.filter( cookieName => this.getCookie(cookieName) != null )
+    let subPrice = ''
+
+    switch(subscriptionCookie[0]) {
+      case 'redirect_ut':
+        subPrice = '$9 USD'
+        break;
+      case 'redirect_ut_direct':
+        subPrice = '$9 USD'
+        break
+      case 'redirect_paceline':
+        subPrice = '$29 USD'
+        break
+      case 'redirect_sweatcoin':
+        subPrice = '$9.95 USD'
+        break
+      case 'redirect_miles':
+        subPrice = '$9 USD'
+        break
+      case 'redirect_studentbeans':
+        subPrice = '$9 USD'
+        break
+      default:
+        subPrice = '$19 USD'
+        break
+    }
+
+    return subPrice
   }
 
   onSubmitHandler(evt) {
