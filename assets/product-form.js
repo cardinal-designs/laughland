@@ -108,10 +108,11 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         }
 
         const subOfferPrice = this.getSubPrice()
-        console.log(subOfferPrice)
-        // option.querySelector("[data-price-subsave]").innerHTML = subOfferPrice
-        console.log(option.querySelector("[data-price-subsave]"))
-        option.querySelector("[data-price-subsave]").innerHTML = `${subOfferPrice}`
+        const newSubPrice = document.createElement("span")
+        newSubPrice.setAttribute('class', 'updated-price')
+        newSubPrice.innerHTML = subOfferPrice
+        option.querySelector("[data-price-subsave]").classList.add('visually-hidden')
+        option.querySelector(".rc_widget__option__selector label").appendChild(newSubPrice)
       })  
     })
 
