@@ -9,7 +9,13 @@
       {% if section.settings.show_cart_note %}
         <cart-note class="cart__note field">
           <label for="Cart-note">{{ 'sections.cart.note' | t }}</label>
-          <textarea class="text-area text-area--resize-vertical field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">{{ cart.note }}</textarea>
+          <textarea
+            class="text-area text-area--resize-vertical field__input"
+            name="note"
+            form="cart"
+            id="Cart-note"
+            placeholder="{{ 'sections.cart.note' | t }}"
+          >{{ cart.note }}</textarea>
         </cart-note>
       {% endif %}
 
@@ -30,7 +36,7 @@
                     <ul class="discounts list-unstyled" role="list" aria-label="{{ 'customer.order.discount' | t }}">
                       {% for discount in cart.cart_level_discount_applications %}
                         <li class="discounts__discount discounts__discount--end">
-                          {% render 'icon' icon: 'discount' %}
+                          {% render 'icon', icon: 'discount' %}
                           {{ discount.title }}
                           (-{{ discount.total_allocated_amount | money }})
                         </li>
@@ -59,7 +65,16 @@
                   </button>
                 </noscript>
 
-                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <button
+                  type="submit"
+                  id="checkout"
+                  class="cart__checkout-button button"
+                  name="checkout"
+                  {% if cart == empty %}
+                    disabled
+                  {% endif %}
+                  form="cart"
+                >
                   {{ 'sections.cart.checkout' | t }}
                 </button>
               </div>
@@ -83,10 +98,13 @@
     constructor() {
       super();
 
-      this.addEventListener('change', debounce((event) => {
-        const body = JSON.stringify({ note: event.target.value });
-        fetch(`${routes.cart_update_url}`, {...fetchConfig(), ...{ body }});
-      }, 300))
+      this.addEventListener(
+        'change',
+        debounce((event) => {
+          const body = JSON.stringify({ note: event.target.value });
+          fetch(`${routes.cart_update_url}`, { ...fetchConfig(), ...{ body } });
+        }, 300)
+      );
     }
   }
 
@@ -94,6 +112,53 @@
 {% endjavascript %}
 
 <script>
+  function getCookie(name) {
+    value = `; ${document.cookie}`;
+    parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  const direct_checkout = getCookie('directcheckout');
+  if (direct_checkout == 'true') {
+    document.cookie = 'directcheckout=expires=Thu, 01 Jan 1970 00:00:01 GMT';
+    try {
+      paceline_automatic = getCookie('redirect_paceline');
+      sweatcoin_automatic = getCookie('redirect_sweatcoin');
+      redirect_ut_direct = getCookie('redirect_ut_direct');
+      redirect_ut = getCookie('redirect_ut');
+      redirect_miles = getCookie('redirect_miles');
+      url_params = [];
+      if (paceline_automatic == 'true') {
+        url_params = url_params.concat(['discount=PACELINE_AUTOMATIC']);
+      } else if (sweatcoin_automatic == 'true') {
+        url_params = url_params.concat(['discount=SWEATCOIN_AUTOMATIC']);
+      } else if (redirect_ut_direct == 'true') {
+        url_params = url_params.concat(['discount=SUB-N-SAVE']);
+      } else if (redirect_ut == 'true') {
+        url_params = url_params.concat(['discount=UTM_GEN_AUTOMATIC']);
+      } else if (redirect_miles == 'true') {
+        url_params = url_params.concat(['discount=MILES_AUTOMATIC']);
+      } else {
+        url_params = url_params.concat(['discount=SUB-N-SAVE']);
+      }
+
+      console.log(url_params);
+
+      window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
+    } catch (err) {
+      console.log(err);
+      window.location.href = 'https://mylaughland.com/checkout?discount=SUB-N-SAVE';
+    }
+  }
+</script>
+
+<script>
+  
+  
+  
+  
+  
+  
   document.addEventListener('DOMContentLoaded', function() {
     function isIE() {
       const ua = window.navigator.userAgent;
@@ -109,9 +174,59 @@
     cartSubmitInput.setAttribute('type', 'hidden');
     document.querySelector('#cart').appendChild(cartSubmitInput);
     document.querySelector('#checkout').addEventListener('click', function(event) {
-      document.querySelector('#cart').submit();
+      {% comment %} document.querySelector('#cart').submit(); {% endcomment %}
+      try {
+        console.log('in trying');
+        paceline_automatic = getCookie('redirect_paceline');
+        sweatcoin_automatic = getCookie('redirect_sweatcoin');
+        redirect_ut_direct = getCookie('redirect_ut_direct');
+        redirect_ut = getCookie('redirect_ut');
+        redirect_miles = getCookie('redirect_miles');
+        url_params = [];
+        if (paceline_automatic == 'true') {
+          url_params = url_params.concat(['discount=PACELINE_AUTOMATIC']);
+        } else if (sweatcoin_automatic == 'true') {
+          url_params = url_params.concat(['discount=SWEATCOIN_AUTOMATIC']);
+        } else if (redirect_ut_direct == 'true') {
+          url_params = url_params.concat(['discount=SUB-N-SAVE']);
+        } else if (redirect_ut == 'true') {
+          url_params = url_params.concat(['discount=UTM_GEN_AUTOMATIC']);
+        } else if (redirect_miles == 'true') {
+          url_params = url_params.concat(['discount=MILES_AUTOMATIC']);
+        } else {
+          url_params = url_params.concat(['discount=SUB-N-SAVE']);
+        }
+        console.log('heres params');
+        console.log(url_params);
+
+        window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
+        //document.querySelector('#cart').submit();
+      } catch (err) {
+        window.location.href = 'https://mylaughland.com/checkout?discount=SUB-N-SAVE';
+      }
     });
   });
+
+  function getCookie(name) {
+    value = `; ${document.cookie}`;
+    parts = value.split(`; ${name}=`);
+    if (parts.length === 2) return parts.pop().split(';').shift();
+  }
+
+  paceline = getCookie('redirect_paceline');
+  sweatcoin = getCookie('redirect_sweatcoin');
+
+  if (paceline == 'true') {
+    $('.announcement-bar__message').first().html('PACELINE SALE! DISCOUNT AUTOMATICALLY APPLIED AT CHECKOUT');
+  } else if (sweatcoin == 'true') {
+    $('.announcement-bar__message').first().html('SWEATCOIN SALE! DISCOUNT AUTOMATICALLY APPLIED AT CHECKOUT');
+  }
+
+
+
+
+
+
 </script>
 
 {% schema %}

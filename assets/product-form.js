@@ -154,6 +154,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
   onSubmitHandler(evt) {
     evt.preventDefault();
     
+    document.cookie = "directcheckout=true;path=/";
+    
     const submitButton = this.querySelector('[type="submit"]');
 
     submitButton.setAttribute('disabled', true);
@@ -184,7 +186,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       .finally(() => {
         submitButton.classList.remove('loading');
         submitButton.removeAttribute('disabled');
-        this.cartDrawer.open();
+        // this.cartDrawer.open();
+        window.location = '/cart'
       });
   }
 
