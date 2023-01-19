@@ -450,7 +450,8 @@ blockquote {
 ==============================================================================*/
 /*================ Button ================*/
 .button,
-.shopify-challenge__button {
+.shopify-challenge__button,
+.jdgm-write-rev-link {
   padding: 16.5px 34px 17.5px;
   background: var(--blue);
   color: var(--cream);
@@ -464,6 +465,11 @@ blockquote {
   box-shadow: 0px 0px 32px var(--blue-transparent);
   transition: all .5s ease;
   display: inline-block;
+}
+
+.jdgm-ask-question-btn, .jdgm-write-rev-link, .jdgm-all-reviews-rating-wrapper, .jdgm-carousel-wrapper a, .jdgm-rev__prod-link, .jdgm-all-reviews-text a, .jdgm-carousel-item__product, .jdgm-carousel-number-of-reviews, .jdgm-revs-tab__url {
+  color: white !important;
+  border-color: var(--blue) !important;
 }
 
 /* Button - hover */
@@ -1562,6 +1568,45 @@ deferred-media {
 
 .jdgm-widget {
   margin-bottom: 100px;
+  font-family: jakarta;
+}
+
+.jdgm-rev-widg__summary-stars {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.jdgm-rev, .jdgm-rev-widg {
+  border: none !important;
+}
+
+.jdgm-rev {
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--navy) !important;
+}
+
+.jdgm-rev-widg__title {
+  display: none;
+}
+
+.jdgm-rev-widg__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.jdgm-histogram.jdgm-temp-hidden {
+  display: none !important;
+}
+
+.jdgm-rev-widg__sort-wrapper {
+  display: none;
+}
+
+.jdgm-widget .jdgm-write-rev-link {
+  padding: 5px 167px;
+  margin-top: 35px;
 }
 
 /*============================================================================
