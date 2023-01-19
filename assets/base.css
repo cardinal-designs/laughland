@@ -1555,7 +1555,7 @@ deferred-media {
   /* margin-bottom: -60px; */
 }
 
-#MainContent > div {
+#MainContent > * {
   position: relative;
   z-indeX: 2;
 }
