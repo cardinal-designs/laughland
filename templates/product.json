@@ -161,17 +161,33 @@
         "link_text": "Learn More"
       }
     },
-    "1673651615075cdcd1": {
+    "1674168377f629ea2c": {
       "type": "apps",
       "blocks": {
-        "de512b68-08d7-4ba7-8ef2-982c2dc4a69a": {
+        "7a7484a7-a212-4abe-9cc8-8965128c84fd": {
           "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
       },
       "block_order": [
-        "de512b68-08d7-4ba7-8ef2-982c2dc4a69a"
+        "7a7484a7-a212-4abe-9cc8-8965128c84fd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "167416839925f49695": {
+      "type": "apps",
+      "blocks": {
+        "894a3137-f26d-4ebf-9da6-4457ace9dadd": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "894a3137-f26d-4ebf-9da6-4457ace9dadd"
       ],
       "settings": {
         "include_margins": true
@@ -185,6 +201,7 @@
     "d7a83216-e232-4258-9705-5edf54558f0b",
     "6916709c-578f-4b73-afd1-d8e53aa1db15",
     "a4ec3822-cf26-400b-a01b-564ae2a93dfc",
-    "1673651615075cdcd1"
+    "1674168377f629ea2c",
+    "167416839925f49695"
   ]
 }
