@@ -13,7 +13,7 @@
           <h4 class="benefit__heading m-h4">{{ formatted_heading }}</h4>
         {% endif %}
         {% if section.settings.text != blank %}
-          <p class="body benefit__paragraph">{{ section.settings.text }}</p>
+          <p class="body-lg benefit__paragraph">{{ section.settings.text }}</p>
         {% endif %}
       </div>
 
@@ -49,11 +49,17 @@
 
 {% javascript %}
   const benefitsSwiper = new Swiper('.benefit__card-carousel', {
-    slidesPerView: 2.75,
-    spaceBetween: 20,
+    slidesPerView: 1.25,
+    spaceBetween: 12,
     navigation: {
       nextEl: '.benefit-next',
       prevEl: '.benefit-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2.75,
+        spaceBetween: 20,
+      },
     },
   });
 {% endjavascript %}

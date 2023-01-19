@@ -8,12 +8,34 @@
   gap: 67px;
 }
 
+@media screen and (max-width: 768px) {
+
+  .benefit-cards .page-width{
+    padding: 0;
+  }
+  .benefit-cards__inner {
+    border-radius: 0;
+    display: block;
+    padding: 60px 0 60px 25px;
+  }
+}
+
 .benefit__cards-column {
   position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .benefit__header-column {
+    padding-right: 50px;
+  }
+}
+
 .benefit__card-carousel .swiper-slide {
   height: auto;
+}
+
+.benefit__paragraph {
+  margin-bottom: 40px;
 }
 
 .benefit__card {
