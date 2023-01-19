@@ -21,7 +21,7 @@
             </li>
           {% endfor %}
         </div>
-        <div class="product__media-pagination swiper-pagination"></div>
+        <div class="product__media-pagination swiper-pagination hide-desktop"></div>
       </ul>
 
       <div class="product__media-thumbnails hide-mobile">
@@ -279,11 +279,11 @@
 
           <div class="visually-hidden subscription-details__wrapper">
             <div class="subscription-details">
-              <dl>
+              <dl class="m-body-xs">
                 <dt>Personalized Whitening Kit</dt>
                 <dd>1-2 Months Supply</dd>
               </dl>
-              <dl>
+              <dl class="m-body-xs">
                 <dt>Recurring Cost</dt>
                 <dd>$19.00</dd>
               </dl>
@@ -292,17 +292,12 @@
         </product-form>
 
         {% if product.metafields.custom.details != blank %}
-          <div class="product__details product__accordion active">
-            <button class="product__accordion-button p">
-              Details <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
-            </button>
-            <div class="product__accordion--inner" style="display: block">
-              <div class="product__details-inner">
-                {% for detail in product.metafields.custom.details.value %}
-                  {% assign formatted_emoji = detail | replace: '{', "<span class='emoji'>" | replace: '}', '</span>' %}
-                  <div class="product__detail-item p">{{ formatted_emoji }}</div>
-                {% endfor %}
-              </div>
+          <div class="product__details">
+            <div class="product__details-inner">
+              {% for detail in product.metafields.custom.details.value %}
+                {% assign formatted_emoji = detail | replace: '{', "<span class='emoji'>" | replace: '}', '</span>' %}
+                <div class="product__detail-item p">{{ formatted_emoji }}</div>
+              {% endfor %}
             </div>
           </div>
         {% endif %}
@@ -329,6 +324,9 @@
   const productSlider = new Swiper('.product__media-list', {
     slidesPerView: 1,
     loop: false,
+    pagination: {
+      el: '.product__media-pagination',
+    },
   });
 
   const productSliderThumbnails = document.querySelectorAll('.product__media-thumbnail-item');

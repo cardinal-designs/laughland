@@ -410,6 +410,13 @@ p,
   line-height: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .m-body-xs {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
 .body-medium-weight {
   font-family: jakarta;
   font-weight: 500;
