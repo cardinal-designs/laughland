@@ -119,6 +119,7 @@
   }
 
   const direct_checkout = getCookie('directcheckout');
+  console.log(direct_checkout);
   if (direct_checkout == 'true') {
     document.cookie = 'directcheckout=expires=Thu, 01 Jan 1970 00:00:01 GMT';
     try {
@@ -144,15 +145,21 @@
 
       console.log(url_params);
 
-      window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
+      window.location.href = '/checkout?' + url_params.join('&');
     } catch (err) {
       console.log(err);
-      window.location.href = 'https://mylaughland.com/checkout?discount=SUB-N-SAVE';
+      window.location.href = '/checkout?discount=SUB-N-SAVE';
     }
+  } else {
+    document.querySelector('.page-transition').classList.toggle('visible');
   }
 </script>
 
 <script>
+  
+  
+  
+  
   
   
   
@@ -221,6 +228,10 @@
   } else if (sweatcoin == 'true') {
     $('.announcement-bar__message').first().html('SWEATCOIN SALE! DISCOUNT AUTOMATICALLY APPLIED AT CHECKOUT');
   }
+
+
+
+
 
 
 

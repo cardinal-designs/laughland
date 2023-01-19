@@ -49,11 +49,26 @@
       {{ 'accessibility.skip_to_text' | t }}
     </a>
 
-    <div class="page-transition">
-      {% if settings.transition_svg_logo != blank %}
-        <div class="page-transition__svg-logo">
-          {{ settings.transition_svg_logo }}
+    <div class="page-transition {% if template == 'cart' %}visible{% endif %}">
+      {% if template == 'product' or template == 'cart' %}
+        <div class="loading-overlay__spinner">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="spinner"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="path" fill="none" stroke-width="6" style="stroke: #FFFFFF!important;" cx="33" cy="33" r="30"></circle>
+          </svg>
         </div>
+      {% else %}
+        {% if settings.transition_svg_logo != blank %}
+          <div class="page-transition__svg-logo">
+            {{ settings.transition_svg_logo }}
+          </div>
+        {% endif %}
       {% endif %}
       <div class="page-transition__content"></div>
     </div>
@@ -96,6 +111,7 @@
     {% endif %}
     {% section 'footer' %}
 
+    {% section 'loading-overlay' %}
     <ul hidden>
       <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
     </ul>

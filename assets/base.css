@@ -1964,6 +1964,7 @@ deferred-media {
   overflow-x: hidden;
 }
 
+.page-transition .loading-overlay__spinner,
 .page-transition__svg-logo {
   position: absolute;
   z-index: 1;
@@ -1988,7 +1989,8 @@ deferred-media {
   z-index: 9999;
 }
 
-.page-transition.visible .page-transition__svg-logo {
+.page-transition.visible .page-transition__svg-logo,
+.page-transition.visible .loading-overlay__spinner {
   opacity: 1;
 }
 

@@ -155,7 +155,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     evt.preventDefault();
     
     document.cookie = "directcheckout=true;path=/";
-    
+
     const submitButton = this.querySelector('[type="submit"]');
 
     submitButton.setAttribute('disabled', true);
@@ -187,6 +187,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         submitButton.classList.remove('loading');
         submitButton.removeAttribute('disabled');
         // this.cartDrawer.open();
+        document.querySelector('.page-transition').classList.toggle('visible');
         window.location = '/cart'
       });
   }
