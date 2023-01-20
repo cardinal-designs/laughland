@@ -57,11 +57,13 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       // }
       // window.ReChargeWidget.createWidget(config);
       
-      this.modifySubscriptionWidget();
+      this.waitForRecharge('.rc-widget').then(() => {
+        this.modifySubscriptionWidget();
+      })
 
       //remove loading circle when ready
       this.container.querySelector(".subscription-wrapper .loading-overlay__spinner").classList.add("hidden")
-      this.container.querySelector(".subscription-wrapper form.visually-hidden").classList.remove("visually-hidden")
+      this.container.querySelector(".subscription-wrapper product-form.visually-hidden").classList.remove("visually-hidden")
     } else {
       console.log("waiting on ReCharge")
       
@@ -71,12 +73,34 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     }
   }
 
+  waitForRecharge(selector) {
+    return new Promise(resolve => {
+      if (document.querySelector(selector)) {
+          return resolve(document.querySelector(selector));
+      }
+
+      const observer = new MutationObserver(mutations => {
+          if (document.querySelector(selector)) {
+              resolve(document.querySelector(selector));
+              observer.disconnect();
+          }
+      });
+
+      observer.observe(document.body, {
+          childList: true,
+          subtree: true
+      });
+  });
+  }
+
   modifySubscriptionWidget(){
     const subWidget = this.container.querySelectorAll(".rc-widget")
+    console.log(subWidget)
+
+    const subOfferPrice = this.getSubPrice()
     
     subWidget.forEach(widget => {
       const widgetOptions = widget.querySelectorAll(".rc_widget__option")
-      console.log(widget)
 
       widgetOptions.forEach((option) => {
 
@@ -84,6 +108,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         const customEl = document.createElement("div")
         customEl.setAttribute('class', 'rc-custom-radio-button')
         option.querySelector(".rc_widget__option__selector label").appendChild(customEl)
+
+        console.log(customEl)
 
         const textEl = document.createElement("span")
         textEl.innerHTML = "&#8212;"
@@ -107,10 +133,10 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
           option.appendChild(secondEl)
         }
 
-        const subOfferPrice = this.getSubPrice()
         const newSubPrice = document.createElement("span")
         newSubPrice.setAttribute('class', 'updated-price')
         newSubPrice.innerHTML = subOfferPrice
+
         option.querySelector("[data-price-subsave]").classList.add('visually-hidden')
         option.querySelector(".rc_widget__option__selector label").appendChild(newSubPrice)
       })  

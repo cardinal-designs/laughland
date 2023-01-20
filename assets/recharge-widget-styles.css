@@ -79,6 +79,11 @@
   display: block !important;
   position: relative !important;
 }
+@media screen and (max-width: 768px) {
+  .rc-selling-plans__label {
+    font-size: 12px;
+  }
+}
 
 .rc-selling-plans__dropdown {
   border: none;

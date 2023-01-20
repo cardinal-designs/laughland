@@ -1650,6 +1650,19 @@ deferred-media {
   margin-top: 35px;
 }
 
+@media screen and (max-width: 768px) {
+  .jdgm-widget .jdgm-write-rev-link {
+    padding: 5px 61px;
+    width: auto;
+    display: inline-block;
+    margin: 35px auto 0;
+  }
+
+  .jdgm-widget-actions-wrapper {
+    text-align: center !important;
+  }
+}
+
 .jdgm-rev__content {
   margin-top: 30px !important;
 }
