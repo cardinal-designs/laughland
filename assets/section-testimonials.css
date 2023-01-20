@@ -187,6 +187,7 @@
   .testimonials__inner {
     padding: 60px 25px;
     border-radius: 0;
+    margin-bottom: 0px;
   }
   .testimonials__container {
     display: block;

@@ -164,6 +164,7 @@
 
   .tooltips__container {
     width: 100%;
+    margin-top: 20px;
   }
 
   .tooltips__inner {
