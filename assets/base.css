@@ -2124,3 +2124,8 @@ section.with-spacing {
 .swiper-pagination-bullet-active {
   background: var(--navy);
 }
+
+.shopify-policy__container {
+  max-width: 1440px;
+  margin: 150px auto 100px;
+}
