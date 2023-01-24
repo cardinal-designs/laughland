@@ -2135,7 +2135,7 @@ section.with-spacing {
   line-height: 58px;
   letter-spacing: -.02em;
   text-transform: capitalize;
-  margin: 0 0 30px;
+  margin: 0 0 100px;
   font-family: manrope,sans-serif;
   font-weight: 400;
 }
