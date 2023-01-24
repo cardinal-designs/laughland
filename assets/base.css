@@ -2129,3 +2129,13 @@ section.with-spacing {
   max-width: 1440px;
   margin: 150px auto 100px;
 }
+
+.shopify-policy__container h1 {
+  font-size: 55px;
+  line-height: 58px;
+  letter-spacing: -.02em;
+  text-transform: capitalize;
+  margin: 0 0 30px;
+  font-family: manrope,sans-serif;
+  font-weight: 400;
+}
