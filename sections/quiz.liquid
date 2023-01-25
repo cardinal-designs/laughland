@@ -1,0 +1,204 @@
+<script src="{{ 'quiz.js' | asset_url }}" defer="defer"></script>
+{{ 'section-quiz.css' | asset_url | stylesheet_tag }}
+
+{% liquid
+  assign formatted_heading_1 = section.settings.step1 | replace: '{', "<span class='stylized'>" | replace: '}', '</span>'
+
+  assign formatted_heading_2 = section.settings.step2 | replace: '{', "<span class='stylized'>" | replace: '}', '</span>'
+
+  assign formatted_heading_3 = section.settings.step3 | replace: '{', "<span class='stylized'>" | replace: '}', '</span>'
+
+  assign formatted_heading_4 = section.settings.step4 | replace: '{', "<span class='stylized'>" | replace: '}', '</span>'
+
+  assign formatted_heading_5 = section.settings.step5 | replace: '{', "<span class='stylized'>" | replace: '}', '</span>'
+%}
+
+<section class="quiz">
+  <div class="quiz__inner">
+    <div class="quiz__header">
+      <div class="quiz__logo">
+        {% if section.settings.quiz_svg_logo != blank %}
+          <div class="quiz__logo-svg">
+            {{ section.settings.quiz_svg_logo }}
+          </div>
+        {% endif %}
+      </div>
+
+      <button class="quiz__close">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line x1="15.1944" y1="1.05253" x2="1.05224" y2="15.1947" stroke="#0D2244"/>
+          <path d="M15.2134 15.2131L1.07125 1.071" stroke="#0D2244"/>
+        </svg>
+      </button>
+    </div>
+    <div class="quiz__content page-width">
+      <div class="quiz__content-headline">
+        <h2 class="quiz__headline active" data-step="1">{{ formatted_heading_1 }}</h2>
+
+        <h2 class="quiz__headline" data-step="2">{{ formatted_heading_2 }}</h2>
+
+        <h2 class="quiz__headline" data-step="3">{{ formatted_heading_3 }}</h2>
+
+        <h2 class="quiz__headline" data-step="4">{{ formatted_heading_4 }}</h2>
+
+        <h2 class="quiz__headline" data-step="5">{{ formatted_heading_5 }}</h2>
+      </div>
+      <div class="quiz__content-card">
+        <quiz class="quiz__form" data-state="1">
+          {% form 'customer' %}
+            <div class="form__step-wrapper active" data-step="1">
+              {% render 'quiz-step-one' %}
+            </div>
+
+            <div class="form__step-wrapper" data-step="2">
+              {% render 'quiz-step-two' %}
+            </div>
+
+            <div class="form__step-wrapper" data-step="3">
+              {% render 'quiz-step-three' %}
+            </div>
+
+            <div class="form__step-wrapper" data-step="4">
+              {% render 'quiz-step-four' %}
+            </div>
+
+            <div class="form__step-wrapper" data-step="5">
+              {% render 'quiz-step-five' %}
+            </div>
+          {% endform %}
+
+          <div class="quiz__content-buttons">
+            <button class="text-link" data-form-back>Back</button>
+            <button class="button" data-form-next>Continue</button>
+            <button class="button hidden" data-form-submit>See Your Results</button>
+          </div>
+        </quiz>
+      </div>
+    </div>
+    <div class="quiz__footer">
+      <div class="quiz__footer-links">
+        {% if section.settings.footer != blank %}
+          <ul class="footer__menu list-unstyled">
+            {% for link in section.settings.footer.links %}
+              <li>
+                <a
+                  href="{{ link.url }}"
+                  class="footer__menu-link"
+                >
+                  {{ link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+
+      <div class="quiz__footer-copyright">
+        <p class="footer__copy">
+          &copy; {{ shop.name | link_to: routes.root_url }}
+          {{ 'now' | date: '%Y' }}. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% comment %} Hidden Klaviyo form {% endcomment %}
+<form
+  style="display:none"
+  id="email_signup"
+  class="klaviyo_styling klaviyo_gdpr_embed_SDmCaY"
+  action="//manage.kmail-lists.com/subscriptions/subscribe"
+  data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe"
+  method="GET"
+  target="_blank"
+  novalidate="novalidate"
+>
+  <input type="hidden" name="g" value="SDmCaY">
+  <input type="hidden" name="$fields" value="$consent, sensitivity, $first_name, $last_name">
+  <input type="hidden" name="$list_fields" value="$consent, sensitivity, $first_name, $last_name">
+  <div class="klaviyo_field_group">
+    <label for="k_id_email">Newsletter Sign Up</label>
+    <input class="" type="email" value="" name="email" id="k_id_email" placeholder="Your email">
+    <label for="k_id_firstname">First_name</label>
+    <input class="" type="text" value="" name="$first_name" id="k_id_firstname" placeholder="First name">
+    <label for="k_id_lastname">Last Name</label>
+    <input class="" type="text" value="" name="$last_name" id="k_id_lastname" placeholder="Last name">
+    <label class="klaviyo_form_actions" for="klaviyo_form_sensitivity">Sensitivity:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_sensitivity" type="text" name="sensitivity" value="">
+    <div class="klaviyo_field_group klaviyo_form_actions">
+      <div class="klaviyo_helptext">How would you like to hear from us? (please select at least one option)</div>
+      <input type="checkbox" name="$consent" id="consent-email" value="email" checked>
+      <label for="consent-email">Email</label><br>
+      <input type="checkbox" name="$consent" id="consent-web" value="web" checked>
+      <label for="consent-web">Online advertisements</label>
+    </div>
+  </div>
+  <div class="klaviyo_messages">
+    <div class="success_message" style="display:none;"></div>
+    <div class="error_message" style="display:none;"></div>
+  </div>
+  <div class="klaviyo_form_actions">
+    <button style="display: none !important" type="submit" class="klaviyo_submit_button">Subscribe</button>
+  </div>
+</form>
+<script type="text/javascript" src="//www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+<script type="text/javascript">
+  KlaviyoSubscribe.attachToForms('#email_signup', {
+    hide_form_on_success: true,
+    extra_properties: {
+      $source: '$embed',
+      $method_type: 'Klaviyo Form',
+      $method_id: 'embed',
+      $consent_version: 'Embed default text',
+    },
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Quiz",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "quiz_svg_logo",
+      "label": "SVG Logo"
+    },
+    {
+      "type": "link_list",
+      "id": "footer",
+      "label": "Footer links"
+    },
+    {
+      "type": "textarea",
+      "id": "step1",
+      "label": "Step 1 Heading",
+      "info": "Wrap stylized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "step2",
+      "label": "Step 2 Heading",
+      "info": "Wrap stylized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "step3",
+      "label": "Step 3 Heading",
+      "info": "Wrap stylized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "step4",
+      "label": "Step 4 Heading",
+      "info": "Wrap stylized text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "step5",
+      "label": "Step 5 Heading",
+      "info": "Wrap stylized text in {}"
+    }
+  ]
+}
+{% endschema %}
