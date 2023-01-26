@@ -122,6 +122,10 @@
   font-size: 12px !important;
 }
 
+#rc_login {
+  margin-top: 60px;
+}
+
 #rc_login a {
   text-underline-offset: 0.5em;
   line-height: normal;
