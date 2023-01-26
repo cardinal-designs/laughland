@@ -132,7 +132,7 @@
 }
 
 .customer-gate__recover-container p, input, label,
-.register.customer-gate__container p, input, label {
+.register .customer-gate__container p, input, label {
   font-family: jakarta;
   font-weight: 400;
   font-size: 16px;
