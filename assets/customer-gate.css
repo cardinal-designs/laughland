@@ -139,6 +139,10 @@
   margin: 0;
 }
 
+.customer-gate__recover-container .customer-gate__text {
+  margin-top: 20px;
+}
+
 #rc_login {
   margin-top: 60px !important;
 }
