@@ -109,6 +109,6 @@
   margin: 0;
 }
 
-.customer-gate__container a {
+#rc_login a {
   text-transform: underline;
 }
