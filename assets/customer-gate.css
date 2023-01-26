@@ -122,6 +122,15 @@
   font-size: 12px !important;
 }
 
+.customer__alt-link {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 16px;
+}
+
 #rc_login {
   margin-top: 60px !important;
 }
