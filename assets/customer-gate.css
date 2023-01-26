@@ -144,3 +144,9 @@
   letter-spacing: -0.015em;
   text-transform: capitalize;
 }
+
+@media screen and (max-width: 768px) {
+  .customer-gate__container {
+    margin: 100px auto;
+  }
+}
