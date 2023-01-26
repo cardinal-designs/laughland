@@ -145,8 +145,12 @@
   text-transform: capitalize;
 }
 
+.form__message {
+  margin-bottom: 10px;
+}
+
 .form__message svg {
-  width:20px;
+  width: 20px;
   margin-right: 10px;
 }
 
