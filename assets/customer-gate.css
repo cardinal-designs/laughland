@@ -145,6 +145,11 @@
   text-transform: capitalize;
 }
 
+.form__message svg {
+  width:20px;
+  margin-right: 20px;
+}
+
 @media screen and (max-width: 768px) {
   .customer-gate__container {
     margin: 100px auto;
