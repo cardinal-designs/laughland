@@ -101,6 +101,6 @@
   display: none;
 }
 
-.customer-gate__container input, p, label {
+.customer-gate__container input, p, label, a {
   font-family: jakarta;
 }
