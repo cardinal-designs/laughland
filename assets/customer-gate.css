@@ -147,6 +147,7 @@
 
 .form__message {
   margin-bottom: 10px;
+  font-family: jakarta;
 }
 
 .form__message svg {
