@@ -147,7 +147,7 @@
 
 .form__message svg {
   width:20px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
