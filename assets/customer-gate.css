@@ -108,3 +108,7 @@
   line-height: 24px;
   margin: 0;
 }
+
+.customer-gate__container a {
+  text-transform: underline;
+}
