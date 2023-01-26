@@ -387,3 +387,7 @@ div[data-address] {
     min-width: 700px;
   }
 }
+
+.customer-gate__container input, p {
+  font-family: jakarta;
+}
