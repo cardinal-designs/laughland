@@ -100,3 +100,7 @@
 .customer-gate.forgot-active #recover + #login {
   display: none;
 }
+
+.customer-gate__container input, p, label {
+  font-family: jakarta;
+}
