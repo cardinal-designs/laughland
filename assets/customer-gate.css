@@ -185,8 +185,16 @@
   font-size: 12px;  
 }
 
+.register .customer-gate__container {
+  padding: 150px 0 200px;
+}
+
 @media screen and (max-width: 768px) {
   .customer-gate__container {
+    margin: 100px auto;
+  }
+
+  .register .customer-gate__container {
     margin: 100px auto;
   }
 }
