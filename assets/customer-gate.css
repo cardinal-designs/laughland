@@ -118,6 +118,10 @@
   font-size: 16px;
 }
 
+.customer-gate__recover-link {
+  font-size: 12px;
+}
+
 #rc_login a {
   text-underline-offset: 0.5em;
   line-height: normal;
