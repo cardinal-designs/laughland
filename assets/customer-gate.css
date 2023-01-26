@@ -156,7 +156,11 @@
 }
 
 .errors ul {
-  margin: 0 0 20px;
+  margin: 0 0 20px; 
+}
+
+.errors li {
+  font-size: 12px;  
 }
 
 @media screen and (max-width: 768px) {
