@@ -109,6 +109,14 @@
   margin: 0;
 }
 
+.customer-gate__container a {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
 #rc_login a {
   text-underline-offset: 0.5em;
   line-height: normal;
