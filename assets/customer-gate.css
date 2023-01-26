@@ -115,7 +115,7 @@
   font-family: jakarta;
   font-weight: 600;
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .customer-gate__recover-link {
@@ -128,7 +128,7 @@
   font-family: jakarta;
   font-weight: 600;
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .customer-gate__recover-container p, input, label {
