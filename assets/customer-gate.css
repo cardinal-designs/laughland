@@ -196,5 +196,7 @@
 
   .register .customer-gate__container {
     margin: 100px auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
