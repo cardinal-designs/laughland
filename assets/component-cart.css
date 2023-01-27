@@ -297,4 +297,9 @@ cart-remove-button {
   cart-remove-button a {
     padding: 8px 13px !important;
   }    
+
+  .cart-item__quantity,
+  .cart-item__quantity {
+    vertical-align: top;
+  }
 }
