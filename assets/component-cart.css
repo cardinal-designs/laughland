@@ -274,4 +274,13 @@ cart-remove-button {
     width: 100px;
     height: auto;
   }
+
+  .cart-item__price-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .cart-item__price-wrapper > * {
+    font-size: 14px;
+  }
 }
