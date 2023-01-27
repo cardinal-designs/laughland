@@ -248,3 +248,7 @@ cart-remove-button {
 .item-price {
   margin-top: 15px;
 }
+
+.cart-item__price-wrapper {
+  font-size: 30px;
+}
