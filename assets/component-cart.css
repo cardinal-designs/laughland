@@ -293,4 +293,8 @@ cart-remove-button {
     width: 90px;
     height: 30px;
   }
+
+  cart-remove-button a {
+    padding: 8px 13px;
+  }    
 }
