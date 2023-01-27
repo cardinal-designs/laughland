@@ -284,4 +284,13 @@ cart-remove-button {
     font-size: 14px !important;
     justify-content: center !important;
   }
+
+  .quantity__button {
+    width: 30px;
+  }
+
+  .quantity {
+    width: 90px;
+    height: 30px;
+  }
 }
