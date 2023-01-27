@@ -235,3 +235,7 @@ cart-items {
 .cart-items thead th:first-of-type {
   text-align: left;
 }
+
+cart-remove-button {
+  text-align: center;
+}
