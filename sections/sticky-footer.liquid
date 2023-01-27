@@ -18,6 +18,7 @@
     e.preventDefault();
     e.target.classList.toggle('hide');
     document.querySelector('.page-transition').classList.toggle('visible');
+    document.querySelector('.quiz').setAttribute('aria-hidden', false);
   });
 {% endjavascript %}
 

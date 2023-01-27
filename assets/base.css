@@ -582,13 +582,15 @@ blockquote {
   position: relative;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='email'] {
   border: none;
   border-bottom: 1px solid var(--navy);
   padding-bottom: 12px;
 }
 
-input[type='text']::placeholder {
+input[type='text']::placeholder,
+input[type='email']::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -601,6 +603,27 @@ fieldset {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 0;
+  row-gap: 18px;
+}
+
+fieldset.fieldset-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+}
+
+fieldset.fieldset-row {
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+fieldset.fieldset-condensed {
+  column-gap: 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+fieldset.fieldset-condensed label {
   padding: 0;
 }
 
@@ -2142,6 +2165,11 @@ deferred-media {
   z-index: 1;
   opacity: 0;
   transition: opacity .3s ease .5s;
+}
+
+.page-transition__svg-logo {
+  top: 15px;
+  display: none;
 }
 
 .page-transition__content {

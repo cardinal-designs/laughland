@@ -758,7 +758,6 @@ customElements.define('add-to-cart', AddToCart);
   const observer = new IntersectionObserver(
     entries => {
       entries.forEach( entry => {
-        console.log(entry)
         entry.target.classList.toggle("show", entry.isIntersecting)
         if(heroLogo){
           header.querySelector(".header__svg-logo").classList.toggle("show", !entry.isIntersecting)

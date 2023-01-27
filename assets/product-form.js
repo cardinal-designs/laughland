@@ -95,8 +95,6 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
 
   modifySubscriptionWidget(){
     const subWidget = this.container.querySelectorAll(".rc-widget")
-    console.log(subWidget)
-
     const subOfferPrice = this.getSubPrice()
     
     subWidget.forEach(widget => {
@@ -108,8 +106,6 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         const customEl = document.createElement("div")
         customEl.setAttribute('class', 'rc-custom-radio-button')
         option.querySelector(".rc_widget__option__selector label").appendChild(customEl)
-
-        console.log(customEl)
 
         const textEl = document.createElement("span")
         textEl.innerHTML = "&#8212;"
