@@ -231,3 +231,7 @@ cart-items {
   display: flex;
   justify-content: center;
 }
+
+.cart-items thead {
+  text-align: left;
+}
