@@ -213,3 +213,7 @@ cart-items {
 .cart-container {
   margin-top: 150px;
 }
+
+.cart-container .title--primary {
+  text-align: center;
+}
