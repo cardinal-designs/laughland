@@ -306,4 +306,8 @@ cart-remove-button {
   .cart-item__details .product-option {
     font-size: 12px;
   }
+
+  .cart-item__details dl {
+    margin-bottom: 0;
+  }
 }
