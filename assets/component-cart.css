@@ -224,7 +224,7 @@ cart-items {
 }
 
 .cart-container .quantity {
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
 }
 
 .cart-container .underlined-link {
