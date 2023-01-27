@@ -269,4 +269,9 @@ cart-remove-button {
   .product-option p {
     font-size: 12px;
   }
+
+  .cart-item__image {
+    width: 100px;
+    height: auto;
+  }
 }
