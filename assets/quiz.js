@@ -18,7 +18,7 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
     this.form = this.querySelector(".quiz__form")
 
     console.log(this.close)
-    this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.closeQuiz.bind(this, evt))
+    this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.closeQuiz.bind(this))
     this.bindEvents();
   }
 
@@ -38,9 +38,11 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
       this.querySelector(`.form__step-wrapper[data-step="${ newValue }"`).classList.add('active')
 
       if( newValue == 5 ){
+        this.next.classList.toggle('hidden')
         this.submit.classList.remove('hidden')
       }
       if ( newValue == 4 && oldValue == 5 ){
+        this.next.classList.toggle('hidden')
         this.submit.classList.add('hidden')
       }
     }

@@ -589,13 +589,14 @@ input[type='email'] {
   padding-bottom: 12px;
 }
 
+input[type='text'],
+input[type='email'],
 input[type='text']::placeholder,
 input[type='email']::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   font-family: jakarta;
-}
 
 fieldset {
   border: none;
@@ -604,12 +605,15 @@ fieldset {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0;
+  margin: 0;
   row-gap: 18px;
 }
 
-fieldset.fieldset-columns {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(auto, 1fr));
+@media screen and (min-width: 769px) {
+  fieldset.fieldset-columns {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 1fr));
+  }
 }
 
 fieldset.fieldset-row {
