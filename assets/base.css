@@ -597,6 +597,7 @@ input[type='email']::placeholder {
   font-size: 16px;
   line-height: 150%;
   font-family: jakarta;
+}
 
 fieldset {
   border: none;

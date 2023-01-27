@@ -25,8 +25,10 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
   bindEvents() {
     this.back.addEventListener('click', this.changeFormStep.bind(this, -1))
     this.next.addEventListener('click', this.changeFormStep.bind(this, 1))
-
     this.close.addEventListener('click', this.closeQuiz.bind(this))
+    this.submit.addEventListener('click', function(e){
+      this.submitForm(e)
+    }.bind(this))
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
@@ -73,5 +75,11 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
 
   validateFormStep() {
 
+  }
+
+  submitForm(e) {
+    e.preventDefault();
+    console.log(e)
+    console.log(this)
   }
 })
