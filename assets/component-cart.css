@@ -216,6 +216,11 @@ cart-items {
 
 .cart-container .title--primary {
   text-align: center;
+  margin-bottom: 15px;
+}
+
+.cart-container .title-wrapper-with-link {
+  margin-bottom: 60px;
 }
 
 .cart-container .underlined-link {
