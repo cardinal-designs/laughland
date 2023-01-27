@@ -51,11 +51,19 @@
 
         <dl class="product-info">
           <dt class="h6">Your Whitening Formula</dt>
-          <dd class="p">
-            {{
-              product.selected_or_first_available_variant.metafields.custom.formula_details
-              | default: product.selected_or_first_available_variant.title
-            }}
+          <dd class="p" data-formula-type>
+            {% comment %}
+              {{
+                product.selected_or_first_available_variant.metafields.custom.formula_details
+                | default: product.selected_or_first_available_variant.title
+              }}
+            {% endcomment %}
+
+            {% for variant in product.variants %}
+              <span data-variant-title="{{ variant.title }}" class="hidden">
+                {{- variant.metafields.custom.formula_details -}}
+              </span>
+            {% endfor %}
           </dd>
         </dl>
 

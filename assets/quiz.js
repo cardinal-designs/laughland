@@ -85,7 +85,48 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
       this.querySelector('#ourformbutforklaviyo').focus();
       this.querySelector('.form-error-message').classList.remove('hidden')
     } else {
-      //submit!
+      //prep data for submit
+      let contactForm = new FormData(document.querySelector('#contact_form'))
+      // let klaviyoForm = new FormData(document.querySelector('.for_email_klaviyo'))
+
+      console.log(contactForm)
+
+      let sensitivity = document.querySelector('input[name="sensitivity"]:checked').value || 'medium'
+
+      let formula_translate = {
+        'mild' : 'strong',
+        'medium': 'medium',
+        'very': 'sensitive'
+      }
+
+      document.querySelector("#k_id_email").value = document.querySelector('#ourformbutforklaviyo').value
+      document.querySelector("#k_id_firstname").value = document.querySelector('#first_name').value
+      document.querySelector("#k_id_lastname").value = document.querySelector('#last_name').value
+      document.querySelector("#klaviyo_form_sensitivity").value = formula_translate[sensitivity]
+
+      // submit
+
+      console.log(formula_translate[sensitivity])
+
+      // handle redirect
+
+      document.cookie =  "strength=" + formula_translate[sensitivity] + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;"
+      document.cookie = "firstname=" + document.querySelector('#first_name').value + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;"
+      document.cookie = "lastname=" + document.querySelector('#last_name').value + "; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/;"
+
+      let ut = getCookie('redirect_ut')
+      let ut_direct = getCookie('redirect_ut_direct')
+
+      setTimeout(function(){
+        console.log(document.cookie)
+  
+        if (ut == 'true' && ut_direct != 'true') {
+          window.location = '/products/at-home-whitening-kit-2'
+        } else {
+          window.location = '/products/at-home-whitening-kit'
+        }
+      }, 1000);
+
     }
   }
 })

@@ -543,7 +543,7 @@ blockquote {
 .text-link {
   color: var(--blue);
   text-decoration: underline;
-  text-underline-offset: .5em;
+  text-underline-offset: 4px;
   line-height: normal;
   font-family: jakarta;
   font-weight: 600;

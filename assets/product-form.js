@@ -8,6 +8,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     this.container = this.closest(".product__info-wrapper")
 
     this.setName();
+    this.setVariant();
 
     this.createSubscriptionWidget();
   }
@@ -46,6 +47,41 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       this.container.querySelector('#product__title_id').innerHTML = `<span class="stylized">${name}'s</span><br> ${storedProductName.replace(/[^\p{L}\p{N}\p{P}\p{Z}^$\n]/gu, '')}`
     }
 
+  }
+
+  setVariant() {
+    let strength = getCookie('strength')
+    console.log(strength)
+
+    let inputValue
+    switch (strength){
+      case 'sensitive':
+        inputValue = '🍃 Gentle (ID: 19-2)'
+        break;
+      case 'medium':
+        inputValue = '✨ Everyday (ID: 8-16)'
+        break;
+      case 'strong':
+        inputValue = '🔥 Super Strength (ID: 8-17)'
+        break;
+      default: 
+        inputValue = '✨ Everyday (ID: 8-16)'
+        break;
+    }
+
+    this.simulateClick(this.querySelector(`input[value="${inputValue}"]`))
+    document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).classList.remove("hidden")
+  }
+
+  simulateClick(elem) {
+    // Create our event (with options)
+    var evt = new MouseEvent('click', {
+      bubbles: true,
+      cancelable: true,
+      view: window
+    });
+    // If cancelled, don't dispatch our event
+    var canceled = !elem.dispatchEvent(evt);
   }
 
   createSubscriptionWidget() {
