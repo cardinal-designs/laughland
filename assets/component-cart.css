@@ -261,4 +261,8 @@ cart-remove-button {
   .cart-item__name {
     font-size: 14px;
   }
+
+  .item-price {
+    font-size: 12px;
+  }
 }
