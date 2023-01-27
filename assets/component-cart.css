@@ -217,3 +217,7 @@ cart-items {
 .cart-container .title--primary {
   text-align: center;
 }
+
+.cart-container .underlined-link {
+  text-align: center;
+}
