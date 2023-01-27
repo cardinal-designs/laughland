@@ -311,4 +311,8 @@ cart-remove-button {
   .cart-item__details dl {
     margin-bottom: 0;
   }
+
+  .cart-item {
+    margin-bottom: 10px;
+  }
 }
