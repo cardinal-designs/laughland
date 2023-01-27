@@ -240,3 +240,7 @@ cart-remove-button {
   display: flex;
   justify-content: center;
 }
+
+.cart-item__details dl {
+  margin-top: 0;
+}
