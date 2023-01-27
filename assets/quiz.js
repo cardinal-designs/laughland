@@ -79,7 +79,13 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
 
   submitForm(e) {
     e.preventDefault();
-    console.log(e)
-    console.log(this)
+    // Check for email field
+    // If we need more validation, we can add that. Currently email is the only required field
+    if( this.querySelector('#ourformbutforklaviyo').value == ''){
+      this.querySelector('#ourformbutforklaviyo').focus();
+      this.querySelector('.form-error-message').classList.remove('hidden')
+    } else {
+      //submit!
+    }
   }
 })
