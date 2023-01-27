@@ -302,4 +302,8 @@ cart-remove-button {
   .cart-item__details {
     vertical-align: top;
   }
+
+  .cart-item__details .product-option {
+    font-size: 12px;
+  }
 }
