@@ -295,6 +295,6 @@ cart-remove-button {
   }
 
   cart-remove-button a {
-    padding: 8px 13px;
+    padding: 8px 13px !important;
   }    
 }
