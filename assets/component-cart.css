@@ -232,6 +232,6 @@ cart-items {
   justify-content: center;
 }
 
-.cart-items thead {
+.cart-items thead th:first-of-type {
   text-align: left;
 }
