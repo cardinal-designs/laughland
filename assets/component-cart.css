@@ -209,3 +209,7 @@ cart-items {
 .cart-items {
   width: 100%;
 }
+
+.cart-container {
+  margin-top: 150px;
+}
