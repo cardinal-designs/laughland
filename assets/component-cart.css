@@ -244,3 +244,7 @@ cart-remove-button {
 .cart-item__details dl {
   margin-top: 0;
 }
+
+.item-price {
+  margin-top: 15px;
+}
