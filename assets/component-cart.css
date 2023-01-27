@@ -249,6 +249,6 @@ cart-remove-button {
   margin-top: 15px;
 }
 
-.cart-item__price-wrapper {
+.cart-item__price-wrapper * {
   font-size: 30px;
 }
