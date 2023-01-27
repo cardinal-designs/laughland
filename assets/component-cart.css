@@ -236,6 +236,10 @@ cart-items {
   text-align: left;
 }
 
+.cart-items thead th:last-of-type {
+  text-align: right;
+}
+
 cart-remove-button {
   display: flex;
   justify-content: center;
