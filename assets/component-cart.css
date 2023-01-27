@@ -236,6 +236,6 @@ cart-items {
   text-align: left;
 }
 
-cart-remove-button {
+cart-remove-button a {
   text-align: center;
 }
