@@ -299,7 +299,7 @@ cart-remove-button {
   }    
 
   .cart-item__quantity,
-  .cart-item__quantity {
+  .cart-item__details {
     vertical-align: top;
   }
 }
