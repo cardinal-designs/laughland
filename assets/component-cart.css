@@ -223,6 +223,10 @@ cart-items {
   margin-bottom: 60px;
 }
 
+.cart-container .quantity {
+  margin-bottom: 20px;
+}
+
 .cart-container .underlined-link {
   display: flex;
   justify-content: center;
