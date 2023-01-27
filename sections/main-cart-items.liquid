@@ -201,7 +201,10 @@
 
                       <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
                         <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                          {% comment %}
                           {% render 'icon' icon: 'remove' %}
+                          {% endcomment %}
+                          remove
                         </a>
                       </cart-remove-button>
                     </div>
