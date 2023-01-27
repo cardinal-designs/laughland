@@ -264,6 +264,7 @@ cart-remove-button {
 
   .item-price {
     font-size: 12px;
+    margin-top: 5px;
   }
 
   .product-option p {
