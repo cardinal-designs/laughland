@@ -315,4 +315,8 @@ cart-remove-button {
   .cart-item {
     margin-bottom: 10px;
   }
+
+  .cart-container {
+    margin-top: 100px;
+  }
 }
