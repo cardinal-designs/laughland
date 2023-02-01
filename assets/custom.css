@@ -145,6 +145,15 @@ input::placeholder {
   font-family: jakarta;
 }
 
+
+.rc_layout__container {
+  padding: 150px 0 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 110px;
+}
+
 @media screen and (max-width: 768px) {
   
   .customer__container .customer__navigation {
