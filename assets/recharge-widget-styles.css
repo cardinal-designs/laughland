@@ -1,8 +1,8 @@
-.rc-widget .rc-option--active {
+.subscription-wrapper .rc-widget .rc-option--active {
   background: transparent;
   color: var(--navy);
 }
-.rc-option {
+.subscription-wrapper .rc-option {
   border: 1px solid var(--navy);
   margin: 5px 0;
   background: transparent;
@@ -12,11 +12,11 @@
   padding: 11.75px!important;
 }
 
-.rc_widget__option--subsave {
+.subscription-wrapper .rc_widget__option--subsave {
   border-radius: 24px;
 }
 
-.rc-custom-radio-button {
+.subscription-wrapper .rc-custom-radio-button {
   position: absolute;
   aspect-ratio: 1/1;
   border: 1px solid var(--navy);
@@ -29,7 +29,7 @@
   top: 0;
 }
 
-.rc-custom-radio-button:after {
+.subscription-wrapper .rc-custom-radio-button:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -40,16 +40,16 @@
   border: 1px solid transparent;
 }
 
-.rc_widget__option__selector input:checked ~ label > .rc-custom-radio-button:after {
+.subscription-wrapper .rc_widget__option__selector input:checked ~ label > .rc-custom-radio-button:after {
   background: var(--blue);
   border-color: var(--blue);
 }
 
-.rc-radio__input {
+.subscription-wrapper .rc-radio__input {
   display: none!important;
 }
 
-.rc-radio__label {
+.subscription-wrapper .rc-radio__label {
   display: flex!important;
   flex-direction: row;
   justify-content: center;
@@ -62,11 +62,11 @@
   cursor: pointer;
 }
 
-[data-label-subsave] {
+.subscription-wrapper [data-label-subsave] {
   margin-bottom: 11.75px;
 }
 
-.rc-selling-plans {
+.subscription-wrapper .rc-selling-plans {
   background: var(--blue-tint-20);
   padding: 0 12px;
   display: flex !important;
@@ -75,17 +75,17 @@
   align-items: center;
 }
 
-.rc-selling-plans__label {
+.subscription-wrapper .rc-selling-plans__label {
   display: block !important;
   position: relative !important;
 }
 @media screen and (max-width: 768px) {
-  .rc-selling-plans__label {
+  .subscription-wrapper .rc-selling-plans__label {
     font-size: 12px;
   }
 }
 
-.rc-selling-plans__dropdown {
+.subscription-wrapper .rc-selling-plans__dropdown {
   border: none;
   background: var(--blue-tint-40);
   font-family: jakarta;
@@ -101,7 +101,7 @@
   background-repeat: no-repeat;
 }
 
-.rc-option dl{
+.subscription-wrapper .rc-option dl{
   background: var(--blue-tint-20);
   border-radius: 17px;
   padding: 14px 12px;
@@ -112,14 +112,30 @@
   margin: 0;
 }
 
-.rc-option dl:first-of-type {
+.subscription-wrapper .rc-option dl:first-of-type {
   border-radius: 17px 17px 0 0;
 }
 
-.rc-option dl:last-of-type {
+.subscription-wrapper .rc-option dl:last-of-type {
   border-radius: 0 0 17px 17px;
 }
 
-.rc_popup {
+.subscription-wrapper .rc_popup {
   display: none !important;
+}
+
+
+
+.product-sticky-bar .rc-radio__label {
+  display: flex!important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  line-height: normal;
+  min-height: 27.5px;
+  margin-left: 0;
+  cursor: pointer;
+  padding-left: 36px;
 }
