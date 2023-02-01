@@ -204,7 +204,8 @@
     },
     "404": {
       "title": "404",
-      "subtext": "Page not found"
+      "subtext": "Page not found",
+      "button_text": "Shop All"
     }
   },
   "sections": {
