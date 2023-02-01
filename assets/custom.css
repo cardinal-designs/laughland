@@ -151,6 +151,10 @@ input::placeholder {
   font-family: jakarta;
 }
 
+.customer__container .customer__content .customer__address-container .addresses .address div[data-address]{
+ text-align: right;
+}
+
 @media screen and (max-width: 768px) {
   
   .customer__container .customer__navigation {
@@ -207,6 +211,10 @@ input::placeholder {
   
   .customer-gate .customer-gate__wrapper .customer-gate__container div#rc_login {
     margin-top: 35px!important;
+  }
+  
+  .customer__container .customer__content .customer__address-container .addresses .address div[data-address]{
+    text-align: left;
   }
   
 }
