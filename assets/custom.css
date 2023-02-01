@@ -48,10 +48,20 @@
   padding: 30px;
 }
 
-.field__label, 
+.field__label,
 .customer .field label {
   font-size: 20px;
   color: #0D2244;
   font-family: manrope, sans-serif;
   margin-bottom: 20px;
+}
+
+.field__input, 
+.select__select, 
+.customer .field input:not([type="checkbox"]), 
+.customer select {
+  border: none;
+  border-bottom: 1px solid #0D2244;
+  font-size: 16px;
+  padding: 12px 0;
 }
