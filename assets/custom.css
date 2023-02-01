@@ -159,6 +159,11 @@ input::placeholder {
   padding: 150px 0 60px;
 }
 
+.template-customers\/account .customer {
+  margin: 70px 0 250px;
+}
+
+
 @media screen and (max-width: 768px) {
   
   .customer__container .customer__navigation {
