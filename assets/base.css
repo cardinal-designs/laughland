@@ -1165,6 +1165,10 @@ deferred-media {
   color: white;
 }
 
+.homepage-hero .outer-header-wrapper.scrolled {
+  color: var(--navy);
+}
+
 /*================ Announcement Bar ================*/
 #shopify-section-announcement-bar {
   z-index: 4;
