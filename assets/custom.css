@@ -81,3 +81,13 @@
 .customer select+svg {
   right: 10px;
 }
+
+.account__modal .field.checkbox-field input {
+  margin: 0;
+  position: relative;
+  top: 8px;
+}
+
+.account__modal .field.checkbox-field .field__label {
+  font-size: 18px;
+}
