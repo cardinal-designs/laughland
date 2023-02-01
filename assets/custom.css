@@ -141,22 +141,14 @@ input::placeholder {
   font-family: manrope, sans-serif;
 }
 
-div#rc_login {
+.customer-gate .customer-gate__wrapper .customer-gate__container div#rc_login {
   margin-top: 45px!important;
 }
 
-#rc_login h5 {
+.customer-gate .customer-gate__wrapper .customer-gate__container #rc_login h5 {
   font-size: 18px;
   line-height: 28px;
   font-family: jakarta;
-}
-
-.rc_layout__container {
-  padding: 150px 0 200px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 110px;
 }
 
 @media screen and (max-width: 768px) {
