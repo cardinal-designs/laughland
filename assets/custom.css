@@ -127,7 +127,7 @@ input::placeholder {
 }
 
 .customer__container .customer__content .customer__address-container .addresses .address__links .address__link {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 768px) {
@@ -144,4 +144,11 @@ input::placeholder {
     font-size: 16px;
   }
   
+  .account__modal-wrapper .account__modal-container {
+    padding: 20px;
+  }
+  
+  .account__modal-wrapper .account__modal-container .field {
+    margin-bottom: 20px;
+  }
 }
