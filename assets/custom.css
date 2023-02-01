@@ -41,7 +41,8 @@
 /*========== 404 PAGE END ==========*/
 
 .account__modal .account__modal-wrapper{
- overflow-y: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .account__modal-wrapper .account__modal-content .account__modal-title {
