@@ -111,8 +111,9 @@
   font-size: 14px;
 }
 
-.address p {
+.customer__container .customer__content .customer__address-container .addresses .address p {
   font-size: 14px;
+  color: #0D2244;
 }
 
 .address__links .address__link {
