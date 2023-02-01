@@ -161,4 +161,11 @@ input::placeholder {
   .account__modal .field.checkbox-field input {
     top: 5px;
   }
+
+  .field__input, 
+  .select__select, 
+  .customer .field input:not([type="checkbox"]), 
+  .customer select {
+    font-size: 14px;
+  }
 }
