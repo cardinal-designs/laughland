@@ -147,7 +147,7 @@ input::placeholder {
 
 .customer-gate .customer-gate__wrapper .customer-gate__container #rc_login h5 {
   font-size: 18px;
-  line-height: 28px;
+  line-height: 1.5;
   font-family: jakarta;
 }
 
