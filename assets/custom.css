@@ -39,3 +39,7 @@
 }
 
 /*========== 404 PAGE END ==========*/
+
+.account__modal-wrapper .account__modal-content .account__modal-title {
+  margin-bottom: 25px;
+}
