@@ -225,5 +225,9 @@ input::placeholder {
   .customer__container .customer__content .customer__address-container .addresses div[data-address]{
     text-align: left;
   }
-  
+
+  .template-customers\/account .customer {
+    margin: 70px 0 250px;
+  }
+
 }
