@@ -89,6 +89,7 @@ input::placeholder {
 .select .icon-caret, 
 .customer select+svg {
   right: 10px;
+  height: 8px;
 }
 
 .account__modal .field.checkbox-field {
