@@ -1,3 +1,5 @@
+{{ 'section-error.css' | asset_url | stylesheet_tag }}
+
 <div class="error-template">
   <div class="page-width">
     <div class="error-inr-template">
@@ -12,23 +14,3 @@
     </div>
   </div>
 </div>
-
-<style>
-
-  .error-template {
-    height: 70vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
-  }
-  
-  .error-template .error-inr-template .title {
-    font-family: canela;
-    font-weight: 300;
-    font-style: italic;
-    margin-bottom: 0;
-  }
-  
-</style>
