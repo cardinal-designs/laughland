@@ -43,3 +43,7 @@
 .account__modal-wrapper .account__modal-content .account__modal-title {
   margin-bottom: 25px;
 }
+
+.account__modal-wrapper .account__modal-container {
+  padding: 30px;
+}
