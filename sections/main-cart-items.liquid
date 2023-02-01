@@ -5,14 +5,14 @@
 
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
-<cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
+<cart-items class="cart-container page-width{% if cart == empty %} is-empty{% endif %}">
   <div class="title-wrapper-with-link">
-    <h1 class="title title--primary">{{ 'sections.cart.title' | t }}</h1>
+    <h3 class="title title--primary">{{ 'sections.cart.title' | t }}</h3>
     <a href="{{ routes.all_products_collection_url }}" class="underlined-link">{{ 'general.continue_shopping' | t }}</a>
   </div>
 
   <div class="cart__warnings">
-    <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
+    <h3 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h3>
     <a href="{{ routes.all_products_collection_url }}" class="button">
       {{ 'general.continue_shopping' | t }}
     </a>
@@ -30,10 +30,9 @@
       <div class="js-contents">
         {% if cart != empty %}
           <table class="cart-items">
-            <thead>
+            <thead class="hide-mobile">
               <tr>
                 <th class="caption-with-letter-spacing" colspan="2" scope="col">{{ 'sections.cart.headings.product' | t }}</th>
-                <th class="medium-hide large-up-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
                 <th class="cart-items__heading--wide small-hide caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.quantity' | t }}</th>
                 <th class="small-hide right caption-with-letter-spacing" colspan="1" scope="col">{{ 'sections.cart.headings.total' | t }}</th>
               </tr>
@@ -61,7 +60,7 @@
                       <p class="caption-with-letter-spacing light">{{ item.product.vendor }}</p>
                     {% endif %}
 
-                    <a href="{{ item.url }}" class="cart-item__name h4 break">{{ item.product.title | escape }}</a>
+                    <a href="{{ item.url }}" class="cart-item__name h5 break">{{ item.product.title | escape }}</a>
 
                     {% if item.original_price != item.final_price %}
                       <div class="cart-item__discounted-prices">
@@ -79,7 +78,7 @@
                         </strong>
                       </div>
                     {% else %}
-                      <div class="product-option">
+                      <div class="item-price product-option">
                         {{ item.original_price | money }}
                       </div>
                     {% endif %}
@@ -89,8 +88,8 @@
                         {% if item.product.has_only_default_variant == false %}
                           {% for option in item.options_with_values %}
                             <div class="product-option">
-                              <dt>{{ option.name }}: </dt>
-                              <dd>{{ option.value }}</dd>
+                              <p>{{ option.name }}: </p>
+                              <p>{{ option.value }}</p>
                             </div>
                           {% endfor %}
                         {% endif %}
@@ -127,15 +126,10 @@
                     </ul>
                   </td>
 
-                  <td class="cart-item__totals right medium-hide large-up-hide">
-                    <div class="loading-overlay hidden">
-                      <div class="loading-overlay__spinner">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </div>
-                    <div class="cart-item__price-wrapper">
+
+                  <td class="cart-item__quantity">
+
+                     <div class="cart-item__price-wrapper hide-desktop">
                       {% if item.original_line_price != item.final_line_price %}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
@@ -172,9 +166,9 @@
                         </div>
                       {% endif %}
                     </div>
-                  </td>
 
-                  <td class="cart-item__quantity">
+
+                
                     <div class="cart-item__quantity-wrapper">
                       <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
                         {{ 'products.product.quantity.label' | t }}
@@ -201,10 +195,14 @@
 
                       <cart-remove-button id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
                         <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                          {% comment %}
                           {% render 'icon' icon: 'remove' %}
+                          {% endcomment %}
+                          remove
                         </a>
                       </cart-remove-button>
                     </div>
+                {% comment %}
                     <div class="cart-item__error" id="Line-item-error-{{ item.index | plus: 1 }}" role="alert">
                       <small class="cart-item__error-text"></small>
                       <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -214,9 +212,10 @@
                         <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
                       </svg>
                     </div>
+                {% endcomment %}
                   </td>
 
-                  <td class="cart-item__totals right small-hide">
+                  <td class="cart-item__totals right hide-mobile">
                     <div class="loading-overlay hidden">
                       <div class="loading-overlay__spinner">
                         <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">

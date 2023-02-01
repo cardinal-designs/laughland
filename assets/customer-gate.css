@@ -1,6 +1,6 @@
 /* Main */
 .customer-gate__wrapper {
-  padding: 100px 0 200px;
+  padding: 150px 0 200px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -79,7 +79,7 @@
 .customer-gate__recover-container {
   max-width: 440px;
   margin: 0 auto;
-  padding: 100px 0 60px;
+  padding: 150px 0 200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -99,4 +99,104 @@
 
 .customer-gate.forgot-active #recover + #login {
   display: none;
+}
+
+.customer-gate__container input, p, label, a {
+  font-family: jakarta;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.customer-gate__container a {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.customer-gate__recover-link {
+  font-size: 12px !important;
+}
+
+.customer__alt-link {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.customer-gate__recover-container p, input, label,
+.register .customer-gate__container p, input, label {
+  font-family: jakarta;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.customer-gate__recover-container .customer-gate__text {
+  margin-top: 20px;
+}
+
+#rc_login {
+  margin-top: 60px !important;
+}
+
+#rc_login a {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#rc_login h5 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-family: manrope, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.015em;
+  text-transform: capitalize;
+}
+
+.form__message {
+  margin-bottom: 10px;
+  font-family: jakarta;
+}
+
+.form__message svg {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.errors ul {
+  margin: 0 0 20px; 
+}
+
+.errors li {
+  font-size: 12px;  
+}
+
+.register .customer-gate__container {
+  padding: 150px 0 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .customer-gate__container {
+    margin: 100px auto;
+  }
+
+  .register .customer-gate__container {
+    margin: 100px auto;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
