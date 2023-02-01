@@ -184,7 +184,8 @@ input::placeholder {
   .field__input, 
   .select__select, 
   .customer .field input:not([type="checkbox"]), 
-  .customer select {
+  .customer select ,
+  .customer-gate__container input {
     font-size: 14px;
   }
   
