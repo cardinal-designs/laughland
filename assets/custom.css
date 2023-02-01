@@ -92,6 +92,7 @@ input::placeholder {
 
 .account__modal .field.checkbox-field {
   align-items: flex-start;
+  gap: 12px;
 }
 
 .account__modal .field.checkbox-field input {
