@@ -163,6 +163,45 @@ input::placeholder {
   margin: 70px 0 250px;
 }
 
+#ReCharge .page__customers__request-invite {
+  padding: 150px 0 200px;
+}
+
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar {
+  margin-bottom: 40px;
+}
+
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_title-bar__title h2 {
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_header-settings__description, 
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_header-settings__description p {
+  font-size: 14px;
+}
+
+#ReCharge .page__customers__request-invite .rc_form br {
+  display: none;
+}
+
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group {
+  margin-bottom: 30px;
+}
+
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group #customer_email {
+  font-family: jakarta;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+#ReCharge .page__customers__request-invite .rc_logo {
+  display: none !important;
+}
 
 @media screen and (max-width: 768px) {
   
@@ -230,8 +269,8 @@ input::placeholder {
     padding: 100px 0 40px;
   }
 
-.template-customers\/account .customer {
-  margin: 40px 0 130px;
-}
+  .template-customers\/account .customer {
+    margin: 40px 0 130px;
+  }
 
 }
