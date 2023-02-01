@@ -152,7 +152,11 @@ input::placeholder {
 }
 
 .customer__container .customer__content .customer__address-container .addresses div[data-address]{
- text-align: right;
+   text-align: right;
+}
+
+.account-header {
+  padding: 150px 0 60px;
 }
 
 @media screen and (max-width: 768px) {
