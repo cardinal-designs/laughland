@@ -45,6 +45,11 @@
   overflow-x: hidden;
 }
 
+.account__modal-wrapper .account__modal-content .account__modal-close .icon-close {
+  width: 36px;
+  height: 36px;
+}
+
 .account__modal-wrapper .account__modal-content .account__modal-title {
   margin-bottom: 25px;
 }
