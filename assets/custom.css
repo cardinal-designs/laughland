@@ -141,6 +141,10 @@ input::placeholder {
   font-family: manrope, sans-serif;
 }
 
+#rc_login h5 {
+  font-family: jakarta;
+}
+
 @media screen and (max-width: 768px) {
   
   .customer__container .customer__navigation {
