@@ -1149,7 +1149,7 @@ deferred-media {
   /* position: sticky; */
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 5;
   font-family: manrope;
   font-weight: 700;
   /* color: white; */
@@ -2174,6 +2174,7 @@ deferred-media {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .page-transition .loading-overlay__spinner,
@@ -2248,8 +2249,4 @@ section.with-spacing {
   margin: 0 0 100px;
   font-family: manrope,sans-serif;
   font-weight: 400;
-}
-
-.content-for-layout:not(.template-index) {
-  padding-top: 72px;
 }
