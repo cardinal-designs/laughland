@@ -168,4 +168,8 @@ input::placeholder {
   .customer select {
     font-size: 14px;
   }
+  
+  input::placeholder {
+    font-size: 14px !important;
+  }
 }
