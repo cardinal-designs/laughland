@@ -1152,13 +1152,17 @@ deferred-media {
   z-index: 5;
   font-family: manrope;
   font-weight: 700;
-  color: white;
+  color: var(--navy);
   transition: all .3s ease;
 }
 
 .outer-header-wrapper.scrolled {
   color: var(--navy);
   background: var(--cream);
+}
+
+.homepage-hero .outer-header-wrapper {
+  color: white;
 }
 
 /*================ Announcement Bar ================*/
