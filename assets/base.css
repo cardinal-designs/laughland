@@ -1668,7 +1668,7 @@ deferred-media {
 
 #MainContent > * {
   position: relative;
-  z-indeX: 2;
+  /*z-indeX: 2;*/
 }
 
 .jdgm-widget {
