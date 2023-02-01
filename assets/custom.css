@@ -195,5 +195,9 @@ input::placeholder {
   .account__modal-content form .account__modal-buttons {
     margin-top: 20px;
   }
+
+  .customer-gate .customer-gate__wrapper .customer-gate__container #rc_login h5{
+    font-size: 16px;
+  }
   
 }
