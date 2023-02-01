@@ -298,4 +298,15 @@ input::placeholder {
 
 @media screen and (max-width: 479px) {
   
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
+    max-width: 90%;
+  }
+  
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_title-bar__title h2 {
+    font-size: 30px;
+  }
+
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar {
+    margin-bottom: 25px;
+  }
 }
