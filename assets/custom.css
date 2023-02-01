@@ -116,6 +116,6 @@
   color: #0D2244;
 }
 
-.address__links .address__link {
+.customer__container .customer__content .customer__address-container .addresses .address__links .address__link {
   font-size: 12px;
 }
