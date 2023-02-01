@@ -2250,3 +2250,7 @@ section.with-spacing {
   font-family: manrope,sans-serif;
   font-weight: 400;
 }
+
+.content-for-layout.template-page {
+  padding-top: 72px;
+}
