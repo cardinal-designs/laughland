@@ -2,7 +2,7 @@ jQuery(document).ready(function($){
 
   {% unless template.suffix == 'index' %}
     jQuery(window).scroll(function(){
-      var sticky = jQuery('.outer-header-wrapper'),
+      var sticky = jQuery('body:not(.template-index) .outer-header-wrapper'),
           scroll = jQuery(window).scrollTop();
   
       if (scroll >= 50){
