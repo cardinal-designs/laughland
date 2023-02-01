@@ -129,3 +129,19 @@ input::placeholder {
 .customer__container .customer__content .customer__address-container .addresses .address__links .address__link {
   font-size: 12px;
 }
+
+@media screen and (max-width: 768px) {
+  
+  .customer__container .customer__navigation {
+    border-color: #000;
+  }
+
+  .customer__container .customer__navigation .customer__navigation-button {
+    font-size: 18px;
+  }
+
+  .customer__container .customer__navigation-link {
+    font-size: 16px;
+  }
+  
+}
