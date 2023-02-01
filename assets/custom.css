@@ -95,3 +95,8 @@
 .account__modal .field.checkbox-field .field__label {
   font-size: 18px;
 }
+
+.customer__container .customer__navigation-link {
+  font-size: 20px;
+  color: #0D2244;
+}
