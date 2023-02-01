@@ -82,6 +82,10 @@
   right: 10px;
 }
 
+.account__modal .field.checkbox-field {
+  align-items: flex-start;
+}
+
 .account__modal .field.checkbox-field input {
   margin: 0;
   position: relative;
