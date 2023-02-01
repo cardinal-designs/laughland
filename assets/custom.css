@@ -40,6 +40,13 @@
 
 /*========== 404 PAGE END ==========*/
 
+
+input::placeholder {
+  color: #0D2244 !important;
+  opacity: 1;
+  font-weight: 500 !important;
+}
+
 .account__modal .account__modal-wrapper{
   overflow-y: auto;
   overflow-x: hidden;
