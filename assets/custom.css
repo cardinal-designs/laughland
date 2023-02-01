@@ -98,7 +98,7 @@ input::placeholder {
 .account__modal .field.checkbox-field input {
   margin: 0;
   position: relative;
-  top: 6px;
+  top: 5.5px;
 }
 
 .account__modal .field.checkbox-field .field__label {
