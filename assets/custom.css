@@ -155,7 +155,7 @@ input::placeholder {
    text-align: right;
 }
 
-.account-header {
+.template-customers\/account .account-header {
   padding: 150px 0 60px;
 }
 
