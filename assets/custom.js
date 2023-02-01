@@ -11,9 +11,5 @@ jQuery(document).ready(function($){
         sticky.removeClass('scrolled');
     }
   });
-
-  var header_padding = jQuery('.outer-header-wrapper'),
-
-    console.log($header_padding);
   
 });
