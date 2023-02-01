@@ -1149,7 +1149,7 @@ deferred-media {
   /* position: sticky; */
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 2;
   font-family: manrope;
   font-weight: 700;
   /* color: white; */
