@@ -101,11 +101,8 @@ input::placeholder {
 }
 
 .account__modal .field.checkbox-field .field__label {
+  font-size: 16px;
   display: block;
-}
-
-.account__modal .field.checkbox-field .field__label {
-  font-size: 18px;
 }
 
 .customer__container .customer__navigation-link {
