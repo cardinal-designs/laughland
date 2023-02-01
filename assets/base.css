@@ -1304,7 +1304,6 @@ deferred-media {
 
 /* Header icons */
 .header__icons {
-  margin-right: -15px;
   display: flex;
   grid-area: icons;
   justify-self: end;
