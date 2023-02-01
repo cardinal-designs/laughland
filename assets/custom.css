@@ -106,3 +106,7 @@
   margin: 0 0 20px;
   padding-bottom: 20px;
 }
+
+.customer__container .customer__content .customer__address-container .addresses .address__title {
+  font-size: 14px;
+}
