@@ -52,6 +52,11 @@ input::placeholder {
   overflow-x: hidden;
 }
 
+.account__modal-wrapper .account__modal-content .account__modal-close {
+  top: -20px;
+  right: -20px;
+}
+
 .account__modal-wrapper .account__modal-content .account__modal-close .icon-close {
   width: 36px;
   height: 36px;
