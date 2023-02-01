@@ -1152,6 +1152,7 @@ deferred-media {
   z-index: 5;
   font-family: manrope;
   font-weight: 700;
+  /* color: white; */
   color: var(--navy);
   transition: all .3s ease;
 }
@@ -1161,6 +1162,7 @@ deferred-media {
   background: var(--cream);
 }
 
+/* New */
 .homepage-hero .outer-header-wrapper {
   color: white;
 }
