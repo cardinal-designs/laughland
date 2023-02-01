@@ -203,6 +203,14 @@ input::placeholder {
   display: none !important;
 }
 
+@media screen and (max-width: 991px) {
+  
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
+    max-width: 60% !important;
+  }
+  
+}
+
 @media screen and (max-width: 768px) {
   
   .customer__container .customer__navigation {
