@@ -230,8 +230,8 @@ input::placeholder {
     padding: 100px 0 40px;
   }
 
-  .template-customers\/account .customer {
-    margin: 70px 0 250px;
-  }
+.template-customers\/account .customer {
+  margin: 40px 0 130px;
+}
 
 }
