@@ -286,4 +286,16 @@ input::placeholder {
     max-width: 80%;
   }
 
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_title-bar__title h2 {
+    font-size: 40px;
+  }
+  
+  #ReCharge .page__customers__request-invite {
+    padding: 140px 0;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+  
 }
