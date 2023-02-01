@@ -47,3 +47,11 @@
 .account__modal-wrapper .account__modal-container {
   padding: 30px;
 }
+
+.field__label, 
+.customer .field label {
+  font-size: 20px;
+  color: #0D2244;
+  font-family: manrope, sans-serif;
+  margin-bottom: 20px;
+}
