@@ -141,10 +141,15 @@ input::placeholder {
   font-family: manrope, sans-serif;
 }
 
-#rc_login h5 {
-  font-family: jakarta;
+div#rc_login {
+  margin-top: 45px!important;
 }
 
+#rc_login h5 {
+  font-size: 18px;
+  line-height: 28px;
+  font-family: jakarta;
+}
 
 .rc_layout__container {
   padding: 150px 0 200px;
