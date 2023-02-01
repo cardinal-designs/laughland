@@ -152,4 +152,12 @@ input::placeholder {
   .account__modal-wrapper .account__modal-container .field {
     margin-bottom: 20px;
   }
+
+  .account__modal .field.checkbox-field .field__label {
+    font-size: 14px;
+  }
+
+  .account__modal .field.checkbox-field input {
+    top: 5px;
+  }
 }
