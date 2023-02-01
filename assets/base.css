@@ -2251,6 +2251,6 @@ section.with-spacing {
   font-weight: 400;
 }
 
-.content-for-layout.template-page {
+.content-for-layout:not(.template-index) {
   padding-top: 72px;
 }
