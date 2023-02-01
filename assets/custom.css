@@ -173,6 +173,7 @@ input::placeholder {
 
 #ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_title-bar__title h2 {
   font-size: 44px;
+  line-height: 1.1;
   margin-bottom: 12px;
 }
 
@@ -279,6 +280,10 @@ input::placeholder {
 
   .template-customers\/account .customer {
     margin: 40px 0 130px;
+  }
+
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
+    max-width: 80%;
   }
 
 }
