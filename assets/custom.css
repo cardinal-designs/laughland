@@ -226,6 +226,10 @@ input::placeholder {
     text-align: left;
   }
 
+  .template-customers\/account .account-header {
+    padding: 100px 0 40px;
+  }
+
   .template-customers\/account .customer {
     margin: 70px 0 250px;
   }
