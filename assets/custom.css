@@ -137,6 +137,10 @@ input::placeholder {
   font-size: 14px;
 }
 
+.customer-gate__container a {
+  font-family: manrope, sans-serif;
+}
+
 @media screen and (max-width: 768px) {
   
   .customer__container .customer__navigation {
