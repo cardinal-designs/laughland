@@ -63,6 +63,7 @@ input::placeholder {
 
 .account__modal-wrapper .account__modal-container {
   padding: 30px;
+  overflow: hidden;
 }
 
 .field__label,
