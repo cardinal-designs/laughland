@@ -231,6 +231,11 @@ input::placeholder {
   font-size: 14px;
 }
 
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group #customer_email::placeholder {
+  color: #0D2244 !important;
+  font-weight: 500 !important;
+}
+
 @media screen and (max-width: 991px) {
   
   #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
