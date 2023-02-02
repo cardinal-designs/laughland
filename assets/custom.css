@@ -389,6 +389,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   padding: 190px 0 150px;
+  overflow: hidden;
 }
 
 .Default_Page_Header .main-page-title,
