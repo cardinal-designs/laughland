@@ -376,3 +376,11 @@ input::placeholder {
   z-index: -1;
   background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
 }
+
+.Default_Page_Header {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 190px 0 150px;
+}
