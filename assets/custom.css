@@ -194,6 +194,10 @@ input::placeholder {
   text-decoration: underline;
 }
 
+.account-header .account-header__title {
+  font-size: 35px;
+}
+
 #ReCharge .page__customers__request-invite {
   padding: 150px 0 200px;
 }
