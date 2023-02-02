@@ -441,6 +441,10 @@ input::placeholder {
   font-weight: 500;
 }
 
+.rte h5 {
+  margin-bottom: 10px;
+}
+
 .rte ul {
   padding-left: 1.8em;
 }
