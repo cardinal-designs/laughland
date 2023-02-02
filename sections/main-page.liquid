@@ -4,11 +4,18 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
+
+{% assign formatted_title = page.title | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
 <div class="Default_Page_Header">
   <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
+    {{ formatted_title }}
   </h1>
 </div>
+
   
 <div class="page-width page-width--narrow">
   <div class="rte">
