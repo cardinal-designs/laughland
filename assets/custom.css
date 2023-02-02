@@ -121,11 +121,13 @@ input::placeholder {
 .customer__container .customer__navigation-link {
   font-size: 20px;
   color: #0D2244;
+  font-weight: 500;
 }
 
 .customer__container .customer__content-title {
   color: #0D2244;
   margin: 0 0 20px;
+  font-weight: 500;
   padding-bottom: 20px;
 }
 
