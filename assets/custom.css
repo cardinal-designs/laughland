@@ -157,16 +157,13 @@ input::placeholder {
   padding: 150px 0 60px;
 }
 
-.template-customers\/account .customer {
+.template-customers\/account .customer,
+.template-customers\/addresses .adresses-page__container {
   margin: 70px 0 250px;
 }
 
 .template-customers\/addresses .account-header {
   padding: 150px 0 60px;
-}
-
-.template-customers\/addresses .customer {
-  margin: 70px 0 250px;
 }
 
 #ReCharge .page__customers__request-invite {
@@ -280,16 +277,13 @@ input::placeholder {
     padding: 100px 0 40px;
   }
 
-  .template-customers\/account .customer {
+  .template-customers\/account .customer,
+  .template-customers\/addresses .adresses-page__container {
     margin: 40px 0 130px;
   }
 
   .template-customers\/addresses .account-header {
     padding: 100px 0 40px;
-  }
-
-  .template-customers\/addresses .customer {
-    margin: 40px 0 130px;
   }
   
   #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
