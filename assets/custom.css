@@ -413,6 +413,10 @@ input::placeholder {
   overflow: hidden;
 }
 
+.shopify-policy__container {
+  padding: 0;
+}
+
 .policies-tempalates .shopify-policy__title h1 {
   margin: 0;
   flex: auto 0 0;
