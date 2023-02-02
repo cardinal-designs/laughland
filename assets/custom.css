@@ -408,6 +408,8 @@ input::placeholder {
 
 .policies-tempalates .shopify-policy__title h1 {
   margin: 0;
+  display: block;
+  width: 100%;
 }
 
 .rte h1,
