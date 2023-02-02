@@ -148,6 +148,7 @@ input::placeholder {
 .adresses-page__container .addresses .address .address__links .address__link {
   font-size: 14px;
   font-weight: 500;
+  font-family: jakarta;
 }
 
 .customer-gate__container a {
