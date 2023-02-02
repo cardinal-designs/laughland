@@ -367,6 +367,10 @@ input::placeholder {
 
 /*========== ACCOUNT PAGE END ==========*/
 
+.default-page-template {
+  padding-bottom: 160px;
+}
+
 .default-page-template:before {
   position: absolute;
   content: "";
