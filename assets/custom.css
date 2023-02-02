@@ -371,6 +371,10 @@ input::placeholder {
   padding-bottom: 160px;
 }
 
+.policies-tempalates {
+  padding-bottom: 50px;
+}
+
 .default-page-template:before,
 .policies-tempalates:before {
   position: absolute;
