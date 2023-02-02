@@ -153,10 +153,6 @@ input::placeholder {
   font-family: jakarta;
 }
 
-.customer__container .customer__content .customer__address-container .addresses div[data-address]{
-   text-align: right;
-}
-
 .template-customers\/account .account-header {
   padding: 150px 0 60px;
 }
@@ -272,10 +268,6 @@ input::placeholder {
     margin-top: 35px!important;
   }
   
-  .customer__container .customer__content .customer__address-container .addresses div[data-address]{
-    text-align: left;
-  }
-
   .template-customers\/account .account-header {
     padding: 100px 0 40px;
   }
