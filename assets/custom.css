@@ -408,6 +408,10 @@ input::placeholder {
   margin-bottom: 1.5em;
 }
 
+.rte a {
+  text-decoration: underline;
+}
+
 .rte h1 {
   font-size: 65px;
 }
