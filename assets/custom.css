@@ -396,6 +396,8 @@ input::placeholder {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 5s linear infinite;
+  display: block;
+  width: 100%;
 }
 
 .policies-tempalates .shopify-policy__title {
