@@ -398,7 +398,7 @@ input::placeholder {
   animation: marquee 25s linear infinite;
 }
 
-.Default_Page_Header, .policies-tempalates .shopify-policy__title {
+.policies-tempalates .shopify-policy__title {
   height: 300px;
   display: flex;
   align-items: center;
