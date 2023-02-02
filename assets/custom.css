@@ -180,6 +180,11 @@ input::placeholder {
   padding: 150px 0 60px;
 }
 
+.account__modal-wrapper .account__modal-container .account__modal-content .account__modal-buttons [aria-label="Close modal"] {
+  font-size: 14px;
+  font-weight: 500;
+}
+
 #ReCharge .page__customers__request-invite {
   padding: 150px 0 200px;
 }
