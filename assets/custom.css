@@ -423,6 +423,7 @@ input::placeholder {
 
 .rte p {
   margin-bottom: 1.5em;
+  line-height: 1.5;
 }
 
 .rte a {
