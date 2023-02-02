@@ -367,8 +367,7 @@ input::placeholder {
 
 /*========== ACCOUNT PAGE END ==========*/
 
-.default-page-template,
-.policies-tempalates {
+.default-page-template {
   padding-bottom: 160px;
 }
 
