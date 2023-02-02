@@ -222,7 +222,14 @@ input::placeholder {
   display: none !important;
 }
 
-
+#ReCharge .page__customers__request-invite .rc_form a {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+}
 
 @media screen and (max-width: 991px) {
   
