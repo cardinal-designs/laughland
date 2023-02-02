@@ -403,7 +403,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 0;
+  padding: 0 0 100px;
 }
 
 .policies-tempalates .shopify-policy__title h1 {
