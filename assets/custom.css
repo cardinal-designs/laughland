@@ -436,3 +436,8 @@ input::placeholder {
   margin: 10px 0;
   padding-left: 1.8em;
 }
+
+.rte ol {
+  margin: 10px 0;
+  padding-left: 1.6em;
+}
