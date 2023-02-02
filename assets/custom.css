@@ -184,6 +184,7 @@ input::placeholder {
   font-size: 44px;
   line-height: 1.1;
   margin-bottom: 12px;
+  font-weight: 500;
 }
 
 #ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_header-settings__description, 
