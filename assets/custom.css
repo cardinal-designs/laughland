@@ -183,6 +183,11 @@ input::placeholder {
 .account__modal-wrapper .account__modal-container .account__modal-content .account__modal-buttons [aria-label="Close modal"] {
   font-size: 14px;
   font-weight: 500;
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 #ReCharge .page__customers__request-invite {
