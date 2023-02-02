@@ -161,6 +161,14 @@ input::placeholder {
   margin: 70px 0 250px;
 }
 
+.template-customers\/addresses .account-header {
+  padding: 150px 0 60px;
+}
+
+.template-customers\/addresses .customer {
+  margin: 70px 0 250px;
+}
+
 #ReCharge .page__customers__request-invite {
   padding: 150px 0 200px;
 }
@@ -276,6 +284,14 @@ input::placeholder {
     margin: 40px 0 130px;
   }
 
+  .template-customers\/addresses .account-header {
+    padding: 100px 0 40px;
+  }
+
+  .template-customers\/addresses .customer {
+    margin: 40px 0 130px;
+  }
+  
   #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
     max-width: 80% !important;
   }
