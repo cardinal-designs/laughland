@@ -47,7 +47,7 @@
     </script>
   </head>
 
-  <body class="template-{{ template }} {% if request.path == contains 'policies' %}test{% endif %}">
+  <body class="template-{{ template }} {% if request.path contains == 'policies' %}test{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
