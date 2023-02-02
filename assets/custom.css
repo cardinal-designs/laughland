@@ -19,6 +19,7 @@
 .error-template .error-inr-template .h5 {
   margin-bottom: 20px;
   font-weight: 500;
+  font-family: jakarta;
 }
 
 @media screen and (max-width: 768px) {
