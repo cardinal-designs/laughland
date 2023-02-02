@@ -25,8 +25,9 @@
   
   .error-template {
     height: 50vh;
+    padding: 60px 0 0;
   }
-
+  
   .error-template .error-inr-template .title {
     font-size: 80px;
     line-height: 1.2;
