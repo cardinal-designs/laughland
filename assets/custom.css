@@ -391,7 +391,8 @@ input::placeholder {
   padding: 190px 0 150px;
 }
 
-.Default_Page_Header .main-page-title {
+.Default_Page_Header .main-page-title,
+.policies-tempalates .shopify-policy__title h1 {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 25s linear infinite;
