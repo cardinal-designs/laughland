@@ -4,10 +4,22 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="page-width page-width--narrow">
-  <h1 class="main-page-title page-title h0">
-    {{ page.title | escape }}
-  </h1>
+
+{% assign formatted_title = page.title | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<div class="Default_Page_Header">
+  {%- for i in (1..100) -%}
+    <h1 class="main-page-title page-title h0">
+      {{ formatted_title | newline_to_br }}
+    </h1>
+  {%- endfor -%}
+</div>
+
+  
+<div class="page-width">
   <div class="rte">
     {{ page.content }}
   </div>
@@ -17,6 +29,6 @@
 {
   "name": "t:sections.main-page.name",
   "tag": "section",
-  "class": "spaced-section"
+  "class": "spaced-section default-page-template"
 }
 {% endschema %}

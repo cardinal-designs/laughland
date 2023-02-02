@@ -107,7 +107,7 @@
           <button class="account__modal-close modal__close" aria-label="Close modal" data-micromodal-close>
             {% render 'icon' icon: 'close' %}
           </button>
-          <h2 class="account__modal-title sh1">Add Address</h2>
+          <h2 class="account__modal-title h4">Add Address</h2>
           {% form 'customer_address', customer.new_address, aria-labelledBy: 'AddressNewHeading' %}
             <div class="field-group">
               <div class="field">
@@ -178,7 +178,7 @@
               <label class="field__label" for="AddressPhoneNew">{{ 'customer.addresses.phone' | t }}</label>
               <input class="field__input" type="tel" id="AddressPhoneNew"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
             </div>
-            <div class="field field--flex">
+            <div class="field field--flex checkbox-field">
               {{ form.set_as_default_checkbox }}
               <label class="field__label" for="address_default_address_new">
                 {{ 'customer.addresses.set_default' | t }}
@@ -211,7 +211,7 @@
               <button class="account__modal-close modal__close" aria-label="Close modal" data-micromodal-close>
                 {% render 'icon' icon: 'close' %}
               </button>
-              <h2 class="account__modal-title sh1">Edit Address</h2>
+              <h2 class="account__modal-title h4">Edit Address</h2>
               {% form 'customer_address', address %}
                 <div class="field-group">
                   <div class="field">
@@ -282,7 +282,7 @@
                   <label class="field__label" for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
                   <input class="field__input" type="tel" id="AddressPhone_{{ form.id }}"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
                 </div>
-                <div class="field field--flex">
+                <div class="field field--flex checkbox-field">
                   {{ form.set_as_default_checkbox }}
                   <label class="field__label" for="address_default_address_{{ form.id }}">
                     {{ 'customer.addresses.set_default' | t }}

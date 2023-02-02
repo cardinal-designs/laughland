@@ -1,0 +1,482 @@
+/*========== 404 PAGE START ==========*/
+
+.error-template {
+  height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
+}
+
+.error-template .error-inr-template .title {
+  font-family: canela;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.error-template .error-inr-template .h5 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: jakarta;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .error-template {
+    height: 50vh;
+    padding: 60px 0 0;
+  }
+  
+  .error-template .error-inr-template .title {
+    font-size: 80px;
+    line-height: 1.2;
+  }
+  
+  .error-template .error-inr-template .button {
+    font-size: 14px;
+    padding: 13px 22px 15px 22px;
+  }
+  
+}
+
+/*========== 404 PAGE END ==========*/
+
+/*========== ACCOUNT PAGE START ==========*/
+
+.customer-gate .customer-gate__title {
+  font-weight: 500;
+}
+
+input::placeholder {
+  color: #0D2244 !important;
+  opacity: 1;
+  font-weight: 500 !important;
+}
+
+.account__modal .account__modal-wrapper{
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.account__modal-wrapper .account__modal-content .account__modal-close {
+  top: -20px;
+  right: -20px;
+}
+
+.account__modal-wrapper .account__modal-content .account__modal-close .icon-close {
+  width: 36px;
+  height: 36px;
+}
+
+.account__modal-wrapper .account__modal-content .account__modal-title {
+  margin-bottom: 25px;
+}
+
+.account__modal-wrapper .account__modal-container {
+  padding: 30px;
+  overflow: hidden;
+}
+
+.field__label,
+.customer .field label {
+  font-size: 20px;
+  color: #0D2244;
+  font-family: manrope, sans-serif;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.field__input, 
+.select__select, 
+.customer .field input:not([type="checkbox"]), 
+.customer select {
+  border: none;
+  border-bottom: 1px solid #0D2244;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 12px 0;
+  font-family: jakarta;
+}
+
+.select .icon-caret, 
+.customer select+svg {
+  right: 10px;
+  height: 8px;
+}
+
+.account__modal .field.checkbox-field {
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.account__modal .field.checkbox-field input {
+  margin: 0;
+  position: relative;
+  top: 5.5px;
+}
+
+.account__modal .field.checkbox-field .field__label {
+  font-size: 16px;
+  display: block;
+}
+
+.customer__container .customer__navigation-link {
+  font-size: 20px;
+  color: #0D2244;
+  font-weight: 500;
+  font-family: manrope,sans-serif;
+}
+
+.customer__container .customer__content-title {
+  color: #0D2244;
+  margin: 0 0 20px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.customer__container .customer__content .customer__address-container .addresses .address__title {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: jakarta;
+}
+
+.customer__container .customer__content .customer__address-container .addresses .address p,
+.adresses-page__container .addresses .address p {
+  font-size: 14px;
+  color: #0D2244;
+}
+
+.customer__container .customer__content .customer__address-container .addresses .address__links .address__link,
+.adresses-page__container .addresses .address .address__links .address__link {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: jakarta;
+}
+
+.customer-gate__container a {
+  font-family: manrope, sans-serif;
+}
+
+.customer-gate .customer-gate__wrapper .customer-gate__container div#rc_login {
+  margin-top: 45px!important;
+}
+
+.customer-gate .customer-gate__wrapper .customer-gate__container #rc_login h5 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: jakarta;
+  font-weight: 500;
+}
+
+.customer-gate .customer-gate__recover-container .customer-gate__text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.template-customers\/account .account-header {
+  padding: 150px 0 60px;
+}
+
+.template-customers\/account .customer,
+.template-customers\/addresses .adresses-page__container {
+  margin: 70px 0 250px;
+}
+
+.template-customers\/addresses .account-header {
+  padding: 150px 0 60px;
+}
+
+.account__modal-wrapper .account__modal-container .account__modal-content .account__modal-buttons [aria-label="Close modal"] {
+  font-size: 14px;
+  font-weight: 500;
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.account-header .account-header__title {
+  font-size: 35px;
+}
+
+#ReCharge .page__customers__request-invite {
+  padding: 150px 0 200px;
+}
+
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar {
+  margin-bottom: 40px;
+}
+
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_title-bar__title h2 {
+ font-size: 35px;
+  line-height: 1.1;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_header-settings__description, 
+#ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar .rc_header-settings__description p {
+  font-size: 14px;
+}
+
+#ReCharge .page__customers__request-invite .rc_form br {
+  display: none;
+}
+
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group {
+  margin-bottom: 30px;
+}
+
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group #customer_email {
+  font-family: jakarta;
+  font-weight: 400;
+  font-size: 16px !important;
+  line-height: 24px;
+  margin: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+#ReCharge .page__customers__request-invite .rc_logo {
+  display: none !important;
+}
+
+#ReCharge .page__customers__request-invite .rc_form a {
+  text-underline-offset: 0.5em;
+  line-height: normal;
+  font-family: jakarta;
+  font-weight: 600;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group #customer_email::placeholder {
+  opacity: 0.5;
+}
+
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group #customer_email:focus-visible {
+  outline: 0;
+}
+
+@media screen and (max-width: 991px) {
+  
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
+    max-width: 60% !important;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+  .customer__container .customer__navigation {
+    border-color: #000;
+  }
+
+  .customer__container .customer__navigation .customer__navigation-button {
+    font-size: 18px;
+  }
+
+  .customer__container .customer__navigation-link {
+    font-size: 16px;
+  }
+  
+  .account__modal-wrapper .account__modal-container {
+    padding: 20px;
+  }
+  
+  .account__modal-wrapper .account__modal-container .field {
+    margin-bottom: 20px;
+  }
+
+  .account__modal .field.checkbox-field .field__label {
+    font-size: 14px;
+  }
+
+  .account__modal .field.checkbox-field input {
+    top: 5px;
+  }
+
+  .field__input, 
+  .select__select, 
+  .customer .field input:not([type="checkbox"]), 
+  .customer select ,
+  .customer-gate .customer-gate__wrapper .customer-gate__container input {
+    font-size: 14px;
+  }
+  
+  input::placeholder {
+    font-size: 14px !important;
+  }
+
+  .account__modal-content form .account__modal-buttons {
+    margin-top: 20px;
+  }
+
+  .customer-gate .customer-gate__wrapper .customer-gate__container #rc_login h5{
+    font-size: 16px;
+  }
+
+  .customer-gate .customer-gate__wrapper .customer-gate__container #rc_login h5 {
+    margin: 25px 0 10px;
+  }
+  
+  .customer-gate .customer-gate__wrapper .customer-gate__container div#rc_login {
+    margin-top: 35px!important;
+  }
+  
+  .template-customers\/account .account-header {
+    padding: 100px 0 40px;
+  }
+
+  .template-customers\/account .customer,
+  .template-customers\/addresses .adresses-page__container {
+    margin: 40px 0 130px;
+  }
+
+  .template-customers\/addresses .account-header {
+    padding: 100px 0 40px;
+  }
+
+  .customer-gate .customer-gate__recover-container {
+    padding: 140px 0;
+  }
+  
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
+    max-width: 80% !important;
+  }
+  
+  #ReCharge .page__customers__request-invite {
+    padding: 140px 0;
+  }
+
+}
+
+@media screen and (max-width: 479px) {
+  
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
+    max-width: 90% !important;
+  }
+
+  #ReCharge .page__customers__request-invite .rc_layout__container .rc_title-bar {
+    margin-bottom: 25px;
+  }
+}
+
+/*========== ACCOUNT PAGE END ==========*/
+
+.default-page-template {
+  padding-bottom: 160px;
+}
+
+.policies-tempalates {
+  padding-bottom: 50px;
+}
+
+.default-page-template:before,
+.policies-tempalates:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
+}
+
+.Default_Page_Header {
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 190px 0 150px;
+  overflow: hidden;
+}
+
+.Default_Page_Header .main-page-title,
+.policies-tempalates .shopify-policy__title h1 {
+  white-space: nowrap;
+  will-change: transform;
+  animation: marquee 5s linear infinite;
+  flex: auto 0 0;
+  padding: 0 50px;
+}
+
+.policies-tempalates .shopify-policy__title {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 100px;
+  overflow: hidden;
+}
+
+.shopify-policy__container {
+  padding: 0;
+  max-width: 100%;
+}
+
+.shopify-policy__container .shopify-policy__body {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.policies-tempalates .shopify-policy__title h1 {
+  margin: 0;
+  flex: auto 0 0;
+  font-size: 120px;
+  line-height: 130px;
+  letter-spacing: -.02em;
+  text-transform: capitalize;
+}
+
+.rte h1,
+.rte h2,
+.rte h3,
+.rte h4,
+.rte h5,
+.rte h6 {
+  line-height: 1.2;
+}
+
+.rte p {
+  margin-bottom: 1.5em;
+  line-height: 1.5;
+}
+
+.rte a {
+  text-decoration: underline;
+}
+
+.rte h1 {
+  font-size: 65px;
+}
+
+.rte h4 {
+  font-weight: 500;
+}
+
+.rte h5 {
+  margin-bottom: 15px;
+}
+
+.rte ul {
+  padding-left: 1.8em;
+}
+
+.rte ol {
+  padding-left: 1.6em;
+}
+
+.rte ol li, 
+.rte ul li {
+  font-family: jakarta;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 5px;
+}

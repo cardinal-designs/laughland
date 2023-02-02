@@ -277,7 +277,6 @@ h3,
 .h3 {
   font-size: 45px;
   line-height: 52px;
-  letter-spacing: -2%;
   letter-spacing: -0.02em;
   text-transform: capitalize;
 }
@@ -332,7 +331,7 @@ h6,
   font-family: manrope;
   font-size: 12px;
   line-height: 14px;
-  weight: 400;
+  font-weight: 400;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -1152,13 +1151,23 @@ deferred-media {
   z-index: 5;
   font-family: manrope;
   font-weight: 700;
-  color: white;
+  /* color: white; */
+  color: var(--navy);
   transition: all .3s ease;
 }
 
 .outer-header-wrapper.scrolled {
   color: var(--navy);
   background: var(--cream);
+}
+
+/* New */
+.homepage-hero .outer-header-wrapper {
+  color: white;
+}
+
+.homepage-hero .outer-header-wrapper.scrolled {
+  color: var(--navy);
 }
 
 /*================ Announcement Bar ================*/
@@ -1294,7 +1303,6 @@ deferred-media {
 
 /* Header icons */
 .header__icons {
-  margin-right: -15px;
   display: flex;
   grid-area: icons;
   justify-self: end;
@@ -1659,7 +1667,7 @@ deferred-media {
 
 #MainContent > * {
   position: relative;
-  z-indeX: 2;
+  /*z-indeX: 2;*/
 }
 
 .jdgm-widget {
@@ -1779,7 +1787,7 @@ deferred-media {
   transform: translate(0, -100%);
   height: 200px;
   background: linear-gradient(180deg, rgba(250, 245, 241, 0) 0%, #B5E5F9 100%);
-  z-index: 0;
+  z-index: -1;
 }
 
 .footer {
@@ -2164,7 +2172,7 @@ deferred-media {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .page-transition .loading-overlay__spinner,
