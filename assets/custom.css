@@ -421,6 +421,7 @@ input::placeholder {
 .shopify-policy__container .shopify-policy__body {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .policies-tempalates .shopify-policy__title h1 {
