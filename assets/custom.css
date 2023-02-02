@@ -159,6 +159,11 @@ input::placeholder {
   font-weight: 500;
 }
 
+.customer-gate .customer-gate__recover-container .customer-gate__text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
 .template-customers\/account .account-header {
   padding: 150px 0 60px;
 }
@@ -213,6 +218,8 @@ input::placeholder {
 #ReCharge .page__customers__request-invite .rc_logo {
   display: none !important;
 }
+
+
 
 @media screen and (max-width: 991px) {
   
