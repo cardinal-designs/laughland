@@ -410,6 +410,7 @@ input::placeholder {
   align-items: center;
   justify-content: center;
   padding: 0 0 100px;
+  overflow: hidden;
 }
 
 .policies-tempalates .shopify-policy__title h1 {
