@@ -18,6 +18,7 @@
 
 .error-template .error-inr-template .h5 {
   margin-bottom: 20px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
