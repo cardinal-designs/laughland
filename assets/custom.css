@@ -396,6 +396,6 @@ input::placeholder {
 }
 
 
-.rte {
-  
+.rte p {
+  margin-bottom: 10px;
 }
