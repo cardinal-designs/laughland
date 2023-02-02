@@ -398,6 +398,7 @@ input::placeholder {
   animation: marquee 5s linear infinite;
   display: block;
   width: 100%;
+  padding: 0 50px;
 }
 
 .policies-tempalates .shopify-policy__title {
