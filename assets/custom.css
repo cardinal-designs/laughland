@@ -383,8 +383,7 @@ input::placeholder {
   background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
 }
 
-.Default_Page_Header,
-.policies-tempalates .shopify-policy__title {
+.Default_Page_Header {
   height: 450px;
   display: flex;
   align-items: center;
@@ -397,6 +396,18 @@ input::placeholder {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 25s linear infinite;
+}
+
+.Default_Page_Header, .policies-tempalates .shopify-policy__title {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.policies-tempalates .shopify-policy__title h1 {
+  margin: 0;
 }
 
 .rte h1,
