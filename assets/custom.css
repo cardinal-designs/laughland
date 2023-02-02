@@ -235,6 +235,9 @@ input::placeholder {
   opacity: 0.5;
 }
 
+#ReCharge .page__customers__request-invite .rc_form .rc_form__group #customer_email:focus-visible {
+  outline: 0;
+}
 @media screen and (max-width: 991px) {
   
   #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
