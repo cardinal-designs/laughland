@@ -395,14 +395,24 @@ input::placeholder {
   animation: marquee 25s linear infinite;
 }
 
+.rte h1,
+.rte h2,
+.rte h3,
+.rte h4,
+.rte h5,
+.rte h6 {
+  line-height: 1.2;
+}
 
 .rte p {
   margin-bottom: 10px;
 }
 
 .rte h1 {
-  
+  font-size: 65px;
+  line-height: 1.2;
 }
+
 .rte h2 {
 
 }
