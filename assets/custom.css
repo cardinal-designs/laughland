@@ -43,6 +43,8 @@
 
 /*========== 404 PAGE END ==========*/
 
+/*========== ACCOUNT PAGE START ==========*/
+
 .customer-gate .customer-gate__title {
   font-weight: 500;
 }
@@ -362,6 +364,8 @@ input::placeholder {
     margin-bottom: 25px;
   }
 }
+
+/*========== ACCOUNT PAGE END ==========*/
 
 .default-page-template:before {
   position: absolute;
