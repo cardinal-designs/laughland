@@ -2173,7 +2173,7 @@ deferred-media {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .page-transition .loading-overlay__spinner,
