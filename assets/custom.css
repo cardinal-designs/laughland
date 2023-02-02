@@ -122,7 +122,7 @@ input::placeholder {
   font-size: 20px;
   color: #0D2244;
   font-weight: 500;
-  font-weight: 500;
+  font-family: manrope,sans-serif;
 }
 
 .customer__container .customer__content-title {
