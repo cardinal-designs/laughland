@@ -282,7 +282,7 @@
                   <label class="field__label" for="AddressPhone_{{ form.id }}">{{ 'customer.addresses.phone' | t }}</label>
                   <input class="field__input" type="tel" id="AddressPhone_{{ form.id }}"  name="address[phone]" value="{{ form.phone }}" autocomplete="tel" placeholder="{{ 'customer.addresses.phone' | t }}">
                 </div>
-                <div class="field field--flex">
+                <div class="field field--flex checkbox-field">
                   {{ form.set_as_default_checkbox }}
                   <label class="field__label" for="address_default_address_{{ form.id }}">
                     {{ 'customer.addresses.set_default' | t }}
