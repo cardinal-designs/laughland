@@ -47,7 +47,7 @@
     </script>
   </head>
 
-  <body class="template-{{ template }} {% if canonical_url contains 'policies' %}policies-tempalates{% endif %}">
+  <body class="template-{{ template }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -103,7 +103,7 @@
       {% section 'cart-drawer' %}
     {% endif %}
 
-    <main id="MainContent" class="content-for-layout template-{{ template }} focus-none" role="main" tabindex="-1">
+    <main id="MainContent" class="content-for-layout template-{{ template }} {% if canonical_url contains 'policies' %}policies-tempalates{% endif %} focus-none" role="main" tabindex="-1">
       {{ content_for_layout }}
     </main>
 
