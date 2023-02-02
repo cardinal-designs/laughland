@@ -367,11 +367,13 @@ input::placeholder {
 
 /*========== ACCOUNT PAGE END ==========*/
 
-.default-page-template {
+.default-page-template,
+.policies-tempalates {
   padding-bottom: 160px;
 }
 
-.default-page-template:before {
+.default-page-template:before,
+.policies-tempalates:before {
   position: absolute;
   content: "";
   top: 0;
