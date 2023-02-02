@@ -292,6 +292,10 @@ input::placeholder {
   .template-customers\/addresses .account-header {
     padding: 100px 0 40px;
   }
+
+  .customer-gate .customer-gate__recover-container {
+    padding: 140px 0;
+  }
   
   #ReCharge .page__customers__request-invite .rc_layout__container .rc_medium-up-max-width-half {
     max-width: 80% !important;
