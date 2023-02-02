@@ -383,7 +383,8 @@ input::placeholder {
   background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
 }
 
-.Default_Page_Header {
+.Default_Page_Header,
+.policies-tempalates .shopify-policy__title {
   height: 450px;
   display: flex;
   align-items: center;
