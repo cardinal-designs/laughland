@@ -42,6 +42,9 @@
 
 /*========== 404 PAGE END ==========*/
 
+.customer-gate .customer-gate__title {
+  font-weight: 500;
+}
 
 input::placeholder {
   color: #0D2244 !important;
