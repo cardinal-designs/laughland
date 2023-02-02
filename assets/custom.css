@@ -136,7 +136,8 @@ input::placeholder {
   color: #0D2244;
 }
 
-.customer__container .customer__content .customer__address-container .addresses .address__links .address__link {
+.customer__container .customer__content .customer__address-container .addresses .address__links .address__link,
+.adresses-page__container .addresses .address .address__links .address__link {
   font-size: 14px;
 }
 
