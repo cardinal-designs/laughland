@@ -153,6 +153,7 @@ input::placeholder {
   font-size: 18px;
   line-height: 1.5;
   font-family: jakarta;
+  font-weight: 500;
 }
 
 .template-customers\/account .account-header {
