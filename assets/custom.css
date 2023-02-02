@@ -397,8 +397,7 @@ input::placeholder {
   white-space: nowrap;
   will-change: transform;
   animation: marquee 5s linear infinite;
-  display: block;
-  width: 100%;
+  flex: 100% 0 0;
   padding: 0 50px;
 }
 
