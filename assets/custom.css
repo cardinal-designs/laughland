@@ -130,7 +130,8 @@ input::placeholder {
   font-size: 14px;
 }
 
-.customer__container .customer__content .customer__address-container .addresses .address p {
+.customer__container .customer__content .customer__address-container .addresses .address p,
+.adresses-page__container .addresses .address p {
   font-size: 14px;
   color: #0D2244;
 }
