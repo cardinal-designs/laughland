@@ -588,4 +588,11 @@ input::placeholder {
   width: 60%;
 }
 
+.template-cart .cart__footer .tax-note {
+  margin: 30px 0;
+  font-family: jakarta;
+  font-size: 14px;
+  line-height: 1;
+}
+
 /*========== CART PAGE END ==========*/
