@@ -653,6 +653,10 @@ input::placeholder {
     font-size: 13px;
     margin: 8px 0;
   }
+  
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__media .cart-item__image {
+    max-width: 100%;
+  }
 }
 
 
