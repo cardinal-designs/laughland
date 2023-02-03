@@ -572,6 +572,7 @@ input::placeholder {
 
 .template-cart .cart__footer .totals > * {
   font-size: 24px;
+  font-weight: 500;
 }
 
 .template-cart .cart__footer .tax-note {
