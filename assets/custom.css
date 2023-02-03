@@ -612,7 +612,10 @@ input::placeholder {
   .template-cart .cart__footer #cart-errors {
     text-align: center;
   }
-  
+
+  .template-cart .cart__footer .totals>* {
+    font-size: 22px;
+  }
 }
 
 
