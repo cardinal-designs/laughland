@@ -595,4 +595,11 @@ input::placeholder {
   line-height: 1;
 }
 
+.template-cart .cart__footer #cart-errors {
+  text-align: right;
+  font-family: jakarta;
+  font-size: 14px;
+  line-height: 1;
+}
+
 /*========== CART PAGE END ==========*/
