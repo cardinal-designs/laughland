@@ -657,6 +657,10 @@ input::placeholder {
   .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__media .cart-item__image {
     max-width: 100%;
   }
+
+  .template-cart .cart__footer .tax-note {
+    margin: 22px 0;
+  }
 }
 
 
