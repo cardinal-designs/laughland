@@ -517,4 +517,8 @@ input::placeholder {
   display: block;
 }
 
+.template-cart .cart-container .cart__contents .cart__items table.cart-items thead tr th {
+  padding-bottom: 10px;
+}
+
 /*========== CART PAGE END ==========*/
