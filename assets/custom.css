@@ -661,6 +661,11 @@ input::placeholder {
   .template-cart .cart__footer .tax-note {
     margin: 22px 0;
   }
+  
+  .template-cart .cart-container .cart__contents .cart__items {
+    padding-bottom: 1rem;
+  }
+  
 }
 
 
