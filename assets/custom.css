@@ -624,6 +624,10 @@ input::placeholder {
   .template-cart .cart__footer, .template-cart .cart__footer-wrapper:last-child .cart__footer {
     padding: 1rem 0 6rem;
   }
+
+  .template-cart .cart__footer .cart__ctas button {
+    width: 80%;
+  }
   
 }
 
@@ -664,6 +668,10 @@ input::placeholder {
   
   .template-cart .cart-container .cart__contents .cart__items {
     padding-bottom: 1rem;
+  }
+  
+  .template-cart .cart__footer .cart__ctas button {
+    width: 100%;
   }
   
 }
