@@ -574,4 +574,8 @@ input::placeholder {
   font-size: 24px;
 }
 
+.template-cart .cart__footer .tax-note {
+  margin: 30px 0;
+}
+
 /*========== CART PAGE END ==========*/
