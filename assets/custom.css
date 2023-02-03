@@ -578,4 +578,12 @@ input::placeholder {
   margin: 30px 0;
 }
 
+.template-cart .cart__footer .cart__ctas {
+  justify-content: flex-end;
+}
+
+.template-cart .cart__footer .cart__ctas button {
+  width: 60%;
+}
+
 /*========== CART PAGE END ==========*/
