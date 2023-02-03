@@ -489,7 +489,8 @@ input::placeholder {
 
 .template-cart .cart-container .title-wrapper-with-link .underlined-link {
   font-family: jakarta;
+  font-size: 16px;
+  font-weight: 500;
 }
-
 
 /*========== CART PAGE END ==========*/
