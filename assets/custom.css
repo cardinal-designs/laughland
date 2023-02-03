@@ -577,6 +577,7 @@ input::placeholder {
 
 .template-cart .cart__footer .tax-note {
   margin: 30px 0;
+  font-family: jakarta;
 }
 
 .template-cart .cart__footer .cart__ctas {
