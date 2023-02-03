@@ -683,6 +683,10 @@ input::placeholder {
     font-size: 14px;
   }
   
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__quantity .quantity .quantity__button {
+    width: 20px;
+  }
+  
 }
 
 
