@@ -564,6 +564,7 @@ input::placeholder {
   font-size: 16px !important;
   font-family: jakarta;
   letter-spacing: 0;
+  font-weight: 500;
 }
 
 .template-cart .cart__footer, 
