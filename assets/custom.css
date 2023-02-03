@@ -687,6 +687,22 @@ input::placeholder {
     width: 20px;
   }
   
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__quantity .quantity {
+    width: 70px;
+  }
+  
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__quantity .cart-item__price-wrapper>* {
+    font-size: 12px !important;
+  }
+  
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__quantity .cart-item__price-wrapper {
+    margin-bottom: 5px;
+  }
+
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__media {
+    width: 20%;
+    padding-right: 5px;
+  }
 }
 
 
