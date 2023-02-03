@@ -367,6 +367,8 @@ input::placeholder {
 
 /*========== ACCOUNT PAGE END ==========*/
 
+/*========== DEFAULT PAGE START ==========*/
+
 .default-page-template {
   padding-bottom: 160px;
 }
@@ -480,3 +482,9 @@ input::placeholder {
   margin: 0;
   margin-bottom: 5px;
 }
+
+/*========== DEFAULT PAGE END ==========*/
+
+/*========== CART PAGE START ==========*/
+
+/*========== CART PAGE END ==========*/
