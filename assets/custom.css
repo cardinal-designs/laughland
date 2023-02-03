@@ -497,6 +497,10 @@ input::placeholder {
   text-decoration: underline;
 }
 
+.template-cart .cart-container .cart__contents .cart__items {
+  padding-bottom: 2rem;
+}
+
 .template-cart .cart-container .cart__contents .cart__items table.cart-items {
   border-collapse: collapse;
 }
@@ -559,6 +563,15 @@ input::placeholder {
   font-size: 16px !important;
   font-family: jakarta;
   letter-spacing: 0;
+}
+
+.template-cart .cart__footer, 
+.template-cart .cart__footer-wrapper:last-child .cart__footer {
+  padding: 2rem 0 6rem;
+}
+
+.template-cart .cart__footer .totals > * {
+  font-size: 24px;
 }
 
 /*========== CART PAGE END ==========*/
