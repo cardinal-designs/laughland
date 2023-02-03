@@ -621,6 +621,14 @@ input::placeholder {
     margin-left: 1.2rem;
   }
   
+  .template-cart .cart__footer, .template-cart .cart__footer-wrapper:last-child .cart__footer {
+    padding: 1rem 0 6rem;
+  }
+  
+}
+
+@media screen and (max-width: 479px) {
+  
 }
 
 
