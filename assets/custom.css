@@ -616,6 +616,11 @@ input::placeholder {
   .template-cart .cart__footer .totals>* {
     font-size: 22px;
   }
+
+  .template-cart .cart__footer .totals > * + * {
+    margin-left: 1.2rem;
+  }
+  
 }
 
 
