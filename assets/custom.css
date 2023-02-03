@@ -674,6 +674,14 @@ input::placeholder {
     width: 100%;
   }
   
+  .cart-container .title-wrapper-with-link {
+    margin-bottom: 50px;
+  }
+
+  .template-cart .cart-container .title-wrapper-with-link .underlined-link {
+    font-size: 14px;
+  }
+  
 }
 
 
