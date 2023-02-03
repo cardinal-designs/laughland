@@ -500,4 +500,13 @@ input::placeholder {
   border-collapse: collapse;
 }
 
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__media {
+  width: 20%;
+}
+
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
 /*========== CART PAGE END ==========*/
