@@ -525,4 +525,15 @@ input::placeholder {
   font-weight: 500;
 }
 
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__details .item-price {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-family: jakarta;
+}
+
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__details .product-option p {
+  font-size: 14px;
+}
+
 /*========== CART PAGE END ==========*/
