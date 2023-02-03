@@ -550,4 +550,11 @@ input::placeholder {
   text-transform: capitalize;
   padding: 12px 27px 13px;
 }
+
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__totals .cart-item__price-wrapper * {
+  font-size: 16px !important;
+  font-family: jakarta;
+  letter-spacing: 0;
+}
+
 /*========== CART PAGE END ==========*/
