@@ -491,6 +491,7 @@ input::placeholder {
   font-family: jakarta;
   font-size: 16px;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 /*========== CART PAGE END ==========*/
