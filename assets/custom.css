@@ -629,6 +629,13 @@ input::placeholder {
 
 @media screen and (max-width: 479px) {
   
+  .template-cart .cart__footer .totals>* {
+    font-size: 18px;
+  }
+
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__details .item-price {
+    font-size: 14px;
+  }
 }
 
 
