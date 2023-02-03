@@ -603,4 +603,17 @@ input::placeholder {
   line-height: 1;
 }
 
+@media screen and (max-width: 768px) {
+  
+  .template-cart .cart__footer .cart__dynamic-checkout-buttons #dynamic-checkout-cart ul {
+    justify-content: center;
+  }
+  
+  .template-cart .cart__footer #cart-errors {
+    text-align: center;
+  }
+  
+}
+
+
 /*========== CART PAGE END ==========*/
