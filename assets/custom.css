@@ -649,6 +649,10 @@ input::placeholder {
     font-size: 12px;
   }
   
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__details .item-price {
+    font-size: 13px;
+    margin: 8px 0;
+  }
 }
 
 
