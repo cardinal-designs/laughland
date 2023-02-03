@@ -496,4 +496,8 @@ input::placeholder {
   text-decoration: underline;
 }
 
+.template-cart .cart-container .cart__contents .cart__items table.cart-items {
+  border-collapse: collapse;
+}
+
 /*========== CART PAGE END ==========*/
