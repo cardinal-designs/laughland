@@ -640,6 +640,14 @@ input::placeholder {
   .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__details .product-option p {
     font-size: 12px;
   }
+
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item td {
+    padding: 8px 5px;
+  }
+
+  .template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__quantity cart-remove-button .button {
+    font-size: 12px;
+  }
   
 }
 
