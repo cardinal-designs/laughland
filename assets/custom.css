@@ -509,4 +509,12 @@ input::placeholder {
   border-bottom: 1px solid #000;
 }
 
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item td {
+  padding: 10px 0;
+}
+
+.template-cart .cart-container .cart__contents .cart__items table.cart-items .cart-item .cart-item__media .cart-item__image {
+  display: block;
+}
+
 /*========== CART PAGE END ==========*/
