@@ -1725,11 +1725,16 @@ deferred-media {
 .jdgm-rev__buyer-badge-wrapper {
   order: 0;
   flex-basis: 100%;
+  display: none;
 }
 
 .jdgm-rev__author-wrapper {
   order: 1;
   flex-basis: 50%;
+}
+
+.jdgm-rev__author {
+  font-weight: 400;
 }
 
 .jdgm-rev {
@@ -1739,6 +1744,21 @@ deferred-media {
 
 .jdgm-rev-widg__title {
   display: none;
+}
+
+.jdgm-rev__title {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: manrope;
+}
+
+.jdgm-widget .jdgm-rev__body {
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 10px;
+  font-family: jakarta;
+  font-weight: 400;
 }
 
 .jdgm-rev-widg__header {
