@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "text": {
+      "type": "text-with-blocks",
+      "blocks": {
+        "367e4bf1-5c7d-46de-bbf2-a1328b56e857": {
+          "type": "block",
+          "settings": {
+            "title": "Diet",
+            "emoji": "☕️",
+            "text": "Acidic & Dark colored foods and drinks like pasta sauce, curry, berries, wine, coffee, soda soften the enamel and allow the dark-colored pigments to penetrate and stain your enamel."
+          }
+        },
+        "7d3bb81c-da72-486a-bad2-1988ea6fbbe5": {
+          "type": "block",
+          "settings": {
+            "title": "Smoking",
+            "emoji": "🚬",
+            "text": "Nicotine, tar, and tobacco smoke will stain your enamel leaving a yellow-to-brownish hue."
+          }
+        },
+        "df3bdb81-d23c-4ca8-af84-8c74ac31c917": {
+          "type": "block",
+          "settings": {
+            "title": "Poor Oral Hygiene",
+            "emoji": "🪥",
+            "text": "Brushing & flossing your teeth daily is extremely important in removing the buildup of plaque and tartar. Miss just a few days and you’ll notice a big difference in your teeth’ color!"
+          }
+        },
+        "64ed44ad-2bdd-49d2-85de-1bb58ffac48c": {
+          "type": "block",
+          "settings": {
+            "title": "Age",
+            "emoji": "👵🏽",
+            "text": "Unfortunately as you get older, your enamel naturally wears and breaks down over time, so it’s extremely important to take care of your teeth while you can!"
+          }
+        }
+      },
+      "block_order": [
+        "367e4bf1-5c7d-46de-bbf2-a1328b56e857",
+        "7d3bb81c-da72-486a-bad2-1988ea6fbbe5",
+        "df3bdb81-d23c-4ca8-af84-8c74ac31c917",
+        "64ed44ad-2bdd-49d2-85de-1bb58ffac48c"
+      ],
+      "settings": {
+        "heading": "{Why} Do Teeth Yellow?",
+        "text": "Teeth discoloration is caused by the staining of the pigments on the surface of your teeth enamel. Additionally, your teeth can become discolored from enamel deterioration which wears down enamel and reveals the yellow dentin underneath.\n<strong>Staining and wear are caused by a confluence of the following factors:<\/strong>"
+      }
+    },
+    "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01": {
+      "type": "image-dropdowns",
+      "blocks": {
+        "4c3e1b83-f13a-4b4d-8dc7-a7912a1b2312": {
+          "type": "block",
+          "settings": {
+            "title": "Chemical Bleaching <em>(Our Process)<\/em>",
+            "text": "Chemical bleaching removes stains by penetrating both surface-level stains on the enamel as well as deep stains in the tooth. Our active ingredients penetrates the surface of the tooth enamel and break down the chromogen that cause stains. This oxidization process removes surface stains and discoloration, leading to a brighter and even appearance of the teeth. \nIt is both more effective, and gentler on your teeth for the long run and is thus the most common method employed by dentists and at-home DIY solutions.\nThe blue light device in our kit is known as a curing light. This LED curing light catalyzes the molecules in the bleaching agent, leading to faster and longer-lasting change in color."
+          }
+        },
+        "8e7ed6db-e942-4f1d-b627-002b54b2c204": {
+          "type": "block",
+          "settings": {
+            "title": "Physical Abrasion",
+            "text": "Chemical bleaching removes stains by penetrating both surface-level stains on the enamel as well as deep stains in the tooth. Our active ingredients penetrates the surface of the tooth enamel and break down the chromogen that cause stains. This oxidization process removes surface stains and discoloration, leading to a brighter and even appearance of the teeth. \nIt is both more effective, and gentler on your teeth for the long run and is thus the most common method employed by dentists and at-home DIY solutions.\nThe blue light device in our kit is known as a curing light. This LED curing light catalyzes the molecules in the bleaching agent, leading to faster and longer-lasting change in color."
+          }
+        }
+      },
+      "block_order": [
+        "4c3e1b83-f13a-4b4d-8dc7-a7912a1b2312",
+        "8e7ed6db-e942-4f1d-b627-002b54b2c204"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/How_It_Works_Short_1_1.jpg",
+        "heading": "{How} Does It Work?",
+        "button_label": "Find Your Formula",
+        "button_link": ""
+      }
+    },
+    "e71299d9-0fca-4b45-8fe5-f4824c5060ea": {
+      "type": "comparison",
+      "blocks": {
+        "b9238013-789b-4136-9de2-76d9586f7305": {
+          "type": "block",
+          "settings": {
+            "highlight": false,
+            "title": "Dentist",
+            "bullet_1": "Whitening treatment is considered a cosmetics procedure and not generally covered by insurance in the U.S. (other locations may vary)",
+            "bullet_2": "Requires appointment and travel",
+            "bullet_3": "Results in 1, 60+ minute treatment",
+            "price": "$500~$3,000+"
+          }
+        },
+        "f5deb6d7-8cf6-4b14-acac-842e6ed21f5b": {
+          "type": "block",
+          "settings": {
+            "highlight": true,
+            "title": "Laughland",
+            "bullet_1": "Our custom formulas utilize the same active ingredients that dentists use, although at a milder strength suitable for safe self-application",
+            "bullet_2": "Self-directed treatments from the comfort of your home",
+            "bullet_3": "Results after 6, 10 minute treatments",
+            "price": "$19\/month"
+          }
+        }
+      },
+      "block_order": [
+        "b9238013-789b-4136-9de2-76d9586f7305",
+        "f5deb6d7-8cf6-4b14-acac-842e6ed21f5b"
+      ],
+      "settings": {
+        "button_label": "Find Your Formula",
+        "button_link": ""
+      }
+    },
+    "7d61af94-868e-49f5-88e9-eeb479f29fcc": {
+      "type": "paragraph",
+      "settings": {
+        "heading": "Whiten with Science, {Not Gimmicks}",
+        "text": "Our advanced whitening formulas are dentist formulated and rigorously tested. \nLaughland is proven in clinical studies to whiten your teeth by up to 8 shades in just 6 days.",
+        "link_label": "Learn More",
+        "link": ""
+      }
+    }
+  },
+  "order": [
+    "text",
+    "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01",
+    "e71299d9-0fca-4b45-8fe5-f4824c5060ea",
+    "7d61af94-868e-49f5-88e9-eeb479f29fcc"
+  ]
+}

@@ -1,0 +1,114 @@
+{{ 'section-image-dropdowns.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_heading = section.settings.heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<section class="image-dropdowns">
+  <div class="page-width">
+    <div class="image-dropdowns__container">
+      <div class="image-dropdowns__image">
+        {% if section.settings.video != blank %}
+          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false }}
+        {% else %}
+          {% render 'lazy-image', image: section.settings.image, fade: true, fill: true %}
+        {% endif %}
+      </div>
+      <div class="image-dropdowns__content">
+        <h2 class="image-dropdowns__title">{{ formatted_heading }}</h2>
+        {% for block in section.blocks %}
+          <div class="image-dropdowns__item{% if forloop.first %} active{% endif %}">
+            <button class="image-dropdowns__item-header">
+              <p>{{ block.settings.title }}</p>
+              <div class="image-dropdowns__item-control"></div>
+            </button>
+            <div class="image-dropdowns__item-content"{% if forloop.first %} style="display: block;"{% endif %}>
+              <div class="image-dropdowns__item-content-container">
+                <p class="body-sm">{{ block.settings.text | newline_to_br }}</p>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        <a href="{{ section.settings.button_link }}" class="image-dropdowns__button button">{{ section.settings.button_label }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% javascript %}
+  const accordionItems = document.querySelectorAll('.image-dropdowns__item-header');
+  accordionItems.forEach((accordion) => {
+    accordion.addEventListener('click', (event) => {
+      const parent = accordion.parentElement;
+      const content = accordion.nextElementSibling;
+
+      if (!parent.classList.contains('active')) {
+        const activeAccordionItem = document.querySelector('.image-dropdowns__item.active');
+        const activeContent = activeAccordionItem.querySelector('.image-dropdowns__item-content')
+        activeAccordionItem.classList.remove('active');
+        slideUp(activeContent, 400);
+ 
+        parent.classList.add('active');
+        slideDown(content, 400);
+      }
+    });
+  });
+{% endjavascript %}
+
+{% schema %}
+  {
+    "name": "Image With Dropdowns",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "info": "Wrap italized text in {}"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "block",
+        "name": "Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image With Dropdowns"
+      }
+    ]
+  }
+{% endschema %}
