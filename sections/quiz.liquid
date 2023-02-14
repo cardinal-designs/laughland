@@ -117,8 +117,16 @@
   novalidate="novalidate"
 >
   <input type="hidden" name="g" value="SDmCaY">
-  <input type="hidden" name="$fields" value="$consent, sensitivity, $first_name, $last_name">
-  <input type="hidden" name="$list_fields" value="$consent, sensitivity, $first_name, $last_name">
+  <input
+    type="hidden"
+    name="$fields"
+    value="$consent, sensitivity, $first_name, $last_name, goals, brush_times, cavities, shade, stain, previous_use"
+  >
+  <input
+    type="hidden"
+    name="$list_fields"
+    value="$consent, sensitivity, $first_name, $last_name, goals, brush_times, cavities, shade, stain, previous_use"
+  >
   <div class="klaviyo_field_group">
     <label for="k_id_email">Newsletter Sign Up</label>
     <input class="" type="email" value="" name="email" id="k_id_email" placeholder="Your email">
@@ -126,8 +134,28 @@
     <input class="" type="text" value="" name="$first_name" id="k_id_firstname" placeholder="First name">
     <label for="k_id_lastname">Last Name</label>
     <input class="" type="text" value="" name="$last_name" id="k_id_lastname" placeholder="Last name">
+
+    <label class="klaviyo_form_actions" for="klaviyo_form_goals">goals:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_goals" type="text" name="$goals" value="">
+
+    <label class="klaviyo_form_actions" for="klaviyo_form_brush_times">brush times:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_brush_times" type="text" name="$brush_times" value="">
+
     <label class="klaviyo_form_actions" for="klaviyo_form_sensitivity">Sensitivity:</label>
-    <input class="klaviyo_form_actions" id="klaviyo_form_sensitivity" type="text" name="sensitivity" value="">
+    <input class="klaviyo_form_actions" id="klaviyo_form_sensitivity" type="text" name="$sensitivity" value="">
+
+    <label class="klaviyo_form_actions" for="klaviyo_form_cavities">cavities:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_cavities" type="text" name="$cavities" value="">
+
+    <label class="klaviyo_form_actions" for="klaviyo_form_shade">shade:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_shade" type="text" name="$shade" value="">
+
+    <label class="klaviyo_form_actions" for="klaviyo_form_stain">stain:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_stain" type="text" name="$stain" value="">
+
+    <label class="klaviyo_form_actions" for="klaviyo_form_previous_use">previous_use:</label>
+    <input class="klaviyo_form_actions" id="klaviyo_form_previous_use" type="text" name="$previous_use" value="">
+
     <div class="klaviyo_field_group klaviyo_form_actions">
       <div class="klaviyo_helptext">How would you like to hear from us? (please select at least one option)</div>
       <input type="checkbox" name="$consent" id="consent-email" value="email" checked>
