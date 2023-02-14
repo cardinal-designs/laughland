@@ -342,6 +342,12 @@ h6,
   }
 }
 
+ul,
+ol,
+li {
+  font-weight: 500;
+}
+
 .stylized {
   font-family: canela;
   font-weight: 300;
