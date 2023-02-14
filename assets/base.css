@@ -215,7 +215,7 @@ h5,
 .h5 {
   margin: 0 0 30px;
   font-family: manrope, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 768px) {
@@ -346,6 +346,8 @@ h6,
   font-family: canela;
   font-weight: 300;
   font-style: italic;
+  margin-right: 3px;
+  white-space: nowrap;
 }
 
 .glow {
@@ -388,7 +390,7 @@ h6,
 p,
 .p {
   font-family: jakarta;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -414,6 +416,11 @@ p,
     font-size: 12px;
     line-height: 20px;
   }
+}
+
+.body-regular-weight {
+  font-family: jakarta;
+  font-weight: 400;
 }
 
 .body-medium-weight {

@@ -87,11 +87,9 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
     } else {
       //prep data for submit
       let contactForm = new FormData(document.querySelector('#contact_form'))
-      // let klaviyoForm = new FormData(document.querySelector('.for_email_klaviyo'))
+      let klaviyForm = document.querySelector("#email_signup")
 
-      console.log(contactForm)
-
-      let sensitivity = document.querySelector('input[name="sensitivity"]:checked').value || 'medium'
+      let sensitivity = document.querySelector('input[name="sensitivity"]:checked')?.value || 'medium'
 
       let formula_translate = {
         'mild' : 'strong',
@@ -99,14 +97,23 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
         'very': 'sensitive'
       }
 
-      document.querySelector("#k_id_email").value = document.querySelector('#ourformbutforklaviyo').value
-      document.querySelector("#k_id_firstname").value = document.querySelector('#first_name').value
-      document.querySelector("#k_id_lastname").value = document.querySelector('#last_name').value
-      document.querySelector("#klaviyo_form_sensitivity").value = formula_translate[sensitivity]
+      klaviyoForm.querySelector("#k_id_email").value = this.querySelector('#ourformbutforklaviyo').value
+      klaviyoForm.querySelector("#k_id_firstname").value = this.querySelector('#first_name').value
+      klaviyoForm.querySelector("#k_id_lastname").value = this.querySelector('#last_name').value
+      klaviyoForm.querySelector("#klaviyo_form_sensitivity").value = formula_translate[sensitivity]
+
+      let goals = ""
+      this.querySelectorAll("[name='goals']:checked")?.forEach((goal) => {  goals == "" ? goals = goal.value : goals = goals + ", " + goal.value })
+
+      klaviyoForm.querySelector("#klaviyo_form_goals").value = goals
+      klaviyoForm.querySelector("#klaviyo_form_brush_times").value = this.querySelector("[name='brushtimes']:checked")?.value || ""
+      klaviyoForm.querySelector("#klaviyo_form_cavities").value = this.querySelector("[name='cavities']:checked")?.value || ""
+      klaviyoForm.querySelector("#klaviyo_form_shade").value = this.querySelector("[name='shade']:checked")?.value || ""
+      klaviyoForm.querySelector("#klaviyo_form_stain").value = this.querySelector("[name='stain']:checked")?.value || ""
+      klaviyoForm.querySelector("#klaviyo_form_previous_use").value = this.querySelector("[name='previous_use']:checked")?.value || ""
 
       // submit
-
-      console.log(formula_translate[sensitivity])
+      klaviyoForm.submit();
 
       // handle redirect
 

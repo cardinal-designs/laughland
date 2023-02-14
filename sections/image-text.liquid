@@ -70,7 +70,7 @@
           <h2 class="image-text__heading m-h4">{{ formatted_heading }}</h2>
         {% endif %}
         {% if section.settings.text != blank %}
-          <p class="body image-text__paragraph">{{ section.settings.text }}</p>
+          <p class="body image-text__paragraph">{{ section.settings.text | newline_to_br }}</p>
         {% endif %}
         {% if bulletBlocks.size != 0 %}
           <ul class="image-text__bullet-list list-unstyled">

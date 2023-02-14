@@ -8,6 +8,12 @@
   margin-left: auto;
   width: calc(100% - 60px);
   overflow: hidden;
+  transform: translateY(100%);
+  transition: transform .4s ease;
+}
+
+#shopify-section-sticky-footer.scrolled {
+  transform: translateY(0);
 }
 
 .sticky-footer__button {

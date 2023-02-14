@@ -751,6 +751,7 @@ customElements.define('add-to-cart', AddToCart);
   const hero = document.querySelector(".homepage-hero")
   const heroLogo = hero?.querySelector(".hero__logo")
   const header = document.querySelector(".outer-header-wrapper")
+  const stickyFooter = document.querySelector("#shopify-section-sticky-footer")
 
   // Other pages
   const firstSection = document.querySelector("#MainContent .shopify-section:first-of-type")
@@ -763,6 +764,8 @@ customElements.define('add-to-cart', AddToCart);
           header.querySelector(".header__svg-logo").classList.toggle("show", !entry.isIntersecting)
         }
         header.classList.toggle("scrolled", !entry.isIntersecting)
+        stickyFooter?.classList.toggle("scrolled", !entry.isIntersecting)
+
       })
     },
     {

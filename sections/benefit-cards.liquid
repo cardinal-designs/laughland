@@ -5,6 +5,19 @@
   | replace: '}', '</span>'
 %}
 
+{% liquid
+  capture show_ingredients
+    for ingredient in product.selected_or_first_available_variant.metafields.custom.ingredients.value
+      echo ingredient | downcase
+      unless forloop.last
+        echo ','
+      endunless
+    endfor
+  endcapture
+
+  assign ingredient_list = show_ingredients | split: ','
+%}
+
 <section class="benefit-cards {% if section.settings.margin_bottom %}with-spacing{% endif %}">
   <div class="page-width">
     <div class="benefit-cards__inner">
@@ -21,6 +34,10 @@
         <div class="benefit__card-carousel swiper">
           <div class="swiper-wrapper">
             {% for block in section.blocks %}
+              {% assign ingredient_name = block.settings.heading | downcase %}
+              {% unless ingredient_list contains ingredient_name %}
+                {% continue %}
+              {% endunless %}
               <div class="swiper-slide">
                 {% assign formatted_card_heading = block.settings.heading
                   | replace: '{', "<span class='stylized'>"
@@ -28,7 +45,12 @@
                 %}
                 <div class="benefit__card">
                   {% if formatted_heading != blank %}
-                    <h4 class="benefit__card-heading m-h4">{{ formatted_card_heading }}</h4>
+                    <h4 class="benefit__card-heading m-h4">
+                      {{ formatted_card_heading }}
+                      {% if block.settings.title %}
+                        <span class="stylized">{{ block.settings.title }}</span>
+                      {% endif %}
+                    </h4>
                   {% endif %}
                   {% if block.settings.text != blank %}
                     <p class="body benefit__card-paragraph">{{ block.settings.text }}</p>
@@ -57,15 +79,7 @@
     },
     breakpoints: {
       768: {
-        slidesPerView: 2.75,
-        spaceBetween: 20,
-      },
-      1024: {
         slidesPerView: 1.75,
-        spaceBetween: 20,
-      },
-      1440: {
-        slidesPerView: 2.75,
         spaceBetween: 20,
       },
     },
@@ -102,8 +116,13 @@
         {
           "type": "textarea",
           "id": "heading",
-          "label": "Heading",
-          "info": "Wrap italized text in {}"
+          "label": "Ingredient"
+        },
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "Benefit",
+          "info": "Will display as italized text"
         },
         {
           "type": "textarea",

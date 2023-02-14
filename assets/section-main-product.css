@@ -136,6 +136,19 @@
   }
 }
 
+.product__how-to-use ol,
+.product__how-to-use ul {
+  padding-inline-start: 20px;
+}
+
+.product__how-to-use ol li {
+  margin: 5px 0;
+}
+
+.product__how-to-use ol li::marker {
+  font-weight: 600;
+}
+
 /* PRODUCT ACCORDION */
 
 .product__accordion {
@@ -196,4 +209,5 @@
 
 .product__detail-item .emoji {
   font-size: 25px;
+  margin-right: 5px;
 }
