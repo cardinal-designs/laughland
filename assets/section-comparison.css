@@ -1,0 +1,123 @@
+.comparison__container {
+  padding: 110px 110px 80px;
+  border-radius: 12px;
+  background-color: var(--blue-tint-20);
+  text-align: center;
+}
+
+.comparison__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.comparison__item {
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(13, 34, 68, 0.05);
+  position: relative;
+}
+
+.comparison__title {
+  margin: 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--blue-tint-20);
+}
+
+.comparison__bullets {
+  text-align: left;
+}
+
+.comparison__bullet {
+  margin: 0;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--blue-tint-20);
+}
+
+.comparison__price {
+  margin: 20px 0 0;
+  text-align: left;
+}
+
+/* Active */
+.comparison__item.active .comparison__title {
+  color: var(--blue)
+}
+
+.comparison__icon {
+  position: absolute;
+  top: -45px;
+  right: -45px;
+}
+
+.comparison__icon::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 35px rgba(70, 189, 240, 0.5);
+}
+
+.comparison__icon svg {
+  position: relative;
+  z-index: 2;
+}
+
+@media screen and (max-width: 1200px) {
+  .comparison__container {
+    padding: 80px 40px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .comparison__container {
+    margin: 0 -20px;
+    padding: 60px 20px 50px;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .comparison__grid {
+    padding: 0 8px;
+    gap: 0;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(13, 34, 68, 0.05);
+  }
+
+  .comparison__item {
+    padding: 30px 10px;
+    background-color: transparent;
+    box-shadow: none;
+  } 
+
+  .comparison__title {
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .comparison__bullet {
+    padding: 14px 0;
+  }
+
+  .comparison__icon {
+    top: -45px;
+    right: -25px;
+  }
+
+  .comparison__icon::before {
+    width: 70px;
+    height: 70px;
+  }
+
+  .comparison__icon svg {
+    width: 90px;
+    height: auto;
+    display: block;
+  }
+}

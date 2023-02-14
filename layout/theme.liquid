@@ -109,7 +109,7 @@
 
     {% if template == 'product' %}
       {% section 'sticky-product-bar' %}
-    {% elsif template == 'index' %}
+    {% elsif template == 'index' or template.suffix == 'whitening' %}
       {% section 'quiz' %}
       {% section 'sticky-footer' %}
     {% endif %}

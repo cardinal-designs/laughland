@@ -75,10 +75,56 @@
         "button_label": "Find Your Formula",
         "button_link": ""
       }
+    },
+    "e71299d9-0fca-4b45-8fe5-f4824c5060ea": {
+      "type": "comparison",
+      "blocks": {
+        "b9238013-789b-4136-9de2-76d9586f7305": {
+          "type": "block",
+          "settings": {
+            "highlight": false,
+            "title": "Dentist",
+            "bullet_1": "Whitening treatment is considered a cosmetics procedure and not generally covered by insurance in the U.S. (other locations may vary)",
+            "bullet_2": "Requires appointment and travel",
+            "bullet_3": "Results in 1, 60+ minute treatment",
+            "price": "$500~$3,000+"
+          }
+        },
+        "f5deb6d7-8cf6-4b14-acac-842e6ed21f5b": {
+          "type": "block",
+          "settings": {
+            "highlight": true,
+            "title": "Laughland",
+            "bullet_1": "Our custom formulas utilize the same active ingredients that dentists use, although at a milder strength suitable for safe self-application",
+            "bullet_2": "Self-directed treatments from the comfort of your home",
+            "bullet_3": "Results after 6, 10 minute treatments",
+            "price": "$19\/month"
+          }
+        }
+      },
+      "block_order": [
+        "b9238013-789b-4136-9de2-76d9586f7305",
+        "f5deb6d7-8cf6-4b14-acac-842e6ed21f5b"
+      ],
+      "settings": {
+        "button_label": "Find Your Formula",
+        "button_link": ""
+      }
+    },
+    "7d61af94-868e-49f5-88e9-eeb479f29fcc": {
+      "type": "paragraph",
+      "settings": {
+        "heading": "Whiten with Science, {Not Gimmicks}",
+        "text": "Our advanced whitening formulas are dentist formulated and rigorously tested. \nLaughland is proven in clinical studies to whiten your teeth by up to 8 shades in just 6 days.",
+        "link_label": "Learn More",
+        "link": ""
+      }
     }
   },
   "order": [
     "text",
-    "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01"
+    "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01",
+    "e71299d9-0fca-4b45-8fe5-f4824c5060ea",
+    "7d61af94-868e-49f5-88e9-eeb479f29fcc"
   ]
 }
