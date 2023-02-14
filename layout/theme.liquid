@@ -103,7 +103,12 @@
       {% section 'cart-drawer' %}
     {% endif %}
 
-    <main id="MainContent" class="content-for-layout template-{{ template }} {% if canonical_url contains 'policies' %}policies-tempalates{% endif %} focus-none" role="main" tabindex="-1">
+    <main
+      id="MainContent"
+      class="content-for-layout template-{{ template }} {% if canonical_url contains 'policies' %}policies-tempalates{% endif %} focus-none"
+      role="main"
+      tabindex="-1"
+    >
       {{ content_for_layout }}
     </main>
 

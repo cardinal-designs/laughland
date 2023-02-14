@@ -751,7 +751,7 @@ customElements.define('add-to-cart', AddToCart);
   const hero = document.querySelector(".homepage-hero")
   const heroLogo = hero?.querySelector(".hero__logo")
   const header = document.querySelector(".outer-header-wrapper")
-  const stickyFooter = document.querySelector("#shopify-section-sticky-footer")
+  const stickyFooter = document.querySelector("#shopify-section-sticky-footer") || document.querySelector("#shopify-section-sticky-product-bar")
 
   // Other pages
   const firstSection = document.querySelector("#MainContent .shopify-section:first-of-type")
