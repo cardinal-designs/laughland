@@ -1,0 +1,54 @@
+{
+  "sections": {
+    "text": {
+      "type": "text-with-blocks",
+      "blocks": {
+        "367e4bf1-5c7d-46de-bbf2-a1328b56e857": {
+          "type": "block",
+          "settings": {
+            "title": "Diet",
+            "emoji": "☕️",
+            "text": "Acidic & Dark colored foods and drinks like pasta sauce, curry, berries, wine, coffee, soda soften the enamel and allow the dark-colored pigments to penetrate and stain your enamel."
+          }
+        },
+        "7d3bb81c-da72-486a-bad2-1988ea6fbbe5": {
+          "type": "block",
+          "settings": {
+            "title": "Smoking",
+            "emoji": "🚬",
+            "text": "Nicotine, tar, and tobacco smoke will stain your enamel leaving a yellow-to-brownish hue."
+          }
+        },
+        "df3bdb81-d23c-4ca8-af84-8c74ac31c917": {
+          "type": "block",
+          "settings": {
+            "title": "Poor Oral Hygiene",
+            "emoji": "🪥",
+            "text": "Brushing & flossing your teeth daily is extremely important in removing the buildup of plaque and tartar. Miss just a few days and you’ll notice a big difference in your teeth’ color!"
+          }
+        },
+        "64ed44ad-2bdd-49d2-85de-1bb58ffac48c": {
+          "type": "block",
+          "settings": {
+            "title": "Age",
+            "emoji": "👵🏽",
+            "text": "Unfortunately as you get older, your enamel naturally wears and breaks down over time, so it’s extremely important to take care of your teeth while you can!"
+          }
+        }
+      },
+      "block_order": [
+        "367e4bf1-5c7d-46de-bbf2-a1328b56e857",
+        "7d3bb81c-da72-486a-bad2-1988ea6fbbe5",
+        "df3bdb81-d23c-4ca8-af84-8c74ac31c917",
+        "64ed44ad-2bdd-49d2-85de-1bb58ffac48c"
+      ],
+      "settings": {
+        "heading": "{Why} Do Teeth Yellow?",
+        "text": "Teeth discoloration is caused by the staining of the pigments on the surface of your teeth enamel. Additionally, your teeth can become discolored from enamel deterioration which wears down enamel and reveals the yellow dentin underneath.\n<strong>Staining and wear are caused by a confluence of the following factors:<\/strong>"
+      }
+    }
+  },
+  "order": [
+    "text"
+  ]
+}
