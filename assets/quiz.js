@@ -87,7 +87,7 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
     } else {
       //prep data for submit
       let contactForm = new FormData(document.querySelector('#contact_form'))
-      let klaviyForm = document.querySelector("#email_signup")
+      let klaviyoForm = document.querySelector("#email_signup")
 
       let sensitivity = document.querySelector('input[name="sensitivity"]:checked')?.value || 'medium'
 
