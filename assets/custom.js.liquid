@@ -1,9 +1,9 @@
-jQuery(document).ready(function($){  
+{% comment %} jQuery(document).ready(function($){  
 
   {% unless template.suffix == 'index' %}
-    jQuery(window).scroll(function(){
-      var sticky = jQuery('body:not(.template-index) .outer-header-wrapper'),
-          scroll = jQuery(window).scrollTop();
+    $(window).scroll(function(){
+      var sticky = $('body:not(.template-index) .outer-header-wrapper'),
+          scroll = $(window).scrollTop();
   
       if (scroll >= 50){
           sticky.addClass('scrolled');
@@ -15,6 +15,23 @@ jQuery(document).ready(function($){
   {% endunless %}
   
 });
+ {% endcomment %}
+
+document.addEventListener('DOMContentLoaded', function () {
+    {% unless template.suffix == 'index' %}
+    document.querySelector(window).scroll(function(){
+      var sticky = document.querySelector('body:not(.template-index) .outer-header-wrapper'),
+          scroll = document.querySelector(window).scrollTop;
+  
+      if (scroll >= 50){
+          sticky.classList.add('scrolled');
+      }
+      else {
+          sticky.classList.remove('scrolled');
+      }
+    });
+  {% endunless %}
+}, false);
 
 var stringToRepeat = document.querySelector(".shopify-policy__container .shopify-policy__title").innerHTML.trim();
 var TempVar = "";
