@@ -15,7 +15,8 @@
 
 /*================ Media ================*/
 .product__media-wrapper {
-  height: 390px;
+  min-height: 390px;
+  aspect-ratio: .85/1;
   border-radius: 0px 0px 12px 0px;
   overflow: hidden;
 }

@@ -112,7 +112,14 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
       klaviyoForm.querySelector("#klaviyo_form_stain").value = this.querySelector("[name='stain']:checked")?.value || ""
       klaviyoForm.querySelector("#klaviyo_form_previous_use").value = this.querySelector("[name='previous_use']:checked")?.value || ""
 
+      let klaviyoFormData = new FormData(klaviyoForm)
+      for (var [key, value] of klaviyoFormData.entries()) { 
+        console.log(key, value);
+      }
+
       // submit
+      console.log(klaviyoForm)
+      // return
       klaviyoForm.submit();
 
       // handle redirect
