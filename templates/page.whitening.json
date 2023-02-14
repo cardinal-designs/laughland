@@ -46,9 +46,39 @@
         "heading": "{Why} Do Teeth Yellow?",
         "text": "Teeth discoloration is caused by the staining of the pigments on the surface of your teeth enamel. Additionally, your teeth can become discolored from enamel deterioration which wears down enamel and reveals the yellow dentin underneath.\n<strong>Staining and wear are caused by a confluence of the following factors:<\/strong>"
       }
+    },
+    "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01": {
+      "type": "image-dropdowns",
+      "blocks": {
+        "4c3e1b83-f13a-4b4d-8dc7-a7912a1b2312": {
+          "type": "block",
+          "settings": {
+            "title": "Chemical Bleaching <em>(Our Process)<\/em>",
+            "text": "Chemical bleaching removes stains by penetrating both surface-level stains on the enamel as well as deep stains in the tooth. Our active ingredients penetrates the surface of the tooth enamel and break down the chromogen that cause stains. This oxidization process removes surface stains and discoloration, leading to a brighter and even appearance of the teeth. \nIt is both more effective, and gentler on your teeth for the long run and is thus the most common method employed by dentists and at-home DIY solutions.\nThe blue light device in our kit is known as a curing light. This LED curing light catalyzes the molecules in the bleaching agent, leading to faster and longer-lasting change in color."
+          }
+        },
+        "8e7ed6db-e942-4f1d-b627-002b54b2c204": {
+          "type": "block",
+          "settings": {
+            "title": "Physical Abrasion",
+            "text": "Chemical bleaching removes stains by penetrating both surface-level stains on the enamel as well as deep stains in the tooth. Our active ingredients penetrates the surface of the tooth enamel and break down the chromogen that cause stains. This oxidization process removes surface stains and discoloration, leading to a brighter and even appearance of the teeth. \nIt is both more effective, and gentler on your teeth for the long run and is thus the most common method employed by dentists and at-home DIY solutions.\nThe blue light device in our kit is known as a curing light. This LED curing light catalyzes the molecules in the bleaching agent, leading to faster and longer-lasting change in color."
+          }
+        }
+      },
+      "block_order": [
+        "4c3e1b83-f13a-4b4d-8dc7-a7912a1b2312",
+        "8e7ed6db-e942-4f1d-b627-002b54b2c204"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/How_It_Works_Short_1_1.jpg",
+        "heading": "{How} Does It Work?",
+        "button_label": "Find Your Formula",
+        "button_link": ""
+      }
     }
   },
   "order": [
-    "text"
+    "text",
+    "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01"
   ]
 }

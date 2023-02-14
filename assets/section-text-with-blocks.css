@@ -36,10 +36,12 @@
   padding: 30px 20px;
   border-radius: 12px;
   background-color: white;
+  box-shadow: 0px 0px 30px rgba(13, 34, 68, 0.05);
 }
 
 .text-with-blocks__item-header {
   height: 9vw;
+  max-height: 130px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
