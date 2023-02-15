@@ -5,6 +5,7 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
   constructor() {
     super();  
 
+    this.open = document.querySelectorAll("[data-open-quiz]")
     this.close = this.querySelector(".quiz__close")
     this.headlines = this.querySelectorAll(".quiz__headline")
     this.quizCards = this.querySelectorAll(".form__step-wrapper")
@@ -17,12 +18,17 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
 
     this.form = this.querySelector(".quiz__form")
 
-    console.log(this.close)
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.closeQuiz.bind(this))
     this.bindEvents();
   }
 
   bindEvents() {
+    this.open.forEach((button) => {
+      button.addEventListener("click", function(e){
+        e.preventDefault();
+        document.querySelector('.sticky-footer__button')?.click()
+      } )
+    })
     this.back.addEventListener('click', this.changeFormStep.bind(this, -1))
     this.next.addEventListener('click', this.changeFormStep.bind(this, 1))
     this.close.addEventListener('click', this.closeQuiz.bind(this))
