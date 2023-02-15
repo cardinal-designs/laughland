@@ -471,6 +471,7 @@ blockquote {
   box-shadow: 0px 0px 32px var(--blue-transparent);
   transition: all .5s ease;
   display: inline-block;
+  position: relative;
 }
 
 .jdgm-ask-question-btn, .jdgm-write-rev-link, .jdgm-all-reviews-rating-wrapper, .jdgm-carousel-wrapper a, .jdgm-rev__prod-link, .jdgm-all-reviews-text a, .jdgm-carousel-item__product, .jdgm-carousel-number-of-reviews, .jdgm-revs-tab__url {
@@ -479,6 +480,7 @@ blockquote {
 }
 
 /* Button - hover */
+.button:not(.loading):not(.button--secondary):hover
 .button:not([disabled]):not(.button--secondary):hover,
 .shopify-challenge__button:hover,
 .button:not([disabled]):not(.button--secondary):active,
@@ -498,6 +500,7 @@ blockquote {
 }
 
 /* Secondary Button - hover */
+.button--secondary:not(.loading):hover,
 .button--secondary:not([disabled]):hover,
 .button--secondary:not([disabled]):active {
   background: var(--blue-tint-20);
@@ -507,6 +510,7 @@ blockquote {
 
 /* Button - other */
 .button:disabled,
+.button.loading,
 .button[aria-disabled='true'],
 .button.disabled,
 .customer button:disabled,
@@ -532,17 +536,27 @@ blockquote {
   padding: 8px 16px 9px;
 }
 
+.button .button-text {
+  pointer-events: none;
+}
+
 .button.loading {
   color: transparent;
   position: relative;
 }
 
-.button.loading > .loading-overlay__spinner {
+.button .loading-overlay__spinner {
+  display: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
   height: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.button.loading > .loading-overlay__spinner {
   display: flex;
 }
 

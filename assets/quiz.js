@@ -79,11 +79,13 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
 
   submitForm(e) {
     e.preventDefault();
+    this.submit.classList.add("loading")
     // Check for email field
     // If we need more validation, we can add that. Currently email is the only required field
     if( this.querySelector('#ourformbutforklaviyo').value == ''){
       this.querySelector('#ourformbutforklaviyo').focus();
       this.querySelector('.form-error-message').classList.remove('hidden')
+      this.submit.classList.remove("loading")
     } else {
       //prep data for submit
       let contactForm = new FormData(document.querySelector('#contact_form'))
@@ -113,14 +115,12 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
       klaviyoForm.querySelector("#klaviyo_form_previous_use").value = this.querySelector("[name='previous_use']:checked")?.value || ""
 
       let klaviyoFormData = new FormData(klaviyoForm)
-      for (var [key, value] of klaviyoFormData.entries()) { 
-        console.log(key, value);
-      }
+      // for (var [key, value] of klaviyoFormData.entries()) { 
+      //   console.log(key, value);
+      // }
 
       // submit
-      console.log(klaviyoForm)
-      // return
-      klaviyoForm.submit();
+      klaviyoForm.querySelector(".klaviyo_submit_button").click()
 
       // handle redirect
 
