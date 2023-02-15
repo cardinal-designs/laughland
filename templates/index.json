@@ -65,9 +65,10 @@
       ],
       "settings": {
         "layout": true,
+        "margin_bottom": true,
         "heading": "Made For {Your Smile}",
-        "text": "Your smile deserves better than a one size fits all solution. \nWe take factors like sensitivity, cavity history, and your diet into account in order to create the fastest, most effective and sensitivity-free formula for your smile. A generic formula could never!",
-        "btn": "\/",
+        "text": "Your smile deserves better than a one size fits all solution.\n\nWe take factors like sensitivity, cavity history, and your diet into account in order to create the fastest, most effective and sensitivity-free formula for your smile. A generic formula could never!",
+        "btn": "",
         "btn_text": "Find Your Formula",
         "link": "",
         "link_text": ""
@@ -122,9 +123,10 @@
       ],
       "settings": {
         "layout": false,
+        "margin_bottom": true,
         "heading": "A Bright Smile Shouldn't Be A {Luxury}",
         "text": "",
-        "btn": "\/",
+        "btn": "",
         "btn_text": "Find Your Formula",
         "link": "\/",
         "link_text": "Learn More"
