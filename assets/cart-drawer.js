@@ -17,10 +17,9 @@ class CartDrawer extends HTMLElement {
     // Elements
     this.drawer = document.getElementById('cart-drawer');
 
-    console.log(this.drawer)
     
     this.cartButton = document.querySelector('.js-open-cart');
-    this.cartButton.addEventListener('click', this.handleCartClick.bind(this));
+    if(this.cartButton) this.cartButton.addEventListener('click', this.handleCartClick.bind(this));
 
     this.closeIcon = document.getElementById('cart-drawer__close');
     this.closeIcon.addEventListener('click', this.close.bind(this));
