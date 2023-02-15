@@ -91,10 +91,12 @@
           </ul>
         {% endif %}
 
-        {% if section.settings.btn != blank or section.settings.link != blank %}
+        {% if section.settings.btn_text != blank or section.settings.link != blank %}
           <div class="image-text__button-wrapper">
             {% if section.settings.btn != blank and section.settings.btn_text != blank %}
               <a href="{{ section.settings.btn }}" class="button">{{ section.settings.btn_text }}</a>
+            {% else %}
+              <button class="button" data-open-quiz>{{ section.settings.btn_text }}</button>
             {% endif %}
 
             {% if section.settings.link != blank and section.settings.link_text != blank %}
@@ -176,7 +178,8 @@
     {
       "type": "url",
       "id": "btn",
-      "label": "Link"
+      "label": "Link",
+      "info": "Leave blank to have button open quiz"
     },
     {
       "type": "text",
