@@ -338,6 +338,9 @@
   // Main product slider
   const productSlider = new Swiper('.product__media-list', {
     slidesPerView: 1,
+    autoplay: {
+      delay: 4000,
+    },
     loop: false,
     pagination: {
       el: '.product__media-pagination',
