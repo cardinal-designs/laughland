@@ -3,6 +3,8 @@
     "main": {
       "type": "main-product",
       "settings": {
+        "atc": "Buy Now",
+        "how_to_use": "{{ product.metafields.custom.how_to_use | metafield_tag }}"
       }
     },
     "product-recommendations": {
@@ -24,37 +26,32 @@
         "44df7525-2bdb-4448-84a3-58ee0f326b42": {
           "type": "card",
           "settings": {
-            "heading": "Hydrogen Peroxide \n{to whiten}",
+            "heading": "Hydrogen Peroxide",
+            "title": "To Whiten",
             "text": "A powerful whitening agent, Hydrogen Peroxide absorbs into your outer teeth and oxidizes with your teeth’s outermost layer, turning any stains & discoloration white."
           }
         },
         "8b04b829-5bbf-46de-8a5d-157270bfd271": {
           "type": "card",
           "settings": {
-            "heading": "Sodium Bicarbonate \n{to whiten}",
+            "heading": "Sodium Bicarbonate",
+            "title": "To Whiten",
             "text": "A sensitivity-free whitening agent, Sodium Bicarbonate absorbs into your outer teeth and oxidizes with your teeth’s outermost layer, turning stains & discoloration white."
           }
         },
         "0b6a308a-6d38-4b82-8f83-097ae148e804": {
           "type": "card",
           "settings": {
-            "heading": "Glycerin \n{to moisturize}",
+            "heading": "Glycerin",
+            "title": "To Moisturize",
             "text": "A natural moisturizer, Glycerin rehydrates your teeth that loses moisture during the whitening process, protecting the enamel from decay and pH imbalance from dryness."
-          }
-        },
-        "d9c61d8d-4978-4699-8da3-bfd6e699e41f": {
-          "type": "card",
-          "settings": {
-            "heading": "Hydrogen Peroxide \n{to whiten}",
-            "text": "A powerful whitening agent, Hydrogen Peroxide absorbs into your outer teeth and oxidizes with your teeth’s outermost layer, turning any stains & discoloration white."
           }
         }
       },
       "block_order": [
         "44df7525-2bdb-4448-84a3-58ee0f326b42",
         "8b04b829-5bbf-46de-8a5d-157270bfd271",
-        "0b6a308a-6d38-4b82-8f83-097ae148e804",
-        "d9c61d8d-4978-4699-8da3-bfd6e699e41f"
+        "0b6a308a-6d38-4b82-8f83-097ae148e804"
       ],
       "settings": {
         "heading": "Ingredients That Work {For You}",
@@ -81,7 +78,7 @@
         "layout": true,
         "margin_bottom": true,
         "heading": "A Brighter Smile\n{Starts Today}",
-        "text": "While our personalized formulas have proven to whiten teeth by 7+ shades in under a week, whitening is like skincare - a continuous, ongoing process. Daily habits + natural aging will bring back those unwanted stains back.\nThe only way to a consistent bright smile is ritual. We’ll be with you every shade of the way!",
+        "text": "While our personalized formulas have proven to whiten teeth by 7+ shades in under a week, whitening is like skincare - a continuous, ongoing process. Daily habits + natural aging will bring back those unwanted stains back.\n\nThe only way to a consistent bright smile is ritual. We’ll be with you every shade of the way!",
         "btn": "",
         "btn_text": "",
         "link": "",
