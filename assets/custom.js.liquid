@@ -1,20 +1,23 @@
-jQuery(document).ready(function($){  
+/* Scroll javascript start */
 
+document.addEventListener('DOMContentLoaded', function () {
   {% unless template.suffix == 'index' %}
-    jQuery(window).scroll(function(){
-      var sticky = jQuery('body:not(.template-index) .outer-header-wrapper'),
-          scroll = jQuery(window).scrollTop();
-  
+    document.querySelector(window).scroll(function(){
+      var sticky = document.querySelector('body:not(.template-index) .outer-header-wrapper'),
+      scroll = document.querySelector(window).scrollTop;  
       if (scroll >= 50){
-          sticky.addClass('scrolled');
+        sticky.classList.add('scrolled');
       }
       else {
-          sticky.removeClass('scrolled');
+        sticky.classList.remove('scrolled');
       }
     });
   {% endunless %}
-  
-});
+}, false);
+
+/* Scroll javascript end */
+
+/* animation policies javascript start */
 
 var stringToRepeat = document.querySelector(".shopify-policy__container .shopify-policy__title").innerHTML.trim();
 var TempVar = "";
@@ -56,3 +59,5 @@ for(let i=0;i<=100;i++){
 }
 
 document.querySelector(".shopify-policy__container .shopify-policy__title").innerHTML = TempVar;
+
+/* animation policies javascript end */
