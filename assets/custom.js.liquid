@@ -2,16 +2,11 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   {% unless template.suffix == 'index' %}
-    document.querySelector(window).scroll(function(){
-      var sticky = document.querySelector('body:not(.template-index) .outer-header-wrapper'),
-      scroll = document.querySelector(window).scrollTop;  
-      if (scroll >= 50){
-        sticky.classList.add('scrolled');
-      }
-      else {
-        sticky.classList.remove('scrolled');
-      }
-    });
+    window.onscroll = function(){
+      let sticky = document.querySelector('body:not(.template-index) .outer-header-wrapper'),
+      scroll = window.pageYOffset;  
+      (scroll >= 50) ? sticky.classList.add('scrolled') : sticky.classList.remove('scrolled');
+    }
   {% endunless %}
 }, false);
 
