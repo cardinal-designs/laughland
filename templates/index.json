@@ -65,9 +65,10 @@
       ],
       "settings": {
         "layout": true,
+        "margin_bottom": true,
         "heading": "Made For {Your Smile}",
         "text": "Your smile deserves better than a one size fits all solution. \nWe take factors like sensitivity, cavity history, and your diet into account in order to create the fastest, most effective and sensitivity-free formula for your smile. A generic formula could never!",
-        "btn": "\/",
+        "btn": "",
         "btn_text": "Find Your Formula",
         "link": "",
         "link_text": ""
@@ -122,9 +123,10 @@
       ],
       "settings": {
         "layout": false,
+        "margin_bottom": true,
         "heading": "A Bright Smile Shouldn't Be A {Luxury}",
         "text": "",
-        "btn": "\/",
+        "btn": "",
         "btn_text": "Find Your Formula",
         "link": "\/",
         "link_text": "Learn More"
@@ -246,14 +248,6 @@
         "image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_4_4f7f704f-2161-436f-b57a-f67a8118967b.png",
         "mobile_image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_5.png"
       }
-    },
-    "127df1e2-c768-4dc6-935e-f223b49a09f9": {
-      "type": "text",
-      "settings": {
-        "heading": "Ready To {Get Started?}",
-        "text": "",
-        "background": "#f7e9e2"
-      }
     }
   },
   "order": [
@@ -261,7 +255,6 @@
     "de560f05-a7d7-4f2b-88fe-ef50dc5cdab7",
     "35483501-7869-4816-b0c4-888b808586a6",
     "3d279213-0242-4d5a-a815-2cec3d9951bb",
-    "f79e1094-2bf6-4ce9-9d39-1c2b9ac2a080",
-    "127df1e2-c768-4dc6-935e-f223b49a09f9"
+    "f79e1094-2bf6-4ce9-9d39-1c2b9ac2a080"
   ]
 }
