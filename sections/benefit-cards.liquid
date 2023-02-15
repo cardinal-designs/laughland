@@ -38,7 +38,7 @@
               {% unless ingredient_list contains ingredient_name %}
                 {% continue %}
               {% endunless %}
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-ingredient="{{ ingredient_name }}">
                 {% assign formatted_card_heading = block.settings.heading
                   | replace: '{', "<span class='stylized'>"
                   | replace: '}', '</span>'

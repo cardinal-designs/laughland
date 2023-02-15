@@ -27,6 +27,7 @@
     min-height: 600px;
     position: sticky;
     top: 0;
+    aspect-ratio: unset;
   }
 }
 
