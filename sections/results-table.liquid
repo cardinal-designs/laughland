@@ -1,0 +1,172 @@
+{{ 'section-results-table.css' | asset_url | stylesheet_tag }}
+
+{% assign column_blocks = section.blocks | where: 'type', 'column' %}
+{% assign row_blocks = section.blocks | where: 'type', 'row' %}
+
+{% assign formatted_heading = section.settings.heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<div class="page-width">
+  <div class="results-table__inner">
+    <div class="results-table__text">
+      <h4 class="results-table__heading">
+        {{ formatted_heading }}
+      </h4>
+      <p class="results-table__text body body-sm">
+        {{ section.settings.text }}
+      </p>
+    </div>
+    <div class="results-table__wrapper">
+      <table class="results-table__table">
+        <thead class="results-table__thead">
+          <tr class="results-table__tr">
+            {% for column in column_blocks %}
+              <th class="body body-lg results-table__th">
+                {{ column.settings.heading }}
+                {% if column.settings.title %}
+                  <span class="body-xs">{{ column.settings.title }}</span>
+                {% endif %}
+              </th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody class="results-table__tbody">
+          {% for row in row_blocks %}
+            {% assign data = row.settings.data | split: ' | ' %}
+            <tr class="results-table__tr">
+              <td class="results-table__td body body-lg body-medium-weight">{{ row.settings.heading }}</td>
+              {% for col in data %}
+                <td class="results-table__td body body-sm">
+                  {% if forloop.last %}
+                    {% render 'star' %}
+                  {% endif %}
+                  <span>{{ col }}</span>
+                </td>
+              {% endfor %}
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Results Table",
+  "tag": "section",
+  "class": "results-table with-spacing",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap italic text in {}"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Subhead"
+        }
+      ]
+    },
+    {
+      "type": "row",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "header",
+          "content": "Column values"
+        },
+        {
+          "type": "textarea",
+          "id": "data",
+          "label": "Data",
+          "info": "Separate column data with | "
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Results Table",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "heading": "Time Point"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "heading": "Before",
+            "title": "(Mean)"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "heading": "After",
+            "title": "(Mean)"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "heading": "Rate of Change"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "heading": "p-value"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "heading": "Analysis"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "heading": "After 6 Days",
+            "data": "9.7 | 2.5 | -74.29% | <0.001** | Significant Difference"
+          }
+        },
+        {
+          "type": "row",
+          "settings": {
+            "heading": "After 14 Days",
+            "data": "9.7 | 1.2 | -87.27% | <0.001** | Significant Difference"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
