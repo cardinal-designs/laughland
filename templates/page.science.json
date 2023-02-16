@@ -86,11 +86,162 @@
         "btn": "",
         "btn_text": "Find Your Formula"
       }
+    },
+    "21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a": {
+      "type": "results-table",
+      "blocks": {
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-0": {
+          "type": "column",
+          "settings": {
+            "heading": "Time Point",
+            "title": ""
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-1": {
+          "type": "column",
+          "settings": {
+            "heading": "Before",
+            "title": "(Mean)"
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-2": {
+          "type": "column",
+          "settings": {
+            "heading": "After",
+            "title": "(Mean)"
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-3": {
+          "type": "column",
+          "settings": {
+            "heading": "Rate of Change",
+            "title": ""
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-4": {
+          "type": "column",
+          "settings": {
+            "heading": "p-value",
+            "title": ""
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-5": {
+          "type": "column",
+          "settings": {
+            "heading": "Analysis",
+            "title": ""
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-6": {
+          "type": "row",
+          "settings": {
+            "heading": "After 6 Days",
+            "data": "9.7 | 2.5 | -74.29% | <0.001** | Significant Difference"
+          }
+        },
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-7": {
+          "type": "row",
+          "settings": {
+            "heading": "After 14 Days",
+            "data": "9.7 | 1.2 | -87.27% | <0.001** | Significant Difference"
+          }
+        }
+      },
+      "block_order": [
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-0",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-1",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-2",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-3",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-4",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-5",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-6",
+        "template--16738132689121__21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a-1676568127716ac129-7"
+      ],
+      "settings": {
+        "heading": "The Numbers {Speak for Themselves}",
+        "text": "The AD shade guide indicates the lower the score, the whiter the teeth color."
+      }
+    },
+    "647d88e1-5c43-4c4a-b404-5691dafeaa20": {
+      "type": "ingredient-list",
+      "blocks": {
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-0": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Hydrogen Peroxide",
+            "active": true,
+            "text": "Hydrogen peroxide works as a stain remover that penetrates the surface of the tooth enamel and break down the chromogen that cause stains. This oxidization process removes surface stains and discoloration, leading to a brighter and  even appearance of the teeth."
+          }
+        },
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-1": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Sodium Bicarbonate",
+            "active": true,
+            "text": "Sodium Bicarbonate works as a stain remover and breaks down plaque, surface stains and discoloration in the teeth. Its Alkaline nature neutralizes the acids that can cause tooth enamel erosion which can also cause discoloration."
+          }
+        },
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-2": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Glycerin",
+            "active": false,
+            "text": "Glycerin creates a protective barrier on the surface of the teeth, prevent staining agents like coffee, tea, and tobacco from adhering to the tooth surface. As a humectant, it helps keep the moisture in the teeth and reduce the amount of abrasion on the teeth, minimizing tooth sensitivity."
+          }
+        },
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-3": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Cellulose Gum",
+            "active": false,
+            "text": "Cellulose Gum stabilizes and thickens the whitening formula, enhancing the adhesion of the formula to the enamel and accelerating the teeth whitening process."
+          }
+        },
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-4": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Sodium Hydroxide",
+            "active": false,
+            "text": "Sodium Hydroxide works as a desensitizer that neutralizes the acidity of Hydrogen Peroxide, reducing the acidity of the whitening solution and decreasing chance of tooth sensitivity."
+          }
+        },
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-5": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Aloe Vera",
+            "active": false,
+            "text": "Aloe leaf juice from the Aloe Vera plant is used as the clear gel base for our teeth whitening solutions due to its inflammatory and soothing properties, which can reduce tooth sensitivity and reduce microbes."
+          }
+        },
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-6": {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Mint Extract",
+            "active": false,
+            "text": "Mint extract is added to our whitening formula to create a refreshing taste"
+          }
+        }
+      },
+      "block_order": [
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-0",
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-1",
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-2",
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-3",
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-4",
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-5",
+        "template--16738132689121__647d88e1-5c43-4c4a-b404-5691dafeaa20-16765801057ea9a553-6"
+      ],
+      "settings": {
+        "title": "Clean Ingredients That Work",
+        "heading": "Whiten With Science, {Not Gimmicks}"
+      }
     }
   },
   "order": [
     "dab77796-8889-43c9-a14d-3beebb61dfd0",
     "98f3dbc0-b26d-438b-adb6-c068c301a26b",
-    "84b9856e-bf96-4659-92e2-140c310090ca"
+    "84b9856e-bf96-4659-92e2-140c310090ca",
+    "21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a",
+    "647d88e1-5c43-4c4a-b404-5691dafeaa20"
   ]
 }
