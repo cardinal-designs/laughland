@@ -13,33 +13,38 @@
           <div class="results-carousel__image-swiper swiper">
             <div class="swiper-wrapper">
               {% for block in section.blocks %}
-                <div class="results-carousel__image-wrapper swiper-slide">
-                  {% if block.settings.before_photo != blank and block.settings.after_photo != blank %}
-                    <div class="results-carousel__image-slide-container">
-                      {{
-                        block.settings.before_photo
-                        | image_url: width: 300
-                        | image_tag: class: 'results-carousel__before-photo results-carousel__image'
-                      }}
-                      {{
-                        block.settings.after_photo
-                        | image_url: width: 300
-                        | image_tag: class: 'results-carousel__after-photo results-carousel__image'
-                      }}
-                    </div>
+                {% if block.settings.before_photo != blank and block.settings.after_photo != blank %}
+                  <div class="results-carousel__image-wrapper swiper-slide">
+                    <div class="results-carousel__image-inner">
+                      <div class="results-carousel__image-slide-container">
+                        {{
+                          block.settings.before_photo
+                          | image_url: width: 300
+                          | image_tag: class: 'results-carousel__before-photo results-carousel__image'
+                        }}
+                        {{
+                          block.settings.after_photo
+                          | image_url: width: 300
+                          | image_tag: class: 'results-carousel__after-photo results-carousel__image'
+                        }}
+                      </div>
 
-                    <input
-                      type="range"
-                      min="1"
-                      max="100"
-                      value="50"
-                      class="results-carousel__slider"
-                      name="slider"
-                      id="slider"
-                    >
-                    <div class="results-carousel__slider-line" aria-hidden="true"></div>
-                  {% endif %}
-                </div>
+                      <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        value="50"
+                        class="results-carousel__slider"
+                        name="slider"
+                      >
+                      <div class="results-carousel__slider-line" aria-hidden="true"></div>
+                    </div>
+                    <div class="results-carousel__slider-labels body body-sm">
+                      <span>{{ block.settings.before_label | default: 'Pre-treatment' }}</span>
+                      <span>{{ block.settings.after_label | default: 'Day 6' }}</span>
+                    </div>
+                  </div>
+                {% endif %}
               {% endfor %}
             </div>
           </div>
@@ -74,15 +79,6 @@
     allowTouchMove: false,
   });
 
-  const resultsCarouselContentSwiper = new Swiper('.results-carousel__info-swiper', {
-    slidesPerView: 1,
-    allowTouchMove: false,
-    controller: {
-      by: 'slide',
-      control: resultsCarouselImageSwiper,
-    },
-  });
-
   const resultsCarouselControls = document.querySelectorAll('.results-carousel__swiper-button');
 
   if (resultsCarouselControls) {
@@ -91,17 +87,20 @@
         e.preventDefault();
         if (!e.target.classList.contains('active')) {
           document.querySelector('.results-carousel__swiper-button.active').classList.remove('active');
-          resultsCarouselContentSwiper.slideTo(e.target.dataset.swiperSlide);
+          resultsCarouselImageSwiper.slideTo(e.target.dataset.swiperSlide);
           e.target.classList.add('active');
         }
       });
     });
   }
 
-  const resultsSlider = document.querySelector('#slider');
-  resultsSlider.addEventListener('input', function (e) {
-    const sliderPosition = e.target.value;
-    document.querySelector('.results-carousel__image-wrapper').style.setProperty('--position', `${sliderPosition}%`);
+  const resultsSlider = document.querySelectorAll('.results-carousel__slider');
+  resultsSlider.forEach((view) => {
+    view.addEventListener('input', function (e) {
+      const sliderPosition = e.target.value;
+      const slideWrapper = e.target.closest('.results-carousel__image-inner');
+      slideWrapper.style.setProperty('--position', `${sliderPosition}%`);
+    });
   });
 {% endjavascript %}
 
@@ -138,9 +137,19 @@
           "label": "Before photo"
         },
         {
+          "type": "text",
+          "id": "before_label",
+          "label": "Before label"
+        },
+        {
           "type": "image_picker",
           "id": "after_photo",
           "label": "After photo"
+        },
+        {
+          "type": "text",
+          "id": "after_label",
+          "label": "Before label"
         }
       ]
     }
