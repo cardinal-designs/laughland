@@ -10,6 +10,10 @@
   margin-right: auto;
 }
 
+.results-carousel__button {
+  margin-top: 50px;
+}
+
 .results-carousel__container {
   display: grid;
   grid-template-columns: minmax(0, 52%) minmax(0, 1fr);
@@ -95,6 +99,13 @@
   transform: translateX(-50%);
   position: absolute;
   content: "";
+}
+
+.results-carousel__info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .results-carousel__swiper-pagination {

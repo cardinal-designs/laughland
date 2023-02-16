@@ -50,7 +50,7 @@
           </div>
         </div>
 
-        <div class="results-carousel__info">
+        <div class="results-carousel__info-wrapper">
           <div class="results-carousel__swiper-pagination">
             {% for block in section.blocks %}
               <button
@@ -66,6 +66,14 @@
           <div class="results-carousel__info">
             <h2 class="results-carousel__heading m-h4">{{ formatted_heading }}</h2>
             <p class="results-carousel__text">{{ section.settings.text }}</p>
+
+            {% if section.settings.btn != blank and section.settings.btn_text != blank %}
+              <a href="{{ section.settings.btn }}" class="button results-carousel__button">
+                {{- section.settings.btn_text -}}
+              </a>
+            {% elsif section.settings.btn == blank and section.settings.btn_text != blank %}
+              <button class="button results-carousel__button" data-open-quiz>{{ section.settings.btn_text }}</button>
+            {% endif %}
           </div>
         </div>
       </div>
@@ -117,6 +125,21 @@
     {
       "type": "inline_richtext",
       "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "url",
+      "id": "btn",
+      "label": "Link",
+      "info": "Leave blank to have button open quiz"
+    },
+    {
+      "type": "text",
+      "id": "btn_text",
       "label": "Text"
     }
   ],

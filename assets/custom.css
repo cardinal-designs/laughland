@@ -395,6 +395,7 @@ input::placeholder {
   justify-content: center;
   padding: 190px 0 150px;
   overflow: hidden;
+  background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
 }
 
 .Default_Page_Header .main-page-title,
