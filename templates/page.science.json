@@ -235,6 +235,15 @@
         "title": "Clean Ingredients That Work",
         "heading": "Whiten With Science, {Not Gimmicks}"
       }
+    },
+    "03ba1648-7654-4624-bd29-d6e005581681": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Laughland_Homepage_71722_3.jpg",
+        "title": "Ready To Meet Your\n{best Smile?}",
+        "button_label": "Find Your Formula",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -242,6 +251,7 @@
     "98f3dbc0-b26d-438b-adb6-c068c301a26b",
     "84b9856e-bf96-4659-92e2-140c310090ca",
     "21c688f0-bffe-42ce-8ded-d2e6e1ec3d4a",
-    "647d88e1-5c43-4c4a-b404-5691dafeaa20"
+    "647d88e1-5c43-4c4a-b404-5691dafeaa20",
+    "03ba1648-7654-4624-bd29-d6e005581681"
   ]
 }
