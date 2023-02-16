@@ -5,9 +5,92 @@
       "settings": {
         "heading": "Brush off {the BS}"
       }
+    },
+    "98f3dbc0-b26d-438b-adb6-c068c301a26b": {
+      "type": "icon-text-columns",
+      "blocks": {
+        "dab0228c-c848-4bcd-b61e-9502c76dc633": {
+          "type": "text",
+          "settings": {
+            "title": "🧪",
+            "heading": "How We Test",
+            "text": "A clinical trial comprised of 34 healthy male & female from the ages of 18-55 applied Laughland’s whitening formula for 6 and 14 days respectively across 2 weeks."
+          }
+        },
+        "546e34b3-9337-4c01-83c6-941339834146": {
+          "type": "text",
+          "settings": {
+            "title": "🦷",
+            "heading": "Clear Results",
+            "text": "Participants reported an average 74% increase in teeth brightness. This represents <strong>7.2 shades whiter<\/strong> teeth after only  6 days."
+          }
+        },
+        "d837aaee-c071-4c08-b5cf-7bbc42a1ced4": {
+          "type": "text",
+          "settings": {
+            "title": "👍",
+            "heading": "100% Effective",
+            "text": "100% of participants reported an increase in teeth whiteness after only 6 treatments and none of the participants reported an increase in sensitivity."
+          }
+        }
+      },
+      "block_order": [
+        "dab0228c-c848-4bcd-b61e-9502c76dc633",
+        "546e34b3-9337-4c01-83c6-941339834146",
+        "d837aaee-c071-4c08-b5cf-7bbc42a1ced4"
+      ],
+      "settings": {
+        "heading": "Dentist-certified {and} clinically tested"
+      }
+    },
+    "84b9856e-bf96-4659-92e2-140c310090ca": {
+      "type": "results-carousel",
+      "blocks": {
+        "19a46550-5ee4-44b1-832d-1abd5d7d8dea": {
+          "type": "results",
+          "settings": {
+            "heading": "View",
+            "before_photo": "shopify:\/\/shop_images\/Laughland_79214_1_d0fdb9a7-0153-4891-bf0b-ecc5620b5cdf.jpg",
+            "before_label": "",
+            "after_photo": "shopify:\/\/shop_images\/Laughland_79214_1_d0fdb9a7-0153-4891-bf0b-ecc5620b5cdf.jpg",
+            "after_label": ""
+          }
+        },
+        "91d7bfd6-90c6-4807-a1fc-22578816e306": {
+          "type": "results",
+          "settings": {
+            "heading": "View",
+            "before_photo": "shopify:\/\/shop_images\/Laughland_79400_1.jpg",
+            "before_label": "",
+            "after_photo": "shopify:\/\/shop_images\/Laughland_79400_1.jpg",
+            "after_label": ""
+          }
+        },
+        "42ca7b78-1581-464e-be27-0faa047834ec": {
+          "type": "results",
+          "settings": {
+            "heading": "View",
+            "before_label": "",
+            "after_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "19a46550-5ee4-44b1-832d-1abd5d7d8dea",
+        "91d7bfd6-90c6-4807-a1fc-22578816e306",
+        "42ca7b78-1581-464e-be27-0faa047834ec"
+      ],
+      "settings": {
+        "heading": "Results To {Smile} About",
+        "text": "On average, participants saw between <strong>74%<\/strong> and <strong>87%<\/strong> improvement in whiteness after using the Laughland At-Home Kit for 6 and 14 days respectively.",
+        "btn": "",
+        "btn_text": "Find Your Formula"
+      }
     }
   },
   "order": [
-    "dab77796-8889-43c9-a14d-3beebb61dfd0"
+    "dab77796-8889-43c9-a14d-3beebb61dfd0",
+    "98f3dbc0-b26d-438b-adb6-c068c301a26b",
+    "84b9856e-bf96-4659-92e2-140c310090ca"
   ]
 }
