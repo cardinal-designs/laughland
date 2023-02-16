@@ -1,8 +1,11 @@
 .hero {
-  height: 650px
+  min-height: 700px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-
 
 .hero.add-overlay::after {
   content: '';
@@ -27,12 +30,9 @@
 }
 
 .hero__inner {
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
   position: relative;
   z-index: 2;
+  width: 100%;
 }
 
 .hero__container {

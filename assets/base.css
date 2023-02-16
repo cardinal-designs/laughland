@@ -1688,8 +1688,8 @@ deferred-media {
   Main
 ==============================================================================*/
 
-#MainContent {
-  /* margin-bottom: -60px; */
+#MainContent:not(.template-product) {
+  margin-bottom: -60px;
 }
 
 #MainContent > * {
