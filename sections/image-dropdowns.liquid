@@ -30,7 +30,12 @@
             </div>
           </div>
         {% endfor %}
-        <a href="{{ section.settings.button_link }}" class="image-dropdowns__button button">{{ section.settings.button_label }}</a>
+
+        {% if section.settings.button_link != blank and section.settings.button_label != blank %}
+          <a href="{{ section.settings.button_link }}" class="image-dropdowns__button button">{{ section.settings.button_label }}</a>
+        {% elsif section.settings.button_link == blank and section.settings.button_label != blank %}
+              <button class="image-dropdowns__button button" data-open-quiz>{{ section.settings.button_label }}</button>
+        {% endif %}
       </div>
     </div>
   </div>
