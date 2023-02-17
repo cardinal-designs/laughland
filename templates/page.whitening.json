@@ -1,5 +1,11 @@
 {
   "sections": {
+    "3f403f92-d7ab-49c8-b6d3-e9eba5385bd7": {
+      "type": "marquee-header",
+      "settings": {
+        "heading": "Whitening {101}"
+      }
+    },
     "text": {
       "type": "text-with-blocks",
       "blocks": {
@@ -122,6 +128,7 @@
     }
   },
   "order": [
+    "3f403f92-d7ab-49c8-b6d3-e9eba5385bd7",
     "text",
     "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01",
     "e71299d9-0fca-4b45-8fe5-f4824c5060ea",
