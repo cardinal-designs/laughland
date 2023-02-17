@@ -92,6 +92,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .ingredient-list.with-spacing {
+    margin: 0;
+  }
   .ingredient-list .page-width {
     padding: 0;
   }

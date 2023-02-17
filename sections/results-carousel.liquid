@@ -9,6 +9,18 @@
   <div class="page-width">
     <div class="results-carousel__inner">
       <div class="results-carousel__container">
+        <div class="results-carousel__info hide-desktop">
+          <p class="results-carousel__text">{{ section.settings.text }}</p>
+
+          {% if section.settings.btn != blank and section.settings.btn_text != blank %}
+            <a href="{{ section.settings.btn }}" class="button results-carousel__button">
+              {{- section.settings.btn_text -}}
+            </a>
+          {% elsif section.settings.btn == blank and section.settings.btn_text != blank %}
+            <button class="button results-carousel__button" data-open-quiz>{{ section.settings.btn_text }}</button>
+          {% endif %}
+        </div>
+
         <div class="results-carousel__images">
           <div class="results-carousel__image-swiper swiper">
             <div class="swiper-wrapper">
@@ -65,14 +77,16 @@
 
           <div class="results-carousel__info">
             <h2 class="results-carousel__heading m-h4">{{ formatted_heading }}</h2>
-            <p class="results-carousel__text">{{ section.settings.text }}</p>
+            <p class="results-carousel__text hide-mobile">{{ section.settings.text }}</p>
 
             {% if section.settings.btn != blank and section.settings.btn_text != blank %}
-              <a href="{{ section.settings.btn }}" class="button results-carousel__button">
+              <a href="{{ section.settings.btn }}" class="button results-carousel__button hide-mobile">
                 {{- section.settings.btn_text -}}
               </a>
             {% elsif section.settings.btn == blank and section.settings.btn_text != blank %}
-              <button class="button results-carousel__button" data-open-quiz>{{ section.settings.btn_text }}</button>
+              <button class="button results-carousel__button hide-mobile" data-open-quiz>
+                {{ section.settings.btn_text }}
+              </button>
             {% endif %}
           </div>
         </div>
