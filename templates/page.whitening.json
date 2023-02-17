@@ -125,6 +125,16 @@
         "link_label": "Learn More",
         "link": ""
       }
+    },
+    "abd298b4-e507-41dc-b608-6fd41a0f439e": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Laughland_Homepage_71722_3.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Laughland_Homepage_71722_tall_2.jpg",
+        "title": "Ready To Met Your\n{Best Smile?}",
+        "button_label": "Find Your Formula",
+        "button_link": ""
+      }
     }
   },
   "order": [
@@ -132,6 +142,7 @@
     "text",
     "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01",
     "e71299d9-0fca-4b45-8fe5-f4824c5060ea",
-    "7d61af94-868e-49f5-88e9-eeb479f29fcc"
+    "7d61af94-868e-49f5-88e9-eeb479f29fcc",
+    "abd298b4-e507-41dc-b608-6fd41a0f439e"
   ]
 }
