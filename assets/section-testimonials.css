@@ -237,5 +237,6 @@
     line-height: 2em;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
+    padding-top: 20px;
   }
 }

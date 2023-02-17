@@ -1,6 +1,10 @@
 .hero {
-  min-height: 700px;
+  height: 650px;
   position: relative;
+}
+
+.hero:not(.homepage-hero){
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,6 +33,13 @@
   object-position: center;
 }
 
+.homepage-hero .hero__inner {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
 .hero__inner {
   position: relative;
   z-index: 2;
@@ -45,14 +56,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero {
+  .hero:not(.homepage-hero) {
     height: 540px;
     justify-content: flex-start;
     align-items: center;
     padding-top: 70px;
   }
 
-  .hero__container {
+  .hero:not(.homepage-hero) .hero__container {
     text-align: center;
   }
 }
