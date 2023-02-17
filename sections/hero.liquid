@@ -15,7 +15,13 @@
   <div class="page-width hero__inner">
     <div class="hero__container">
       <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
-      <a href="{{ section.settings.button_link }}" class="button">{{ section.settings.button_label }}</a>
+      {% if section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="button button--secondary">
+          {{- section.settings.button_label -}}
+        </a>
+      {% else %}
+        <button class="button button--secondary" data-open-quiz>{{ section.settings.button_label }}</button>
+      {% endif %}
     </div>
   </div>
 </div>

@@ -1,8 +1,6 @@
 <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
-<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
 {% if section.settings.heading != blank %}
   {% assign formatted_title = section.settings.heading
@@ -16,29 +14,28 @@
 
 <div class="Default_Page_Header">
   {%- for i in (1..5) -%}
-    <h1 class="main-page-title page-title h0">
+    <h1 class="main-page-title page-title h1">
       {{ formatted_title | newline_to_br }}
     </h1>
   {%- endfor -%}
 </div>
 
-<div class="page-width">
-  <div class="rte">
-    {{ page.content }}
-  </div>
-</div>
-
 {% schema %}
 {
-  "name": "t:sections.main-page.name",
+  "name": "Marquee Header",
   "tag": "section",
-  "class": "spaced-section default-page-template",
+  "class": "marquee-header",
   "settings": [
     {
       "type": "textarea",
       "id": "heading",
       "label": "Heading",
       "info": "Wrap italic text in {}"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Maquee Header"
     }
   ]
 }

@@ -95,7 +95,7 @@
           <div class="image-text__button-wrapper">
             {% if section.settings.btn != blank and section.settings.btn_text != blank %}
               <a href="{{ section.settings.btn }}" class="button">{{ section.settings.btn_text }}</a>
-            {% else %}
+            {% elsif section.settings.btn == blank and section.settings.btn_text != blank %}
               <button class="button" data-open-quiz>{{ section.settings.btn_text }}</button>
             {% endif %}
 

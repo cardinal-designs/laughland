@@ -1,0 +1,122 @@
+.ingredient-list__inner {
+  background: var(--blue-tint-20);
+  padding: 90px 50px;
+  border-radius: 12px;
+}
+
+.ingredient-list__header {
+  margin-bottom: 70px;
+}
+
+.ingredient-list__subhead {
+  margin-bottom: 20px;
+}
+
+.ingredient-list__heading {
+  margin-bottom: 0;
+}
+
+.ingredient-list__list-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 100px;
+}
+
+.ingredient-list__list-wrapper > div {
+  flex: 1;
+}
+
+.ingredient-list__button {
+  color: var(--navy-tint-40);
+  position: relative;
+  padding-left: 0;
+  transition: all .3s ease;
+  /* margin-bottom: 0; */
+}
+
+.ingredient-list__button:before {
+  content: url("data:image/svg+xml,%3Csvg width='35' height='25' viewBox='0 0 35 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.419 0L15.0101 1.10969C15.0101 1.10969 20.9501 8.4162 24.66 11.3455H0V13.652H24.66C20.9501 16.5812 15.0101 23.8877 15.0101 23.8877L16.419 24.9974C16.419 24.9974 25.2268 16.0097 35 12.4987C25.2268 8.9877 16.419 0 16.419 0Z' fill='%230D2244'/%3E%3C/svg%3E%0A");
+  position: absolute;
+  height: auto;
+  width: 35px;
+  top: 50%;
+  left: 0;
+  opacity: 0;
+  transform: translate(-120%, -50%);
+  transition: all .3s ease;
+}
+
+.ingredient-list__button + .ingredient-list__content {
+  padding-lefT: 47px;
+}
+
+.ingredient-list__content {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity .3s ease .1s, transform .3s ease .2s;
+}
+
+.ingredient-list__block.active .ingredient-list__button {
+  color: var(--navy);
+  padding-left: 47px;
+  pointer-events: none;
+}
+
+.ingredient-list__block.active .ingredient-list__button:before {
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+.ingredient-list__block.active .ingredient-list__content {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.ingredient-list__tag {
+  margin-bottom: 26px;
+}
+
+.ingredient-list__desktop {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'active';
+  overflow: hidden;
+}
+
+.ingredient-list__desktop .ingredient-list__block {
+  grid-area: active;
+}
+
+@media screen and (max-width: 768px) {
+  .ingredient-list.with-spacing {
+    margin: 0;
+  }
+  .ingredient-list .page-width {
+    padding: 0;
+  }
+
+  .ingredient-list__inner {
+    padding: 60px 25px;
+    border-radius: 0;
+  }
+
+  .ingredient-list__header {
+    margin-bottom: 40px;
+  }
+
+  .ingredient-list__button {
+    margin: 15px 0;
+  }
+
+  .ingredient-list__tag {
+    margin-bottom: 12px;
+  }
+
+  .ingredient-list__content {
+    display: none;
+  }
+}

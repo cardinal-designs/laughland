@@ -1,0 +1,201 @@
+{{ 'section-ingredient-list.css' | asset_url | stylesheet_tag }}
+{% assign formatted_heading = section.settings.heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<div class="page-width">
+  <div class="ingredient-list__inner">
+    <div class="ingredient-list__header">
+      <h5 class="ingredient-list__subhead">{{ section.settings.title }}</h5>
+      <h2 class="ingredient-list__heading">{{ formatted_heading }}</h2>
+    </div>
+
+    <div class="ingredient-list__list-wrapper">
+      <div class="ingredient-list__list">
+        {% for ingredient in section.blocks %}
+          <div class="ingredient-list__block {% if forloop.first %}active{% endif%}">
+            <button
+              class="ingredient-list__button h4 m-h5"
+              data-controls="ingredient-{{ forloop.index }}-{{ ingredient.settings.heading | handleize }}"
+            >
+              {{ ingredient.settings.heading }}
+            </button>
+
+            <div class="ingredient-list__content hide-desktop">
+              {% if ingredient.settings.active == true %}
+                <div>
+                  <span class="ingredient-list__tag button button--secondary button--xs">Active Ingredient</span>
+                </div>
+              {% endif %}
+              <p class="ingredient-list__text">{{ ingredient.settings.text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="ingredient-list__desktop hide-mobile">
+        {% for ingredient in section.blocks %}
+          <div
+            class="ingredient-list__block {% if forloop.first %}active{% endif%}"
+            data-ingredient="ingredient-{{ forloop.index }}-{{ ingredient.settings.heading | handleize }}"
+          >
+            <div class="ingredient-list__content">
+              {% if ingredient.settings.active == true %}
+                <div>
+                  <span class="ingredient-list__tag button button--secondary button--xs">Active Ingredient</span>
+                </div>
+              {% endif %}
+              <p class="ingredient-list__text">{{ ingredient.settings.text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% javascript %}
+  const ingredientButtons = document.querySelectorAll('.ingredient-list__button');
+
+  ingredientButtons.forEach((button) => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      const container = e.target.closest('.ingredient-list');
+      const currentActive = container.querySelectorAll('.ingredient-list__block.active');
+
+      const parent = e.target.parentElement;
+      const content = document.querySelector(`[data-ingredient='${e.target.dataset.controls}']`);
+
+      currentActive.forEach((active) => {
+        active.classList.remove('active');
+        if (active.querySelector('.ingredient-list__content')) {
+          slideUp(active.querySelector('.ingredient-list__content'), 400);
+        }
+      });
+
+      if (parent.classList.contains('active')) {
+        parent.classList.remove('active');
+        content.classList.remove('active');
+        slideUp(parent.querySelector('.ingredient-list__content'), 400);
+      } else {
+        parent.classList.add('active');
+        content.classList.add('active');
+        slideDown(parent.querySelector('.ingredient-list__content'), 400);
+      }
+    });
+  });
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Ingredient List",
+  "tag": "section",
+  "class": "ingredient-list with-spacing",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Subhead"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap italic text in {}"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Name"
+        },
+        {
+          "type": "checkbox",
+          "id": "active",
+          "label": "Active ingredient",
+          "default": false
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredient List",
+      "settings": {
+        "title": "Clean Ingredients That Work",
+        "heading": "Whiten With Science, {Not Gimmicks}"
+      },
+      "blocks": [
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Hydrogen Peroxide",
+            "active": true,
+            "text": "Hydrogen peroxide works as a stain remover that penetrates the surface of the tooth enamel and break down the chromogen that cause stains. This oxidization process removes surface stains and discoloration, leading to a brighter and  even appearance of the teeth."
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Sodium Bicarbonate",
+            "active": true,
+            "text": "Sodium Bicarbonate works as a stain remover and breaks down plaque, surface stains and discoloration in the teeth. Its Alkaline nature neutralizes the acids that can cause tooth enamel erosion which can also cause discoloration."
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Glycerin",
+            "active": false,
+            "text": "Glycerin creates a protective barrier on the surface of the teeth, prevent staining agents like coffee, tea, and tobacco from adhering to the tooth surface. As a humectant, it helps keep the moisture in the teeth and reduce the amount of abrasion on the teeth, minimizing tooth sensitivity."
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Cellulose Gum",
+            "active": false,
+            "text": "Cellulose Gum stabilizes and thickens the whitening formula, enhancing the adhesion of the formula to the enamel and accelerating the teeth whitening process."
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Sodium Hydroxide",
+            "active": false,
+            "text": "Sodium Hydroxide works as a desensitizer that neutralizes the acidity of Hydrogen Peroxide, reducing the acidity of the whitening solution and decreasing chance of tooth sensitivity."
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Aloe Vera",
+            "active": false,
+            "text": "Aloe leaf juice from the Aloe Vera plant is used as the clear gel base for our teeth whitening solutions due to its inflammatory and soothing properties, which can reduce tooth sensitivity and reduce microbes."
+          }
+        },
+        {
+          "type": "ingredient",
+          "settings": {
+            "heading": "Mint Extract",
+            "active": false,
+            "text": "Mint extract is added to our whitening formula to create a refreshing taste"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

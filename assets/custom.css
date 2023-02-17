@@ -389,19 +389,27 @@ input::placeholder {
 }
 
 .Default_Page_Header {
-  height: 450px;
+  min-height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 190px 0 150px;
   overflow: hidden;
+  background: linear-gradient(180deg, #DAF2FC 0%, #FAF5F1 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .Default_Page_Header {
+    min-height: 390px;
+    padding: 100px 0 90px;
+  }
 }
 
 .Default_Page_Header .main-page-title,
 .policies-tempalates .shopify-policy__title h1 {
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 5s linear infinite;
+  animation: marquee 8s linear infinite;
   flex: auto 0 0;
   padding: 0 50px;
 }
