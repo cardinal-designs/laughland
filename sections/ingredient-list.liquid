@@ -16,7 +16,7 @@
         {% for ingredient in section.blocks %}
           <div class="ingredient-list__block {% if forloop.first %}active{% endif%}">
             <button
-              class="ingredient-list__button h4"
+              class="ingredient-list__button h4 m-h5"
               data-controls="ingredient-{{ forloop.index }}-{{ ingredient.settings.heading | handleize }}"
             >
               {{ ingredient.settings.heading }}
@@ -70,6 +70,9 @@
 
       currentActive.forEach((active) => {
         active.classList.remove('active');
+        if (active.querySelector('.ingredient-list__content')) {
+          slideUp(active.querySelector('.ingredient-list__content'), 400);
+        }
       });
 
       if (parent.classList.contains('active')) {
@@ -89,7 +92,7 @@
 {
   "name": "Ingredient List",
   "tag": "section",
-  "class": "with-spacing ingredient-list",
+  "class": "ingredient-list",
   "settings": [
     {
       "type": "text",

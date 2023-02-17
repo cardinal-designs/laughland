@@ -159,14 +159,18 @@
   }
   .results-carousel__container {
     display: block;
+    /* display: flex; */
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
   }
 
   .results-carousel__inner {
     margin-top: 40px;
   }
 
-  .results-carousel__image {
-    aspect-ratio: .84/1;
+  .results-carousel__image-container {
+    height: 340px;
   }
 
   .results-carousel__swiper-pagination {

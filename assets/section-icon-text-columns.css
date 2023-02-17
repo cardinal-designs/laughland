@@ -54,7 +54,19 @@
     display: block;
   }
 
+  .icon-text-columns__heading-wrapper {
+    margin-bottom: 30px;
+  }
+
   .icon-text-columns__block-wrapper {
     flex-direction: column;
+  }
+
+  .icon-text-columns__block-wrapper {
+    row-gap: 30px;
+  }
+
+  .icon-text-columns__item-heading {
+    margin-bottom: 12px;
   }
 }

@@ -12,6 +12,10 @@
   margin-bottom: 20px;
 }
 
+.ingredient-list__heading {
+  margin-bottom: 0;
+}
+
 .ingredient-list__list-wrapper {
   display: flex;
   flex-direction: row;
@@ -44,8 +48,11 @@
   transition: all .3s ease;
 }
 
+.ingredient-list__button + .ingredient-list__content {
+  padding-lefT: 47px;
+}
+
 .ingredient-list__content {
-  /* display: none; */
   opacity: 0;
   transform: translateY(30px);
   transition: opacity .3s ease .1s, transform .3s ease .2s;
@@ -82,4 +89,31 @@
 
 .ingredient-list__desktop .ingredient-list__block {
   grid-area: active;
+}
+
+@media screen and (max-width: 768px) {
+  .ingredient-list .page-width {
+    padding: 0;
+  }
+
+  .ingredient-list__inner {
+    padding: 60px 25px;
+    border-radius: 0;
+  }
+
+  .ingredient-list__header {
+    margin-bottom: 40px;
+  }
+
+  .ingredient-list__button {
+    margin: 15px 0;
+  }
+
+  .ingredient-list__tag {
+    margin-bottom: 12px;
+  }
+
+  .ingredient-list__content {
+    display: none;
+  }
 }

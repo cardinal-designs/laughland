@@ -254,6 +254,8 @@ h1,
 @media only screen and (max-width: 768px) {
   h1,
   .h1 {
+    font-size: 55px;
+    line-height: 58px;
   }
 }
 
@@ -2294,4 +2296,13 @@ section.with-spacing {
   margin: 0 0 100px;
   font-family: manrope,sans-serif;
   font-weight: 400;
+}
+
+.accordion-toggle svg line {
+  transform-origin: center;
+  transition: all .3s ease;
+}
+
+.active .accordion-toggle svg line {
+  transform: rotate(90deg);
 }

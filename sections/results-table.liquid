@@ -20,7 +20,7 @@
     </div>
     <div class="results-table__wrapper">
       <table class="results-table__table">
-        <thead class="results-table__thead">
+        <thead class="results-table__thead hide-mobile">
           <tr class="results-table__tr">
             {% for column in column_blocks %}
               <th class="body body-lg results-table__th">
@@ -35,16 +35,32 @@
         <tbody class="results-table__tbody">
           {% for row in row_blocks %}
             {% assign data = row.settings.data | split: ' | ' %}
-            <tr class="results-table__tr">
-              <td class="results-table__td body body-lg body-medium-weight">{{ row.settings.heading }}</td>
-              {% for col in data %}
-                <td class="results-table__td body body-sm">
-                  {% if forloop.last %}
-                    {% render 'star' %}
-                  {% endif %}
-                  <span>{{ col }}</span>
-                </td>
-              {% endfor %}
+            <tr class="results-table__tr {% if forloop.first %}active{% endif %}">
+              <td class="results-table__td body body-lg body-medium-weight">
+                <span class="hide-mobile">{{ row.settings.heading }}</span>
+                <button data-table-button class="hide-desktop body body-lg body-medium-weight">
+                  <span>{{ row.settings.heading }}</span>
+                  <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
+                </button>
+              </td>
+              <td class="results-table__td results-table__inner-table-wrapper" colspan="{{ data.size }}">
+                <table class="results-table__inner-table">
+                  <tr>
+                    {% for col in data %}
+                      <td class="results-table__td body body-sm">
+                        <span class="hide-desktop">
+                          {{- column_blocks[forloop.index].settings.heading }}
+                          <em class="body-xs">{{ column_blocks[forloop.index].settings.title }}</em>
+                        </span>
+                        {% if forloop.last %}
+                          {% render 'star' %}
+                        {% endif %}
+                        <span>{{ col }}</span>
+                      </td>
+                    {% endfor %}
+                  </tr>
+                </table>
+              </td>
             </tr>
           {% endfor %}
         </tbody>
@@ -52,6 +68,27 @@
     </div>
   </div>
 </div>
+
+{% javascript %}
+  const tableButtons = document.querySelectorAll('[data-table-button]');
+
+  tableButtons.forEach((button) => {
+    button.addEventListener('click', function (e) {
+      const parent = e.target.closest('tr');
+      const content = parent.querySelector('.results-table__td:last-of-type');
+      const container = e.target.closest('table');
+
+      if (parent.classList.contains('active')) {
+        parent.classList.remove('active');
+        slideUp(content, 400);
+      } else {
+        parent.classList.add('active');
+        slideDown(content, 400);
+      }
+    });
+  });
+{% endjavascript %}
+
 {% schema %}
 {
   "name": "Results Table",

@@ -46,7 +46,14 @@
 
 @media screen and (max-width: 768px) {
   .hero {
-    height: 550px;
+    height: 540px;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 70px;
+  }
+
+  .hero__container {
+    text-align: center;
   }
 }
 
