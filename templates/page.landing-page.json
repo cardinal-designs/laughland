@@ -44,6 +44,15 @@
         "heading": "{Why} Laughland?"
       }
     },
+    "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
+      "type": "pricing-section",
+      "settings": {
+        "section_heading": "Not all whitening is {Created Equal}",
+        "section_sub_heading": "Not all whitening is Created Equal",
+        "button_label": "",
+        "button_url": ""
+      }
+    },
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa": {
       "type": "carousel",
       "blocks": {
@@ -181,6 +190,7 @@
   "order": [
     "main",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
+    "d3414607-66d0-46b2-a396-e6a4263c1ca4",
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
     "49f3d9ac-7509-4919-89f3-3c6825a727c8",
     "b60d8150-a8c1-4d20-a017-a4952d382660"
