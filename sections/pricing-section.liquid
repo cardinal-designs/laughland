@@ -2,6 +2,11 @@
 {% assign pricing_column = section.blocks | where: 'type', 'column' %}
 {% assign pricing_data = section.blocks | where: 'type', 'row' %}
 
+{% assign formatted_heading = section.settings.section_heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
 <div class="Pricing_Section">
   <div class="page-width">
     <div class="Section_Header">
