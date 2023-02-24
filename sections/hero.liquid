@@ -20,7 +20,7 @@
           {{- section.settings.button_label -}}
         </a>
       {% else %}
-        <button class="button button--secondary" data-open-quiz>{{ section.settings.button_label }}</button>
+        <button class="button {% if section.settings.button_style == 'primary' %}{% else %}button--secondary{% endif %}" data-open-quiz>{{ section.settings.button_label }}</button>
       {% endif %}
     </div>
   </div>
@@ -67,6 +67,22 @@
       "type": "url",
       "id": "button_link",
       "label": "Button Link"
+    },
+    {
+      "type": "select",
+      "id": "button_style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "secondary",
+      "label": "Button Style"
     }
   ],
   "presets": [
