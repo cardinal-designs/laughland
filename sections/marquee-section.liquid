@@ -1,4 +1,16 @@
-
+{% assign formatted_title = section.settings.heading
+  | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+  
+<div class="Marquee_Section">
+  {%- for i in (1..5) -%}
+    <h1 class="main-page-title page-title h1">
+      {{ formatted_title | newline_to_br }}
+    </h1>
+  {%- endfor -%}
+</div>
 
 {% schema %}
   {
