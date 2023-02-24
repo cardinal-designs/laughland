@@ -10,10 +10,13 @@
         {% endif %}
       </div>
       <div class="Faq_Area">
-        <div class="Faq_List">
+        <div class="Faq_List accordionWrapper">
           {% for block in section.blocks %}
-            <div class="Single_Faq">
-              
+            <div class="Single_Faq accordionItem close">
+              <h2 class="accordionItemHeading">{{ block.settings.title }}</h2>
+              <div class="accordionItemContent body-1">
+                {{ block.settings.sub_title }}
+              </div>
             </div>
           {% endfor %}
         </div>
