@@ -64,6 +64,6 @@
   transform: translateY(-50%);
 }
 
-.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion:after {
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion.is-open:after {
   background-image: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 21' width='20' height='21'%3E%3Cpath id='Layer' stroke='%230d2244' class='s0' d='m20 10.5h-20'/%3E%3C/svg%3E");
 }
