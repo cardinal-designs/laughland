@@ -1,4 +1,21 @@
-
 .Instagram_Section {
   padding: 60px 0 108px 0;
+}
+
+.Instagram_Section .Images_List {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.Instagram_Section .Images_List .Single_Image {
+  flex: 20% 0 0;
+  max-width: 20%;
+  padding: 0 6px;
+}
+
+.Instagram_Section .Images_List .Single_Image img {
+  border-radius: 12px;
+  width: 100%;
+  display: block;
 }
