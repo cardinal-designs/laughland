@@ -14,7 +14,7 @@
   padding: 0 6px;
 }
 
-.Instagram_Section .Images_List .Single_Image img {
+.Instagram_Section .Images_List .Single_Image .IG_Image {
   border-radius: 12px;
   width: 100%;
   display: block;
