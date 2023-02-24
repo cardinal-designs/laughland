@@ -1,3 +1,5 @@
+{{ 'section-pricing.css' | asset_url | stylesheet_tag }}
+
 {% assign formatted_heading = section.settings.section_heading
   | replace: '{', "<span class='stylized'>"
   | replace: '}', '</span>'
