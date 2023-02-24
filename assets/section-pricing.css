@@ -56,9 +56,14 @@
   color: #46BDF0;
 }
 
-
 .Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges {
   position: absolute;
   right: -70px;
   top: -70px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Button_Area {
+  display: block;
+  text-align: center;
+  margin-top: 80px;
 }
