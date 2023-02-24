@@ -91,7 +91,7 @@
       "mobile-menu": {
         "type": "mobile-menu",
         "settings": {
-          "menu": "main-menu"
+          "menu": "mobile-menu"
         }
       },
       "homepage-hero": {
