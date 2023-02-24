@@ -14,3 +14,45 @@
   margin-top: 10px;
   width: 100%;
 }
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 11px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td {
+    border: 1px solid #DAF2FC;
+    padding: 15px 14px;
+    text-align: center;
+    height: 60px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th {
+    border: none;
+    padding: 12px 14px;
+    text-align: center;
+    height: 64px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead {}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:first-child {
+    width: 450px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td:last-child {
+    background-color: #ECF8FE;
+    color: #46BDF0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:last-child {
+    color: #46BDF0;
+}
