@@ -71,53 +71,6 @@
       "settings": {
       }
     },
-    "b60d8150-a8c1-4d20-a017-a4952d382660": {
-      "type": "instagram",
-      "blocks": {
-        "bf56c20e-2ced-442b-8dd5-831b38863d61": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IG-Image-1.jpg"
-          }
-        },
-        "6535ba57-bd90-43b5-8c6e-f75b9a51be31": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IG-Image-2.jpg"
-          }
-        },
-        "46369378-93b9-4365-a694-53f175bca28b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IG-Image-3.jpg"
-          }
-        },
-        "9a1df953-43c6-42b5-962e-43f443c50f37": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IG-Image-4.jpg"
-          }
-        },
-        "ce0ea17d-780b-43ad-a772-20b6743c982b": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/IG-Image-5.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "bf56c20e-2ced-442b-8dd5-831b38863d61",
-        "6535ba57-bd90-43b5-8c6e-f75b9a51be31",
-        "46369378-93b9-4365-a694-53f175bca28b",
-        "9a1df953-43c6-42b5-962e-43f443c50f37",
-        "ce0ea17d-780b-43ad-a772-20b6743c982b"
-      ],
-      "settings": {
-        "section_heading": "Join the movement",
-        "section_sub_heading": "@mylaughland",
-        "sub_heading_link": "https:\/\/www.instagram.com\/"
-      }
-    },
     "49f3d9ac-7509-4919-89f3-3c6825a727c8": {
       "type": "faq-section",
       "blocks": {
@@ -176,13 +129,60 @@
         "section_heading": "Still have<br> questions?",
         "section_sub_heading": ""
       }
+    },
+    "b60d8150-a8c1-4d20-a017-a4952d382660": {
+      "type": "instagram",
+      "blocks": {
+        "bf56c20e-2ced-442b-8dd5-831b38863d61": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-1.jpg"
+          }
+        },
+        "6535ba57-bd90-43b5-8c6e-f75b9a51be31": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-2.jpg"
+          }
+        },
+        "46369378-93b9-4365-a694-53f175bca28b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-3.jpg"
+          }
+        },
+        "9a1df953-43c6-42b5-962e-43f443c50f37": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-4.jpg"
+          }
+        },
+        "ce0ea17d-780b-43ad-a772-20b6743c982b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "bf56c20e-2ced-442b-8dd5-831b38863d61",
+        "6535ba57-bd90-43b5-8c6e-f75b9a51be31",
+        "46369378-93b9-4365-a694-53f175bca28b",
+        "9a1df953-43c6-42b5-962e-43f443c50f37",
+        "ce0ea17d-780b-43ad-a772-20b6743c982b"
+      ],
+      "settings": {
+        "section_heading": "Join the movement",
+        "section_sub_heading": "@mylaughland",
+        "sub_heading_link": "https:\/\/www.instagram.com\/"
+      }
     }
   },
   "order": [
     "main",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
-    "b60d8150-a8c1-4d20-a017-a4952d382660",
-    "49f3d9ac-7509-4919-89f3-3c6825a727c8"
+    "49f3d9ac-7509-4919-89f3-3c6825a727c8",
+    "b60d8150-a8c1-4d20-a017-a4952d382660"
   ]
 }
