@@ -19,8 +19,12 @@
           </div>
 
           <div class="icon-with-text__text-wrapper">
-            <h5 class="icon-with-text__item-heading">{{ block.settings.heading }}</h5>
-            <p class="icon-with-text__item-text">{{ block.settings.text }}</p>
+            {% if block.settings.heading != blank %}
+              <h5 class="icon-with-text__item-heading">{{ block.settings.heading }}</h5>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <p class="icon-with-text__item-text">{{ block.settings.text }}</p>
+            {% endif %}
           </div>
         </div>
       {% endfor %}
