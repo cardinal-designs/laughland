@@ -722,3 +722,11 @@ input::placeholder {
 .menu-drawer__header {
   border-bottom: 0;
 }
+
+.menu-drawer__menu li {
+  border-bottom: 0;
+}
+
+.menu-drawer__close svg {
+  width: 22px;
+}
