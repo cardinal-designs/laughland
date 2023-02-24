@@ -1,9 +1,15 @@
+.Marquee_Section {
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #0D2244;
+  padding: 23px 0;
+}
+
 .Marquee_Section .Marquee_List {
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  background: linear-gradient(180deg,#DAF2FC 0%,#FAF5F1 100%);
 }
 
 .Marquee_Section .Marquee_List .Single_Marquee {
