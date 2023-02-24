@@ -24,12 +24,12 @@
   padding: 0 20px;
 }
 
-.accordion-content {
+.Accordion-Content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-in-out;
 }
 
-.accordion-content .Accordion-Inr-Content {
+.Accordion-Content .Accordion-Inr-Content {
   padding: 10px 0;
 }
