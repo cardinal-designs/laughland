@@ -16,7 +16,7 @@
         <div class="Faq_List">
           {% for block in section.blocks %}
             <div class="accordion-block">
-              <h6 class="accordion-title sh1">{{ block.settings.title }}</h6>
+              <button class="accordion sh1">{{ block.settings.title }}</button>
               <div class="accordion-content body-1">
                 {{ block.settings.sub_title }}
               </div>
