@@ -739,3 +739,7 @@ input::placeholder {
 .header__svg-logo {
   margin: 0 auto;
 }
+
+.menu-drawer__header {
+  padding: 15px 20px 20px;
+}
