@@ -47,49 +47,106 @@
     "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
       "type": "pricing-section",
       "blocks": {
-        "614f2e38-845d-4812-9c12-865d076f1eec": {
-          "type": "column",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "d5240e8c-f44b-4e8c-8390-56be42c14672": {
-          "type": "column",
-          "settings": {
-            "heading": "DIY"
-          }
-        },
-        "a4ed10da-0e84-456e-8fc4-942ad2c9cb4b": {
-          "type": "column",
-          "settings": {
-            "heading": "Dentist"
-          }
-        },
-        "79bd3de6-625b-486d-9ef1-11565ad481b1": {
-          "type": "column",
-          "settings": {
-            "heading": "Us"
-          }
-        },
         "03e4d13b-03a9-4c5c-9bac-59957e891b74": {
           "type": "row",
           "settings": {
             "heading": "Custom Formulas",
-            "data": "",
-            "data_icon": "true"
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "ae7bdc1d-47d0-41ec-bb0c-d1b1ae3fe708": {
+          "type": "row",
+          "settings": {
+            "heading": "Sensitivity-Free",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "a663de5b-482d-486a-a50d-ee6af1b977a7": {
+          "type": "row",
+          "settings": {
+            "heading": "<15 Minute Treatments",
+            "diy_data": "",
+            "diy_data_icon": "true",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "eba27974-ccd9-47b2-9fa0-a6e9c093c370": {
+          "type": "row",
+          "settings": {
+            "heading": "Dentist-Formulated",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "5a0cacf8-dc0d-4b83-bfd5-3d88cecb1d23": {
+          "type": "row",
+          "settings": {
+            "heading": "No Expensive & Painful Office Visits",
+            "diy_data": "",
+            "diy_data_icon": "true",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "0cea6716-7667-417c-8f1a-c44d1a72559a": {
+          "type": "row",
+          "settings": {
+            "heading": "Lifetime Guarantee",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "a94da3c4-b056-41d3-ae5f-de5ccdeae0ee": {
+          "type": "row",
+          "settings": {
+            "heading": "Price",
+            "diy_data": "$100",
+            "diy_data_icon": "true",
+            "dentist_data": "$250~1.5k",
+            "dentist_data_icon": "true",
+            "us_data": "$19\/mo",
+            "us_data_icon": "true"
           }
         }
       },
       "block_order": [
-        "614f2e38-845d-4812-9c12-865d076f1eec",
-        "d5240e8c-f44b-4e8c-8390-56be42c14672",
-        "a4ed10da-0e84-456e-8fc4-942ad2c9cb4b",
-        "79bd3de6-625b-486d-9ef1-11565ad481b1",
-        "03e4d13b-03a9-4c5c-9bac-59957e891b74"
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74",
+        "ae7bdc1d-47d0-41ec-bb0c-d1b1ae3fe708",
+        "a663de5b-482d-486a-a50d-ee6af1b977a7",
+        "eba27974-ccd9-47b2-9fa0-a6e9c093c370",
+        "5a0cacf8-dc0d-4b83-bfd5-3d88cecb1d23",
+        "0cea6716-7667-417c-8f1a-c44d1a72559a",
+        "a94da3c4-b056-41d3-ae5f-de5ccdeae0ee"
       ],
       "settings": {
         "section_heading": "Not all whitening is {Created Equal}",
         "section_sub_heading": "Not all whitening is Created Equal",
+        "first_title": "DIY",
+        "second_title": "Dentist",
+        "third_title": "Us",
         "button_label": "",
         "button_url": ""
       }
