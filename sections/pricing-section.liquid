@@ -22,8 +22,11 @@
         </thead>
         <tbody>
           {% for row in pricing_data %}
+            {% assign data = row.settings.data | split: ' | ' %}
           <tr>
-            <td></td>
+            {% for col in data %}
+              <td>{{ col }}</td>
+            {% endfor %}
           </tr>
           {% endfor %}
           
