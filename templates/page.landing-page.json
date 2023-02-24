@@ -46,6 +46,38 @@
     },
     "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
       "type": "pricing-section",
+      "blocks": {
+        "614f2e38-845d-4812-9c12-865d076f1eec": {
+          "type": "column",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "d5240e8c-f44b-4e8c-8390-56be42c14672": {
+          "type": "column",
+          "settings": {
+            "heading": "DIY"
+          }
+        },
+        "a4ed10da-0e84-456e-8fc4-942ad2c9cb4b": {
+          "type": "column",
+          "settings": {
+            "heading": "Dentist"
+          }
+        },
+        "79bd3de6-625b-486d-9ef1-11565ad481b1": {
+          "type": "column",
+          "settings": {
+            "heading": "Us"
+          }
+        }
+      },
+      "block_order": [
+        "614f2e38-845d-4812-9c12-865d076f1eec",
+        "d5240e8c-f44b-4e8c-8390-56be42c14672",
+        "a4ed10da-0e84-456e-8fc4-942ad2c9cb4b",
+        "79bd3de6-625b-486d-9ef1-11565ad481b1"
+      ],
       "settings": {
         "section_heading": "Not all whitening is {Created Equal}",
         "section_sub_heading": "Not all whitening is Created Equal",
