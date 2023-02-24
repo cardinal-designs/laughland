@@ -20,14 +20,19 @@
         <tbody>
           {% for block in section.blocks %}
             <tr>
-              <td class=""></td>
-              <td>
+              <td class="sh3">{{ block.settings.heading }}</td>
+              <td class="sh3">
+                {%- if block.settings.diy_data != blank -%}
+                  {{ block.settings.diy_data }}
+                {%- else -%}
+                  {% render 'icon' icon: 'false-icon' %}
+                  {% render 'icon' icon: 'true-icon' %}
+                {% endif %}
+              </td>
+              <td class="sh3">
                 
               </td>
-              <td>
-                
-              </td>
-              <td>
+              <td class="sh3">
                 
               </td>
             </tr>
