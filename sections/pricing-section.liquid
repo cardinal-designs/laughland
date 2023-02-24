@@ -2,12 +2,58 @@
   {
     "name": "Pricing Section",
     "settings": [
-
-      
+      {
+        "type": "text",
+        "id": "first_title",
+        "label": "First Title"        
+      },
+      {
+        "type": "text",
+        "id": "second_title",
+        "label": "Second Title"        
+      },
+      {
+        "type": "text",
+        "id": "third_title",
+        "label": "Third Title"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }
+        ]
+      },
+      {
+        "type": "row",
+        "name": "Row",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "header",
+            "content": "Column values"
+          },
+          {
+            "type": "textarea",
+            "id": "data",
+            "label": "Data"
+          }
+        ]
+      }
     ],
     "presets": [
       {
-        "name": "FAQ Section"
+        "name": "Pricing Section"
       }
     ]
   }
