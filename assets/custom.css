@@ -751,6 +751,7 @@ input::placeholder {
   .js-close-menu.menu-drawer__close {
     position: absolute;
     right: 18px;
+    top: 18px;
   }
   
   .header__svg-logo {
