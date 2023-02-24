@@ -49,6 +49,7 @@
 .hero__container {
   text-align: left;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .hero__review {
