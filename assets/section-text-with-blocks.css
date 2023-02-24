@@ -78,9 +78,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .text-with-blocks {
-    margin: 40px 0;
-  }
 
   .text-with-blocks__header {
     margin-bottom: 40px;
