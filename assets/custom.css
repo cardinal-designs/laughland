@@ -780,6 +780,8 @@ input::placeholder {
   
   .menu-drawer__close svg path {
     fill: #0D2244;
+    width: 20px;
+    height: 20px;
   }
   
   .menu-drawer__menu-button:hover {
