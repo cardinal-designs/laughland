@@ -15,7 +15,15 @@
     <div class="Images_List">
       {% for block in section.blocks %}
         <div class="Single_Image">
-          
+          <img
+            srcset="{{ block.settings.png | image_url: width: 300 }} 1x, {{ block.settings.png | image_url: width: 300, scale: 2 }} 2x"
+            src="{{ block.settings.png | image_url: width: 300}}"
+            loading="lazy"
+            class="header__heading-logo"
+            width="{{ block.settings.png.width }}"
+            height="{{ block.settings.png.height }}"
+            alt="{{ block.settings.png.alt }}"
+          >
         </div>
       {% endfor %}
     </div>
@@ -48,14 +56,9 @@
         "name": "Image",
         "settings": [
           {
-            "type": "text",
-            "id": "heading",
-            "label": "Heading"
-          },
-          {
-            "type": "text",
-            "id": "title",
-            "label": "Subhead"
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
           }
         ]
       }
