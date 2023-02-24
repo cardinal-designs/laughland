@@ -11,7 +11,14 @@
     <div class="Pricing_Table">
       <table>
         <thead>
-          <th></th>
+          {% for column in column_blocks %}
+            <th class="sh2">
+              {{ column.settings.heading }}
+              {% if column.settings.title %}
+                <span class="body-xs">{{ column.settings.title }}</span>
+              {% endif %}
+            </th>
+          {% endfor %}
         </thead>
         <tbody>
           <td></td>
