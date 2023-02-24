@@ -46,7 +46,7 @@
           {% endfor %}
         </ul>
         <ul class="menu-drawer__menu list-unstyled" role="list">
-          {% for link in section.settings.bottom_menu %}
+          {% for link in section.settings.bottom_menu.links %}
             <li>
               {% if link.links != blank %}
                 <a class="menu-drawer__menu-button h4" href="{{ link.url }}">{{ link.title }}</a>
