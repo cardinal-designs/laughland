@@ -788,4 +788,8 @@ input::placeholder {
     color: #46BDF0;
   }
 
+  .template-index.Menu_Open {
+    overflow: hidden;
+  }
+
 }
