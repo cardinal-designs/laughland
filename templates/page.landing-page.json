@@ -141,12 +141,36 @@
             "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
             "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
           }
+        },
+        "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "b4f85b92-4e73-489e-8e59-6fcdabf5d358": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
         }
       },
       "block_order": [
         "211060df-f259-4c34-bf3a-8ff6f7ebc051",
         "7d5a83c8-daae-4afc-826a-7e2c8303468a",
-        "3f5fff35-bec5-4563-b68f-af7d8b7b045f"
+        "3f5fff35-bec5-4563-b68f-af7d8b7b045f",
+        "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae",
+        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148",
+        "b4f85b92-4e73-489e-8e59-6fcdabf5d358"
       ],
       "settings": {
         "section_heading": "Still have<br> questions?",
