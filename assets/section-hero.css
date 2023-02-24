@@ -52,7 +52,17 @@
 }
 
 .hero__title {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
+}
+
+.hero__subtitle {
+  margin-bottom: 50px;
+}
+
+.hero__subtitle span {
+  border: 1px solid #FAF5F1;
+  box-shadow: 0px 0px 37px 7px #46bdf0;
+  border-radius: 10px;
 }
 
 .hero__container .button--primary {
