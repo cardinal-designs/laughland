@@ -1,14 +1,17 @@
 <div class="FAQ_Section">
   <div class="page-width">
     <div class="Faq_section_inner">
-    <div class="Section_Header">
-      {% if section.settings.section_heading != blank %}
-        <h2 class="h4">{{ section.settings.section_heading }}</h2>
-      {% endif %}
-      {% if section.settings.section_sub_heading != blank %}
-        <p class="sh1">{{ section.settings.section_sub_heading }}</p>
-      {% endif %}
-    </div>
+      <div class="Section_Header">
+        {% if section.settings.section_heading != blank %}
+          <h2 class="h4">{{ section.settings.section_heading }}</h2>
+        {% endif %}
+        {% if section.settings.section_sub_heading != blank %}
+          <p class="sh1">{{ section.settings.section_sub_heading }}</p>
+        {% endif %}
+      </div>
+      <div class="Faq_Area">
+        
+      </div>
     </div>
   </div>
 </div>
@@ -17,7 +20,16 @@
   {
     "name": "FAQ Section",
     "settings": [
-      
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Heading"        
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "Sub Heading"        
+      }
     ]
   }
 {% endschema %}
