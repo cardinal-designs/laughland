@@ -14,9 +14,6 @@
           {% for column in column_blocks %}
             <th class="sh2">
               {{ column.settings.heading }}
-              {% if column.settings.title %}
-                <span class="body-xs">{{ column.settings.title }}</span>
-              {% endif %}
             </th>
           {% endfor %}
         </thead>
