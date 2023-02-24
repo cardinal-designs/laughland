@@ -22,3 +22,10 @@
   width: 65%;
   padding: 0 20px;
 }
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+  padding: 10px 0;
+}
