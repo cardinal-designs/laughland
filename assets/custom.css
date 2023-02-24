@@ -735,3 +735,7 @@ input::placeholder {
   position: absolute;
   right: 18px;
 }
+
+.header__svg-logo {
+  margin: 0 auto;
+}
