@@ -16,7 +16,7 @@
     <div class="hero__container">
       <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
       {% if section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}" class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% endif %}">
+        <a href="{{ section.settings.button_link }}" class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
           {{- section.settings.button_label -}}
         </a>
       {% else %}
