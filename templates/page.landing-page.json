@@ -54,7 +54,8 @@
         "3cf2bbea-42e8-4109-a516-ea7b1218cfe9"
       ],
       "settings": {
-        "heading": "{Why} Laughland?"
+        "heading": "{Why} Laughland?",
+        "section_padding": true
       }
     },
     "adc7667a-6bb9-4319-878c-b709f2259336": {
