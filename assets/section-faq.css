@@ -30,6 +30,21 @@
   transition: max-height 0.2s ease-in-out;
 }
 
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block {
+  padding: 20px 0;
+  border-bottom: 1px solid #0D2244;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block:first-child {
+  border-top: 1px solid #0D2244;
+}
+
 .Accordion-Content .Accordion-Inr-Content {
-  padding: 10px 0;
+  padding-top: 20px;
 }
