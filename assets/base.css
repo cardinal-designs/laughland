@@ -351,6 +351,13 @@ h6,
   letter-spacing: -0.01em;
 }
 
+.sh2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
 .body-2, 
 .body-2 p {
   font-family: jakarta;
