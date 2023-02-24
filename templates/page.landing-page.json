@@ -44,6 +44,43 @@
         "heading": "{Why} Laughland?"
       }
     },
+    "adc7667a-6bb9-4319-878c-b709f2259336": {
+      "type": "icon-with-text",
+      "blocks": {
+        "a37e3b6d-2088-480b-8389-6583048b8210": {
+          "type": "text",
+          "settings": {
+            "title": "😄",
+            "heading": "",
+            "text": "Tell us about your smile and whitening history over a short quiz."
+          }
+        },
+        "53d00897-c847-438a-b54e-0eb7c0141dc3": {
+          "type": "text",
+          "settings": {
+            "title": "🧪",
+            "heading": "",
+            "text": "We’ll create the perfect formula based on your responses."
+          }
+        },
+        "294cf63d-37cf-4308-8466-ebcc8997623d": {
+          "type": "text",
+          "settings": {
+            "title": "🦷",
+            "heading": "",
+            "text": "Use daily for 6 days and say “hello”  to your new pearly whites!"
+          }
+        }
+      },
+      "block_order": [
+        "a37e3b6d-2088-480b-8389-6583048b8210",
+        "53d00897-c847-438a-b54e-0eb7c0141dc3",
+        "294cf63d-37cf-4308-8466-ebcc8997623d"
+      ],
+      "settings": {
+        "heading": "Getting Started is simple"
+      }
+    },
     "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
       "type": "pricing-section",
       "blocks": {
@@ -289,6 +326,7 @@
   "order": [
     "main",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
+    "adc7667a-6bb9-4319-878c-b709f2259336",
     "d3414607-66d0-46b2-a396-e6a4263c1ca4",
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
     "49f3d9ac-7509-4919-89f3-3c6825a727c8",
