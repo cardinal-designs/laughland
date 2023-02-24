@@ -51,6 +51,10 @@
   padding-bottom: 50px;
 }
 
+.hero__container .hero__review {
+  margin-bottom: 16px;
+}
+
 .hero__title {
   margin: 0 0 20px;
 }
