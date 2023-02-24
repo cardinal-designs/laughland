@@ -67,3 +67,7 @@
   text-align: center;
   margin-top: 80px;
 }
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr:last-child td:last-child {
+  border-radius: 0 0 11px 0;
+}
