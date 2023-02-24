@@ -717,6 +717,12 @@ input::placeholder {
     display: block !important;
   }
 
+  .menu-drawer {
+    width: 100%;
+    max-width: 100%;
+    background: #FAF5F1;
+  }
+
   .Bottom_Menu .menu-drawer__menu-button {
     font-size: 18px;
     font-weight: 400;
