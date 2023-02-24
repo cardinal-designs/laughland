@@ -2,7 +2,15 @@
   <div class="page-width">
     <div class="Section_Header">
       <h2 class="h4">{{ section.settings.section_heading }}</h2>
-      <p class="body-1">{{ section.settings.section_sub_heading }}</p>
+      <p class="body-1">
+        {% if section.settings.sub_heading_link != blank %}
+          <a href="{{ section.settings.sub_heading_link }}">
+        {% endif %}
+        {{ section.settings.section_sub_heading }}
+        {% if section.settings.sub_heading_link != blank %}
+          </a>
+        {% endif %}
+      </p>
     </div>
   </div>
 </div>
