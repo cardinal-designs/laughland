@@ -147,8 +147,8 @@
         "first_title": "DIY",
         "second_title": "Dentist",
         "third_title": "Us",
-        "button_label": "",
-        "button_url": "",
+        "button_label": "Start Now",
+        "button_url": "shopify:\/\/collections\/all",
         "badges": "shopify:\/\/shop_images\/Winner_Badge.png"
       }
     },
