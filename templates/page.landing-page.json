@@ -7,6 +7,15 @@
         "heading": ""
       }
     },
+    "7bcf4c83-a487-4e52-8bcd-e98257c59e64": {
+      "type": "hero",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_Image.jpg",
+        "title": "Take the first step<br> { to a better smile}",
+        "button_label": "Start Now",
+        "button_link": "shopify:\/\/collections\/all"
+      }
+    },
     "8f55a32e-9355-4413-8e5d-a7d66bb39102": {
       "type": "icon-text-columns",
       "blocks": {
@@ -325,6 +334,7 @@
   },
   "order": [
     "main",
+    "7bcf4c83-a487-4e52-8bcd-e98257c59e64",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
     "adc7667a-6bb9-4319-878c-b709f2259336",
     "d3414607-66d0-46b2-a396-e6a4263c1ca4",
