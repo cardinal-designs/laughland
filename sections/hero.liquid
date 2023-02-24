@@ -33,6 +33,9 @@
       {% else %}
         <button class="button button--secondary" data-open-quiz>{{ section.settings.button_label }}</button>
       {% endif %}
+      <div class="Hero_Badges">
+        <img src="{{ section.settings.hero_badges | img_url: '160x' }}">
+      </div>
     </div>
   </div>
 </div>
