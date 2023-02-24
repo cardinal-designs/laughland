@@ -488,7 +488,7 @@ var MenuDrawer = class extends HTMLElement {
 
     this.pageOverlayElement.classList.add('is-visible');
     document.body.addEventListener('click', this.onBodyClick);
-    document.querySelectorAll('body').classList.add('Menu_Open');
+    document.querySelectorAll('.template-index').classList.add('Menu_Open');
   }
 
   closeMenuDrawer() {
@@ -497,7 +497,7 @@ var MenuDrawer = class extends HTMLElement {
 
     this.pageOverlayElement.classList.remove('is-visible');
     document.body.removeEventListener('click', this.onBodyClick);
-    document.querySelectorAll('body').classList.remove('Menu_Open');
+    document.querySelectorAll('.template-index').classList.remove('Menu_Open');
   }
 
   toggleMenuButtons() {
