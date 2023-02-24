@@ -718,3 +718,7 @@ input::placeholder {
   width: 100%;
   max-width: 100%;
 }
+
+.menu-drawer__header {
+  border-bottom: 0;
+}
