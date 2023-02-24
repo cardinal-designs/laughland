@@ -1,7 +1,3 @@
-
-{% assign pricing_column = section.blocks | where: 'type', 'column' %}
-{% assign pricing_data = section.blocks | where: 'type', 'row' %}
-
 {% assign formatted_heading = section.settings.section_heading
   | replace: '{', "<span class='stylized'>"
   | replace: '}', '</span>'
@@ -16,20 +12,17 @@
     <div class="Pricing_Table">
       <table>
         <thead>
-          {% for column in pricing_column %}
-            <th class="sh2">{{ column.settings.heading }}</th>
-          {% endfor %}
+            <th></th>
+            <th class="sh2">{{ column.settings.first_title }}</th>
+            <th class="sh2">{{ column.settings.second_title }}</th>
+            <th class="sh2">{{ column.settings.third_title }}</th>
         </thead>
         <tbody>
-          {% for row in pricing_data %}
-            {% assign data = row.settings.data | split: ' | ' %}
-          <tr>
-            {% for col in data %}
+          {% for block in section.blocks %}
+            <tr>
               <td>{{ col }}</td>
-            {% endfor %}
-          </tr>
+            </tr>
           {% endfor %}
-          
         </tbody>
       </table>
     </div>
