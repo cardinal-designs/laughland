@@ -744,3 +744,7 @@ input::placeholder {
   height: 65px;
   padding: 15px 20px 15px;
 }
+
+.menu-drawer__menu-button {
+  font-size: 35px;
+}
