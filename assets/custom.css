@@ -766,4 +766,10 @@ input::placeholder {
     display: block !important;
   }
 
+  .Bottom_Menu .menu-drawer__menu-button {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
 }
