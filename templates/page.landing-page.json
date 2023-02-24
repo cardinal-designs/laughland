@@ -70,13 +70,22 @@
           "settings": {
             "heading": "Us"
           }
+        },
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74": {
+          "type": "row",
+          "settings": {
+            "heading": "Custom Formulas",
+            "data": "",
+            "data_icon": "true"
+          }
         }
       },
       "block_order": [
         "614f2e38-845d-4812-9c12-865d076f1eec",
         "d5240e8c-f44b-4e8c-8390-56be42c14672",
         "a4ed10da-0e84-456e-8fc4-942ad2c9cb4b",
-        "79bd3de6-625b-486d-9ef1-11565ad481b1"
+        "79bd3de6-625b-486d-9ef1-11565ad481b1",
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74"
       ],
       "settings": {
         "section_heading": "Not all whitening is {Created Equal}",
