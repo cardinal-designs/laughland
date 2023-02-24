@@ -19,6 +19,10 @@
   {% endif %}
   <div class="page-width hero__inner">
     <div class="hero__container">
+      review
+      {% if section.settings.review != blank %}
+        <h2 class="hero__review">{{ section.settings.review }}</h2>
+      {% endif %}
       <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
       {% if formatted_sub_title != blank %}
         <h5 class="hero__subtitle h5">{{ formatted_sub_title }}</h5>
