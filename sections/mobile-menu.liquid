@@ -31,7 +31,7 @@
           {% for link in section.settings.menu.links %}
             <li>
               {% if link.links != blank %}
-                <button class="menu-drawer__menu-button menu-drawer__menu-button--has-menu body" href="{{ link.url }}">{{ link.title }} {% render 'icon' icon: 'caret' %}</button>
+                <button class="menu-drawer__menu-button menu-drawer__menu-button--has-menu h4" href="{{ link.url }}">{{ link.title }} {% render 'icon' icon: 'caret' %}</button>
                 <ul class="menu-drawer__secondary-menu list-unstyled" role="list">
                   {% for child_link in link.links %}
                     <li>
