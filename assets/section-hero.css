@@ -51,8 +51,13 @@
   padding-bottom: 50px;
 }
 
-.hero__container .hero__review {
+.hero__review {
   margin-bottom: 16px;
+}
+
+.hero__review .stylized {
+  margin: 0 0 0 8px;
+  line-height: 1;
 }
 
 .hero__title {
