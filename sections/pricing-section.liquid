@@ -4,18 +4,13 @@
     "settings": [
       {
         "type": "text",
-        "id": "first_title",
-        "label": "First Title"        
+        "id": "section_heading",
+        "label": "Heading"        
       },
       {
         "type": "text",
-        "id": "second_title",
-        "label": "Second Title"        
-      },
-      {
-        "type": "text",
-        "id": "third_title",
-        "label": "Third Title"        
+        "id": "section_sub_heading",
+        "label": "Sub Heading"        
       }
     ],
     "blocks": [
@@ -47,6 +42,22 @@
             "type": "textarea",
             "id": "data",
             "label": "Data"
+          },
+          {
+            "type": "select",
+            "id": "data_icon",
+            "options": [
+              {
+                "value": "true",
+                "label": "True"
+              },
+              {
+                "value": "false",
+                "label": "False"
+              }
+            ],
+            "default": "true",
+            "label": "True/False"
           }
         ]
       }
