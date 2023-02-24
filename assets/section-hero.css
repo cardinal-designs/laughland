@@ -55,6 +55,10 @@
   margin: 0 0 40px;
 }
 
+.hero__container .button--primary {
+  padding: 16.5px 60px 17.5px;
+}
+
 @media screen and (max-width: 768px) {
   .hero:not(.homepage-hero) {
     height: 540px;
