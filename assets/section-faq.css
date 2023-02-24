@@ -5,6 +5,7 @@
 .FAQ_Section .Faq_section_inner {
   background-color: #DAF2FC;
   border-radius: 12px;
+  padding: 100px 50px;
 }
 
 .FAQ_Section .Faq_section_inner .Row {
