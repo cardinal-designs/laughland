@@ -6,25 +6,27 @@
   | replace: '}', '</span>'
 %}
 
-<div class="page-width">
-  <div class="icon-text-columns__inner">
-    <div class="icon-text-columns__heading-wrapper">
-      <h4 class="icon-text-columns__heading">{{ formatted_heading }}</h4>
-    </div>
-
-    <div class="icon-text-columns__block-wrapper">
-      {% for block in section.blocks %}
-        <div class="icon-text-columns__item">
-          <div class="icon-text-columns__icon-wrapper">
-            <div class="icon-text-columns__icon">{{ block.settings.title }}</div>
+<div class="{% if section.settings.section_padding %}Section_Padding{% endif %}">
+  <div class="page-width">
+    <div class="icon-text-columns__inner">
+      <div class="icon-text-columns__heading-wrapper">
+        <h4 class="icon-text-columns__heading">{{ formatted_heading }}</h4>
+      </div>
+  
+      <div class="icon-text-columns__block-wrapper">
+        {% for block in section.blocks %}
+          <div class="icon-text-columns__item">
+            <div class="icon-text-columns__icon-wrapper">
+              <div class="icon-text-columns__icon">{{ block.settings.title }}</div>
+            </div>
+  
+            <div class="icon-text-columns__text-wrapper">
+              <h5 class="icon-text-columns__item-heading">{{ block.settings.heading }}</h5>
+              <p class="icon-text-columns__item-text">{{ block.settings.text }}</p>
+            </div>
           </div>
-
-          <div class="icon-text-columns__text-wrapper">
-            <h5 class="icon-text-columns__item-heading">{{ block.settings.heading }}</h5>
-            <p class="icon-text-columns__item-text">{{ block.settings.text }}</p>
-          </div>
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
   </div>
 </div>
