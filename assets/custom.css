@@ -712,6 +712,7 @@ input::placeholder {
 
 /*========== CART PAGE END ==========*/
 
+@media screen and (max-width: 989px) {
 
   .header__icon {
     display: block !important;
@@ -782,3 +783,5 @@ input::placeholder {
   .menu-drawer__menu-button:hover {
     color: #46BDF0;
   }
+
+}
