@@ -39,12 +39,27 @@
   display: block;
   width: 100%;
   text-align: left;
+  position: relative;
 }
 
 .FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block:first-child {
   border-top: 1px solid #0D2244;
 }
 
-.Accordion-Content .Accordion-Inr-Content {
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion-Content .Accordion-Inr-Content {
   padding-top: 20px;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion:after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='9.97461' y1='0.5' x2='9.97461' y2='20.5' stroke='%230D2244'/%3E%3Cpath d='M20 10.5L-7.15256e-07 10.5' stroke='%230D2244'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 20px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
