@@ -1,3 +1,9 @@
 .Pricing_Section {
   padding: 75px 0;
 }
+
+.Pricing_Section .Pricing_Inner_Section {
+  padding: 110px 113px 80px;
+  background: #DAF2FC;
+  border-radius: 12px;
+}
