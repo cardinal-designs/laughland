@@ -64,8 +64,7 @@ document.querySelector(".shopify-policy__container .shopify-policy__title").inne
 
 /* Accordion Javascript Start */
 
-  $(".Faq_Area .accordion-content").hide(); 
-  $(".Faq_Area .accordion-block.activeToggle .accordion-content").show();
+  $(".accordion-content").hide();
   $(".accordion-title").click(function(){
     $(this).toggleClass('active');
     if($(this).hasClass('active')){
