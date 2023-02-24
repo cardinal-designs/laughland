@@ -752,6 +752,10 @@ input::placeholder {
     border-bottom: 0;
   }
 
+  .menu-drawer__close svg {
+    width: auto;
+  }
+
   .js-close-menu.menu-drawer__close {
     position: absolute;
     right: 18px;
