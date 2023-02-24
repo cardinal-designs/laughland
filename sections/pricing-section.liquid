@@ -16,10 +16,8 @@
     <div class="Pricing_Table">
       <table>
         <thead>
-          {% for pricing_column in column_blocks %}
-            <th class="sh2">
-              {{ pricing_column.settings.heading }}
-            </th>
+          {% for column in pricing_column %}
+            <th class="sh2">{{ column.settings.heading }}</th>
           {% endfor %}
         </thead>
         <tbody>
