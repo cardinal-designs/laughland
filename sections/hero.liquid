@@ -5,6 +5,11 @@
   | replace: '}', '</span>'
 %}
 
+{% assign formatted_sub_title = section.settings.sub_title
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
 <div class="hero">
   {% if section.settings.mobile_image != blank %}
     {% render 'lazy-image', image: section.settings.image, fade: true, fill: true, classes: 'hide-mobile' %}
@@ -15,8 +20,8 @@
   <div class="page-width hero__inner">
     <div class="hero__container">
       <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
-      {% if section.settings.sub_title != blank %}
-        <h5 class="hero__subtitle h5">{{ section.settings.sub_title }}</h5>
+      {% if formatted_sub_title != blank %}
+        <h5 class="hero__subtitle h5">{{ formatted_sub_title }}</h5>
       {% endif %}
       {% if section.settings.button_link != blank %}
         <a href="{{ section.settings.button_link }}" class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
