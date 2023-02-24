@@ -12,7 +12,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Hero_Image.jpg",
         "title": "Take the first step<br> { to a better smile}",
-        "sub_title": "Get a customized whitening solution for just {$19} today.",
+        "sub_title": "Get a customized whitening solution for just {<sup>$<\/sup>19} today.",
         "button_label": "Start Now",
         "button_link": "shopify:\/\/collections\/all",
         "button_style": "primary"
