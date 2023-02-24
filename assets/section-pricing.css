@@ -12,6 +12,7 @@
   display: inline-block;
   margin-top: 10px;
   width: 100%;
+  position: relative;
 }
 
 .Pricing_Section .Pricing_Inner_Section .Pricing_Table table {
@@ -53,4 +54,11 @@
 
 .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:last-child {
   color: #46BDF0;
+}
+
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges {
+  position: absolute;
+  right: -70px;
+  top: -70px;
 }
