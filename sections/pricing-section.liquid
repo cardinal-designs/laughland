@@ -1,3 +1,7 @@
+
+{% assign pricing_column = section.blocks | where: 'type', 'column' %}
+{% assign pricing_data = section.blocks | where: 'type', 'row' %}
+
 <div class="Pricing_Section">
   <div class="page-width">
     <div class="Section_Header">
