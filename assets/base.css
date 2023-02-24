@@ -352,8 +352,7 @@ h6,
   font-family: manrope;
 }
 
-.sh2,
-.sh2 p {
+.sh2 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
