@@ -7,14 +7,6 @@
         "heading": ""
       }
     },
-    "4dac7b2d-e883-4fa0-8b54-7317f081e559": {
-      "type": "hero",
-      "settings": {
-        "title": "",
-        "button_label": "",
-        "button_link": ""
-      }
-    },
     "8f55a32e-9355-4413-8e5d-a7d66bb39102": {
       "type": "icon-text-columns",
       "blocks": {
@@ -98,12 +90,39 @@
         "section_sub_heading": "@mylaughland",
         "sub_heading_link": "https:\/\/www.instagram.com\/"
       }
+    },
+    "240de530-a532-4dbd-b2a8-79f7e7c9b9fa": {
+      "type": "carousel",
+      "blocks": {
+        "1b3fc029-1055-4710-8825-398d2d320b7c": {
+          "type": "slide",
+          "settings": {
+            "logo": "",
+            "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue_0a0973f6-c62c-4750-bc63-096e9ab38351.png",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        },
+        "83b29aad-1ec3-43d4-9d28-f3f7680cfd9d": {
+          "type": "slide",
+          "settings": {
+            "logo": "",
+            "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue_0a0973f6-c62c-4750-bc63-096e9ab38351.png",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        }
+      },
+      "block_order": [
+        "1b3fc029-1055-4710-8825-398d2d320b7c",
+        "83b29aad-1ec3-43d4-9d28-f3f7680cfd9d"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "4dac7b2d-e883-4fa0-8b54-7317f081e559",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
-    "b60d8150-a8c1-4d20-a017-a4952d382660"
+    "b60d8150-a8c1-4d20-a017-a4952d382660",
+    "240de530-a532-4dbd-b2a8-79f7e7c9b9fa"
   ]
 }
