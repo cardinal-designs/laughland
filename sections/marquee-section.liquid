@@ -7,11 +7,13 @@
 %}
   
 <div class="Marquee_Section">
-  {%- for i in (1..50) -%}
-    <h5 class="Single_Marquee h5">
-      {{ formatted_title | newline_to_br }}
-    </h5>
-  {%- endfor -%}
+  <div class="Marquee_List">
+    {%- for i in (1..50) -%}
+      <h5 class="Single_Marquee h5">
+        {{ formatted_title | newline_to_br }}
+      </h5>
+    {%- endfor -%}
+  </div>
 </div>
 
 {% schema %}
