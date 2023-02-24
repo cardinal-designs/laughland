@@ -728,11 +728,12 @@ input::placeholder {
     padding-bottom: 20px;
   }
   
-  .menu-drawer {
-    background: #FAF5F1;
-    width: 100%;
-    max-width: 100%;
-    z-index: 9999;
+  .Bottom_Menu .menu-drawer__menu-button {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    padding: 8px 25px;
+    line-height: 1.5em;
   }
   
   .menu-drawer__header {
