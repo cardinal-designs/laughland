@@ -7,59 +7,61 @@
 
 <div class="Pricing_Section">
   <div class="page-width">
-    <div class="Section_Header">
-      <h2 class="h3">{{ formatted_heading }}</h2>
-      <p class="sh2">{{ section.settings.section_sub_heading }}</p>
-    </div>
-    <div class="Pricing_Table">
-      <table>
-        <thead>
-            <th></th>
-            <th class="sh2">{{ section.settings.first_title }}</th>
-            <th class="sh2">{{ section.settings.second_title }}</th>
-            <th class="sh2">{{ section.settings.third_title }}</th>
-        </thead>
-        <tbody>
-          {% for block in section.blocks %}
-            <tr>
-              <td class="sh3">{{ block.settings.heading }}</td>
-              <td class="sh3">
-                {%- if block.settings.diy_data != blank -%}
-                  {{ block.settings.diy_data }}
-                {%- else -%}
-                  {%- if block.settings.diy_data_icon == 'true' -%}
-                    {% render 'icon' icon: 'true-icon' %}
-                  {% else %}
-                    {% render 'icon' icon: 'false-icon' %}
+    <div class="Pricing_Inner_Section">
+      <div class="Section_Header">
+        <h2 class="h3">{{ formatted_heading }}</h2>
+        <p class="sh2">{{ section.settings.section_sub_heading }}</p>
+      </div>
+      <div class="Pricing_Table">
+        <table>
+          <thead>
+              <th></th>
+              <th class="sh2">{{ section.settings.first_title }}</th>
+              <th class="sh2">{{ section.settings.second_title }}</th>
+              <th class="sh2">{{ section.settings.third_title }}</th>
+          </thead>
+          <tbody>
+            {% for block in section.blocks %}
+              <tr>
+                <td class="sh3">{{ block.settings.heading }}</td>
+                <td class="sh3">
+                  {%- if block.settings.diy_data != blank -%}
+                    {{ block.settings.diy_data }}
+                  {%- else -%}
+                    {%- if block.settings.diy_data_icon == 'true' -%}
+                      {% render 'icon' icon: 'true-icon' %}
+                    {% else %}
+                      {% render 'icon' icon: 'false-icon' %}
+                    {% endif %}
                   {% endif %}
-                {% endif %}
-              </td>
-              <td class="sh3">
-                {%- if block.settings.dentist_data != blank -%}
-                  {{ block.settings.dentist_data }}
-                {%- else -%}
-                  {%- if block.settings.dentist_data_icon == 'true' -%}
-                    {% render 'icon' icon: 'true-icon' %}
-                  {% else %}
-                    {% render 'icon' icon: 'false-icon' %}
+                </td>
+                <td class="sh3">
+                  {%- if block.settings.dentist_data != blank -%}
+                    {{ block.settings.dentist_data }}
+                  {%- else -%}
+                    {%- if block.settings.dentist_data_icon == 'true' -%}
+                      {% render 'icon' icon: 'true-icon' %}
+                    {% else %}
+                      {% render 'icon' icon: 'false-icon' %}
+                    {% endif %}
                   {% endif %}
-                {% endif %}
-              </td>
-              <td class="sh3">
-                {%- if block.settings.us_data != blank -%}
-                  {{ block.settings.us_data }}
-                {%- else -%}
-                  {%- if block.settings.us_data_icon == 'true' -%}
-                    {% render 'icon' icon: 'true-icon' %}
-                  {% else %}
-                    {% render 'icon' icon: 'false-icon' %}
+                </td>
+                <td class="sh3">
+                  {%- if block.settings.us_data != blank -%}
+                    {{ block.settings.us_data }}
+                  {%- else -%}
+                    {%- if block.settings.us_data_icon == 'true' -%}
+                      {% render 'icon' icon: 'true-icon' %}
+                    {% else %}
+                      {% render 'icon' icon: 'false-icon' %}
+                    {% endif %}
                   {% endif %}
-                {% endif %}
-              </td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </div>
