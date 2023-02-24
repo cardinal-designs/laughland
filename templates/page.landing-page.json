@@ -13,7 +13,8 @@
         "image": "shopify:\/\/shop_images\/Hero_Image.jpg",
         "title": "Take the first step<br> { to a better smile}",
         "button_label": "Start Now",
-        "button_link": "shopify:\/\/collections\/all"
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary"
       }
     },
     "8f55a32e-9355-4413-8e5d-a7d66bb39102": {
