@@ -1,0 +1,19 @@
+.Icon_With_Text_Section {
+  padding: 75px 0;
+}
+
+.Icon_With_Text_Section .icon-with-text__block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -40px;
+}
+
+.Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item {
+  flex: 33.33% 0 0;
+  max-width: 33.33%;
+  padding: 0 40px;
+}
+
+.Icon_With_Text_Section .page-width {
+  max-width: 1190px;
+}
