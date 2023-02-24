@@ -751,6 +751,10 @@ input::placeholder {
   margin: 0;
 }
 
+.menu-drawer__close svg path {
+  fill: #0D2244;
+}
+
 .menu-drawer__menu-button:hover {
   color: #46BDF0;
 }
