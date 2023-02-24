@@ -2,7 +2,26 @@
   <div class="menu-drawer" id="menu-drawer" aria-hidden="true" aria-modal="true" aria-label="Menu Drawer" role="dialog" tabindex="-1">
     <div class="menu-drawer__inner">
       <div class="menu-drawer__header">
-        <h2 class="menu-drawer__title h4">Menu</h2>
+        {% if section.settings.svg_logo != blank %}
+          <div class="header__svg-logo">
+            {{ section.settings.svg_logo }}
+          </div>
+        {% else %}
+          {% if section.settings.logo != blank %}
+            {% assign image_size = section.settings.logo_width | append: 'x' %}
+            <img
+              srcset="{{ section.settings.logo | img_url: image_size }} 1x, {{ section.settings.logo | img_url: image_size, scale: 2 }} 2x"
+              src="{{ section.settings.logo | img_url: image_size }}"
+              loading="lazy"
+              class="header__heading-logo"
+              width="{{ section.settings.logo.width }}"
+              height="{{ section.settings.logo.height }}"
+              alt="{{ section.settings.logo.alt | default: shop.name | escape }}"
+            >
+          {% else %}
+            <span class="h2">{{ shop.name }}</span>
+          {% endif %}
+        {% endif %}
         <button class="js-close-menu menu-drawer__close">
           {% render 'icon' icon: 'close' %}
         </button>
@@ -39,6 +58,37 @@
         "type": "link_list",
         "id": "menu",
         "label": "Menu"
+      },
+      {
+        "type": "textarea",
+        "id": "svg_logo",
+        "label": "SVG Logo",
+        "info": "Optional. This will override logo image picker."
+      },
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "t:sections.header.settings.logo.label"
+      },
+      {
+        "type": "range",
+        "id": "logo_width",
+        "min": 50,
+        "max": 250,
+        "step": 10,
+        "default": 150,
+        "unit": "px",
+        "label": "Logo Width"
+      },
+      {
+        "type": "range",
+        "id": "mobile_logo_width",
+        "min": 50,
+        "max": 150,
+        "step": 5,
+        "default": 100,
+        "unit": "px",
+        "label": "Mobile Logo Width"
       }
     ]
   }
