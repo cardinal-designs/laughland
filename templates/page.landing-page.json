@@ -51,11 +51,19 @@
       "settings": {
         "heading": "{Why} Laughland?"
       }
+    },
+    "b60d8150-a8c1-4d20-a017-a4952d382660": {
+      "type": "instagram",
+      "settings": {
+        "section_heading": "Join the movement",
+        "section_sub_heading": "@mylaughland"
+      }
     }
   },
   "order": [
     "main",
     "4dac7b2d-e883-4fa0-8b54-7317f081e559",
-    "8f55a32e-9355-4413-8e5d-a7d66bb39102"
+    "8f55a32e-9355-4413-8e5d-a7d66bb39102",
+    "b60d8150-a8c1-4d20-a017-a4952d382660"
   ]
 }
