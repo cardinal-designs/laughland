@@ -715,4 +715,6 @@ input::placeholder {
 
 .menu-drawer {
   background: #FAF5F1;  
+  width: 100%;
+  max-width: 100%;
 }
