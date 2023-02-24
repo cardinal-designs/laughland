@@ -25,15 +25,34 @@
                 {%- if block.settings.diy_data != blank -%}
                   {{ block.settings.diy_data }}
                 {%- else -%}
-                  {% render 'icon' icon: 'false-icon' %}
-                  {% render 'icon' icon: 'true-icon' %}
+                  {%- if block.settings.diy_data_icon == 'true' -%}
+                    {% render 'icon' icon: 'true-icon' %}
+                  {% else %}
+                    {% render 'icon' icon: 'false-icon' %}
+                  {% endif %}
                 {% endif %}
               </td>
               <td class="sh3">
-                
+                {%- if block.settings.dentist_data != blank -%}
+                  {{ block.settings.dentist_data }}
+                {%- else -%}
+                  {%- if block.settings.dentist_data_icon == 'true' -%}
+                    {% render 'icon' icon: 'true-icon' %}
+                  {% else %}
+                    {% render 'icon' icon: 'false-icon' %}
+                  {% endif %}
+                {% endif %}
               </td>
               <td class="sh3">
-                
+                {%- if block.settings.us_data != blank -%}
+                  {{ block.settings.us_data }}
+                {%- else -%}
+                  {%- if block.settings.us_data_icon == 'true' -%}
+                    {% render 'icon' icon: 'true-icon' %}
+                  {% else %}
+                    {% render 'icon' icon: 'false-icon' %}
+                  {% endif %}
+                {% endif %}
               </td>
             </tr>
           {% endfor %}
