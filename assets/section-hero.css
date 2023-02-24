@@ -84,6 +84,12 @@
   padding: 16.5px 60px 17.5px;
 }
 
+.Hero_Badges {
+  position: absolute;
+  right: -10px;
+  top: -100px;
+}
+
 @media screen and (max-width: 768px) {
   .hero:not(.homepage-hero) {
     height: 540px;
