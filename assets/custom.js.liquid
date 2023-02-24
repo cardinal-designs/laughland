@@ -1,5 +1,5 @@
 /* Scroll javascript start */
-/*
+
 document.addEventListener('DOMContentLoaded', function () {
   {% unless template.suffix == 'index' %}
     document.querySelector(window).scroll(function(){
@@ -14,11 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   {% endunless %}
 }, false);
-*/
+
 /* Scroll javascript end */
 
 /* animation policies javascript start */
-/*
+
 var stringToRepeat = document.querySelector(".shopify-policy__container .shopify-policy__title").innerHTML.trim();
 var TempVar = "";
 for(let i=0;i<=100;i++){
@@ -59,28 +59,5 @@ for(let i=0;i<=100;i++){
 }
 
 document.querySelector(".shopify-policy__container .shopify-policy__title").innerHTML = TempVar;
-*/
+
 /* animation policies javascript end */
-
-/* Accordion Javascript Start */
-
-  $(".accordion-content").hide();
-  $(".accordion-title").click(function(){
-    $(this).toggleClass('active');
-    if($(this).hasClass('active')){
-      $('.accordion-content').slideUp();
-      $('.accordion-title').not(this).removeClass('active');
-      $('.accordion-block').removeClass('activeToggle');
-      $(this).addClass('active');
-      $(this).next('.accordion-content').slideDown();
-      $(this).parent().addClass("activeToggle"); 
-    } else {
-      $(this).removeClass('active');
-      $(this).next('.accordion-content').slideUp();
-      $(this).parent().removeClass("activeToggle"); 	
-    }
-  });
-
-
-
-/* Accordion Javascript End */
