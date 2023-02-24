@@ -15,6 +15,7 @@
   <div class="page-width hero__inner">
     <div class="hero__container">
       <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
+      <h5 class="h5">{{ section.settings.sub_title }}</h5>
       {% if section.settings.button_link != blank %}
         <a href="{{ section.settings.button_link }}" class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
           {{- section.settings.button_label -}}
@@ -53,6 +54,11 @@
       "id": "title",
       "label": "Title",
       "info": "Wrap italized text in {}"
+    },
+    {
+      "type": "text",
+      "id": "sub_title",
+      "label": "Sub Title"
     },
     {
       "type": "header",
