@@ -12,12 +12,12 @@
       <div class="Faq_Area">
         <div class="Faq_List">
           {% for block in section.blocks %}
-            <div class="Single_Faq">
+
               <h2 class="accordion">{{ block.settings.title }}</h2>
               <div class="accordion-content body-1">
                 {{ block.settings.sub_title }}
               </div>
-            </div>
+      
           {% endfor %}
         </div>
       </div>
