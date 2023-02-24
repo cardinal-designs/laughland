@@ -2318,3 +2318,12 @@ section.with-spacing {
 .active .accordion-toggle svg line {
   transform: rotate(90deg);
 }
+
+.Section_Header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Section_Header h2 {
+  margin-bottom: 14px;
+}
