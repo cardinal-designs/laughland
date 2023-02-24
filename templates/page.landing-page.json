@@ -117,12 +117,48 @@
         "section_sub_heading": "@mylaughland",
         "sub_heading_link": "https:\/\/www.instagram.com\/"
       }
+    },
+    "49f3d9ac-7509-4919-89f3-3c6825a727c8": {
+      "type": "faq-section",
+      "blocks": {
+        "211060df-f259-4c34-bf3a-8ff6f7ebc051": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "7d5a83c8-daae-4afc-826a-7e2c8303468a": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "3f5fff35-bec5-4563-b68f-af7d8b7b045f": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "211060df-f259-4c34-bf3a-8ff6f7ebc051",
+        "7d5a83c8-daae-4afc-826a-7e2c8303468a",
+        "3f5fff35-bec5-4563-b68f-af7d8b7b045f"
+      ],
+      "settings": {
+        "section_heading": "",
+        "section_sub_heading": ""
+      }
     }
   },
   "order": [
     "main",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
-    "b60d8150-a8c1-4d20-a017-a4952d382660"
+    "b60d8150-a8c1-4d20-a017-a4952d382660",
+    "49f3d9ac-7509-4919-89f3-3c6825a727c8"
   ]
 }
