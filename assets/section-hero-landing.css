@@ -8,7 +8,7 @@
   align-items: flex-start;
 }
 
-.hero__inner {
+.Hero_Inner {
   position: relative;
   z-index: 2;
   width: 100%;
