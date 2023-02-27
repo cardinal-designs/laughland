@@ -13,17 +13,13 @@ jQuery(document).ready(function(){
       {
         breakpoint: 1200,
         settings: {
-          centerMode: true,
-          centerPadding: '20%',
-          slidesToShow: 1
+          centerPadding: '20%'
         }
       },
       {
         breakpoint: 480,
         settings: {
-          centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 1
+          centerPadding: '12px'
         }
       }
     ]
