@@ -43,7 +43,7 @@
   padding: 30px 20px;
 }
 
-.Arrows {
+.slick_pagination .slick_arrow {
   display: flex;
   align-items: center;
   justify-content: space-between;
