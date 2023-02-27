@@ -139,6 +139,10 @@
   .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th {
     height: 45px;
   }
+
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td {
+    padding: 11px 10px;
+  }
 }
 
 @media screen and (max-width: 479px) {
