@@ -3,7 +3,7 @@
 }
 
 .Featured_Product .price-item.price-item--regular,
-.price-item.price-item--sale {
+.Featured_Product .price-item.price-item--sale {
   font-weight: 500;
   font-size: 35px;
   line-height: 38px;
@@ -40,6 +40,11 @@
 
   .Featured_Product .product {
     gap: 30px;
+  }
+
+  .Featured_Product .price-item.price-item--sale {
+    font-size: 20px;
+    line-height: 28px;
   }
 
 }
