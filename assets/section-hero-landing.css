@@ -151,5 +151,16 @@
   .Hero_Inner {
     position: unset;
   }
+  
+  .Hero_Container .Hero_Badges {
+    bottom: unset;
+    top: 62px;
+    right: 25px;
+    left: inherit;
+  }
+  
+  .Hero_Container .Hero_Badges img {
+    max-width: 75px;
+  }
     
 }
