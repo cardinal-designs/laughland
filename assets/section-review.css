@@ -10,7 +10,8 @@
 
 .Reviews_Section .Reviews_Inr_Section .Section_Header,
 .Reviews_Section .Reviews_Inr_Section .Review_Count,
-.Reviews_Section .Reviews_Inr_Section .Button_Area {
+.Reviews_Section .Reviews_Inr_Section .Button_Area,
+.Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination {
   padding: 0 50px;
 }
 
