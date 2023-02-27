@@ -34,7 +34,7 @@ $('.Instagram_Slider').slick({
   ]
 });
 
-function realReviewSlider() {
+function instaSlider() {
 
   if (window.matchMedia("(max-width: 991px)").matches) {  
     $('.Images_List').slick({
@@ -67,9 +67,9 @@ function realReviewSlider() {
 }
 
 $(document).ready(function() {
-  realReviewSlider();
+  instaSlider();
 })
 
 $(window).on('resize orientationchange', function() {
-  realReviewSlider();
+  instaSlider();
 })
