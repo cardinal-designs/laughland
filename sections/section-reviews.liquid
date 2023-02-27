@@ -11,6 +11,10 @@
         <h2 class="h4">{{ formatted_heading }}</h2>
         <p class="sh2">{{ section.settings.section_sub_heading }}</p>
       </div>
+      <div class="Review_Count">
+        {% render 'icon' icon: 'review-5-star' %}
+        <span class="sh1-medium"><span class='stylized'>{{ section.settings.review_count }}</span> Reviews</span>
+      </div>
       <div class="Review_List">
         {% for block in section.blocks %}
           <div class="Single_Review">
