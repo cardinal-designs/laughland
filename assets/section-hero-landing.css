@@ -125,6 +125,10 @@
 }
 
 @media screen and (max-width: 768px) {
+ 
+}
+
+@media screen and (max-width: 768px) {
 
   .hero:not(.homepage-hero) {
     height: 540px;
