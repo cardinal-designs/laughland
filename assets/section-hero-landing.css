@@ -192,6 +192,10 @@
   .Hero_Container .Hero_Badges img {
     max-width: 75px;
   }
+
+  .Hero_Subtitle span {
+    box-shadow: 0 0 17px 1px #46bdf0;
+  }
     
 }
 
