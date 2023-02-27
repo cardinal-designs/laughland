@@ -10,7 +10,7 @@
   | replace: '}', '</span>'
 %}
 
-<div class="hero">
+<div class="Landing_Hero">
   {% if section.settings.mobile_image != blank %}
     {% render 'lazy-image', image: section.settings.image, fade: true, fill: true, classes: 'hide-mobile' %}
     {% render 'lazy-image', image: section.settings.mobile_image, fade: true, fill: true, classes: 'hide-desktop' %}
