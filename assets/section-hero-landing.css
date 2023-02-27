@@ -111,7 +111,7 @@
   
   .Hero_Title {
     font-size: 45px;
-    line-height: 1.2;
+    line-height: 52px;
   }
   
   .Hero_Container .button--primary {
@@ -196,6 +196,7 @@
   .Hero_Title {
     padding: 0;
     font-size: 32px;
+    line-height: 1.2;
   }
 
   .Hero_Subtitle {
