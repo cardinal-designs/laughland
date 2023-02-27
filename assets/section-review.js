@@ -2,6 +2,7 @@ jQuery(document).ready(function(){
   jQuery('.Review_Slider').slick({
     centerMode: true,
     dots: true,
+    arrows: true,
     prevArrow: $('.prev-slide'),
     nextArrow: $('.next-slide'),
     centerPadding: '28%',
