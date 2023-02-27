@@ -15,3 +15,7 @@
   line-height: 28px;
   color: #9EA7B4;
 }
+
+.Featured_Product .badge.price__badge-sale {
+  display: none;
+}
