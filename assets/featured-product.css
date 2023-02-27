@@ -44,7 +44,7 @@
 }
 
 .Featured_Product .product__media .img-fill img {
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 @media screen and (max-width: 991px) {
