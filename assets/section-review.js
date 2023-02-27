@@ -1,5 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+  slidesPerView: 4,
   spaceBetween: 30,
   centeredSlides: true,
   navigation: {
@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: '.carousel-prev',
   },
   pagination: {
-    el: '.carousel-pagination',
-    type: 'bullets',
+    el: ".swiper-pagination",
+    clickable: true,
   },
 });
