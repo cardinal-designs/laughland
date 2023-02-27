@@ -13,11 +13,11 @@ jQuery(document).ready(function(){
     slidesToShow: 1,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1200,
         settings: {
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          centerPadding: '20%',
+          slidesToShow: 1
         }
       },
       {
