@@ -211,6 +211,7 @@ File does not have any other versions
   .Faq_Heading .h4 {
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 40px;
   }
 
   .FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion {
