@@ -7,8 +7,8 @@
         "heading": ""
       }
     },
-    "7bcf4c83-a487-4e52-8bcd-e98257c59e64": {
-      "type": "hero",
+    "3a2908b4-cb46-4bba-ab1d-db530f856c49": {
+      "type": "hero-landing",
       "settings": {
         "image": "shopify:\/\/shop_images\/Hero_Image.jpg",
         "mobile_image": "shopify:\/\/shop_images\/Mobile_Hero_Image.jpg",
@@ -404,7 +404,7 @@
   },
   "order": [
     "main",
-    "7bcf4c83-a487-4e52-8bcd-e98257c59e64",
+    "3a2908b4-cb46-4bba-ab1d-db530f856c49",
     "36e4f7aa-dd9e-4e47-a123-81be1338efe2",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
     "a4c5d03d-76b9-4c42-a509-36657ba4b556",
