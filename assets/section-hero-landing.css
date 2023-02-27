@@ -167,4 +167,24 @@
 
 @media screen and (max-width: 389px) {
   
+  .Hero_Title {
+    padding: 0;
+    font-size: 32px;
+  }
+
+  .Hero_Subtitle {
+    font-size: 16px;
+  }
+
+  .Hero_Subtitle span {
+    height: 35px;
+    padding: 13px 14px 7px;
+    font-size: 18px;
+  }
+  
+  .Hero_Subtitle span sup {
+    font-size: 19px;
+    top: 0px;
+  }
+  
 }

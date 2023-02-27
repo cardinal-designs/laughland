@@ -378,6 +378,12 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/IG-Image-5.jpg"
           }
+        },
+        "edd92d3f-52d8-48c2-9c19-3c4049852111": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-4.jpg"
+          }
         }
       },
       "block_order": [
@@ -385,7 +391,8 @@
         "6535ba57-bd90-43b5-8c6e-f75b9a51be31",
         "46369378-93b9-4365-a694-53f175bca28b",
         "9a1df953-43c6-42b5-962e-43f443c50f37",
-        "ce0ea17d-780b-43ad-a772-20b6743c982b"
+        "ce0ea17d-780b-43ad-a772-20b6743c982b",
+        "edd92d3f-52d8-48c2-9c19-3c4049852111"
       ],
       "settings": {
         "section_heading": "Join the movement",
