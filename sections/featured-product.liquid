@@ -4,7 +4,7 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'recharge-widget-styles.css' | asset_url | stylesheet_tag }}
 
-{% assign formatted_heading = section.settings.section_heading
+{% assign formatted_heading = section.settings.title
   | escape
   | replace: '{', "<span class='stylized'>"
   | replace: '}', '</span>'
@@ -51,7 +51,7 @@
 
         <h3 class="product__title m-h4" id="product__title_id">
           {%- if section.settings.title != blank -%}
-            {{ section.settings.title }}
+            {{ formatted_heading }}
           {%- else -%}
             {{ product.title | default: product.title }}
           {%- endif -%}
