@@ -1,4 +1,4 @@
-$('.Images_List').slick({
+$('.Instagram_Slider').slick({
   dots: true,
   infinite: false,
   speed: 300,

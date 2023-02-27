@@ -29,6 +29,9 @@
         </div>
       {% endfor %}
     </div>
+    <div class="Button_Area">
+      <a href="{{ section.settings.button_url }}" class="button">{{ section.settings.button_label }}</a>
+    </div>
   </div>
 </div>
 
@@ -41,6 +44,20 @@
       "id": "heading",
       "label": "Heading",
       "info": "Wrap italic text in {}"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"        
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"        
     }
   ],
   "max_blocks": 3,
