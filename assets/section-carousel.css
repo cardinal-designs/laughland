@@ -7,6 +7,14 @@
   position: relative;
 }
 
+@media screen and (max-width: 991px) {
+
+  .carousel__slide-text {
+    font-size: 30px;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   .carousel__inner {
     grid-template-columns: 20px minmax(0, 1fr) 20px;
