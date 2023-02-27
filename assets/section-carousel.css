@@ -40,10 +40,12 @@
   background-color: #CFD3DA;
   width: 9px;
   height: 9px;
+  opacity:1;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: var(--navy);
+  opacity:1;
 }
 
 @media screen and (max-width: 991px) {
