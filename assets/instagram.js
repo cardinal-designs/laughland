@@ -40,6 +40,7 @@ function instaSlider() {
     $('.Images_List').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
+      arrows: false
       responsive: [
         {
           breakpoint: 769,
