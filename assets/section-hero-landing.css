@@ -55,13 +55,17 @@
   padding: 16.5px 60px 17.5px;
 }
 
-.Hero_Badges {
+.Hero_Container .Hero_Badges {
   position: absolute;
   right: -10px;
   top: -100px;
 }
 
 @media screen and (max-width: 1200px) {
+  
+  .Hero_Title {
+    font-size: 50px;
+  }
   
   .Hero_Subtitle {
     font-size: 18px;
