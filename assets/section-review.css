@@ -33,8 +33,13 @@
   margin-top: 60px;
 }
 
+.Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review {
+  padding: 0 10px;
+}
+
 .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr {
   background-color: #fff;
   border-radius: 12px;
   padding: 30px 20px;
 }
+
