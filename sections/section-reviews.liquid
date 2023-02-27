@@ -19,7 +19,12 @@
         {% for block in section.blocks %}
           <div class="Single_Review">
             <div class="Single_Review_Inr">
-              
+              {% render 'icon' icon: 'review-5-star' %}
+              <h4 class="h4">{{ block.settings.title }}</h4>
+              <div class="Review">
+                {{ block.settings.review }}
+              </div>
+              <h6 class="h6">{{ block.settings.author }}</h6>
             </div>
           </div>
         {% endfor %}
