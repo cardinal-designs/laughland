@@ -212,4 +212,9 @@ File does not have any other versions
     line-height: 28px;
   }
 
+  .FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
 }
