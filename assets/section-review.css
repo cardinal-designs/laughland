@@ -109,4 +109,8 @@
 
 @media screen and (max-width: 1200px) {
   
+  .Reviews_Section {
+    padding: 50px 0;
+  }
+  
 }
