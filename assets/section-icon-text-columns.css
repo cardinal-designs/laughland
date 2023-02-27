@@ -59,6 +59,15 @@
     padding: 90px 0 15px;
   }
   
+  
+}
+
+@media screen and (max-width: 1024px) {
+  
+  .icon-text-columns__inner {
+    display: block;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
