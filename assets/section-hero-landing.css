@@ -143,6 +143,10 @@
     font-size: 16px;
     justify-content: center;
   }
+
+  .Hero_Review svg {
+    height: 14px;
+  }
   
   .Hero_Subtitle {
     margin-bottom: 40px;
