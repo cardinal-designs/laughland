@@ -127,6 +127,10 @@
   .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th {
     font-size: 14px;
   }
+
+  .Pricing_Section .Pricing_Inner_Section .Section_Header {
+    margin-bottom: 30px;
+  }
   
 }
 
