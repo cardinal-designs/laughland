@@ -110,7 +110,7 @@
       "settings": {
         "section_heading": "What People {love} about Laughland",
         "section_sub_heading": "",
-        "review_count": "5,0000",
+        "review_count": "5,000",
         "button_label": "Start Now",
         "button_url": "shopify:\/\/collections\/all"
       }
@@ -119,6 +119,7 @@
       "type": "featured-product",
       "settings": {
         "product": "at-home-whitening-kit",
+        "title": "",
         "atc": "Buy Now",
         "how_to_use": ""
       }
