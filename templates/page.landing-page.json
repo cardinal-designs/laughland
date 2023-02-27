@@ -11,6 +11,7 @@
       "type": "hero",
       "settings": {
         "image": "shopify:\/\/shop_images\/Hero_Image.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_Hero_Image.jpg",
         "review": "5.0\/5",
         "title": "Take the first step <br>{ to a better smile}",
         "sub_title": "Get a customized whitening solution for just {<sup>$<\/sup>19} today.",
