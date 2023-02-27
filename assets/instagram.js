@@ -37,7 +37,7 @@ $('.Instagram_Slider').slick({
 function realReviewSlider() {
 
   if (window.matchMedia("(max-width: 991px)").matches) {  
-    $('.Real_Reviews_Row').slick({
+    $('.Images_List').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
@@ -45,17 +45,15 @@ function realReviewSlider() {
     }); 
   } 
   else {
-    $('.Real_Reviews_Row').slick('unslick');
+    $('.Images_List').slick('unslick');
   }
   
 }
 
 $(document).ready(function() {
-  imageBlockSlider();
   realReviewSlider();
 })
 
 $(window).on('resize orientationchange', function() {
-  imageBlockSlider();
   realReviewSlider();
 })
