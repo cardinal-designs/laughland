@@ -112,5 +112,13 @@
   .Reviews_Section {
     padding: 50px 0;
   }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_Count {
+    margin-bottom: 50px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section {
+    padding: 70px 0;
+  }
   
 }
