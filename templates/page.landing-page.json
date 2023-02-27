@@ -66,6 +66,46 @@
     },
     "a4c5d03d-76b9-4c42-a509-36657ba4b556": {
       "type": "section-reviews",
+      "blocks": {
+        "89a41fcd-2300-427b-82fa-c9fb649485da": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        },
+        "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        },
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        },
+        "14cebb8f-f4fa-4a74-8811-da9796c988c8": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        }
+      },
+      "block_order": [
+        "89a41fcd-2300-427b-82fa-c9fb649485da",
+        "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f",
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791",
+        "14cebb8f-f4fa-4a74-8811-da9796c988c8"
+      ],
       "settings": {
         "section_heading": "What People {love} about Laughland",
         "section_sub_heading": "",
