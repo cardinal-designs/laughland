@@ -36,6 +36,13 @@
   grid-column: 3/4;
 }
 
+.swiper-pagination-bullet {
+  background-color: #CFD3DA;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  
+}
 
 @media screen and (max-width: 991px) {
 
