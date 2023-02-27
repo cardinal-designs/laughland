@@ -1,3 +1,9 @@
 .Featured_Product .product-info {
   margin-bottom: 35px;
 }
+
+.Featured_Product .price-item.price-item--regular {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 38px;
+}
