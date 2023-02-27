@@ -200,3 +200,11 @@ File does not have any other versions
   }
 
 }
+
+@media screen and (max-width: 768px) {
+
+  .FAQ_Section .Faq_section_inner {
+    padding: 70px 25px;
+  }
+
+}
