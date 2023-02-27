@@ -50,6 +50,7 @@
   .Featured_Product .price__sale .price-item.price-item--regular {
     font-size: 16px;
     font-weight: 500;
+    margin-right: 10px;
   }
   
 }
