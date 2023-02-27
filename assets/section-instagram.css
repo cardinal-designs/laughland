@@ -68,4 +68,8 @@
     display: none;
   }
 
+  .Instagram_Section .Section_Header h2 {
+    margin-bottom: 6px;
+  }
+
 }
