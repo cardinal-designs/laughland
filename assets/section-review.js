@@ -3,8 +3,6 @@ jQuery(document).ready(function(){
     centerMode: true,
     dots: true,
     arrows: true,
-    prevArrow: $('.prev-slide'),
-    nextArrow: $('.next-slide'),
     centerPadding: '28%',
     appendArrows:$(".slick_arrow"),
     prevArrow:'<span class="Slick-Prev"></span>',
