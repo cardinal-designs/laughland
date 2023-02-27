@@ -31,6 +31,7 @@
 
 .Featured_Product .product {
   margin-bottom: 25px;
+  padding: 0 50px;
 }
 
 .Featured_Product .price--on-sale .price__sale {
