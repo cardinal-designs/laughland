@@ -44,16 +44,18 @@
         {% assign product_form_id = 'product-form-' | append: section.id %}
 
         <h3 class="product__title m-h4" id="product__title_id">
-          {{ product.title | default: product.title }}
+          {%- if section.settings.title != blank -%}
+            {{ section.settings.title }}
+          {%- else -%}
+              {{ product.title | default: product.title }}
+          {%- endif -%}
         </h3>
 
-        <div class="no-js-hidden" id="price-{{ section.id }}" role="status">
+        <div class="no-js-hidden visibility-hidden visually-hidden" id="price-{{ section.id }}" role="status">
           {% render 'price', product: product, use_variant: true, show_badges: true, price_class: '' %}
         </div>
 
         <div class="subscription-wrapper">
-
-          {% comment %}
           <div class="loading-overlay__spinner">
             <svg
               aria-hidden="true"
@@ -66,13 +68,15 @@
               <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
             </svg>
           </div>
+
+          {% comment %}
             {% form 'product', product, id: 'product-form-installment', class: 'installment visually-hidden' %}
               <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
               {{ form | payment_terms }}
             {% endform %}
           {% endcomment %}
 
-          <product-form class="product-form" data-product-id="{{ product.id }}">
+          <product-form class="product-form visually-hidden" data-product-id="{{ product.id }}">
             <div class="product-form__error-message-wrapper" role="alert" hidden>
               <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
                 <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
@@ -194,7 +198,7 @@
                 </div>
               </noscript>
 
-              <div class="product-form__input product-form__quantity visually-hidden">
+              <div class="product-form__input product-form__quantity">
                 <label class="form__label" for="Quantity-{{ section.id }}">
                   {{ 'products.product.quantity.label' | t }}
                 </label>
@@ -395,6 +399,11 @@
       "type": "product",
       "id": "product",
       "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Product Title"
     },
     {
       "type": "text",
