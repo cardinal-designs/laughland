@@ -38,6 +38,8 @@
 
 .swiper-pagination-bullet {
   background-color: #CFD3DA;
+  width: 9px;
+  height: 9px;
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
