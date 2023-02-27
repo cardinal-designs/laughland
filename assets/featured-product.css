@@ -65,5 +65,9 @@
     background-color: #0D2244;
     opacity: .2;
   }
+
+  .Featured_Product .product-info dd span {
+    margin-bottom: -2px;
+  }
     
 }
