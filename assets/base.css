@@ -521,6 +521,10 @@ blockquote {
   position: relative;
 }
 
+.button.large-btn {
+  padding: 16.5px 60px 17.5px;
+}
+
 .jdgm-ask-question-btn, .jdgm-write-rev-link, .jdgm-all-reviews-rating-wrapper, .jdgm-carousel-wrapper a, .jdgm-rev__prod-link, .jdgm-all-reviews-text a, .jdgm-carousel-item__product, .jdgm-carousel-number-of-reviews, .jdgm-revs-tab__url {
   color: white !important;
   border-color: var(--blue) !important;
