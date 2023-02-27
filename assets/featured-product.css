@@ -19,3 +19,7 @@
 .Featured_Product .badge.price__badge-sale {
   display: none;
 }
+
+.Featured_Product .subscription-wrapper {
+  margin-top: 40px;
+}
