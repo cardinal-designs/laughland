@@ -186,14 +186,17 @@
   }
 
   .Hero_Subtitle span {
-    height: 35px;
-    padding: 13px 14px 7px;
-    font-size: 18px;
+    height: 33px;
+    padding: 11px 14px 7px;
+    font-size: 22px;
+    line-height: 0;
+    width: 56px;
   }
   
   .Hero_Subtitle span sup {
-    font-size: 19px;
+    position: relative;
     top: 0px;
+    font-size: 18px;
   }
   
 }
