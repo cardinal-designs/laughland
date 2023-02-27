@@ -27,3 +27,8 @@
 .Reviews_Section .Reviews_Inr_Section .Review_Count {
   margin-bottom: 70px;
 }
+
+.Reviews_Section .Reviews_Inr_Section .Button_Area {
+  text-align: center;
+  margin-top: 60px;
+}
