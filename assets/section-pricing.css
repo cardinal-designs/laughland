@@ -111,7 +111,7 @@
 @media screen and (max-width: 768px) {
 
   .Pricing_Section {
-    padding: 40px 0 0;
+    padding: 40px 0 20px;
   }
   
   .Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges img {
