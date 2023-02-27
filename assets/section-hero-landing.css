@@ -62,7 +62,11 @@
 }
 
 @media screen and (max-width: 1200px) {
- 
+  
+  .Hero_Subtitle {
+    font-size: 18px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
