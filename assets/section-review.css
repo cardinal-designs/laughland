@@ -200,7 +200,10 @@
     line-height: 21px;
     font-weight: 400;
   }
-  
+
+  .slick_pagination .slick_arrow {
+    margin-top: 37px;   
+  }
   
 }
 
