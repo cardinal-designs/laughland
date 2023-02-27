@@ -231,10 +231,6 @@ h5,
   .h5 {
     margin-bottom: 20px;
   }
-  .h4,h4{
-    font-size: 20px;
-    line-height: 28px;
-  }
 }
  
 .h-medium {
@@ -306,6 +302,8 @@ h4,
 @media only screen and (max-width: 768px) {
   h4,
   .h4 {
+    font-size: 20px;
+    line-height: 28px;
   }
   .m-h4 {
     font-size: 35px;
