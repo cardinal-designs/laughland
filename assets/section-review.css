@@ -144,6 +144,10 @@
   .Reviews_Section {
     padding: 30px 0;
   }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title {
+    margin-bottom: 35px;
+  }
   
   .Reviews_Section .Reviews_Inr_Section .Section_Header {
     margin-bottom: 30px;
