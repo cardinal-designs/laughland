@@ -154,6 +154,7 @@
     height: 35px;
     padding: 13px 14px 7px;
     font-size: 28px;
+    line-height: 0;
   }
 
   .Hero_Title br {
