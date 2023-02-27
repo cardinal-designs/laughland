@@ -118,5 +118,10 @@
   .Featured_Product .product {
     margin-bottom: 0;
   }
+
+  .Featured_Product .product__info-wrapper {
+    padding: 40px 20px 33px;
+    margin-right: 0;
+  }
   
 }
