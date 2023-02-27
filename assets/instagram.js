@@ -2,8 +2,8 @@ $('.Images_List').slick({
   dots: true,
   infinite: false,
   speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  slidesToShow: 5,
+  slidesToScroll: 2,
   responsive: [
     {
       breakpoint: 1024,
