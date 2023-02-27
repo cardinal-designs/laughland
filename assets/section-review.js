@@ -9,7 +9,7 @@ jQuery(document).ready(function(){
     appendArrows:$(".slick_arrow"), // Class For Arrows Buttons
     prevArrow:'<span class="Slick-Prev"></span>',
     nextArrow:'<span class="Slick-Next"></span>',
-    appendDots: $('.slick_dots'),
+    appendDots: $('.news__dots'),
     slidesToShow: 1,
     responsive: [
       {
