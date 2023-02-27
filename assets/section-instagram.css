@@ -64,4 +64,8 @@
     padding: 0;
   }
 
+  .slick_pagination .slick_arrow_insta {
+    display: none;
+  }
+
 }
