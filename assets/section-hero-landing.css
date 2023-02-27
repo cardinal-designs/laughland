@@ -17,6 +17,7 @@
 .Hero_Container {
   text-align: left;
   padding-bottom: 50px;
+  position: relative;
 }
 
 .Hero_Review {
@@ -148,7 +149,8 @@
     display: none;
   }
 
-  .Hero_Inner {
+  .Hero_Inner,
+  .Hero_Container {
     position: unset;
   }
   
