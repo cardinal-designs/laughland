@@ -47,4 +47,9 @@
     line-height: 28px;
   }
 
+  .Featured_Product .price__sale .price-item.price-item--regular {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
 }
