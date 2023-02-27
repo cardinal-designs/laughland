@@ -7,8 +7,6 @@ jQuery(document).ready(function(){
     nextArrow: $('.next-slide'),
     centerPadding: '28%',
     appendArrows:$(".slick_arrow"),
-    prevArrow:'<span class="Slick-Prev"></span>',
-    nextArrow:'<span class="Slick-Next"></span>',
     appendDots: $('.slick_dots'),
     slidesToShow: 1,
     responsive: [
