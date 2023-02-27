@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
   jQuery('.Review_Slider').slick({
     centerMode: true,
+    dots: true,
     centerPadding: '60px',
     slidesToShow: 1,
     responsive: [
