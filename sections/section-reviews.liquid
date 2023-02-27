@@ -4,6 +4,30 @@
   | replace: '}', '</span>'
 %}
 
+<div class="Reviews_Section">
+  <div class="page-width">
+    <div class="Section_Header">
+      <h2 class="h4">{{ section.settings.section_heading }}</h2>
+      <p class="sh2">{{ section.settings.section_sub_heading }}</p>
+    </div>
+    <div class="Images_List">
+      {% for block in section.blocks %}
+        <div class="Single_Image">
+          <img
+            srcset="{{ block.settings.image | image_url: width: 300 }} 1x, {{ block.settings.png | image_url: width: 300, scale: 2 }} 2x"
+            src="{{ block.settings.image | image_url: width: 300}}"
+            loading="lazy"
+            class="IG_Image"
+            width="{{ block.settings.image.width }}"
+            height="{{ block.settings.image.height }}"
+            alt="{{ block.settings.image.alt }}"
+          >
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
 {% schema %}
   {
     "name": "Reviews Section",
