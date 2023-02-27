@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
     dots: true,
     arrows: true,
     centerPadding: '28%',
-    appendArrows:$(".slick_arrow"),
+    appendArrows:$(".slick_pagination .slick_arrow"),
     prevArrow:'<span class="Slick-Prev"></span>',
     nextArrow:'<span class="Slick-Next"></span>',
     appendDots: $('.slick_dots'),
