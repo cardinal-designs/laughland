@@ -88,6 +88,16 @@
     right: -20px;
   }
   
+  .Hero_Container {
+    width: 63%;
+  }
+  
+  .Hero_Container .Hero_Badges {
+    bottom: -100px;
+    top: auto;
+    left: 0;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
