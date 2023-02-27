@@ -60,6 +60,7 @@
 
 .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Author {
   margin: 20px 0 0;
+  text-transform: unset;
 }
 
 .slick_pagination .slick_arrow {
