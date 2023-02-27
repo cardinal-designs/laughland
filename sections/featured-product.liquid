@@ -92,17 +92,6 @@
               <span class="product-form__error-message"></span>
             </div>
 
-            {% if product.metafields.custom.details != blank %}
-              <div class="product__details">
-                <div class="product__details-inner">
-                  {% for detail in product.metafields.custom.details.value %}
-                    {% assign formatted_emoji = detail | replace: '{', "<span class='emoji'>" | replace: '}', '</span>' %}
-                    <div class="product__detail-item p">{{ formatted_emoji }}</div>
-                  {% endfor %}
-                </div>
-              </div>
-            {% endif %}
-
             <dl class="product-info">
               <dt class="h6">Details</dt>
               <dd class="p" data-formula-type>
