@@ -67,7 +67,8 @@
   }
 
   .Featured_Product .product-info dd span {
-    margin-bottom: -2px;
+    margin: 0 4px -2px 0;
+    display: inline-block;
   }
 
   .Featured_Product .product-info dd {
