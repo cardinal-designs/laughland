@@ -32,6 +32,10 @@
   margin-bottom: 25px;
 }
 
+.Featured_Product .price--on-sale .price__sale {
+  align-items: center;
+}
+
 @media screen and (max-width: 991px) {
 
   .Featured_Product {
