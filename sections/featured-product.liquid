@@ -4,6 +4,12 @@
 {{ 'component-rte.css' | asset_url | stylesheet_tag }}
 {{ 'recharge-widget-styles.css' | asset_url | stylesheet_tag }}
 
+{% assign formatted_heading = section.settings.section_heading
+  | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {% assign product = section.settings.product %}
