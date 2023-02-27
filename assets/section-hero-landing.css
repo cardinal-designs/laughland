@@ -1,9 +1,6 @@
-.hero {
+.Landing_Hero {
   height: 650px;
   position: relative;
-}
-
-.hero:not(.homepage-hero){
   min-height: 700px;
   display: flex;
   flex-direction: column;
