@@ -56,8 +56,11 @@
   }
 
   .Instagram_Section .Images_List {
-
     margin: 0;
+  }
+
+  .Instagram_Section .page-width {
+    padding: 0;
   }
 
 }
