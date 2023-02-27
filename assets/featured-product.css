@@ -47,6 +47,10 @@
   border-radius: 13px;
 }
 
+.Featured_Product .product-form__buttons button {
+  padding: 13.5px 34px 14.5px;
+}
+
 @media screen and (max-width: 991px) {
 
   .Featured_Product {
