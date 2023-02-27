@@ -98,6 +98,15 @@
     left: 0;
   }
   
+  .Hero_Title {
+    font-size: 44px;
+    line-height: 1.2;
+  }
+  
+  .Hero_Container .button--primary {
+    padding: 16.5px 50px 17.5px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
