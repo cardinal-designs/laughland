@@ -10,6 +10,24 @@ jQuery(document).ready(function(){
     prevArrow:'<span class="Slick-Prev"></span>',
     nextArrow:'<span class="Slick-Next"></span>',
     appendDots: $('.slick_dots'),
-    slidesToShow: 1
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 });
