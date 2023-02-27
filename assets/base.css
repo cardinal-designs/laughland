@@ -284,8 +284,10 @@ h3,
 }
 
 @media only screen and (max-width: 768px) {
-  h3,
+  h3, 
   .h3 {
+    font-size: 35px;
+    line-height: 38px;
   }
 }
 
@@ -300,6 +302,8 @@ h4,
 @media only screen and (max-width: 768px) {
   h4,
   .h4 {
+    font-size: 20px;
+    line-height: 28px;
   }
   .m-h4 {
     font-size: 35px;
@@ -342,6 +346,60 @@ h6,
   h6,
   .h6 {
   }
+}
+
+.sh1 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  font-family: manrope;
+}
+
+.sh1-medium {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  font-family: manrope;
+}
+
+.sh2 {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.sh3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .sh2 {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .sh3 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  
+}
+
+.body-2, 
+.body-2 p {
+  font-family: jakarta;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
 }
 
 ul,
@@ -480,6 +538,10 @@ blockquote {
   transition: all .5s ease;
   display: inline-block;
   position: relative;
+}
+
+.button.large-btn {
+  padding: 16.5px 60px 17.5px;
 }
 
 .jdgm-ask-question-btn, .jdgm-write-rev-link, .jdgm-all-reviews-rating-wrapper, .jdgm-carousel-wrapper a, .jdgm-rev__prod-link, .jdgm-all-reviews-text a, .jdgm-carousel-item__product, .jdgm-carousel-number-of-reviews, .jdgm-revs-tab__url {
@@ -2310,4 +2372,13 @@ section.with-spacing {
 
 .active .accordion-toggle svg line {
   transform: rotate(90deg);
+}
+
+.Section_Header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Section_Header h2 {
+  margin-bottom: 14px;
 }

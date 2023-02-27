@@ -1,0 +1,93 @@
+{{ 'section-icon-with-text.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_heading = section.settings.heading
+  | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<div class="Icon_With_Text_Section">
+  <div class="page-width">
+    <div class="Section_Header">
+      <h4 class="h4">{{ formatted_heading }}</h4>
+    </div>
+    <div class="icon-with-text__block-wrapper">
+      {% for block in section.blocks %}
+        <div class="icon-with-text__item">
+          <div class="icon-with-text__icon-wrapper">
+            <div class="icon-with-text__icon">{{ block.settings.title }}</div>
+          </div>
+
+          <div class="icon-with-text__text-wrapper">
+            {% if block.settings.heading != blank %}
+              <h5 class="icon-with-text__item-heading">{{ block.settings.heading }}</h5>
+            {% endif %}
+            {% if block.settings.text != blank %}
+              <p class="icon-with-text__item-text sh2">{{ block.settings.text }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="Button_Area">
+      <a href="{{ section.settings.button_url }}" class="button large-btn">{{ section.settings.button_label }}</a>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Icon With Text",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap italic text in {}"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"        
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Url"        
+    }
+  ],
+  "max_blocks": 3,
+  "blocks": [
+    {
+      "name": "Icon/Text Block",
+      "type": "text",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "title",
+          "label": "SVG or text emoji"
+        },
+        {
+          "type": "textarea",
+          "id": "heading",
+          "label": "Heading"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon With Text"
+    }
+  ]
+}
+{% endschema %}

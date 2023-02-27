@@ -1,0 +1,78 @@
+.Instagram_Section {
+  padding: 60px 0 65px;
+}
+
+.Instagram_Section .Images_List {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -6px;
+}
+
+.Instagram_Section .Images_List .Single_Image {
+  flex: 20% 0 0;
+  max-width: 20%;
+  padding: 0 6px;
+}
+
+.Instagram_Section .Images_List .Single_Image .IG_Image {
+  border-radius: 12px;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.slick_pagination .slick_arrow_insta .Slick-Prev.slick-arrow::after {
+  content: url("data:image/svg+xml,%3Csvg width='35' height='25' viewBox='0 0 35 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.581 0L19.9899 1.10969C19.9899 1.10969 14.0498 8.4162 10.34 11.3455H35V13.652H10.34C14.0498 16.5812 19.9899 23.8877 19.9899 23.8877L18.581 24.9974C18.581 24.9974 9.77324 16.0097 -6.15973e-08 12.4987C9.77324 8.9877 18.581 0 18.581 0Z' fill='%230D2244'/%3E%3C/svg%3E%0A");
+}
+
+.slick_pagination .slick_arrow_insta .slick-arrow.Slick-Next::after {
+  content: url("data:image/svg+xml,%3Csvg width='35' height='25' viewBox='0 0 35 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.419 0L15.0101 1.10969C15.0101 1.10969 20.9502 8.4162 24.66 11.3455H0V13.652H24.66C20.9502 16.5812 15.0101 23.8877 15.0101 23.8877L16.419 24.9974C16.419 24.9974 25.2268 16.0097 35 12.4987C25.2268 8.9877 16.419 0 16.419 0Z' fill='%230D2244'/%3E%3C/svg%3E%0A");
+}
+
+.slick_pagination .slick_arrow_insta .slick-arrow {
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.slick_pagination .slick_arrow_insta .slick-arrow {
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.slick_pagination .slick_arrow_insta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .Instagram_Section {
+    padding: 70px 0 100px;
+  }
+
+  .Instagram_Section .Images_List {
+    margin: 0;
+  }
+
+  .Instagram_Section .page-width {
+    padding: 0;
+  }
+
+  .slick_pagination .slick_arrow_insta {
+    display: none;
+  }
+
+  .Instagram_Section .Section_Header h2 {
+    margin-bottom: 6px;
+  }
+
+  .Instagram_Section .Section_Header {
+    margin-bottom: 30px;
+  }
+  
+}

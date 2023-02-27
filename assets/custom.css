@@ -711,3 +711,85 @@ input::placeholder {
 
 
 /*========== CART PAGE END ==========*/
+
+@media screen and (max-width: 989px) {
+
+  .header__icon {
+    display: block !important;
+  }
+
+  .menu-drawer {
+    width: 100%;
+    max-width: 100%;
+    background: #FAF5F1;
+    z-index: 9999;
+  }
+
+  .Bottom_Menu .menu-drawer__menu-button {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: Jakarta;
+    letter-spacing: -0.01em;
+  }
+
+  .Bottom_Menu.menu-drawer__menu {
+    padding-bottom: 20px;
+  }
+  
+  .Bottom_Menu .menu-drawer__menu-button {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    padding: 5px 25px;
+    line-height: 1.5em;
+  }
+  
+  .menu-drawer__header {
+    border-bottom: 0;
+  }
+  
+  .menu-drawer__menu li {
+    border-bottom: 0;
+  }
+
+  .menu-drawer__close svg {
+    width: auto;
+  }
+
+  .js-close-menu.menu-drawer__close {
+    position: absolute;
+    right: 12px;
+    top: 13px;
+  }
+  
+  .header__svg-logo {
+    margin: 0 auto;
+  }
+  
+  .menu-drawer__header {
+    height: 65px;
+    padding: 15px 20px;
+    margin: 0 0 55px;
+  }
+  
+  .menu-drawer__menu-button {
+    font-size: 35px;
+    padding: 10px 25px;
+    margin: 0;
+  }
+  
+  .menu-drawer__close svg path {
+    fill: #0D2244;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .menu-drawer__menu-button:hover {
+    color: #46BDF0;
+  }
+
+  .template-index.Menu_Open {
+    overflow: hidden;
+  }
+
+}

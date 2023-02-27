@@ -1,0 +1,230 @@
+.Landing_Hero {
+  height: 650px;
+  position: relative;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.Hero_Inner {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.Hero_Container {
+  text-align: left;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.Hero_Review {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.Hero_Review svg {
+  height: 19px;
+  display: block;
+}
+
+.Hero_Review .stylized {
+  margin: 0 0 0 8px;
+  line-height: 1;
+}
+
+.Hero_Title {
+  margin: 0 0 20px;
+}
+
+.Hero_Subtitle {
+  margin-bottom: 50px;
+}
+
+.Hero_Subtitle span {
+  border: 1px solid #FAF5F1;
+  box-shadow: 0 0 37px 7px #46bdf0;
+  border-radius: 50%;
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 11px;
+  display: inline-block;
+  height: 40px;
+  width: 67px;
+  padding: 0 15px;
+}
+
+.Hero_Subtitle span sup {
+  position: relative;
+  top: 2px;
+  font-size: 22px;
+}
+
+.Hero_Container .button--primary {
+  padding: 16.5px 60px 17.5px;
+}
+
+.Hero_Container .Hero_Badges {
+  position: absolute;
+  right: -10px;
+  top: -63px;
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .Hero_Title {
+    font-size: 50px;
+  }
+  
+  .Hero_Container .Hero_Badges img {
+    max-width: 105px;
+  }
+  
+  .Hero_Container .Hero_Badges {
+    top: -105px;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+
+  .Hero_Subtitle {
+    margin-bottom: 30px;
+  }
+  
+  .Hero_Container .Hero_Badges {
+    right: -20px;
+  }
+  
+  .Hero_Container {
+    width: 63%;
+  }
+  
+  .Hero_Container .Hero_Badges {
+    bottom: -100px;
+    top: auto;
+    left: 0;
+  }
+  
+  .Hero_Title {
+    font-size: 45px;
+    line-height: 52px;
+  }
+  
+  .Hero_Container .button--primary {
+    padding: 16.5px 60px 17.5px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .Landing_Hero {
+    height: 800px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-top: 70px;
+  }
+  
+  .Landing_Hero .Hero_Container {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  
+  .Hero_Title {
+    padding: 0 37px;
+  }
+  
+  .Hero_Review {
+    font-size: 16px;
+    justify-content: center;
+  }
+
+  .Hero_Review svg {
+    height: 14px;
+    width: 74px;
+    position: relative;
+    top: -2px;
+  }
+  
+  .Hero_Subtitle {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  .Hero_Subtitle span sup {
+    position: relative;
+    font-size: 20px;
+    top: 3px;
+  }
+  
+  .Hero_Title .stylized {
+    margin: 0 -28px;
+  }
+
+  .Hero_Subtitle span {
+    height: 35px;
+    padding: 13px 14px 7px;
+    font-size: 28px;
+    line-height: 0;
+  }
+
+  .Hero_Title br {
+    display: none;
+  }
+
+  .Hero_Inner,
+  .Hero_Container {
+    position: unset;
+  }
+  
+  .Hero_Container .Hero_Badges {
+    bottom: unset;
+    top: 62px;
+    right: 25px;
+    left: inherit;
+  }
+  
+  .Hero_Container .Hero_Badges img {
+    max-width: 75px;
+  }
+
+  .Hero_Subtitle span {
+    box-shadow: 0 0 17px 1px #46bdf0;
+  }
+    
+}
+
+@media screen and (max-width: 389px) {
+  
+  .Hero_Title {
+    padding: 0;
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .Hero_Subtitle {
+    font-size: 16px;
+  }
+
+  .Hero_Subtitle span {
+    height: 33px;
+    padding: 11px 14px 7px;
+    font-size: 22px;
+    line-height: 0;
+    width: 56px;
+  }
+  
+  .Hero_Subtitle span sup {
+    position: relative;
+    top: 0px;
+    font-size: 18px;
+  }
+  
+
+  
+}

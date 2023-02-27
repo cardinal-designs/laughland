@@ -1,0 +1,42 @@
+{{ 'section-marquee.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_title = section.settings.heading
+  | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+  
+<div class="Marquee_Section">
+  <div class="Marquee_List">
+    {%- for i in (1..50) -%}
+      <h5 class="Single_Marquee h5">
+        {{ formatted_title | newline_to_br }}
+      </h5>
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Marquee Section",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "heading",
+        "label": "Heading",
+        "info": "Wrap italic text in {}"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Marquee Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -2,11 +2,421 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
+        "heading": ""
+      }
+    },
+    "3a2908b4-cb46-4bba-ab1d-db530f856c49": {
+      "type": "hero-landing",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Hero_Image.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_Hero_Image.jpg",
+        "review": "5.0\/5",
+        "title": "Take the first step <br>{ to a better smile}",
+        "sub_title": "Get a customized whitening solution for just {<sup>$<\/sup>19} today.",
+        "hero_badges": "shopify:\/\/shop_images\/Women_sHealthBeautyAward_2022_Transparent_1.png",
+        "button_label": "Start Now",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_style": "primary"
+      }
+    },
+    "36e4f7aa-dd9e-4e47-a123-81be1338efe2": {
+      "type": "marquee-section",
+      "settings": {
+        "heading": "Not all Whitening is {created Equal}"
+      }
+    },
+    "8f55a32e-9355-4413-8e5d-a7d66bb39102": {
+      "type": "icon-text-columns",
+      "blocks": {
+        "d7d7bf45-564c-4d17-ba0f-6fa7a20a6b72": {
+          "type": "text",
+          "settings": {
+            "title": "🦷",
+            "heading": "Sensitivity-Free",
+            "text": "Have sensitive teeth? We’ll reduce the strength and add more desensitizer. Don’t have sensitive teeth? We’ll prescribe a stronger strength."
+          }
+        },
+        "2f0003b4-ab55-4c0c-81d0-320005cefc78": {
+          "type": "text",
+          "settings": {
+            "title": "🤩",
+            "heading": "Personalized",
+            "text": "Since we get to know your dental profile through our quiz, we can make a faster and more effective formula than any generic solution you find online."
+          }
+        },
+        "3cf2bbea-42e8-4109-a516-ea7b1218cfe9": {
+          "type": "text",
+          "settings": {
+            "title": "💸",
+            "heading": "Value",
+            "text": "A better smile should not be a luxury. Our Whitening Plan starts at just $19 and comes with a Whitening Light, 3 whitening gels and phone adaptors."
+          }
+        }
+      },
+      "block_order": [
+        "d7d7bf45-564c-4d17-ba0f-6fa7a20a6b72",
+        "2f0003b4-ab55-4c0c-81d0-320005cefc78",
+        "3cf2bbea-42e8-4109-a516-ea7b1218cfe9"
+      ],
+      "settings": {
+        "heading": "{Why} Laughland?",
+        "section_padding": true
+      }
+    },
+    "a4c5d03d-76b9-4c42-a509-36657ba4b556": {
+      "type": "section-reviews",
+      "blocks": {
+        "89a41fcd-2300-427b-82fa-c9fb649485da": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        },
+        "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        },
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        },
+        "14cebb8f-f4fa-4a74-8811-da9796c988c8": {
+          "type": "review",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet",
+            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "author": "John Doe"
+          }
+        }
+      },
+      "block_order": [
+        "89a41fcd-2300-427b-82fa-c9fb649485da",
+        "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f",
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791",
+        "14cebb8f-f4fa-4a74-8811-da9796c988c8"
+      ],
+      "settings": {
+        "section_heading": "What People {love} about Laughland",
+        "section_sub_heading": "",
+        "review_count": "5,000",
+        "button_label": "Start Now",
+        "button_url": "shopify:\/\/collections\/all"
+      }
+    },
+    "0bba9f22-7698-459e-80ea-c2869211daea": {
+      "type": "featured-product",
+      "settings": {
+        "product": "at-home-whitening-kit",
+        "title": "{Your Personalized}<br>  Teeth Whitening Kit",
+        "description": "Utilizing the same active ingredients that dentists use, our quick and simple 10-minute routine yields smiles 7+ shades brighter in just 6 days!",
+        "atc": "Start Now",
+        "how_to_use": ""
+      }
+    },
+    "adc7667a-6bb9-4319-878c-b709f2259336": {
+      "type": "icon-with-text",
+      "blocks": {
+        "a37e3b6d-2088-480b-8389-6583048b8210": {
+          "type": "text",
+          "settings": {
+            "title": "😄",
+            "heading": "",
+            "text": "Tell us about your smile and whitening history over a short quiz."
+          }
+        },
+        "53d00897-c847-438a-b54e-0eb7c0141dc3": {
+          "type": "text",
+          "settings": {
+            "title": "🧪",
+            "heading": "",
+            "text": "We’ll create the perfect formula based on your responses."
+          }
+        },
+        "294cf63d-37cf-4308-8466-ebcc8997623d": {
+          "type": "text",
+          "settings": {
+            "title": "🦷",
+            "heading": "",
+            "text": "Use daily for 6 days and say “hello” to your new pearly whites!"
+          }
+        }
+      },
+      "block_order": [
+        "a37e3b6d-2088-480b-8389-6583048b8210",
+        "53d00897-c847-438a-b54e-0eb7c0141dc3",
+        "294cf63d-37cf-4308-8466-ebcc8997623d"
+      ],
+      "settings": {
+        "heading": "Getting Started is simple",
+        "button_label": "Start Now",
+        "button_url": "shopify:\/\/collections\/all"
+      }
+    },
+    "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
+      "type": "pricing-section",
+      "blocks": {
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74": {
+          "type": "row",
+          "settings": {
+            "heading": "Custom Formulas",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "ae7bdc1d-47d0-41ec-bb0c-d1b1ae3fe708": {
+          "type": "row",
+          "settings": {
+            "heading": "Sensitivity-Free",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "a663de5b-482d-486a-a50d-ee6af1b977a7": {
+          "type": "row",
+          "settings": {
+            "heading": "<15 Minute Treatments",
+            "diy_data": "",
+            "diy_data_icon": "true",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "eba27974-ccd9-47b2-9fa0-a6e9c093c370": {
+          "type": "row",
+          "settings": {
+            "heading": "Dentist-Formulated",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "5a0cacf8-dc0d-4b83-bfd5-3d88cecb1d23": {
+          "type": "row",
+          "settings": {
+            "heading": "No Expensive & Painful Office Visits",
+            "diy_data": "",
+            "diy_data_icon": "true",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "0cea6716-7667-417c-8f1a-c44d1a72559a": {
+          "type": "row",
+          "settings": {
+            "heading": "Lifetime Guarantee",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "a94da3c4-b056-41d3-ae5f-de5ccdeae0ee": {
+          "type": "row",
+          "settings": {
+            "heading": "Price",
+            "diy_data": "$100",
+            "diy_data_icon": "true",
+            "dentist_data": "$250~1.5k",
+            "dentist_data_icon": "true",
+            "us_data": "$19\/mo",
+            "us_data_icon": "true"
+          }
+        }
+      },
+      "block_order": [
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74",
+        "ae7bdc1d-47d0-41ec-bb0c-d1b1ae3fe708",
+        "a663de5b-482d-486a-a50d-ee6af1b977a7",
+        "eba27974-ccd9-47b2-9fa0-a6e9c093c370",
+        "5a0cacf8-dc0d-4b83-bfd5-3d88cecb1d23",
+        "0cea6716-7667-417c-8f1a-c44d1a72559a",
+        "a94da3c4-b056-41d3-ae5f-de5ccdeae0ee"
+      ],
+      "settings": {
+        "section_heading": "Not all whitening is {Created Equal}",
+        "section_sub_heading": "",
+        "first_title": "DIY",
+        "second_title": "Dentist",
+        "third_title": "Us",
+        "button_label": "Start Now",
+        "button_url": "shopify:\/\/collections\/all",
+        "badges": "shopify:\/\/shop_images\/Winner_Badge.png"
+      }
+    },
+    "240de530-a532-4dbd-b2a8-79f7e7c9b9fa": {
+      "type": "carousel",
+      "blocks": {
+        "1b3fc029-1055-4710-8825-398d2d320b7c": {
+          "type": "slide",
+          "settings": {
+            "logo": "",
+            "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue_0a0973f6-c62c-4750-bc63-096e9ab38351.png",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        },
+        "83b29aad-1ec3-43d4-9d28-f3f7680cfd9d": {
+          "type": "slide",
+          "settings": {
+            "logo": "",
+            "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue_0a0973f6-c62c-4750-bc63-096e9ab38351.png",
+            "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
+          }
+        }
+      },
+      "block_order": [
+        "1b3fc029-1055-4710-8825-398d2d320b7c",
+        "83b29aad-1ec3-43d4-9d28-f3f7680cfd9d"
+      ],
+      "settings": {
+      }
+    },
+    "49f3d9ac-7509-4919-89f3-3c6825a727c8": {
+      "type": "faq-section",
+      "blocks": {
+        "211060df-f259-4c34-bf3a-8ff6f7ebc051": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "7d5a83c8-daae-4afc-826a-7e2c8303468a": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "3f5fff35-bec5-4563-b68f-af7d8b7b045f": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        },
+        "b4f85b92-4e73-489e-8e59-6fcdabf5d358": {
+          "type": "faq",
+          "settings": {
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "211060df-f259-4c34-bf3a-8ff6f7ebc051",
+        "7d5a83c8-daae-4afc-826a-7e2c8303468a",
+        "3f5fff35-bec5-4563-b68f-af7d8b7b045f",
+        "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae",
+        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148",
+        "b4f85b92-4e73-489e-8e59-6fcdabf5d358"
+      ],
+      "settings": {
+        "section_heading": "Still have<br> questions?",
+        "section_sub_heading": ""
+      }
+    },
+    "b60d8150-a8c1-4d20-a017-a4952d382660": {
+      "type": "instagram",
+      "blocks": {
+        "bf56c20e-2ced-442b-8dd5-831b38863d61": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-1.jpg"
+          }
+        },
+        "6535ba57-bd90-43b5-8c6e-f75b9a51be31": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-2.jpg"
+          }
+        },
+        "46369378-93b9-4365-a694-53f175bca28b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-3.jpg"
+          }
+        },
+        "9a1df953-43c6-42b5-962e-43f443c50f37": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-4.jpg"
+          }
+        },
+        "50a6c1e4-9a59-408b-acab-f53140308478": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IG-Image-5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "bf56c20e-2ced-442b-8dd5-831b38863d61",
+        "6535ba57-bd90-43b5-8c6e-f75b9a51be31",
+        "46369378-93b9-4365-a694-53f175bca28b",
+        "9a1df953-43c6-42b5-962e-43f443c50f37",
+        "50a6c1e4-9a59-408b-acab-f53140308478"
+      ],
+      "settings": {
+        "section_heading": "Join the movement",
+        "section_sub_heading": "@mylaughland",
+        "sub_heading_link": "https:\/\/www.instagram.com\/"
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "3a2908b4-cb46-4bba-ab1d-db530f856c49",
+    "36e4f7aa-dd9e-4e47-a123-81be1338efe2",
+    "8f55a32e-9355-4413-8e5d-a7d66bb39102",
+    "a4c5d03d-76b9-4c42-a509-36657ba4b556",
+    "0bba9f22-7698-459e-80ea-c2869211daea",
+    "adc7667a-6bb9-4319-878c-b709f2259336",
+    "d3414607-66d0-46b2-a396-e6a4263c1ca4",
+    "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
+    "49f3d9ac-7509-4919-89f3-3c6825a727c8",
+    "b60d8150-a8c1-4d20-a017-a4952d382660"
   ]
 }

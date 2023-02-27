@@ -1,0 +1,80 @@
+{{ 'section-faq.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'section-faq.js' | asset_url }}" defer="defer"></script>
+
+<div class="FAQ_Section">
+  <div class="page-width">
+    <div class="Faq_section_inner">
+      <div class="Row">
+        <div class="Faq_Heading">
+          {% if section.settings.section_heading != blank %}
+            <h2 class="h4">{{ section.settings.section_heading }}</h2>
+          {% endif %}
+          {% if section.settings.section_sub_heading != blank %}
+            <p class="sh2">{{ section.settings.section_sub_heading }}</p>
+          {% endif %}
+        </div>
+        <div class="Faq_Area">
+          <div class="Faq_List">
+            {% for block in section.blocks %}
+              <div class="Accordion-Block">
+                <button class="Accordion sh2">{{ block.settings.title }}</button>
+                <div class="Accordion-Content">
+                  <div class="Accordion-Inr-Content body-2">
+                    {{ block.settings.sub_title }}
+                  </div>
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "FAQ Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Heading"        
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "Sub Heading"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "Question/Answer",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "title",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "sub_title",
+            "label": "Answer"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

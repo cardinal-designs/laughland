@@ -1,0 +1,231 @@
+.Reviews_Section {
+  padding: 65px 0 50px;
+}
+
+.Reviews_Section .Reviews_Inr_Section {
+  background-color: #DAF2FC;
+  border-radius: 12px;
+  padding: 110px 0;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Section_Header,
+.Reviews_Section .Reviews_Inr_Section .Review_Count,
+.Reviews_Section .Reviews_Inr_Section .Button_Area,
+.Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination {
+  padding: 0 50px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_Count {
+  text-align: center;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_Count svg {
+  display: block;
+  width: 100%;
+  margin-bottom: 8px;
+  height: 20px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_Count {
+  margin-bottom: 70px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Button_Area {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review {
+  padding: 0 10px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr svg {
+  display: block;
+  margin-bottom: 20px;
+  height: 14px;
+  width: 72px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title {
+  margin-bottom: 50px;
+  font-family: canela;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Author {
+  margin: 20px 0 0;
+  text-transform: unset;
+  font-family: jakarta;
+}
+
+.slick_pagination .slick_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination {
+  position: relative;
+}
+
+.slick_pagination .slick_dots .slick-dots {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+
+.slick_pagination .slick_dots .slick-dots li button {
+  font-size: 0;
+  width: 9px;
+  height: 9px;
+  background: #CFD3DA;
+  border-radius: 100%;
+}
+
+.slick_pagination .slick_dots .slick-dots li {
+  margin: 0 4px;
+  line-height: 0;
+}
+
+.slick_pagination .slick_dots .slick-dots .slick-active button {
+  background: #0D2244;
+}
+
+.slick_pagination .slick_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 40px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination .slick_dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slick_pagination .slick_arrow .slick-arrow {
+  width: 35px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.slick_pagination .slick_arrow .Slick-Prev.slick-arrow:after {
+  content: url("data:image/svg+xml,%3Csvg width='35' height='25' viewBox='0 0 35 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.581 0L19.9899 1.10969C19.9899 1.10969 14.0498 8.4162 10.34 11.3455H35V13.652H10.34C14.0498 16.5812 19.9899 23.8877 19.9899 23.8877L18.581 24.9974C18.581 24.9974 9.77324 16.0097 -6.15973e-08 12.4987C9.77324 8.9877 18.581 0 18.581 0Z' fill='%230D2244'/%3E%3C/svg%3E%0A");
+}
+
+.slick_pagination .slick_arrow .slick-arrow.Slick-Next:after {
+  content: url("data:image/svg+xml,%3Csvg width='35' height='25' viewBox='0 0 35 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.419 0L15.0101 1.10969C15.0101 1.10969 20.9502 8.4162 24.66 11.3455H0V13.652H24.66C20.9502 16.5812 15.0101 23.8877 15.0101 23.8877L16.419 24.9974C16.419 24.9974 25.2268 16.0097 35 12.4987C25.2268 8.9877 16.419 0 16.419 0Z' fill='%230D2244'/%3E%3C/svg%3E%0A");
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .Reviews_Section {
+    padding: 50px 0;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_Count {
+    margin-bottom: 50px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section {
+    padding: 70px 0;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+
+  .Reviews_Section {
+    padding: 30px 0;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title {
+    margin-bottom: 40px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Section_Header {
+    margin-bottom: 30px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_Count {
+    margin-bottom: 50px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Button_Area {
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+  .Reviews_Section {
+    padding: 0;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
+    padding: 0px 9% !important;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review {
+    padding: 0 6px;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
+    padding: 0px 9% !important;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr svg {
+    margin-bottom: 12px;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+
+  .slick_pagination .slick_arrow {
+    margin-top: 37px;   
+  }
+  
+}
+
+@media screen and (max-width: 479px) {
+
+  .Reviews_Section .page-width {
+    padding: 0;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section {
+    border-radius: 0;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
+    padding: 0px 5% !important;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Section_Header, 
+  .Reviews_Section .Reviews_Inr_Section .Review_Count, 
+  .Reviews_Section .Reviews_Inr_Section .Button_Area, 
+  .Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination {
+    padding: 0 25px;
+  }
+  
+}

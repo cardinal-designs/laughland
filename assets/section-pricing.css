@@ -1,0 +1,164 @@
+.Pricing_Section {
+  padding: 75px 0;
+}
+
+.Pricing_Section .Pricing_Inner_Section {
+  padding: 110px 113px 80px;
+  background: #DAF2FC;
+  border-radius: 12px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table {
+  display: inline-block;
+  margin-top: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td {
+  border: 1px solid #DAF2FC;
+  padding: 15px 14px;
+  text-align: center;
+  height: 60px;
+  font-family: jakarta;
+  color: #3D4E69;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th {
+  border: none;
+  padding: 12px 14px;
+  text-align: center;
+  height: 64px;
+  font-weight: 600;
+  color: #3D4E69;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:first-child {
+  width: 38.426%;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td:last-child {
+  background-color: #ECF8FE;
+  color: #46BDF0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:last-child {
+  color: #46BDF0;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges {
+  position: absolute;
+  right: -70px;
+  top: -70px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Button_Area {
+  display: block;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr:last-child td:last-child {
+  border-radius: 0 0 11px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  
+  .Pricing_Section .Pricing_Inner_Section {
+    padding: 80px 70px;
+  }
+
+  .Pricing_Section .Pricing_Inner_Section .Button_Area {
+    margin-top: 60px;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges img {
+    max-width: 120px;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section {
+    padding: 70px 45px;
+  }
+
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges {
+    right: -50px;
+    top: -90px;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section .Button_Area {
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .Pricing_Section {
+    padding: 40px 0 20px;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges img {
+    max-width: 72px;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section {
+    padding: 70px 25px;
+  }
+
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table .Winner_Badges {
+    right: -30px;
+    top: -40px;
+  }
+
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td:last-child {
+    font-size: 14px;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th {
+    font-size: 14px;
+    height: 45px;
+    font-family: jakarta;
+    font-weight: 500;
+  }
+
+  .Pricing_Section .Pricing_Inner_Section .Section_Header {
+    margin-bottom: 20px;
+  }
+
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table tbody tr td {
+    padding: 11px 10px;
+    font-family: jakarta;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .Pricing_Section .page-width {
+    padding: 0;
+  }
+
+  
+  .Pricing_Section .Pricing_Inner_Section {
+    border-radius: 0;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:first-child {
+    width: 31.8%;
+  }
+}

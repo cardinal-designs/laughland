@@ -1,0 +1,115 @@
+.Icon_With_Text_Section {
+  padding: 75px 0;
+}
+
+.Icon_With_Text_Section .page-width {
+  max-width: 1190px;
+}
+
+.Icon_With_Text_Section .Section_Header {
+  margin-bottom: 60px;
+}
+
+.Icon_With_Text_Section .icon-with-text__block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -40px;
+}
+
+.Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item {
+  flex: 33.33% 0 0;
+  max-width: 33.33%;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item .icon-with-text__icon-wrapper {
+  margin-bottom: 18px;
+}
+
+.Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item .icon-with-text__icon-wrapper .icon-with-text__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #DAF2FC;
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  width: 93px;
+  font-size: 42px;
+  line-height: 150%;
+  margin: 0 auto;
+}
+
+.Icon_With_Text_Section .Button_Area {
+  text-align: center;
+  margin-top: 75px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  
+  .Icon_With_Text_Section {
+    padding: 55px 0;
+  }
+  
+  .Icon_With_Text_Section .Button_Area {
+    margin-top: 60px;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  
+  .Icon_With_Text_Section {
+    padding: 40px 0;
+  }
+
+  .Icon_With_Text_Section .Button_Area {
+    margin-top: 50px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  
+  .Icon_With_Text_Section {
+    padding: 35px 0 40px;
+  }
+
+  .Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item {
+    flex: 100% 0 0;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .Icon_With_Text_Section .Section_Header {
+    margin-bottom: 30px;
+  }
+  
+  .Icon_With_Text_Section .Section_Header .h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .Icon_With_Text_Section .Button_Area {
+    margin-top: 40px;
+  }
+  
+  .Icon_With_Text_Section .icon-with-text__block-wrapper {
+    margin: 0;
+  }
+
+  .Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item .icon-with-text__icon-wrapper .icon-with-text__icon {
+    width: 72px;
+  }
+
+  .Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item .icon-with-text__icon-wrapper {
+    margin-bottom: 12px;
+  }
+  
+}

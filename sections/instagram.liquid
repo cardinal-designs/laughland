@@ -1,0 +1,70 @@
+{{ 'section-instagram.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'instagram.js' | asset_url }}" defer="defer"></script>
+
+<div class="Instagram_Section">
+  <div class="page-width">
+    <div class="Section_Header">
+      <h2 class="h4">{{ section.settings.section_heading }}</h2>
+      <p class="sh2">
+        {% if section.settings.sub_heading_link != blank %}
+          <a href="{{ section.settings.sub_heading_link }}" target="_blank">
+        {% endif %}
+        {{ section.settings.section_sub_heading }}
+        {% if section.settings.sub_heading_link != blank %}
+          </a>
+        {% endif %}
+      </p>
+    </div>
+    <div class="Images_List">
+      {% for block in section.blocks %}
+        <div class="Single_Image">
+          <img  class="IG_Image" src="{{ block.settings.image | img_url: '300x' }}">
+        </div>
+      {% endfor %}
+    </div>
+    <div class="slick_pagination">
+      <div class="slick_arrow_insta"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Instagram Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Heading"        
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "Sub Heading"        
+      },
+      {
+        "type": "url",
+        "id": "sub_heading_link",
+        "label": "Sub Heading Link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Instagram Section"
+      }
+    ]
+  }
+{% endschema %}

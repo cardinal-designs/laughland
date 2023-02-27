@@ -1,0 +1,125 @@
+{{ 'section-review.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'section-review.js' | asset_url }}"></script>
+
+{% assign formatted_heading = section.settings.section_heading
+  | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<div class="Reviews_Section">
+  <div class="page-width">
+    <div class="Reviews_Inr_Section">
+      <div class="Section_Header">
+        <h2 class="h3">{{ formatted_heading }}</h2>
+        <p class="sh2">{{ section.settings.section_sub_heading }}</p>
+      </div>
+      <div class="Review_Count">
+        {% render 'icon' icon: 'review-5-star' %}
+        <span class="sh1-medium"><span class='stylized'>{{ section.settings.review_count }}</span>+ Reviews</span>
+      </div>
+      <div class="Review_List">
+        <div class="Review_Slider">
+          {% for block in section.blocks %}
+            <div class="Single_Review swiper-slide">
+              <div class="Single_Review_Inr">
+                {% render 'icon' icon: 'review-5-star' %}
+                <h4 class="Review_Title h4">{{ block.settings.title }}</h4>
+                <div class="Review">
+                  <p>{{ block.settings.text }}</p>
+                </div>
+                <h6 class="Review_Author h6">{{ block.settings.author }}</h6>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="slick_pagination">
+          <div class="slick_arrow"></div>
+          <div class="slick_dots"></div>
+        </div>
+      </div>
+      <div class="Button_Area">
+        <a href="{{ section.settings.button_url }}" class="button large-btn">{{ section.settings.button_label }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Reviews Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Header"
+      },
+      {
+        "type": "textarea",
+        "id": "section_heading",
+        "label": "Heading"        
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "Sub Heading"        
+      },
+      {
+        "type": "header",
+        "content": "Review Count"
+      },
+      {
+        "type": "text",
+        "id": "review_count",
+        "label": "Review Count"        
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label"        
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"        
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Review",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"            
+          },
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Review"
+          },
+          {
+            "type": "text",
+            "id": "author",
+            "label": "Author"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Reviews Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

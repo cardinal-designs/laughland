@@ -1,0 +1,236 @@
+{{ 'section-pricing.css' | asset_url | stylesheet_tag }}
+
+{% assign formatted_heading = section.settings.section_heading
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
+<div class="Pricing_Section">
+  <div class="page-width">
+    <div class="Pricing_Inner_Section">
+      <div class="Section_Header">
+        <h2 class="h3">{{ formatted_heading }}</h2>
+        <p class="sh2">{{ section.settings.section_sub_heading }}</p>
+      </div>
+      <div class="Pricing_Table">
+        <table>
+          <thead>
+              <th></th>
+              <th class="h5">{{ section.settings.first_title }}</th>
+              <th class="h5">{{ section.settings.second_title }}</th>
+              <th class="h5">{{ section.settings.third_title }}</th>
+          </thead>
+          <tbody>
+            {% for block in section.blocks %}
+              <tr>
+                <td class="sh3">{{ block.settings.heading }}</td>
+                <td class="sh3">
+                  {%- if block.settings.diy_data != blank -%}
+                    {{ block.settings.diy_data }}
+                  {%- else -%}
+                    {%- if block.settings.diy_data_icon == 'true' -%}
+                      {% render 'icon' icon: 'true-icon' %}
+                    {% else %}
+                      {% render 'icon' icon: 'false-icon' %}
+                    {% endif %}
+                  {% endif %}
+                </td>
+                <td class="sh3">
+                  {%- if block.settings.dentist_data != blank -%}
+                    {{ block.settings.dentist_data }}
+                  {%- else -%}
+                    {%- if block.settings.dentist_data_icon == 'true' -%}
+                      {% render 'icon' icon: 'true-icon' %}
+                    {% else %}
+                      {% render 'icon' icon: 'false-icon' %}
+                    {% endif %}
+                  {% endif %}
+                </td>
+                <td class="sh3">
+                  {%- if block.settings.us_data != blank -%}
+                    {{ block.settings.us_data }}
+                  {%- else -%}
+                    {%- if block.settings.us_data_icon == 'true' -%}
+                      {% render 'icon' icon: 'true-icon' %}
+                    {% else %}
+                      {% render 'icon' icon: 'false-icon' %}
+                    {% endif %}
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <div class="Winner_Badges">
+          <img src="{{ section.settings.badges | img_url: '140x' }}">
+        </div>
+      </div>
+      <div class="Button_Area">
+        <a href="{{ section.settings.button_url }}" class="button large-btn">{{ section.settings.button_label }}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Pricing Section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Header"
+      },
+      {
+        "type": "text",
+        "id": "section_heading",
+        "label": "Heading"        
+      },
+      {
+        "type": "text",
+        "id": "section_sub_heading",
+        "label": "Sub Heading"        
+      },
+      {
+        "type": "header",
+        "content": "Table Header"
+      },
+      {
+        "type": "text",
+        "id": "first_title",
+        "label": "First Title"        
+      },
+      {
+        "type": "text",
+        "id": "second_title",
+        "label": "Second Title"        
+      },
+      {
+        "type": "text",
+        "id": "third_title",
+        "label": "Third Title"        
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button Label"        
+      },
+      {
+        "type": "url",
+        "id": "button_url",
+        "label": "Button Url"        
+      },
+      {
+        "type": "header",
+        "content": "Badges"
+      },
+      {
+        "type": "image_picker",
+        "id": "badges",
+        "label": "Badges"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "row",
+        "name": "Row",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "header",
+            "content": "DIY Values"
+          },
+          {
+            "type": "text",
+            "id": "diy_data",
+            "label": "Data"
+          },
+          {
+            "type": "select",
+            "id": "diy_data_icon",
+            "options": [
+              {
+                "value": "true",
+                "label": "True"
+              },
+              {
+                "value": "false",
+                "label": "False"
+              }
+            ],
+            "default": "true",
+            "label": "True/False"
+          },
+          {
+            "type": "header",
+            "content": "Dentist Values"
+          },
+          {
+            "type": "text",
+            "id": "dentist_data",
+            "label": "Data"
+          },
+          {
+            "type": "select",
+            "id": "dentist_data_icon",
+            "options": [
+              {
+                "value": "true",
+                "label": "True"
+              },
+              {
+                "value": "false",
+                "label": "False"
+              }
+            ],
+            "default": "true",
+            "label": "True/False"
+          },
+          {
+            "type": "header",
+            "content": "US Values"
+          },
+          {
+            "type": "text",
+            "id": "us_data",
+            "label": "Data"
+          },
+          {
+            "type": "select",
+            "id": "us_data_icon",
+            "options": [
+              {
+                "value": "true",
+                "label": "True"
+              },
+              {
+                "value": "false",
+                "label": "False"
+              }
+            ],
+            "default": "true",
+            "label": "True/False"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Pricing Section"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

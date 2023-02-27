@@ -1,0 +1,127 @@
+.Featured_Product .product-info {
+  margin-bottom: 35px;
+}
+
+.Featured_Product .price-item.price-item--regular,
+.Featured_Product .price-item.price-item--sale {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 38px;
+  letter-spacing: -0.015em;
+}
+
+.Featured_Product .price__sale .price-item.price-item--regular {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #9ea7b4;
+  margin-right: 12px;
+}
+
+.Featured_Product .badge.price__badge-sale {
+  display: none;
+}
+
+.Featured_Product .subscription-wrapper {
+  margin-top: 40px;
+}
+
+.Featured_Product {
+  padding: 50px 0;
+}
+
+.Featured_Product .product {
+  margin-bottom: 25px;
+  padding: 0 50px;
+  gap: 67px;
+}
+
+.Featured_Product .price--on-sale .price__sale {
+  align-items: center;
+}
+
+.Featured_Product .Product_Description dd {
+  font-weight: 400;
+}
+
+.Featured_Product .product__media .img-fill img {
+  border-radius: 13px;
+}
+
+.Featured_Product .product-form__buttons button {
+  padding: 13.5px 34px 14.5px;
+}
+
+@media screen and (max-width: 991px) {
+
+  .Featured_Product {
+    padding: 50px 0 0;
+  }
+
+  .Featured_Product .product {
+    gap: 30px;
+  }
+
+  .Featured_Product .price-item.price-item--sale {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .Featured_Product .subscription-wrapper {
+    margin-top: 30px;
+  }
+
+  .Featured_Product .price__sale .price-item.price-item--regular {
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  .Featured_Product .swiper-pagination-bullet {
+    background-color: #0D2244;
+    opacity: .2;
+  }
+
+  .Featured_Product .product-info dd span {
+    margin: 0 4px -2px 0;
+    display: inline-block;
+  }
+
+  .Featured_Product .product-info dd {
+    margin-bottom: 8px;
+  }
+
+  .Featured_Product .product-info dd:last-child {
+    margin-bottom: 8px;
+  }
+
+  .Featured_Product {
+    padding: 0;
+  }
+
+  .Featured_Product .product {
+    padding: 0;
+  }
+
+  .Featured_Product .product__media .img-fill img {
+    border-radius: 0;
+  }
+
+  .Featured_Product .product-info {
+    margin-bottom: 23px;
+  }
+
+  .Featured_Product .product {
+    margin-bottom: 0;
+  }
+
+  .Featured_Product .product__info-wrapper {
+    padding: 40px 20px 33px;
+    margin-right: 0;
+  }
+  
+}

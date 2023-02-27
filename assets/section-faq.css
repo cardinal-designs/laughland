@@ -1,0 +1,117 @@
+.FAQ_Section {
+  padding: 60px 0;
+}
+
+.FAQ_Section .Faq_section_inner {
+  background-color: #DAF2FC;
+  border-radius: 12px;
+  padding: 100px 50px;
+}
+
+.FAQ_Section .Faq_section_inner .Row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Heading {
+  width: 28.114%;
+  padding: 0 20px;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area {
+  width: 71.886%;
+  padding: 0 20px;
+}
+
+.Accordion-Content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block {
+  padding: 20px 0;
+  border-bottom: 1px solid #0D2244;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion {
+  display: block;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  font-family: jakarta;
+  padding-right: 30px;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block:first-child {
+  border-top: 1px solid #0D2244;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion-Content .Accordion-Inr-Content {
+  padding-top: 20px;
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion:after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='9.97461' y1='0.5' x2='9.97461' y2='20.5' stroke='%230D2244'/%3E%3Cpath d='M20 10.5L-7.15256e-07 10.5' stroke='%230D2244'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 20px;
+  height: 21px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion.is-open:after {
+  background-image: url("data:image/svg+xml,%3Csvg version='1.2' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 21' width='20' height='21'%3E%3Cpath id='Layer' stroke='%230d2244' class='s0' d='m20 10.5h-20'/%3E%3C/svg%3E");
+}
+
+
+@media screen and (max-width: 991px) {
+  
+  .FAQ_Section .Faq_section_inner .Row {
+    display: block;
+  }
+
+  .FAQ_Section .Faq_section_inner .Faq_Area,
+  .FAQ_Section .Faq_section_inner .Faq_Heading {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .FAQ_Section .Faq_section_inner {
+    padding: 70px 25px;
+    border-radius: 0;
+  }
+
+  .Faq_Heading .h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  .Faq_Heading .h4 br {
+    display: none;
+  }
+  
+  .FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  .FAQ_Section .page-width {
+    padding: 0;
+  }
+
+  .FAQ_Section {
+    padding: 0 0;
+  }
+
+}

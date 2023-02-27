@@ -471,7 +471,7 @@ var MenuDrawer = class extends HTMLElement {
     this.closeButtons = document.querySelectorAll('.js-close-menu');
     this.menuButtons = document.querySelectorAll('.menu-drawer__menu-button');
     this.pageOverlayElement = document.querySelector('.page-overlay');
-    
+    this.body = document.querySelector('body');
     this.drawer.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.closeMenuDrawer());
     this.bindEvents();
   }
@@ -489,6 +489,7 @@ var MenuDrawer = class extends HTMLElement {
 
     this.pageOverlayElement.classList.add('is-visible');
     document.body.addEventListener('click', this.onBodyClick);
+    this.body.classList.add('Menu_Open');
   }
 
   closeMenuDrawer() {
@@ -497,6 +498,7 @@ var MenuDrawer = class extends HTMLElement {
 
     this.pageOverlayElement.classList.remove('is-visible');
     document.body.removeEventListener('click', this.onBodyClick);
+    this.body.classList.remove('Menu_Open');
   }
 
   toggleMenuButtons() {
