@@ -48,6 +48,7 @@
 .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr svg {
   display: block;
   margin-bottom: 20px;
+  height: 14px;
 }
 
 .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title {
