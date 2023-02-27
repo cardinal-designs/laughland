@@ -40,3 +40,11 @@
   height: 25px;
   cursor: pointer;
 }
+
+.slick_pagination .slick_arrow_insta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 40px;
+}
