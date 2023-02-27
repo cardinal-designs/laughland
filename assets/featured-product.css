@@ -2,7 +2,8 @@
   margin-bottom: 35px;
 }
 
-.Featured_Product .price-item.price-item--regular {
+.Featured_Product .price-item.price-item--regular,
+.price-item.price-item--sale {
   font-weight: 500;
   font-size: 35px;
   line-height: 38px;
