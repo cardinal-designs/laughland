@@ -395,6 +395,7 @@
     "0bba9f22-7698-459e-80ea-c2869211daea": {
       "type": "featured-product",
       "settings": {
+        "product": "early-cancellation-fee",
         "atc": "Buy Now",
         "how_to_use": ""
       }
