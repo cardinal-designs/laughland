@@ -65,7 +65,7 @@
 .Hero_Container .Hero_Badges {
   position: absolute;
   right: -10px;
-  top: -100px;
+  top: -63px;
 }
 
 @media screen and (max-width: 1200px) {
