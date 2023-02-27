@@ -125,5 +125,9 @@
   .Hero_Title br {
     display: none;
   }
+
+  .Hero_Inner {
+    position: unset;
+  }
     
 }
