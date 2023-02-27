@@ -89,6 +89,17 @@
               <span class="product-form__error-message"></span>
             </div>
 
+            {% if product.metafields.custom.details != blank %}
+              <div class="product__details">
+                <div class="product__details-inner">
+                  {% for detail in product.metafields.custom.details.value %}
+                    {% assign formatted_emoji = detail | replace: '{', "<span class='emoji'>" | replace: '}', '</span>' %}
+                    <div class="product__detail-item p">{{ formatted_emoji }}</div>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endif %}
+                  
             {% form 'product',
               product,
               id: product_form_id,
@@ -286,17 +297,6 @@
             </div>
           {% endif %}
         {% endcomment %}
-
-        {% if product.metafields.custom.details != blank %}
-          <div class="product__details">
-            <div class="product__details-inner">
-              {% for detail in product.metafields.custom.details.value %}
-                {% assign formatted_emoji = detail | replace: '{', "<span class='emoji'>" | replace: '}', '</span>' %}
-                <div class="product__detail-item p">{{ formatted_emoji }}</div>
-              {% endfor %}
-            </div>
-          </div>
-        {% endif %}
 
         {% if section.settings.how_to_use != blank %}
           <div class="product__how-to-use product__accordion">
