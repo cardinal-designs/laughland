@@ -146,7 +146,7 @@
   }
 
   .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
   
   .Reviews_Section .Reviews_Inr_Section .Section_Header {
@@ -179,6 +179,15 @@
 
   .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
     padding: 0px 9% !important;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review_Title{
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr svg {
+    margin-bottom: 12px;
   }
   
 }
