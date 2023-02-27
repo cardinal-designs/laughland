@@ -96,6 +96,10 @@
     margin-bottom: 40px;
   }
 
+  .Faq_Heading .h4 br {
+    display: none;
+  }
+  
   .FAQ_Section .Faq_section_inner .Faq_Area .Faq_List .Accordion-Block .Accordion {
     font-size: 16px;
     line-height: 24px;
