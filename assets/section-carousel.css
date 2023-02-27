@@ -56,9 +56,5 @@
     font-size: 20px;
     padding: 40px 20px 64px;
   }
-
-  .swiper-pagination.carousel-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
-    display: none;
-  }
   
 }
