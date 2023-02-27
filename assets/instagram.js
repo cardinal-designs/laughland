@@ -7,7 +7,7 @@ $('.Images_List').slick({
   dots: false,
   appendArrows:$(".slick_arrow"),
   prevArrow:'<span class="Slick-Prev"></span>',
-  nextArrow:'<span class="Slick-Next"></span>'
+  nextArrow:'<span class="Slick-Next"></span>',
   responsive: [
     {
       breakpoint: 1024,
