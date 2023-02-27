@@ -1,3 +1,9 @@
 .Reviews_Section {
   padding: 65px 0 50px;
 }
+
+.Reviews_Section .Reviews_Inr_Section {
+  background-color: #DAF2FC;
+  border-radius: 12px;
+  padding: 110px 0;
+}
