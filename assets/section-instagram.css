@@ -6,7 +6,6 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -6px;
-  justify-content: center;
 }
 
 .Instagram_Section .Images_List .Single_Image {
@@ -48,9 +47,4 @@
   justify-content: space-between;
   position: relative;
   margin-top: 40px;
-}
-
-@media screen and (max-width: 991px) {
-
-
 }
