@@ -161,6 +161,10 @@
     font-size: 20px;
     top: 3px;
   }
+  
+  .Hero_Title .stylized {
+    margin: 0 -28px;
+  }
 
   .Hero_Subtitle span {
     height: 35px;
