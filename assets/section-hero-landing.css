@@ -67,10 +67,6 @@
     font-size: 50px;
   }
   
-  .Hero_Subtitle {
-    font-size: 18px;
-  }
-  
   .Hero_Container .Hero_Badges img {
     max-width: 105px;
   }
@@ -81,7 +77,6 @@
 
   .Hero_Subtitle {
     margin-bottom: 30px;
-    font-size: 16px;
   }
   
   .Hero_Container .Hero_Badges {
@@ -99,7 +94,7 @@
   }
   
   .Hero_Title {
-    font-size: 44px;
+    font-size: 45px;
     line-height: 1.2;
   }
   
@@ -110,14 +105,14 @@
 }
 
 @media screen and (max-width: 768px) {
-
+  
   .Landing_Hero {
-    height: 540px;
-    justify-content: flex-start;
+    height: 800px;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 70px;
   }
-
+  
   .Landing_Hero .Hero_Container {
     text-align: center;
     width: 100%;
