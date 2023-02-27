@@ -77,5 +77,9 @@
   .Pricing_Section .Pricing_Inner_Section {
     padding: 80px 70px;
   }
+
+  .Pricing_Section .Pricing_Inner_Section .Button_Area {
+    margin-top: 60px;
+  }
   
 }
