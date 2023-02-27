@@ -103,4 +103,13 @@
   .Icon_With_Text_Section .icon-with-text__block-wrapper {
     margin: 0;
   }
+
+  .Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item .icon-with-text__icon-wrapper .icon-with-text__icon {
+    width: 72px;
+  }
+
+  .Icon_With_Text_Section .icon-with-text__block-wrapper .icon-with-text__item .icon-with-text__icon-wrapper {
+    margin-bottom: 12px;
+  }
+  
 }
