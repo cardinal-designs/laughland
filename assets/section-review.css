@@ -193,6 +193,13 @@
   .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr svg {
     margin-bottom: 12px;
   }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review .Single_Review_Inr .Review p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+  }
+  
   
 }
 
