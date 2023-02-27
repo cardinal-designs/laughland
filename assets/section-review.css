@@ -178,7 +178,7 @@
   }
 
   .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
-    padding: 0px 5% !important;
+    padding: 0px 10% !important;
   }
 
   .Reviews_Section .Reviews_Inr_Section .Section_Header, 
@@ -198,6 +198,10 @@
 
   .Reviews_Section .Reviews_Inr_Section {
     border-radius: 0;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
+    padding: 0px 5% !important;
   }
   
 }
