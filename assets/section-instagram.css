@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 -6px;
+  justify-content: center;
 }
 
 .Instagram_Section .Images_List .Single_Image {
