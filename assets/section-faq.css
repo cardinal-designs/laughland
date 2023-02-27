@@ -205,6 +205,7 @@ File does not have any other versions
 
   .FAQ_Section .Faq_section_inner {
     padding: 70px 25px;
+    border-radius: 0;
   }
 
   .Faq_Heading .h4 {
