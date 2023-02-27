@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-.hero__container {
+.Hero_Container {
   text-align: left;
   padding-bottom: 50px;
   position: relative;
@@ -51,7 +51,7 @@
   height: 40px;
 }
 
-.hero__container .button--primary {
+.Hero_Container .button--primary {
   padding: 16.5px 60px 17.5px;
 }
 
@@ -67,14 +67,14 @@
 
 @media screen and (max-width: 768px) {
 
-  .hero:not(.homepage-hero) {
+  .Landing_Hero {
     height: 540px;
     justify-content: flex-start;
     align-items: center;
     padding-top: 70px;
   }
 
-  .hero:not(.homepage-hero) .hero__container {
+  .Landing_Hero .Hero_Container {
     text-align: center;
   }
     
