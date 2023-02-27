@@ -379,7 +379,12 @@ h6,
 }
 
 @media only screen and (max-width: 768px) {
-  
+
+  .sh2 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .sh3 {
     font-size: 12px;
     line-height: 18px;
