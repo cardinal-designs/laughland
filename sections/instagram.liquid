@@ -18,7 +18,7 @@
     <div class="Images_List">
       {% for block in section.blocks %}
         <div class="Single_Image">
-          <img  class="IG_Image" loading="lazy" src="{{ block.settings.image | image_url }}"
+          <img  class="IG_Image" loading="lazy" src="{{ block.settings.image | img_url: '300x' }}"
           >
         </div>
       {% endfor %}
