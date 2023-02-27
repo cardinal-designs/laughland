@@ -207,4 +207,9 @@ File does not have any other versions
     padding: 70px 25px;
   }
 
+  .Faq_Heading .h4 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
 }
