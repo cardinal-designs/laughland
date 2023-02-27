@@ -5,7 +5,7 @@ $('.Images_List').slick({
   slidesToShow: 5,
   slidesToScroll: 2,
   dots: false,
-  arrows: false,
+  arrows: true,
   appendArrows:$(".slick_arrow"),
   prevArrow:'<span class="Slick-Prev"></span>',
   nextArrow:'<span class="Slick-Next"></span>',
