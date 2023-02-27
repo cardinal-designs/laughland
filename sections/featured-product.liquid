@@ -99,6 +99,15 @@
                 </div>
               </div>
             {% endif %}
+
+            <dl class="product-info">
+              <dt class="h6">Includes</dt>
+              {% for item in product.metafields.custom.includes.value %}
+                <dd class="p">
+                  <span>{% render 'icon', icon: 'checkmark' %} </span>{{ item }}
+                </dd>
+              {% endfor %}
+            </dl>
                   
             {% form 'product',
               product,
