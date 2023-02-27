@@ -1,3 +1,5 @@
+{{ 'section-review.css' | asset_url | stylesheet_tag }}
+
 {% assign formatted_heading = section.settings.section_heading
   | escape
   | replace: '{', "<span class='stylized'>"
