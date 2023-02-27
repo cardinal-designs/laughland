@@ -40,9 +40,6 @@ function instaSlider() {
     $('.Images_List').slick({
       slidesToShow: 3,
       slidesToScroll: 3,
-      appendArrows:$(".slick_pagination .slick_arrow_insta"),
-      prevArrow:'<span class="Slick-Prev"></span>',
-      nextArrow:'<span class="Slick-Next"></span>',
       responsive: [
         {
           breakpoint: 767,
