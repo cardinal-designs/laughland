@@ -26,6 +26,11 @@
   margin-bottom: 16px;
 }
 
+.Hero_Review svg {
+  height: 19px;
+  display: block;
+}
+
 .Hero_Review .stylized {
   margin: 0 0 0 8px;
   line-height: 1;
