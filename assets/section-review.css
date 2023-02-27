@@ -50,14 +50,18 @@
   justify-content: space-between;
 }
 
-.slick_pagination .slick_arrow .slick_dots .slick-dots {
+.Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination {
+  position: relative;
+}
+
+.slick_pagination .slick_dots .slick-dots {
   padding: 0;
   list-style: none;
   margin: 0;
   display: flex;
 }
 
-.slick_pagination .slick_arrow .slick_dots .slick-dots li button {
+.slick_pagination .slick_dots .slick-dots li button {
   font-size: 0;
   width: 9px;
   height: 9px;
@@ -65,12 +69,12 @@
   border-radius: 100%;
 }
 
-.slick_pagination .slick_arrow .slick_dots .slick-dots li {
+.slick_pagination .slick_dots .slick-dots li {
   margin: 0 4px;
   line-height: 0;
 }
 
-.slick_pagination .slick_arrow .slick_dots .slick-dots .slick-active button {
+.slick_pagination .slick_dots .slick-dots .slick-active button {
   background: #0D2244;
 }
 
@@ -80,6 +84,11 @@
   justify-content: space-between;
   position: relative;
   margin-top: 40px;
+}
+
+.Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination .slick_dots {
+  position: absolute;
+  top: 0;
 }
 
 .slick_pagination .slick_arrow .slick-arrow {
