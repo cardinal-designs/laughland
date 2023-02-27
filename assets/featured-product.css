@@ -110,5 +110,9 @@
   .Featured_Product .product__media .img-fill img {
     border-radius: 0;
   }
+
+  .Featured_Product .product-info {
+    margin-bottom: 23px;
+  }
   
 }
