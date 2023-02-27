@@ -93,5 +93,9 @@
   .Featured_Product {
     padding: 0;
   }
+
+  .Featured_Product .product {
+    padding: 0;
+  }
   
 }
