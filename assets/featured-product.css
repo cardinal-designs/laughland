@@ -7,6 +7,7 @@
   font-weight: 500;
   font-size: 35px;
   line-height: 38px;
+  letter-spacing: -0.015em;
 }
 
 .Featured_Product .price__sale .price-item.price-item--regular {
