@@ -115,6 +115,14 @@
         "button_url": "shopify:\/\/collections\/all"
       }
     },
+    "0bba9f22-7698-459e-80ea-c2869211daea": {
+      "type": "featured-product",
+      "settings": {
+        "product": "at-home-whitening-kit",
+        "atc": "Buy Now",
+        "how_to_use": ""
+      }
+    },
     "adc7667a-6bb9-4319-878c-b709f2259336": {
       "type": "icon-with-text",
       "blocks": {
@@ -394,14 +402,6 @@
         "section_sub_heading": "@mylaughland",
         "sub_heading_link": "https:\/\/www.instagram.com\/"
       }
-    },
-    "0bba9f22-7698-459e-80ea-c2869211daea": {
-      "type": "featured-product",
-      "settings": {
-        "product": "at-home-whitening-kit",
-        "atc": "Buy Now",
-        "how_to_use": ""
-      }
     }
   },
   "order": [
@@ -410,11 +410,11 @@
     "36e4f7aa-dd9e-4e47-a123-81be1338efe2",
     "8f55a32e-9355-4413-8e5d-a7d66bb39102",
     "a4c5d03d-76b9-4c42-a509-36657ba4b556",
+    "0bba9f22-7698-459e-80ea-c2869211daea",
     "adc7667a-6bb9-4319-878c-b709f2259336",
     "d3414607-66d0-46b2-a396-e6a4263c1ca4",
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
     "49f3d9ac-7509-4919-89f3-3c6825a727c8",
-    "b60d8150-a8c1-4d20-a017-a4952d382660",
-    "0bba9f22-7698-459e-80ea-c2869211daea"
+    "b60d8150-a8c1-4d20-a017-a4952d382660"
   ]
 }
