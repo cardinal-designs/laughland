@@ -114,5 +114,9 @@
   .Featured_Product .product-info {
     margin-bottom: 23px;
   }
+
+  .Featured_Product .product {
+    margin-bottom: 0;
+  }
   
 }
