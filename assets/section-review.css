@@ -7,3 +7,9 @@
   border-radius: 12px;
   padding: 110px 0;
 }
+
+.Reviews_Section .Reviews_Inr_Section .Section_Header,
+.Reviews_Section .Reviews_Inr_Section .Review_Count,
+.Reviews_Section .Reviews_Inr_Section .Button_Area {
+  padding: 0 50px;
+}
