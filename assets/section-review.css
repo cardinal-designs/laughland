@@ -43,3 +43,8 @@
   padding: 30px 20px;
 }
 
+.Arrows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
