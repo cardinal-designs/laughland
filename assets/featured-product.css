@@ -43,6 +43,10 @@
   font-weight: 400;
 }
 
+.Featured_Product .product__media .img-fill img {
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 991px) {
 
   .Featured_Product {
@@ -96,6 +100,10 @@
 
   .Featured_Product .product {
     padding: 0;
+  }
+
+  .Featured_Product .product__media .img-fill img {
+    border-radius: 0;
   }
   
 }
