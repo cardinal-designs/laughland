@@ -79,6 +79,10 @@
 
 @media screen and (max-width: 991px) {
   
+  .Hero_Container .Hero_Badges {
+    right: -20px;
+  }
+  
 }
 
 @media screen and (max-width: 768px) {
