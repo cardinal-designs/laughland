@@ -1,3 +1,4 @@
+/*
 $('.Images_List').slick({
   dots: true,
   infinite: false,
@@ -35,3 +36,4 @@ $('.Images_List').slick({
     }
   ]
 });
+*/
