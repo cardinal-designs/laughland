@@ -98,7 +98,7 @@
   }
   
   .Hero_Container .button--primary {
-    padding: 16.5px 50px 17.5px;
+    padding: 16.5px 60px 17.5px;
   }
   
 }
@@ -125,6 +125,17 @@
   .Hero_Review {
     font-size: 16px;
     justify-content: center;
+  }
+  
+  .Hero_Subtitle {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  .Hero_Subtitle span {
+    height: 35px;
+    padding: 13px 14px 7px;
+    font-size: 28px;
   }
 
   .Hero_Title br {
