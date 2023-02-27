@@ -91,6 +91,7 @@
   .icon-text-columns__text-wrapper .icon-text-columns__item-text {
     font-size: 14px;
     line-height: 21px;
+    font-weight: 400;
   }
   
   .icon-text-columns__block-wrapper {

@@ -74,5 +74,9 @@
   .Featured_Product .product-info dd {
     margin-bottom: 8px;
   }
+
+  .Featured_Product .product-info dd:last-child {
+    margin-bottom: 8px;
+  }
   
 }
