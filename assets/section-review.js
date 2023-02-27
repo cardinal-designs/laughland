@@ -17,7 +17,13 @@ jQuery(document).ready(function(){
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
+        settings: {
+          centerPadding: '15%'
+        }
+      },
+      {
+        breakpoint: 479,
         settings: {
           centerPadding: '12%'
         }
