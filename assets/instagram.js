@@ -24,7 +24,7 @@ $('.Images_List').slick({
         centerMode: true,
         centerPadding: '10%',
         infinite: true,
-        arrows: false
+        arrow: false
       }
     },
     {
