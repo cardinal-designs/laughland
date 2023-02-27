@@ -1,4 +1,3 @@
-/*
 $('.Images_List').slick({
   dots: true,
   infinite: false,
@@ -7,7 +6,7 @@ $('.Images_List').slick({
   slidesToScroll: 2,
   dots: false,
   arrows: true,
-  appendArrows:$(".slick_arrow"),
+  appendArrows:$(".slick_arrow_insta"),
   prevArrow:'<span class="Slick-Prev"></span>',
   nextArrow:'<span class="Slick-Next"></span>',
   responsive: [
@@ -36,4 +35,3 @@ $('.Images_List').slick({
     }
   ]
 });
-*/
