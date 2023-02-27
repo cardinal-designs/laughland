@@ -44,7 +44,13 @@
         {% assign product_form_id = 'product-form-' | append: section.id %}
 
         <h3 class="product__title m-h4" id="product__title_id">
-          {{ product.title | default: product.title }}
+          {%- if section.settings.title != blank -%}
+            {{ section.settings.title }}
+          {%- else -%}
+            {{ product.title | default: product.title }}
+          {%- endif -%}
+            
+            
         </h3>
 
         <div class="no-js-hidden" id="price-{{ section.id }}" role="status">
@@ -395,6 +401,11 @@
       "type": "product",
       "id": "product",
       "label": "Product"
+    },
+    {
+      "type": "textarea",
+      "id": "title",
+      "label": "Product Title"
     },
     {
       "type": "text",
