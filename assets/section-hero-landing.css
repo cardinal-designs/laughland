@@ -118,6 +118,10 @@
     width: 100%;
   }
   
+  .Hero_Title {
+    padding: 0 38px;
+  }
+  
   .Hero_Review {
     justify-content: center;
   }
