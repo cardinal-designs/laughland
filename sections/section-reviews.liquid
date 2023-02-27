@@ -18,19 +18,22 @@
         {% render 'icon' icon: 'review-5-star' %}
         <span class="sh1-medium"><span class='stylized'>{{ section.settings.review_count }}</span>+ Reviews</span>
       </div>
-      <div class="Review_List">
-        {% for block in section.blocks %}
-          <div class="Single_Review">
-            <div class="Single_Review_Inr">
-              {% render 'icon' icon: 'review-5-star' %}
-              <h4 class="h4">{{ block.settings.title }}</h4>
-              <div class="Review">
-                {{ block.settings.text }}
+      <div class="swiper mySwiper">
+        <div class="Review_List swiper-wrapper">
+          {% for block in section.blocks %}
+            <div class="Single_Review swiper-slide">
+              <div class="Single_Review_Inr">
+                {% render 'icon' icon: 'review-5-star' %}
+                <h4 class="h4">{{ block.settings.title }}</h4>
+                <div class="Review">
+                  {{ block.settings.text }}
+                </div>
+                <h6 class="h6">{{ block.settings.author }}</h6>
               </div>
-              <h6 class="h6">{{ block.settings.author }}</h6>
             </div>
-          </div>
-        {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
       <div class="Button_Area">
         <a href="{{ section.settings.button_url }}" class="button">{{ section.settings.button_label }}</a>
