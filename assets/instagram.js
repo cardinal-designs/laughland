@@ -42,10 +42,12 @@ function instaSlider() {
       slidesToScroll: 3,
       responsive: [
         {
-          breakpoint: 767,
+          breakpoint: 769,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2
+            slidesToScroll: 2,
+            centerMode: true,
+            centerPadding: '10%',
           }
         },
         {
