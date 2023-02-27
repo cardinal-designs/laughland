@@ -94,6 +94,7 @@
 }
 
 @media screen and (max-width: 768px) {
+  
   .hero:not(.homepage-hero) {
     height: 540px;
     justify-content: flex-start;
@@ -104,6 +105,7 @@
   .hero:not(.homepage-hero) .hero__container {
     text-align: center;
   }
+  
 }
 
 .hero.homepage-hero {
@@ -112,9 +114,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  
   .hero.homepage-hero {
     height: calc(100vh - 110px);
   }
+  
 }
 
 .homepage-hero .hero__logo-container {
@@ -126,12 +130,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  
   .homepage-hero .hero__logo-container {
     padding-top: 0;
   }
   .homepage-hero .hero__logo-container svg {
     width: 340px;
   }
+  
 }
 
 .homepage-hero .hero__logo:not(.show){
