@@ -27,3 +27,7 @@
 .Featured_Product {
   padding: 50px 0;
 }
+
+.Featured_Product .product {
+  margin-bottom: 25px;
+}
