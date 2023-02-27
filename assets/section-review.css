@@ -125,4 +125,16 @@
 
 @media screen and (max-width: 991px) {
   
+  .Reviews_Section .Reviews_Inr_Section .Section_Header {
+    margin-bottom: 30px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_Count {
+    margin-bottom: 40px;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Button_Area {
+    margin-top: 50px;
+  }
+  
 }
