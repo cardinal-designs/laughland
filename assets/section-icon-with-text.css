@@ -100,4 +100,7 @@
     margin-top: 40px;
   }
   
+  .Icon_With_Text_Section .icon-with-text__block-wrapper {
+    margin: 0;
+  }
 }
