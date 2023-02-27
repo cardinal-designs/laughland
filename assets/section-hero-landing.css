@@ -147,6 +147,8 @@
   .Hero_Review svg {
     height: 14px;
     width: 74px;
+    position: relative;
+    top: -2px;
   }
   
   .Hero_Subtitle {
