@@ -1,9 +1,13 @@
 var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 4,
+  slidesPerView: 3,
   spaceBetween: 30,
   centeredSlides: true,
+  navigation: {
+    nextEl: '.carousel-next',
+    prevEl: '.carousel-prev',
+  },
   pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+    el: '.carousel-pagination',
+    type: 'bullets',
   },
 });
