@@ -1,3 +1,9 @@
+{% assign formatted_heading = section.settings.section_heading
+  | escape
+  | replace: '{', "<span class='stylized'>"
+  | replace: '}', '</span>'
+%}
+
 {% schema %}
   {
     "name": "Reviews Section",
