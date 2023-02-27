@@ -376,6 +376,14 @@ h6,
   letter-spacing: -0.01em;
 }
 
+@media only screen and (max-width: 768px) {
+  
+  .sh3 {
+    font-size: 12px;
+  }
+  
+}
+
 .body-2, 
 .body-2 p {
   font-family: jakarta;
