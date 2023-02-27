@@ -391,6 +391,13 @@
         "section_sub_heading": "@mylaughland",
         "sub_heading_link": "https:\/\/www.instagram.com\/"
       }
+    },
+    "0bba9f22-7698-459e-80ea-c2869211daea": {
+      "type": "featured-product",
+      "settings": {
+        "atc": "Buy Now",
+        "how_to_use": ""
+      }
     }
   },
   "order": [
@@ -403,6 +410,7 @@
     "d3414607-66d0-46b2-a396-e6a4263c1ca4",
     "240de530-a532-4dbd-b2a8-79f7e7c9b9fa",
     "49f3d9ac-7509-4919-89f3-3c6825a727c8",
-    "b60d8150-a8c1-4d20-a017-a4952d382660"
+    "b60d8150-a8c1-4d20-a017-a4952d382660",
+    "0bba9f22-7698-459e-80ea-c2869211daea"
   ]
 }
