@@ -5,8 +5,9 @@ jQuery(document).ready(function(){
     prevArrow: $('.prev-slide'),
     nextArrow: $('.next-slide'),
     centerPadding: '28%',
-    prevArrow: '<div class="news__arrow news__arrow_dir_left"></div>',
-    nextArrow: '<div class="news__arrow news__arrow_dir_right"></div>',
+    appendArrows:$(".Arrows"), // Class For Arrows Buttons
+    prevArrow:'<span class="Slick-Prev"></span>',
+    nextArrow:'<span class="Slick-Next"></span>',
     appendDots: $('.news__dots'),
     slidesToShow: 1,
     responsive: [
