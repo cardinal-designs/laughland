@@ -62,6 +62,11 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .Section_Padding {
+    padding: 70px 0 0;
+  }
+  
   .icon-text-columns__inner {
     display: block;
   }
