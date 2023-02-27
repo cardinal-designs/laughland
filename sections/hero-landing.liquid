@@ -22,7 +22,7 @@
       {% if section.settings.review != blank %}
         <h5 class="Hero_Review">{% render 'icon' icon: 'review-5-star' %}<span class='stylized'>{{ section.settings.review }}</span></h5>
       {% endif %}
-      <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
+      <h2 class="Hero_Title">{{ formatted_title | newline_to_br }}</h2>
       {% if formatted_sub_title != blank %}
         <h5 class="hero__subtitle h5">{{- formatted_sub_title -}}</h5>
       {% endif %}
