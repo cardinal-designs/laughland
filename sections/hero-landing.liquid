@@ -20,7 +20,7 @@
   <div class="page-width Hero_Inner">
     <div class="Hero_Container">
       {% if section.settings.review != blank %}
-        <h5 class="hero__review">{% render 'icon' icon: 'review-5-star' %}<span class='stylized'>{{ section.settings.review }}</span></h5>
+        <h5 class="Hero_Review">{% render 'icon' icon: 'review-5-star' %}<span class='stylized'>{{ section.settings.review }}</span></h5>
       {% endif %}
       <h2 class="hero__title">{{ formatted_title | newline_to_br }}</h2>
       {% if formatted_sub_title != blank %}
