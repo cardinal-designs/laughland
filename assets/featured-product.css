@@ -7,3 +7,10 @@
   font-size: 35px;
   line-height: 38px;
 }
+
+.Featured_Product .price__sale .price-item.price-item--regular {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #9EA7B4;
+}
