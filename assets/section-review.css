@@ -180,6 +180,13 @@
   .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
     padding: 0px 5% !important;
   }
+
+  .Reviews_Section .Reviews_Inr_Section .Section_Header, 
+  .Reviews_Section .Reviews_Inr_Section .Review_Count, 
+  .Reviews_Section .Reviews_Inr_Section .Button_Area, 
+  .Reviews_Section .Reviews_Inr_Section .Review_List .slick_pagination {
+    padding: 0 25px;
+  }
   
 }
 
