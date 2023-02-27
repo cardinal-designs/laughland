@@ -46,39 +46,12 @@
         {% assign product_form_id = 'product-form-' | append: section.id %}
 
         <h3 class="product__title m-h4" id="product__title_id">
-          {{ product.metafields.custom.title | default: product.title }}
+          {{ product.title | default: product.title }}
         </h3>
 
         <div class="no-js-hidden visibility-hidden visually-hidden" id="price-{{ section.id }}" role="status">
           {% render 'price', product: product, use_variant: true, show_badges: true, price_class: '' %}
         </div>
-
-        <dl class="product-info">
-          <dt class="h6">Your Whitening Formula</dt>
-          <dd class="p" data-formula-type>
-            {% comment %}
-              {{
-                product.selected_or_first_available_variant.metafields.custom.formula_details
-                | default: product.selected_or_first_available_variant.title
-              }}
-            {% endcomment %}
-
-            {% for variant in product.variants %}
-              <span data-variant-title="{{ variant.title }}" class="hidden">
-                {{- variant.metafields.custom.formula_details -}}
-              </span>
-            {% endfor %}
-          </dd>
-        </dl>
-
-        <dl class="product-info">
-          <dt class="h6">Includes</dt>
-          {% for item in product.metafields.custom.includes.value %}
-            <dd class="p">
-              <span>{% render 'icon', icon: 'checkmark' %} </span>{{ item }}
-            </dd>
-          {% endfor %}
-        </dl>
 
         <div class="subscription-wrapper">
           <div class="loading-overlay__spinner">
