@@ -194,4 +194,9 @@ File does not have any other versions
     display: block;
   }
 
+  .FAQ_Section .Faq_section_inner .Faq_Area,
+  .FAQ_Section .Faq_section_inner .Faq_Heading {
+    width: 100%;
+  }
+
 }
