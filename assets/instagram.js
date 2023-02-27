@@ -17,17 +17,21 @@ $('.Images_List').slick({
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 769,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: '10%'
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '15%'
       }
     }
   ]
