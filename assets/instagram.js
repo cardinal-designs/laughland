@@ -33,3 +33,29 @@ $('.Instagram_Slider').slick({
     }
   ]
 });
+
+function realReviewSlider() {
+
+  if (window.matchMedia("(max-width: 991px)").matches) {  
+    $('.Real_Reviews_Row').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false  
+    }); 
+  } 
+  else {
+    $('.Real_Reviews_Row').slick('unslick');
+  }
+  
+}
+
+$(document).ready(function() {
+  imageBlockSlider();
+  realReviewSlider();
+})
+
+$(window).on('resize orientationchange', function() {
+  imageBlockSlider();
+  realReviewSlider();
+})
