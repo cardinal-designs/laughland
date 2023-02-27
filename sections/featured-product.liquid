@@ -54,8 +54,6 @@
           {%- else -%}
             {{ product.title | default: product.title }}
           {%- endif -%}
-            
-            
         </h3>
 
         <div class="no-js-hidden" id="price-{{ section.id }}" role="status">
@@ -105,6 +103,17 @@
               </div>
             {% endif %}
 
+            <dl class="product-info">
+              <dt class="h6">Details</dt>
+              <dd class="p" data-formula-type>
+                {% if section.settings.description != blank %}
+                  {{ section.settings.description }}
+                {% else %}
+                   {{ product.description }}
+                {% endif %}
+              </dd>
+            </dl>
+                  
             <dl class="product-info">
               <dt class="h6">Includes</dt>
               {% for item in product.metafields.custom.includes.value %}
