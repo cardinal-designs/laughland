@@ -22,7 +22,8 @@ $('.Images_List').slick({
         slidesToShow: 2,
         slidesToScroll: 2,
         centerMode: true,
-        centerPadding: '10%'
+        centerPadding: '10%',
+        infinite: true
       }
     },
     {
@@ -31,7 +32,8 @@ $('.Images_List').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '15%'
+        centerPadding: '15%',
+        infinite: true
       }
     }
   ]
