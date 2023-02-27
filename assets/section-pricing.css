@@ -135,9 +135,23 @@
   .Pricing_Section .Pricing_Inner_Section .Section_Header {
     margin-bottom: 30px;
   }
-  
+
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th {
+    height: 45px;
+  }
 }
 
 @media screen and (max-width: 479px) {
+  .Pricing_Section .page-width {
+    padding: 0;
+  }
+
   
+  .Pricing_Section .Pricing_Inner_Section {
+    border-radius: 0;
+  }
+  
+  .Pricing_Section .Pricing_Inner_Section .Pricing_Table table thead tr th:first-child {
+    width: 31.8%;
+  }
 }

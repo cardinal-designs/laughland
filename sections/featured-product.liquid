@@ -234,7 +234,7 @@
                 >
                   <span>
                     {% if product.selected_or_first_available_variant.available %}
-                      {{ section.settings.atc }}
+                      {{ section.settings.atc }} -- {{ product.price | money }}
                     {% else %}
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
