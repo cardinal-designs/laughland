@@ -20,13 +20,13 @@
   position: relative;
 }
 
-.hero__review {
+.Hero_Review {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
 
-.hero__review .stylized {
+.Hero_Review .stylized {
   margin: 0 0 0 8px;
   line-height: 1;
 }
