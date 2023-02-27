@@ -18,8 +18,8 @@
         {% render 'icon' icon: 'review-5-star' %}
         <span class="sh1-medium"><span class='stylized'>{{ section.settings.review_count }}</span>+ Reviews</span>
       </div>
-      <div class="swiper mySwiper">
-        <div class="Review_List swiper-wrapper">
+      <div class="Review_List">
+        <div class="Review_Slider">
           {% for block in section.blocks %}
             <div class="Single_Review swiper-slide">
               <div class="Single_Review_Inr">
@@ -33,9 +33,7 @@
             </div>
           {% endfor %}
         </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev carousel-prev hide-mobile"></div>
-        <div class="swiper-button-next carousel-next hide-mobile"></div>
+
       </div>
 
       <div class="Button_Area">

@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('.center').slick({
+  $('.Review_Slider').slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
