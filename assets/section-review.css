@@ -169,6 +169,18 @@
     padding: 0;
   }
   
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
+    padding: 0px 9% !important;
+  }
+  
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Single_Review {
+    padding: 0 6px;
+  }
+
+  .Reviews_Section .Reviews_Inr_Section .Review_List .Review_Slider .slick-list {
+    padding: 0px 5% !important;
+  }
+  
 }
 
 @media screen and (max-width: 479px) {
