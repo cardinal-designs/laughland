@@ -173,4 +173,8 @@
 
 @media screen and (max-width: 479px) {
 
+  .Reviews_Section .page-width {
+    padding: 0;
+  }
+  
 }
