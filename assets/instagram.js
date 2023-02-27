@@ -1,4 +1,4 @@
-$('.Instagram_Slider').slick({
+$('.Images_List').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 5,
@@ -32,46 +32,3 @@ $('.Instagram_Slider').slick({
     }
   ]
 });
-
-function instaSlider() {
-
-  if (window.matchMedia("(max-width: 991px)").matches) {  
-    $('.Images_List').slick({
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      arrows: false,
-      responsive: [
-        {
-          breakpoint: 769,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            centerMode: true,
-            centerPadding: '10%'
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '15%'
-          }
-        }
-      ]
-    }); 
-  } 
-  else {
-    $('.Images_List').slick('unslick');
-  }
-  
-}
-
-$(document).ready(function() {
-  instaSlider();
-})
-
-$(window).on('resize orientationchange', function() {
-  instaSlider();
-})
