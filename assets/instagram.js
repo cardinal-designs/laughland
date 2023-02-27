@@ -48,7 +48,7 @@ function instaSlider() {
             slidesToShow: 2,
             slidesToScroll: 2,
             centerMode: true,
-            centerPadding: '10%',
+            centerPadding: '10%'
           }
         },
         {
