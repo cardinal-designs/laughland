@@ -105,6 +105,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
   
   .Landing_Hero {
     height: 800px;
@@ -116,6 +117,14 @@
   .Landing_Hero .Hero_Container {
     text-align: center;
     width: 100%;
+  }
+  
+  .Hero_Review {
+    justify-content: center;
+  }
+
+  .Hero_Title br {
+    display: none;
   }
     
 }
