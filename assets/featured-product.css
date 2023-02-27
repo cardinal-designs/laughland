@@ -60,5 +60,10 @@
     font-weight: 500;
     margin-right: 10px;
   }
-  
+
+  .Featured_Product .swiper-pagination-bullet {
+    background-color: #0D2244;
+    opacity: .2;
+  }
+    
 }
