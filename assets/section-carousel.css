@@ -41,7 +41,7 @@
 }
 
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  
+  background-color: var(--navy);
 }
 
 @media screen and (max-width: 991px) {
