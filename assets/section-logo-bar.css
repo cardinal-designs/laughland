@@ -20,9 +20,13 @@
 }
 
 .logo-bar__list-item > * {
-  width: 126px;
-  height: auto;
+  width: auto;
+  height: 25px;
   vertical-align: middle;
+}
+
+.logo-bar__list-item img {
+  opacity: 0.2;
 }
 
 .logo-bar__list-item svg,
