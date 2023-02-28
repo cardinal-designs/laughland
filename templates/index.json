@@ -32,7 +32,8 @@
           "type": "logo",
           "settings": {
             "svg": "",
-            "png": "shopify:\/\/shop_images\/instyle-logo.png"
+            "png": "shopify:\/\/shop_images\/instyle-logo.png",
+            "opacity": 2
           }
         },
         "1771e86e-7589-47e2-8d98-c1de2bd4764d": {
