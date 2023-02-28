@@ -25,10 +25,6 @@
   vertical-align: middle;
 }
 
-.logo-bar__list-item img {
-  opacity: 0.2;
-}
-
 .logo-bar__list-item svg,
 .logo-bar__list-item svg path,
 .logo-bar__list-item svg g {
