@@ -25,7 +25,9 @@
   vertical-align: middle;
 }
 
-.logo-bar__list-item svg {
+.logo-bar__list-item svg,
+.logo-bar__list-item svg path,
+.logo-bar__list-item svg g {
   fill: #CBCBCF;
 }
 
