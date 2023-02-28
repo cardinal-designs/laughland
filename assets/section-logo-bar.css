@@ -25,6 +25,10 @@
   vertical-align: middle;
 }
 
+.logo-bar__list-item svg {
+  fill: #CBCBCF;
+}
+
 @media screen and (max-width: 768px) {
   section.logo-bar {
     margin-bottom: 0;
