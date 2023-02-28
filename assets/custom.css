@@ -409,7 +409,7 @@ input::placeholder {
 .policies-tempalates .shopify-policy__title h1 {
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 8s linear infinite;
+  animation: marquee 12s linear infinite;
   flex: auto 0 0;
   padding: 0 50px;
   margin: 0;
