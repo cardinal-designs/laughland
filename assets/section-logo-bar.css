@@ -29,6 +29,8 @@
 .logo-bar__list-item svg path,
 .logo-bar__list-item svg g {
   fill: #CBCBCF;
+  opacity: 1;
+  fill-opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
