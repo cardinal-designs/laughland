@@ -156,7 +156,7 @@
   </body>
 </html>
 
-<!-- Klaviyo Javascript -->
+<!-- Klaviyo Add To Cart Tracking -->
 {% if product %}
 <script type="text/javascript">
   var _learnq = _learnq || [];
@@ -186,7 +186,7 @@
 </script>
 
 <script type="text/javascript">var learnq = _learnq || [];
-  var classname = document.getElementsByClassName("product-form__submit button button--full-width button--secondary");
+  var classname = document.getElementsByClassName("product-form__submit button");
   var addToCart = function() {
   _learnq.push(['track', 'Added to Cart', item]);
   }; for (var i = 0; i < classname.length; i++) {
