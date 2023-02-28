@@ -3,6 +3,8 @@
 <section class="logo-bar">
   <div class="page-width">
     <div class="logo-bar__inner">
+
+      {% comment %}
       <ul class="logo-bar__list list-unstyled">
         {% for block in section.blocks %}
           <li class="logo-bar__list-item">
@@ -23,9 +25,10 @@
           </li>
         {% endfor %}
       </ul>
+      {% endcomment %}
 
       {% comment %} Duplicate for mobile marquee {% endcomment %}
-      <ul class="logo-bar__list list-unstyled hide-desktop">
+      <ul class="logo-bar__list list-unstyled {% comment %}hide-desktop{% endcomment %}">
         {% for block in section.blocks %}
           <li class="logo-bar__list-item">
             {% if block.settings.svg != blank %}
