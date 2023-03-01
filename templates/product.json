@@ -130,6 +130,7 @@
           "settings": {
             "logo": "",
             "png": "shopify:\/\/shop_images\/Byrdie_Logo-500x118.png",
+            "opacity": 3,
             "text": "\"A pain-free and powerful LED teeth whitening experience\""
           }
         }
