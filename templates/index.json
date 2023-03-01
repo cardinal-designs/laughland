@@ -24,6 +24,14 @@
             "png": "shopify:\/\/shop_images\/2560px-Womenshealthlogo_blue.png"
           }
         },
+        "557f9f37-e310-4b24-8457-85829704bc23": {
+          "type": "logo",
+          "settings": {
+            "svg": "",
+            "png": "shopify:\/\/shop_images\/325-3258311_good-morning-america-logo.png",
+            "opacity": 3
+          }
+        },
         "e3421af7-0087-42bf-b093-c4c8cda44b22": {
           "type": "logo",
           "settings": {
@@ -56,6 +64,7 @@
         "07cefbf2-aac7-40a1-89a7-67ff51a368c5",
         "e94aa8fd-a71e-469a-972d-b9e334f12cf1",
         "57acd987-73b8-4e87-8347-80dc5a73db88",
+        "557f9f37-e310-4b24-8457-85829704bc23",
         "e3421af7-0087-42bf-b093-c4c8cda44b22",
         "0340f548-3f5e-4ac6-bfad-b093fb2bbfff",
         "1771e86e-7589-47e2-8d98-c1de2bd4764d",
