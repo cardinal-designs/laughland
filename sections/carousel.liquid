@@ -19,6 +19,7 @@
                     width="{{ block.settings.png.width }}"
                     height="{{ block.settings.png.height }}"
                     alt="{{ block.settings.png.alt }}"
+                    {% if block.settings.opacity != blank%}style="opacity: 0.{{ block.settings.opacity }}"{% endif %}
                   >
                 {% endif %}
 
