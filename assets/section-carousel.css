@@ -28,6 +28,14 @@
   width: auto;
 }
 
+.carousel__slide-content svg,
+.carousel__slide-content svg path,
+.carousel__slide-content svg g {
+  fill: #CBCBCF;
+  opacity: 1;
+  fill-opacity: 1;
+}
+
 .carousel-instance .swiper-button-prev {
   grid-column: 1/2;
 }
