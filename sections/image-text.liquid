@@ -19,7 +19,7 @@
               {% for block in imageBlocks %}
                 <div class="image-text__slide-content swiper-slide" data-slide-id="{{ block.id }}">
                   <div class="image-text__image-container">
-                    <div class="image-text__image">{{ block.settings.image | image_url: 'master' | image_tag }}</div>
+                    <div class="image-text__image">{{ block.settings.image | image_url: width: 'master' | image_tag }}</div>
                     {% if block.settings.text != blank or block.settings.sm_text != blank %}
                       <div class="image-text__image-overlay">
                         {% if block.settings.text != blank %}
