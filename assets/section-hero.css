@@ -80,7 +80,7 @@
 }
 
 .homepage-hero .hero__logo-container {
-  padding-top: var(--header-height);
+/*   padding-top: var(--header-height); */
   position: absolute;
   top: 50%;
   left: 50%;
