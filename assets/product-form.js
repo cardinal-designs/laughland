@@ -75,6 +75,22 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).classList.remove("hidden")
     document.querySelector(`[data-sticky-formula]`).innerHTML = document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).innerHTML.split(":")[0]
 
+    if(variantIngredients){
+      let variantIngredientList = variantIngredients.find((v) => v.id == inputValue)
+
+      let ingredientCards = document.querySelectorAll("[data-ingredient]")
+      ingredientCards.forEach((ingredient, i) => {
+        if( variantIngredientList.ingredients.includes(ingredient.dataset.ingredient)) {
+          ingredient.classList.remove("hidden")
+        } else {
+          ingredient.classList.add("hidden")
+        }
+        if( i == ingredientCards.length - 1) {
+          ingredient.closest('.swiper').classList.add('update')
+        }
+      })
+    }
+
     
   }
 

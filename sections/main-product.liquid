@@ -409,6 +409,35 @@
   endif
 %}
 
+{% liquid
+  assign variant_ingredient_array = ""
+  capture variant_ingredients
+    echo "["
+    for variant in product.variants
+      echo "{"
+      echo '"id": "'
+      echo variant.title
+      echo '", "ingredients": ["'
+      for ingredient in variant.metafields.custom.ingredients.value
+        echo ingredient | downcase
+        unless forloop.last
+        echo '", "'
+        endunless
+      endfor
+      echo '"]'
+      echo "}"
+      unless forloop.last
+        echo ","
+      endunless
+    endfor
+    echo "]"
+  endcapture
+%}
+
+<script>
+  let variantIngredients = {{variant_ingredients }}
+</script>
+
 <script type="application/ld+json">
   {
     "@context": "http://schema.org/",
