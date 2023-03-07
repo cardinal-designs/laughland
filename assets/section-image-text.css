@@ -47,7 +47,7 @@
   align-items: center;
 }
 
-.image-text__image .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+.image-text__image .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 0;
 }
 
