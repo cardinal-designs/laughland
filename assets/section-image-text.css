@@ -32,7 +32,7 @@
   display: block;
 }
 
-.image-text__image-overlay{
+.image-text__image-overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -45,6 +45,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+}
+
+.image-text__image .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0;
 }
 
 .image-text__overlay-text-sm {
