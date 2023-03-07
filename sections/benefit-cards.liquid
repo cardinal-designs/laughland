@@ -14,7 +14,6 @@
       endunless
     endfor
   endcapture
-
   assign ingredient_list = show_ingredients | split: ','
 %}
 
@@ -35,10 +34,7 @@
           <div class="swiper-wrapper">
             {% for block in section.blocks %}
               {% assign ingredient_name = block.settings.heading | downcase %}
-              {% unless ingredient_list contains ingredient_name %}
-                {% continue %}
-              {% endunless %}
-              <div class="swiper-slide" data-ingredient="{{ ingredient_name }}">
+              <div class="swiper-slide {% unless ingredient_list contains ingredient_name %}hidden{% endunless %}" data-ingredient="{{ ingredient_name }}">
                 {% assign formatted_card_heading = block.settings.heading
                   | replace: '{', "<span class='stylized'>"
                   | replace: '}', '</span>'
@@ -74,6 +70,7 @@
   const benefitsSwiper = new Swiper('.benefit__card-carousel', {
     slidesPerView: 1.25,
     spaceBetween: 12,
+    observer: true,
     navigation: {
       nextEl: '.benefit-next',
       prevEl: '.benefit-prev',
@@ -84,6 +81,11 @@
         spaceBetween: 20,
       },
     },
+    on: {
+      observerUpdate: function(){
+        console.log('update')
+      }
+    }
   });
 {% endjavascript %}
 
