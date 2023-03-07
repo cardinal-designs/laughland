@@ -19,10 +19,10 @@
                 <div class="testimonial__image-wrapper swiper-slide">
                   {% if block.settings.before_photo != blank and block.settings.after_photo != blank %}
                     <div class="testimonial__before-photo testimonial__image">
-                      {{ block.settings.before_photo | image_url: width: 300 | image_tag }}
+                      {{ block.settings.before_photo | image_url: width: master | image_tag }}
                     </div>
                     <div class="testimonial__after-photo testimonial__image active">
-                      {{ block.settings.after_photo | image_url: width: 300 | image_tag }}
+                      {{ block.settings.after_photo | image_url: width: master | image_tag }}
                     </div>
                     <button class="testimonial__photo-button"></button>
                   {% endif %}
