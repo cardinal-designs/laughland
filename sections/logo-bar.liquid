@@ -3,8 +3,7 @@
 <section class="logo-bar">
   <div class="page-width">
     <div class="logo-bar__inner">
-
-      {% comment %}
+      {% for i in (i..3)%}
       <ul class="logo-bar__list list-unstyled">
         {% for block in section.blocks %}
           <li class="logo-bar__list-item">
@@ -25,29 +24,7 @@
           </li>
         {% endfor %}
       </ul>
-      {% endcomment %}
-
-      {% comment %} Duplicate for mobile marquee {% endcomment %}
-      <ul class="logo-bar__list list-unstyled {% comment %}hide-desktop{% endcomment %}">
-        {% for block in section.blocks %}
-          <li class="logo-bar__list-item">
-            {% if block.settings.svg != blank %}
-              {{ block.settings.svg }}
-            {% elsif block.settings.png != blank %}
-              <img
-                srcset="{{ block.settings.png | image_url: width: 300 }} 1x, {{ block.settings.png | image_url: width: 300, scale: 2 }} 2x"
-                src="{{ block.settings.png | image_url: width: 300}}"
-                loading="lazy"
-                class="header__heading-logo"
-                width="{{ block.settings.png.width }}"
-                height="{{ block.settings.png.height }}"
-                alt="{{ block.settings.png.alt }}"
-                {% if block.settings.opacity != blank%}style="opacity: 0.{{ block.settings.opacity }}"{% endif %}
-              >
-            {% endif %}
-          </li>
-        {% endfor %}
-      </ul>
+    {% endfor %}
     </div>
   </div>
 </section>
