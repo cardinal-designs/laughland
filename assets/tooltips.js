@@ -10,6 +10,7 @@ class Tooltip extends HTMLElement {
 
     this.initializeTippy();
     this.getLineCoordinates();
+
     this.animateTooltip();
 
     window.addEventListener("resize", (e) => {
