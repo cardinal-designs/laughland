@@ -4,6 +4,16 @@
   position: relative;
 }
 
+.tooltips:after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 18.6%;
+  background: linear-gradient(180deg, rgba(250, 245, 241, 0) 0%, #B5E5F9 100%);
+}
+
 .tooltips__inner {
   padding: 100px 0;
   text-align: center;
