@@ -192,11 +192,10 @@
   }
 
   .tooltips__inner {
-    padding:60px 0 0;
+    padding: 160px 0 0;
   }
 
   .tooltips__container {
-    /* padding-bottom: 111%; */
     aspect-ratio: 1/1.11;
   }
 }
