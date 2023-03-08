@@ -233,8 +233,8 @@
           "settings": {
             "heading": "Lab {Innovation}",
             "text": "Better ingredients that actually work. We were tired of whitening products that claimed to be pain-free and effective but were neither",
-            "vertical_tooltip": 80,
-            "horizontal_tooltip": 0,
+            "vertical_tooltip": 65,
+            "horizontal_tooltip": 7,
             "vertical_arrow": 50,
             "horizontal_arrow": 36,
             "vertical_mobile": 57,
