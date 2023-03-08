@@ -20,6 +20,13 @@
   text-align: center;
 }
 
+.tooltops__headers {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  z-index: 1;
+}
+
 .tooltips__heading, .tooltips__text {
   text-align: center;
   max-width: 886px;
