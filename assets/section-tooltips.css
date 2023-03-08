@@ -1,6 +1,7 @@
 .tooltips {
   background: linear-gradient(to bottom, rgba(250,245,241,1) 0%, rgba(247,233,226,1) 0%, rgba(250,245,241,1) 100%);
   margin-bottom: 0;
+  position: relative;
 }
 
 .tooltips__inner {
