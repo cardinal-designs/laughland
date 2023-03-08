@@ -192,7 +192,7 @@
   }
 
   .tooltips__inner {
-    padding: 160px 0 0;
+    padding: 0;
   }
 
   .tooltops__headers {
@@ -200,6 +200,8 @@
   }
 
   .tooltips__container {
-    aspect-ratio: 1/1.11;
+    aspect-ratio: 1/2.25;
+    margin-top: 0;
+    top: 0;
   }
 }
