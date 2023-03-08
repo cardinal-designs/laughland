@@ -3,6 +3,7 @@
   background: #F6E9E0;
   margin-bottom: 0;
   position: relative;
+  overflow: hidden;
 }
 
 .tooltips:after {
