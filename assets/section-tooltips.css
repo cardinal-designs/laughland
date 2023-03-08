@@ -204,11 +204,17 @@
   }
 
   .tooltips__image {
+    margin-top: -30%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tooltips__image {
     margin-top: -20%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .tooltips__inner {
     padding: 50px 0 0;
   }
