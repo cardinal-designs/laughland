@@ -259,8 +259,8 @@
           "settings": {
             "heading": "Proven {Performance}",
             "text": "Lorem ipsum dolor.",
-            "vertical_tooltip": 0,
-            "horizontal_tooltip": 15,
+            "vertical_tooltip": 20,
+            "horizontal_tooltip": 14,
             "vertical_arrow": 30,
             "horizontal_arrow": 32,
             "vertical_mobile": 29,
