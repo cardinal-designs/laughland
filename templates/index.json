@@ -233,12 +233,12 @@
           "settings": {
             "heading": "Lab {Innovation}",
             "text": "Better ingredients that actually work. We were tired of whitening products that claimed to be pain-free and effective but were neither",
-            "vertical_tooltip": 80,
-            "horizontal_tooltip": 0,
+            "vertical_tooltip": 65,
+            "horizontal_tooltip": 7,
             "vertical_arrow": 50,
             "horizontal_arrow": 36,
-            "vertical_mobile": 57,
-            "horizontal_mobile": 29
+            "vertical_mobile": 45,
+            "horizontal_mobile": 25
           }
         },
         "bcec259a-c478-4684-81dc-93bf16ad0954": {
@@ -247,11 +247,11 @@
             "heading": "{Natural} Ingredients",
             "text": "Our dental advisory board hand-selects ingredients and formulas to make your smile shine.",
             "vertical_tooltip": 60,
-            "horizontal_tooltip": 76,
-            "vertical_arrow": 29,
-            "horizontal_arrow": 65,
-            "vertical_mobile": 74,
-            "horizontal_mobile": 71
+            "horizontal_tooltip": 74,
+            "vertical_arrow": 35,
+            "horizontal_arrow": 66,
+            "vertical_mobile": 46,
+            "horizontal_mobile": 81
           }
         },
         "02a6f280-d780-4471-9cd3-59966e787f61": {
@@ -259,11 +259,11 @@
           "settings": {
             "heading": "Proven {Performance}",
             "text": "Lorem ipsum dolor.",
-            "vertical_tooltip": 0,
-            "horizontal_tooltip": 15,
-            "vertical_arrow": 30,
-            "horizontal_arrow": 32,
-            "vertical_mobile": 29,
+            "vertical_tooltip": 22,
+            "horizontal_tooltip": 14,
+            "vertical_arrow": 37,
+            "horizontal_arrow": 33,
+            "vertical_mobile": 28,
             "horizontal_mobile": 13
           }
         }
@@ -278,8 +278,8 @@
         "text": "Better ingredients that actually work. We were tired of whitening products that claimed to be pain-free and effective but were neither. Our dental advisory board hand-selects ingredients and formulas to make your smile shine.",
         "url": "\/",
         "link_text": "Learn More",
-        "image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_4_4f7f704f-2161-436f-b57a-f67a8118967b.png",
-        "mobile_image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_5.png"
+        "image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_4_60087915-300d-4545-a981-64065f70e4ee.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/LARGELaughland_WhiteningKit_Instructions_1_wide_5_57ea2856-48c5-44e1-91d0-946fff72ada2.jpg"
       }
     }
   },
