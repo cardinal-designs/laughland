@@ -21,10 +21,10 @@
       <div class="tooltips__container-content">
         <div class="tooltips__image">
           {% if section.settings.mobile_image != blank %}
-            {{ section.settings.mobile_image | image_url: width: 500 | image_tag: class: 'hide-desktop' }}
-            {{ section.settings.image | image_url: width: 1440 | image_tag: class: 'hide-mobile' }}
+            {{ section.settings.mobile_image | image_url: width: master | image_tag: class: 'hide-desktop' }}
+            {{ section.settings.image | image_url: width: master | image_tag: class: 'hide-mobile' }}
           {% else %}
-            {{ section.settings.image | image_url: width: 1440 | image_tag }}
+            {{ section.settings.image | image_url: width: master | image_tag }}
           {% endif %}
         </div>
 
