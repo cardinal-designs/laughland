@@ -4,7 +4,7 @@
       "type": "main-product",
       "settings": {
         "atc": "Buy Now",
-        "how_to_use": "{{ product.metafields.custom.how_to_use | metafield_tag }}"
+        "how_to_use": ""
       }
     },
     "product-recommendations": {
