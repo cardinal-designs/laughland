@@ -108,6 +108,7 @@
         "type": "homepage-hero",
         "settings": {
           "add_overlay": true,
+          "image": "shopify:\/\/shop_images\/Laughland_Homepage_Lilac.gif",
           "title": "{Personalized}\nTeeth Whitening",
           "button_label": "Find Your Formula",
           "button_link": "",
