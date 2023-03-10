@@ -1719,6 +1719,7 @@ deferred-media {
   display: block;
   padding: 20px;
   font-size: 14px;
+  text-align: left;
 }
 
 .menu-drawer__menu-button--has-menu {

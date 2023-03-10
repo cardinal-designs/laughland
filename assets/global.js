@@ -471,7 +471,7 @@ var MenuDrawer = class extends HTMLElement {
     this.drawer = this.drawer = document.getElementById('menu-drawer');
     this.openButtons = document.querySelectorAll('.js-open-menu');
     this.closeButtons = document.querySelectorAll('.js-close-menu');
-    this.menuButtons = document.querySelectorAll('.menu-drawer__menu-button');
+    this.menuButtons = document.querySelectorAll('.menu-drawer__menu-button--has-menu');
     this.pageOverlayElement = document.querySelector('.page-overlay');
     this.body = document.querySelector('body');
     this.drawer.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.closeMenuDrawer());

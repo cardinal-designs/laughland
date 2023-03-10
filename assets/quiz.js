@@ -26,6 +26,9 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
     this.open.forEach((button) => {
       button.addEventListener("click", function(e){
         e.preventDefault();
+        if(document.querySelector("body").classList.contains("Menu_Open")) {
+          document.querySelector("menu-drawer").closeMenuDrawer()
+        }
         document.querySelector('.sticky-footer__button')?.click()
       } )
     })
