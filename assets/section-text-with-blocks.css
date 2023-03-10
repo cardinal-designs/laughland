@@ -49,6 +49,7 @@
 
 .text-with-blocks__item-title {
   margin: 0;
+  white-space: break-spaces;
 }
 
 .text-with-blocks__item-emoji {
@@ -74,6 +75,14 @@
 
   .text-with-blocks__item-header {
     height: 135px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .text-with-blocks__blocks-wrapper {
+    margin: 0 -40px;
+    padding: 0 40px;
+    overflow: scroll;
   }
 }
 

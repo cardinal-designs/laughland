@@ -54,8 +54,10 @@
                         </span>
                         {% if forloop.last %}
                           {% render 'star' %}
+                          <span class="body-bold-weight">{{ col }}</span>
+                          {% else %}
+                          <span>{{ col }}</span>
                         {% endif %}
-                        <span>{{ col }}</span>
                       </td>
                     {% endfor %}
                   </tr>

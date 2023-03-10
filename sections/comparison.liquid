@@ -31,7 +31,11 @@
           </div>
         {% endfor %}
       </div>
-      <a href="{{ section.settings.button_link }}" class="image-dropdowns__button button">{{ section.settings.button_label }}</a>
+      {% if section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="image-dropdowns__button button">{{ section.settings.button_label }}</a>
+      {% else %}
+        <button class="image-dropdowns__button button button--secondary" data-open-quiz>{{ section.settings.button_label }}</button>
+      {% endif %}
     </div>
   </div>
 </section>

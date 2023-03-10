@@ -33,7 +33,7 @@
   position: relative;
   padding-left: 0;
   transition: all .3s ease;
-  /* margin-bottom: 0; */
+  font-weight: 600;
 }
 
 .ingredient-list__button:before {
