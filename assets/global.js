@@ -452,6 +452,7 @@ const serializeForm = form => {
 };
 
 /*================ Micromodal Initialize ================*/
+window.addEventListener("DOMContentLoaded", function () {
 // Micromodal
 MicroModal.init({
   openClass: 'is-open',
@@ -460,6 +461,7 @@ MicroModal.init({
   awaitOpenAnimation: true,
   awaitCloseAnimation: true
 });
+})
 
 /*================ Components ================*/
 var MenuDrawer = class extends HTMLElement {
@@ -756,7 +758,7 @@ customElements.define('add-to-cart', AddToCart);
   const stickyFooter = document.querySelector("#shopify-section-sticky-footer") || document.querySelector("#shopify-section-sticky-product-bar")
 
   // Other pages
-  const firstSection = document.querySelector("#MainContent .shopify-policy__title") || document.querySelector("#MainContent .shopify-section:first-of-type")
+  let firstSection = document.querySelector("#MainContent .shopify-policy__title") || document.querySelector("#MainContent .shopify-section:first-of-type")
 
   const observer = new IntersectionObserver(
     entries => {
