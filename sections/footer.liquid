@@ -28,8 +28,29 @@
   </div>
   <div class="footer__menus">
     <div class="footer__menu-blocks">
+      <div class="footer__block hide-desktop">
+        <button class="footer__mobile-header p">
+          {{ footer_menus[0].settings.menu_title | default: fotoer_menus[0].settings.menu.title }}
+          <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
+        </button>
+
+        <ul class="footer__menu list-unstyled">
+          {% for block in footer_menus %}
+            {% for link in block.settings.menu.links %}
+              <li>
+                <a
+                  href="{{ link.url }}"
+                  class="footer__menu-link{% if link.active %} footer__menu-link--active{% endif %}"
+                >
+                  {{ link.title }}
+                </a>
+              </li>
+            {% endfor %}
+          {% endfor %}
+        </ul>
+      </div>
       {% for block in footer_menus %}
-        <div class="footer__block" {{ block.shopify_attributes }}>
+        <div class="footer__block hide-mobile" {{ block.shopify_attributes }}>
           <button class="footer__mobile-header hide-desktop p">
             {{ block.settings.menu_title | default: block.settings.menu.title }}
             <span class="accordion-toggle">{% render 'icon', icon: 'accordion' %}</span>
