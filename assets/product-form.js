@@ -95,13 +95,11 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
   }
 
   createSubscriptionWidget() {
-    if( typeof window.ReChargeWidget != 'undefined' ) {
-      console.log("ReCharge widget is available!")
-      
-      this.waitForRecharge('.subscription-wrapper .rc-widget').then(() => {
-        this.modifySubscriptionWidget('.subscription-wrapper .rc-widget');
-        this.updateStickyBar(this.querySelector(".rc-option--active input").value, this.querySelector(".rc-option--active .updated-price").innerHTML ||this.querySelector(".rc-option--active .rc-option__price").innerHTML)
-      })
+    this.waitForRecharge('.subscription-wrapper [data-widget]').then(() => {
+      console.log('recharge ready')
+      this.modifySubscriptionWidget('.subscription-wrapper .rc-widget');
+
+      this.updateStickyBar(this.querySelector(".rc_widget__option__input:checked").value, this.querySelector(".rc_widget__option__input:checked").nextElementSibling.querySelector(".updated-price").innerHTML || this.querySelector(".rc_widget__option__input:checked").nextElementSibling.querySelector(".rc-option__price").innerHTML)
 
       //remove loading circle when ready
       this.container.querySelector(".subscription-wrapper .loading-overlay__spinner").classList.add("hidden")
@@ -112,13 +110,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       this.rechargeOptions = this.querySelector(".rc-template")
       const observer = new MutationObserver(this.observeForm.bind(this))
       observer.observe(this.rechargeOptions, {attributes: true, childList: true, subtree: true})
-    } else {
-      console.log("waiting on ReCharge")
-      
-      setTimeout(() => {
-        this.createSubscriptionWidget()
-      }, 2000)
-    }
+    })
   }
 
   updateStickyBar(selection, price) {
