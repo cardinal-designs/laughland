@@ -2,6 +2,10 @@
   background: transparent;
   color: var(--navy);
 }
+
+.subscription-wrapper .rc_widget__option__discount {
+  display: none;
+}
 .subscription-wrapper .rc-option {
   border: 1px solid var(--navy);
   margin: 5px 0;
