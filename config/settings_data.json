@@ -76,7 +76,7 @@
             "settings": {
               "heading": "Already A Customer?",
               "text": "Sign in to your account to edit your formula, view or track your most recent order, or purchase refills.",
-              "btn_one": "\/",
+              "btn_one": "\/account\/login",
               "btn_one_text": "Account Log In",
               "btn_two": "",
               "btn_two_text": ""
