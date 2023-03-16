@@ -118,8 +118,10 @@
     {% if template == 'product' %}
       {% section 'sticky-product-bar' %}
     {% else %}
+      {% unless template == 'cart'%}
       {% section 'quiz' %}
       {% section 'sticky-footer' %}
+      {% endunless %}
     {% endif %}
     {% section 'footer' %}
     {% comment %}
