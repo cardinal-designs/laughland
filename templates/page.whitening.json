@@ -82,8 +82,117 @@
         "button_link": ""
       }
     },
+    "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
+      "type": "pricing-section",
+      "blocks": {
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74": {
+          "type": "row",
+          "settings": {
+            "heading": "Custom Formulas",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "ae7bdc1d-47d0-41ec-bb0c-d1b1ae3fe708": {
+          "type": "row",
+          "settings": {
+            "heading": "Sensitivity-Free",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "a663de5b-482d-486a-a50d-ee6af1b977a7": {
+          "type": "row",
+          "settings": {
+            "heading": "<15 Minute Treatments",
+            "diy_data": "",
+            "diy_data_icon": "true",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "eba27974-ccd9-47b2-9fa0-a6e9c093c370": {
+          "type": "row",
+          "settings": {
+            "heading": "Dentist-Formulated",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "true",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "5a0cacf8-dc0d-4b83-bfd5-3d88cecb1d23": {
+          "type": "row",
+          "settings": {
+            "heading": "No Expensive & Painful Office Visits",
+            "diy_data": "",
+            "diy_data_icon": "true",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "0cea6716-7667-417c-8f1a-c44d1a72559a": {
+          "type": "row",
+          "settings": {
+            "heading": "Lifetime Guarantee",
+            "diy_data": "",
+            "diy_data_icon": "false",
+            "dentist_data": "",
+            "dentist_data_icon": "false",
+            "us_data": "",
+            "us_data_icon": "true"
+          }
+        },
+        "a94da3c4-b056-41d3-ae5f-de5ccdeae0ee": {
+          "type": "row",
+          "settings": {
+            "heading": "Price",
+            "diy_data": "$100",
+            "diy_data_icon": "true",
+            "dentist_data": "$250~1.5k",
+            "dentist_data_icon": "true",
+            "us_data": "$19\/mo",
+            "us_data_icon": "true"
+          }
+        }
+      },
+      "block_order": [
+        "03e4d13b-03a9-4c5c-9bac-59957e891b74",
+        "ae7bdc1d-47d0-41ec-bb0c-d1b1ae3fe708",
+        "a663de5b-482d-486a-a50d-ee6af1b977a7",
+        "eba27974-ccd9-47b2-9fa0-a6e9c093c370",
+        "5a0cacf8-dc0d-4b83-bfd5-3d88cecb1d23",
+        "0cea6716-7667-417c-8f1a-c44d1a72559a",
+        "a94da3c4-b056-41d3-ae5f-de5ccdeae0ee"
+      ],
+      "settings": {
+        "section_heading": "Not all whitening is {Created Equal}",
+        "section_sub_heading": "",
+        "first_title": "DIY",
+        "second_title": "Dentist",
+        "third_title": "Us",
+        "button_label": "Start Now",
+        "button_url": "shopify:\/\/collections\/all",
+        "badges": "shopify:\/\/shop_images\/Winner_Badge.png"
+      }
+    },
     "e71299d9-0fca-4b45-8fe5-f4824c5060ea": {
       "type": "comparison",
+      "disabled": true,
       "blocks": {
         "b9238013-789b-4136-9de2-76d9586f7305": {
           "type": "block",
@@ -141,6 +250,7 @@
     "3f403f92-d7ab-49c8-b6d3-e9eba5385bd7",
     "text",
     "603e7eb2-e1ad-47d6-8d4e-77ef4c29ff01",
+    "d3414607-66d0-46b2-a396-e6a4263c1ca4",
     "e71299d9-0fca-4b45-8fe5-f4824c5060ea",
     "7d61af94-868e-49f5-88e9-eeb479f29fcc",
     "abd298b4-e507-41dc-b608-6fd41a0f439e"

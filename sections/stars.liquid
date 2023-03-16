@@ -1,0 +1,42 @@
+<div class="page-width">
+<div class="stars">
+  <div class="stars__svg">
+    {{ section.settings.svg}}
+  </div>
+
+  <div class="stars__average-rating h4 stylized">
+    {{ section.settings.rating }}
+  </div>
+
+  <div class="stars__text h5">
+    {{ section.settings.text}}
+  </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "Stars",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "svg",
+        "label": "Stars svg"
+      },
+      {
+        "type": "text",
+        "id": "rating",
+        "label": "Average rating"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Stars"
+      }
+    ]
+  }
+{% endschema %}

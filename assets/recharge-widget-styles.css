@@ -66,6 +66,14 @@
   cursor: pointer;
 }
 
+.subscription-wrapper .rc_widget__option__label > span:not(.rc-option__price):not(.updated-price) {
+  font-weight: 500;
+}
+
+.subscription-wrapper .rc_widget__option__label > span.updated-price,.subscription-wrapper .rc_widget__option__label > span.rc-option__price {
+  font-size: 1.1rem;
+}
+
 .subscription-wrapper [data-label-subsave] {
   margin-bottom: 11.75px;
 }
