@@ -40,7 +40,8 @@
         "d837aaee-c071-4c08-b5cf-7bbc42a1ced4"
       ],
       "settings": {
-        "heading": "Dentist-certified {and} clinically tested"
+        "heading": "Dentist-certified {and} clinically tested",
+        "section_padding": false
       }
     },
     "84b9856e-bf96-4659-92e2-140c310090ca": {
@@ -50,9 +51,9 @@
           "type": "results",
           "settings": {
             "heading": "View",
-            "before_photo": "shopify:\/\/shop_images\/Laughland_79214_1_d0fdb9a7-0153-4891-bf0b-ecc5620b5cdf.jpg",
+            "before_photo": "shopify:\/\/shop_images\/IMAGE_1_BEFORE.png",
             "before_label": "",
-            "after_photo": "shopify:\/\/shop_images\/Laughland_79214_1_d0fdb9a7-0153-4891-bf0b-ecc5620b5cdf.jpg",
+            "after_photo": "shopify:\/\/shop_images\/IMAGE_1_AFTER.png",
             "after_label": ""
           }
         },
@@ -60,25 +61,16 @@
           "type": "results",
           "settings": {
             "heading": "View",
-            "before_photo": "shopify:\/\/shop_images\/Laughland_79400_1.jpg",
+            "before_photo": "shopify:\/\/shop_images\/IMAGE_2_BEFORE.png",
             "before_label": "",
-            "after_photo": "shopify:\/\/shop_images\/Laughland_79400_1.jpg",
-            "after_label": ""
-          }
-        },
-        "42ca7b78-1581-464e-be27-0faa047834ec": {
-          "type": "results",
-          "settings": {
-            "heading": "View",
-            "before_label": "",
+            "after_photo": "shopify:\/\/shop_images\/IMAGE_2_AFTER.png",
             "after_label": ""
           }
         }
       },
       "block_order": [
         "19a46550-5ee4-44b1-832d-1abd5d7d8dea",
-        "91d7bfd6-90c6-4807-a1fc-22578816e306",
-        "42ca7b78-1581-464e-be27-0faa047834ec"
+        "91d7bfd6-90c6-4807-a1fc-22578816e306"
       ],
       "settings": {
         "heading": "Results To {Smile} About",
