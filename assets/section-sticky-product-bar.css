@@ -67,9 +67,9 @@
   pointer-events: none;
 }
 
-.product-sticky-bar__inner {
+/* .product-sticky-bar__inner {
   display: none;
-}
+} */
 
 sticky-product-bar{
   display: grid;
