@@ -553,6 +553,7 @@ blockquote {
 /* Button - hover */
 .button:not(.loading):not(.button--secondary):hover
 .button:not([disabled]):not(.button--secondary):hover,
+.button:hover,
 .shopify-challenge__button:hover,
 .button:not([disabled]):not(.button--secondary):active,
 .shopify-challenge__button:active {
