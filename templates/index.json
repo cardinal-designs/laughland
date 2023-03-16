@@ -78,23 +78,32 @@
         "3021148b-0789-47cc-b421-9518a12f5d19": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Laughland_79214_1_941e7a16-eea4-4354-b338-69231d909e0b.jpg",
-            "text": "Medium Sensitivity\nWine Drinker\nYears of Stains",
-            "sm_text": "Joe Shmoe"
+            "image": "shopify:\/\/shop_images\/Tyler_V.jpg",
+            "text": "Fairly Sensitive\nWine Drinker\nYears of Stains\nNew to Whitening",
+            "sm_text": "Tyler V."
           }
         },
         "bc97ed44-a594-4120-be5e-93766641037f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Laughland_79214_1_786660dd-280b-468a-bc87-6121bb6649a7.jpg",
-            "text": "Mild Sensitivity\nCoffee Stains",
-            "sm_text": "Joe Low"
+            "image": "shopify:\/\/shop_images\/Natalie_L.jpg",
+            "text": "Minimal Sensitivity\nCoffee Lover\nLight Stains\nDisappointed with Strips",
+            "sm_text": "Natalie L."
+          }
+        },
+        "2f6d9f53-381a-49fa-91a8-64439d9a43bb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ana_P.jpg",
+            "text": "Highly Sensitive\nCavity-Prone\nLight Stains\nObsessed with Oral Hygiene",
+            "sm_text": "Gabby P."
           }
         }
       },
       "block_order": [
         "3021148b-0789-47cc-b421-9518a12f5d19",
-        "bc97ed44-a594-4120-be5e-93766641037f"
+        "bc97ed44-a594-4120-be5e-93766641037f",
+        "2f6d9f53-381a-49fa-91a8-64439d9a43bb"
       ],
       "settings": {
         "layout": true,
