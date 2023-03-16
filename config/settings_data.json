@@ -48,6 +48,7 @@
         "blocks": {
           "a2055792-f809-40d0-9556-a6ffeb11fb3b": {
             "type": "link_list",
+            "disabled": true,
             "settings": {
               "menu": "cardinal-nav",
               "menu_title": "Menu"
