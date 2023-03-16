@@ -8,6 +8,7 @@
 {% assign formatted_heading = section.settings.title
   | replace: '{', "<span class='stylized'>"
   | replace: '}', '</span>'
+  | newline_to_br
 %}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
@@ -49,7 +50,7 @@
       <div id="ProductInfo-{{ section.id }}" class="product__info-container">
         {% assign product_form_id = 'product-form-' | append: section.id %}
 
-        <h3 class="product__title m-h4" id="product__title_id">
+        <h3 class="product__title m-h4">
           {%- if section.settings.title != blank -%}
             {{ formatted_heading }}
           {%- else -%}
