@@ -45,9 +45,9 @@ function chooseLandingPage() {
   var d = Math.random();
 
   if d <= .5 {
-    return 'homepage'
+    return ['homepage', 'https://www.mylaughland.com']
   } else {
-    return 
+    return ['landing-page', 'https://www.mylaughland.com/pages/landing-page']
   }
 }
 
