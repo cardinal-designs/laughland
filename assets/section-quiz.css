@@ -82,7 +82,7 @@
   column-gap: 66px;
   padding-top: 10vh;
   padding-bottom: 10vh;
-  overflow-y: scroll;
+  overflow-y: visible;
 }
 
 @media screen and (max-width: 768px) {
@@ -235,4 +235,16 @@
 
 formula-quiz[data-state='1'] [data-form-back] {
   opacity: 0;
+}
+
+.quiz::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.quiz::-webkit-scrollbar-track {
+  background: var(--cream-tint-50);
+}
+ 
+.quiz::-webkit-scrollbar-thumb {
+  background-color: var(--navy);
 }
