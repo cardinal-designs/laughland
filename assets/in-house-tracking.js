@@ -71,7 +71,8 @@ function landingPageAction(current_page) {
         setGoogleTag('Cactus Media', landing[0])
         window.location = landing[1]
       default:
-        subPrice = '$19'
+        setGoogleTag('NA', 'homepage')
+        window.location = 'https://www.mylaughland.com'
         break
     }
 }
