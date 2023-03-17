@@ -24,7 +24,6 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
     effective_landing_page: effective_landing_page
   });
 }
-console.log('hello?')
 
 in_house_first_land = getCookie('in_house_first_land')
 if (in_house_first_land == 'true') {
@@ -32,7 +31,7 @@ if (in_house_first_land == 'true') {
   console.log(current_page)
 }
 
-// var date = new Date();
-// date.setTime(date.getTime()+(3600*24*1000));
-// var expires = "; expires="+date.toUTCString();
-document.cookie = "in_house_first_land=true; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+var date = new Date();
+date.setFullYear(date.getFullYear() + 1);
+var expires = "; expires="+date.toUTCString();
+document.cookie = "in_house_first_land=true" + expires + "; path=/";
