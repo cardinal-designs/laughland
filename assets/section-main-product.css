@@ -292,3 +292,16 @@
     font-size: 10px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  .product-form__buttons .disacount-apply-text {
+    text-align: center;
+    color: #46BDF0;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 21px;
+  }
+
+}
+
