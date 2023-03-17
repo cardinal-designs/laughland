@@ -230,6 +230,10 @@
 }
 .discount--wrapper .discount-input--wrapper .discount-text {
   opacity: 0.5;
+  font-size:12px;
+}
+.discount--wrapper .discount-input--wrapper .discount-code{
+  font-size:14px;
 }
 .discount--wrapper .disacount-apply-text{
   color:#46BDF0;
