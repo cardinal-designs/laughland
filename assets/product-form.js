@@ -269,6 +269,9 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       sections_url: window.location.pathname
     });
 
+    console.log(body)
+    return
+
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
