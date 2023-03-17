@@ -267,6 +267,7 @@
   .discount--wrapper .discount-input--wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
   }
   .discount--wrapper {
     flex-wrap: wrap;
