@@ -54,10 +54,14 @@ function chooseLandingPage() {
 
 
 function setGoogleTag(affiliate_source, effective_landing_page) {
-  gtag('set', 'user_properties', {
-    affiliate_source: affiliate_source,
-    effective_landing_page: effective_landing_page
-  });
+  in_house_first_land = getCookie('in_house_first_land') // This should only be non true if this is a newly active GA session
+  if (in_house_first_land != 'true') {
+    setCookie('in_house_first_land', 'true')
+    gtag('set', 'user_properties', {
+      affiliate_source: affiliate_source,
+      effective_landing_page: effective_landing_page
+    });
+  }
 }
 
 function landingPageAction(current_page) {
@@ -73,18 +77,19 @@ function landingPageAction(current_page) {
         window.location = landing[1]
       default:
         setGoogleTag('NA', 'homepage')
-        window.location = 'https://www.mylaughland.com'
+        // window.location = 'https://www.mylaughland.com'
         break
     }
 }
+
+broken_url = window.location.href.split('?')[0].split('/')
+current_page = broken_url[broken_url.length - 1]
+landingPageAction(current_page)
 
 in_house_first_land = getCookie('in_house_first_land') // This should only be non true if this is a newly active GA session
 if (in_house_first_land != 'true') {
   setCookie('in_house_first_land', 'true')
   
-  broken_url = window.location.href.split('?')[0].split('/')
-  current_page = broken_url[broken_url.length - 1]
-  landingPageAction(current_page)
 } else if (window.location.href.includes('clear-affiliate-cookies')) {
   console.log('hi there sir')
   clearAllAffiliateCookies()
