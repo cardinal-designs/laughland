@@ -92,7 +92,7 @@ sticky-product-bar{
   }
 }
 
-.sticky__formula  {
+.sticky__formula {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,6 +101,7 @@ sticky-product-bar{
 
 @media screen and (max-width: 768px) {
   .sticky__formula {
+    display: none;
     width: 100%;
     border-bottom: 1px solid white;
   }
