@@ -6,11 +6,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  
   .product {
     gap: 0;
     display: block;
     margin-bottom: 70px;
   }
+  
 }
 
 /*================ Media ================*/
