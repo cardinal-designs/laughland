@@ -232,7 +232,8 @@
   opacity: 0.5;
   font-size:12px;
 }
-.discount--wrapper .discount-input--wrapper .discount-code{
+.discount--wrapper .discount-input--wrapper .discount-code,
+.discount--wrapper .disacount-apply-text{
   font-size:14px;
 }
 .discount--wrapper .disacount-apply-text{
