@@ -258,6 +258,15 @@
                 </quantity-input>
               </div>
 
+              {% if section.settings.discount_code != blank and section.settings.discount_text != blank %}
+                <div class="discount--wrapper">
+                  <div class="discount-input--wrapper">
+                    <p class="discount-code">{{ section.settings.discount_code }}</p>
+                    <p class="discount-text">{{ section.settings.discount_text }}</p>
+                  </div>
+                  <p>Discount Applied!</p>
+                </div>
+              {% endif %}
               <div class="product-form__buttons">
                 <button
                   type="submit"
