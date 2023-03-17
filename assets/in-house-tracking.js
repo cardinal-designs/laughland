@@ -24,7 +24,7 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
     effective_landing_page: effective_landing_page
   });
 }
-
+console.log('hello?')
 
 in_house_first_land = getCookie('in_house_first_land')
 if (in_house_first_land == 'true') {
