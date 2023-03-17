@@ -67,8 +67,9 @@ function landingPageAction(current_page) {
       case 'utm_gen':
         clearAllAffiliateCookies()
         setCookie('redirect_ut', 'true')
-        
-
+        landing = chooseLandingPage()
+        setGoogleTag('Cactus Media', landing[0])
+        window.location = landing[1]
       default:
         subPrice = '$19'
         break
