@@ -6,11 +6,13 @@
 }
 
 @media screen and (max-width: 768px) {
+  
   .product {
     gap: 0;
     display: block;
     margin-bottom: 70px;
   }
+  
 }
 
 /*================ Media ================*/
@@ -213,3 +215,101 @@
   font-size: 25px;
   margin-right: 5px;
 }
+
+.discount--wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.discount--wrapper .discount-input--wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 435px;
+  border: 1px solid #0D2244;
+  padding: 9px 26px;
+  border-radius: 40px;
+}
+
+.discount--wrapper .discount-input--wrapper .discount-text {
+  font-size: 12px;
+  color: #6E7A8F;
+  font-weight: 400;
+}
+
+.discount--wrapper .discount-input--wrapper .discount-code,
+.discount--wrapper .disacount-apply-text{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.discount--wrapper .disacount-apply-text{
+  color: #46bdf0;
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 1439px) {
+  
+  .discount--wrapper .disacount-apply-text {
+    padding-left: 20px;
+  }
+  
+  .discount--wrapper .discount-input--wrapper {
+    width: 325px;
+    padding: 9px 16px;
+  }
+  
+}
+
+@media screen and (max-width: 1200px) {
+
+  .discount--wrapper .discount-input--wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .discount--wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .discount--wrapper .disacount-apply-text {
+    padding: 5px 0 0;
+  }
+  
+}
+
+@media screen and (max-width: 991px) {
+  
+  .discount--wrapper .discount-input--wrapper .discount-code, 
+  .discount--wrapper .disacount-apply-text {
+    font-size: 12px;
+  }
+
+  .discount--wrapper .discount-input--wrapper .discount-text {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .product-form__buttons .disacount-apply-text {
+    text-align: center;
+    color: #46BDF0;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 21px;
+  }
+
+  .discount--wrapper .discount-input--wrapper .discount-code, 
+  .discount--wrapper .disacount-apply-text {
+    font-size: 14px;
+  }
+  
+  .discount--wrapper .discount-input--wrapper .discount-text {
+    font-size: 12px;
+  }
+}
+

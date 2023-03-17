@@ -119,7 +119,6 @@
   }
 
   const direct_checkout = getCookie('directcheckout');
-  console.log(direct_checkout);
   if (direct_checkout == 'true') {
     document.cookie = 'directcheckout=expires=Thu, 01 Jan 1970 00:00:01 GMT';
     try {
@@ -128,6 +127,8 @@
       redirect_ut_direct = getCookie('redirect_ut_direct');
       redirect_ut = getCookie('redirect_ut');
       redirect_miles = getCookie('redirect_miles');
+      productDiscountCode = getCookie('productDiscountCode');
+      console.log("Cart productDiscountCode ::",productDiscountCode);
       url_params = [];
       if (paceline_automatic == 'true') {
         url_params = url_params.concat(['discount=PACELINE_AUTOMATIC']);
@@ -143,6 +144,12 @@
         url_params = url_params.concat(['discount=SUB-N-SAVE']);
       }
 
+      if(productDiscountCode != ""){
+        url_params = [`discount=${productDiscountCode}`];
+        document.cookie = 'productDiscountCode=;expires=Thu, 01 Jan 1970 00:00:01 GMT';
+      }
+
+      
       console.log(url_params);
 
       window.location.href = '/checkout?' + url_params.join('&');

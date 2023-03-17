@@ -21,6 +21,8 @@
         redirect_ut_direct = getCookie('redirect_ut_direct');
         redirect_ut = getCookie('redirect_ut');
         redirect_miles = getCookie('redirect_miles');
+        productDiscountCode = getCookie('productDiscountCode');
+        console.log("productDiscountCode ::",productDiscountCode)
         url_params = [];
         if (paceline_automatic == 'true') {
           url_params = url_params.concat(['discount=PACELINE_AUTOMATIC']);
@@ -35,6 +37,10 @@
         } else {
           url_params = url_params.concat(['discount=SUB-N-SAVE']);
         }
+
+        if(productDiscountCode != "") url_params = url_params.concat([`discount=${productDiscountCode}`]);
+
+        
         console.log('heres params');
         console.log(url_params);
 

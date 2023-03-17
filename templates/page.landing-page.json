@@ -122,7 +122,10 @@
         "title": "{Your Personalized}<br> Teeth Whitening Kit",
         "description": "Utilizing the same active ingredients that dentists use, our quick and simple 10-minute routine yields smiles 7+ shades brighter in just 6 days!",
         "atc": "Start Now",
-        "how_to_use": ""
+        "how_to_use": "",
+        "discounted_price": 19,
+        "discount_code": "CARDINALTEST",
+        "discount_text": "15% Off First Month"
       }
     },
     "adc7667a-6bb9-4319-878c-b709f2259336": {
@@ -278,6 +281,7 @@
         "1b3fc029-1055-4710-8825-398d2d320b7c": {
           "type": "slide",
           "settings": {
+            "svg": "",
             "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue_0a0973f6-c62c-4750-bc63-096e9ab38351.png",
             "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
           }
@@ -285,6 +289,7 @@
         "83b29aad-1ec3-43d4-9d28-f3f7680cfd9d": {
           "type": "slide",
           "settings": {
+            "svg": "",
             "png": "shopify:\/\/shop_images\/buzzfeed-logo_blue_0a0973f6-c62c-4750-bc63-096e9ab38351.png",
             "text": "“More convenient, affordable, and, perhaps most important of all, not at all irritating.”"
           }

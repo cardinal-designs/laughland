@@ -14,6 +14,10 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {% assign product = section.settings.product %}
+{% assign productPrice = product.price %}
+{% if section.settings.discounted_price != blank and section.settings.discounted_price != 0 %}
+  {% assign productPrice = section.settings.discounted_price | times:100 %}
+{% endif %}
 
 <section class="Featured_Product">
   <div class="product">
@@ -59,7 +63,7 @@
         </h3>
 
         <div class="no-js-hidden" id="price-{{ section.id }}" role="status">
-          {% render 'main-price', product: product, use_variant: true, show_badges: true, price_class: '' %}
+          {% render 'main-price', product: product, use_variant: true, show_badges: true, price_class: '', custom_peice: productPrice %}
         </div>
 
         <div class="subscription-wrapper">
@@ -254,18 +258,33 @@
                 </quantity-input>
               </div>
 
+              {% if section.settings.discount_code != blank and section.settings.discount_text != blank %}
+                <div class="discount--wrapper">
+                  <div class="discount-input--wrapper">
+                    <p class="discount-code">{{ section.settings.discount_code }}</p>
+                    <p class="discount-text">{{ section.settings.discount_text }}</p>
+                  </div>
+                  <p class="disacount-apply-text hide-mobile">Discount Applied!</p>
+                </div>
+              {% endif %}
               <div class="product-form__buttons">
                 <button
+                  {% comment %}
                   type="submit"
                   name="add"
-                  class="product-form__submit button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                  {% endcomment %}
+                  class=" button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
                   {% endif %}
+                  {% if section.settings.discount_code != blank %}
+                    data-dsicount-code="{{ section.settings.discount_code }}"
+                  {% endif %}
+                  data-open-quiz
                 >
                   <span>
                     {% if product.selected_or_first_available_variant.available %}
-                      {{ section.settings.atc }} — {{ product.price | money }}
+                      {{ section.settings.atc }} — {{ productPrice | money }}
                     {% else %}
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
@@ -286,6 +305,8 @@
                 {% if block.settings.show_dynamic_checkout %}
                   {{ form | payment_button }}
                 {% endif %}
+
+                <p class="disacount-apply-text hide-desktop">Discount Applied!</p>
               </div>
             {% endform %}
 
@@ -437,7 +458,23 @@
       "id": "how_to_use",
       "label": "How to use",
       "info": "Connect product How To Use metafield"
+    },
+    {
+      "type": "number",
+      "id": "discounted_price",
+      "label": "Discounted Price"
+    },
+    {
+      "type": "text",
+      "id": "discount_code",
+      "label": "Discount Code"
+    },
+    {
+      "type": "text",
+      "id": "discount_text",
+      "label": "Discount Text"
     }
+    
   ],
   "presets": [
     {

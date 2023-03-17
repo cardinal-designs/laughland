@@ -69,11 +69,13 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     }
 
     this.querySelector(`input[value="${inputValue}"]`).click()
-    document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).classList.remove("hidden")
-    document.querySelector(`[data-sticky-formula]`).innerHTML = document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).innerHTML.split(":")[0]
+    if(document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`)){
+      document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).classList.remove("hidden")
+      if(document.querySelector(`[data-sticky-formula]`)) document.querySelector(`[data-sticky-formula]`).innerHTML = document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).innerHTML.split(":")[0]
+    }
 
-    if(variantIngredients){
-      let variantIngredientList = variantIngredients.find((v) => v.id == inputValue)
+    if(window.variantIngredients){
+      let variantIngredientList = window.variantIngredients.find((v) => v.id == inputValue)
 
       let ingredientCards = document.querySelectorAll("[data-ingredient]")
       ingredientCards.forEach((ingredient, i) => {
@@ -266,6 +268,15 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       sections_url: window.location.pathname
     });
 
+    if(submitButton.dataset.dsicountCode){
+      console.log(submitButton.dataset.dsicountCode)
+      var date = new Date();
+      date.setTime(date.getTime()+(3600*24*1000));
+      var expires = "; expires="+date.toUTCString();
+      if(submitButton.dataset.dsicountCode != "") document.cookie = `productDiscountCode=${submitButton.dataset.dsicountCode} ${expires};path=/; `;
+    }
+
+    
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
       .then((parsedState) => {
