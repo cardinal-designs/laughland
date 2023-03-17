@@ -45,7 +45,9 @@ function chooseLandingPage() {
   var d = Math.random();
 
   if d <= .5 {
-    landing = ''
+    return 'homepage'
+  } else {
+    return 
   }
 }
 
