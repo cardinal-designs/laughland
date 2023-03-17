@@ -78,7 +78,7 @@ function landingPageAction(current_page) {
 }
 
 in_house_first_land = getCookie('in_house_first_land') // This should only be non true if this is a newly active GA session
-if (in_house_first_land == 'true') {
+if (in_house_first_land != 'true') {
   setCookie('in_house_first_land', 'true')
   
   broken_url = window.location.href.split('?')[0].split('/')
