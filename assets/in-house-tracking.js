@@ -25,11 +25,37 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
   });
 }
 
+function landingPageAction(current_page) {
+  switch(current_page) {
+      case 'redirect_ut':
+        subPrice = '$9'
+        break;
+      case 'redirect_ut_direct':
+        subPrice = '$9'
+        break
+      case 'redirect_paceline':
+        subPrice = '$29'
+        break
+      case 'redirect_sweatcoin':
+        subPrice = '$9.95'
+        break
+      case 'redirect_miles':
+        subPrice = '$9'
+        break
+      case 'redirect_studentbeans':
+        subPrice = '$9'
+        break
+      default:
+        subPrice = '$19'
+        break
+    }
+}
+
 in_house_first_land = getCookie('in_house_first_land')
 if (in_house_first_land == 'true') {
   broken_url = window.location.href.split('?')[0].split('/')
   current_page = broken_url[broken_url.length - 1]
-  console.log(current_page)
+  landingPageAction(current_page)
 }
 
 var date = new Date();
