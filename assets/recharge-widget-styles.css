@@ -70,7 +70,7 @@
   font-weight: 500;
 }
 
-.subscription-wrapper .rc_widget__option__label > span.updated-price,.subscription-wrapper .rc_widget__option__label > span.rc-option__price {
+.subscription-wrapper .rc_widget__option__label > span.updated-price {
   font-size: 1.1rem;
 }
 
