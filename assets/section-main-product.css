@@ -278,4 +278,9 @@
   .discount--wrapper .disacount-apply-text {
     padding: 5px 0 0;
   }
+  
+}
+
+@media screen and (max-width: 991px) {
+  
 }
