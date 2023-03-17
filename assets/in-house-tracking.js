@@ -44,7 +44,7 @@ function clearAllAffiliateCookies(){
 function chooseLandingPage() {
   var d = Math.random();
 
-  if d <= .5 {
+  if (d <= .5) {
     return ['homepage', 'https://www.mylaughland.com']
   } else {
     return ['landing-page', 'https://www.mylaughland.com/pages/landing-page']
