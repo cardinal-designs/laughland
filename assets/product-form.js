@@ -273,7 +273,10 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
 
     if(submitButton.dataset.dsicountCode){
       console.log(submitButton.dataset.dsicountCode)
-      if(submitButton.dataset.dsicountCode != "") document.cookie = `productDiscountCode=${submitButton.dataset.dsicountCode}`;
+      var date = new Date();
+      date.setTime(date.getTime()+(3600*24*1000));
+      var expires = "; expires="+date.toUTCString();
+      if(submitButton.dataset.dsicountCode != "") document.cookie = `productDiscountCode=${submitButton.dataset.dsicountCode} ${expires};path=/; `;
     }
 
     
