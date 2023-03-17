@@ -1,4 +1,4 @@
-cookies = ['redirect_ut', 'redirect_ut_direct', 'redirect_paceline', 'redirect_sweatcoin', 
+affiliate_cookie_options = ['redirect_ut', 'redirect_ut_direct', 'redirect_paceline', 'redirect_sweatcoin', 
           'redirect_miles', 'redirect_studentbeans']
 
 
@@ -45,7 +45,7 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
 function landingPageAction(current_page) {
   switch(current_page) {
       case 'clear-affiliate-cookies':
-        subPrice = '$9'
+        xs.forEach((x, i) => console.log(x));
         break;
       case 'redirect_ut_direct':
         subPrice = '$9'
