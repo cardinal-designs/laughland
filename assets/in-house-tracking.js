@@ -25,4 +25,7 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
   });
 }
 
+// var date = new Date();
+// date.setTime(date.getTime()+(3600*24*1000));
+// var expires = "; expires="+date.toUTCString();
 document.cookie = "in_house_first_land=true; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
