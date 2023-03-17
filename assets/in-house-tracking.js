@@ -18,7 +18,7 @@ function getCookie(cname) {
   return null;
 }
 
-function googleTag(affiliate_source, effective_landing_page) {
+function setGoogleTag(affiliate_source, effective_landing_page) {
   gtag('set', 'user_properties', {
     affiliate_source: affiliate_source,
     effective_landing_page: effective_landing_page
