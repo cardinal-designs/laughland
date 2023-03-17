@@ -24,3 +24,5 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
     effective_landing_page: effective_landing_page
   });
 }
+
+document.cookie = "in_house_first_land=true; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
