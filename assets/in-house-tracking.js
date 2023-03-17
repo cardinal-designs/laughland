@@ -56,6 +56,10 @@ function chooseLandingPage() {
 function setGoogleTag(affiliate_source, effective_landing_page) {
   in_house_first_land = getCookie('in_house_first_land') // This should only be non true if this is a newly active GA session
   if (in_house_first_land != 'true') {
+    console.log('setting gtags')
+    console.log(affiliate_source)
+    console.log(effective_landing_page)
+    
     setCookie('in_house_first_land', 'true')
     gtag('set', 'user_properties', {
       affiliate_source: affiliate_source,
