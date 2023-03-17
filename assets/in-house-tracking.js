@@ -45,7 +45,7 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
 function landingPageAction(current_page) {
   switch(current_page) {
       case 'clear-affiliate-cookies':
-        xs.forEach((x, i) => console.log(x));
+        affiliate_cookie_options.forEach((affiliate, index) => removeCookie(affiliate));
         break;
       case 'redirect_ut_direct':
         subPrice = '$9'
