@@ -188,7 +188,6 @@
       </a>
     {% endif %}
 
-    {% comment %}
        {% if template != 'cart' %}
         <button class="js-open-cart header__icon header__icon--cart" id="cart-icon-bubble" aria-label="Open Cart Drawer">
           {% render 'icon', icon: 'cart' %}
@@ -216,7 +215,6 @@
           {% endif %}
         </a>
       {% endif %}
-    {% endcomment %}
   </div>
 
   {% if section.settings.enable_search %}
