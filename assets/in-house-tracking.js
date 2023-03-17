@@ -30,8 +30,14 @@ function setCookie(key, value) {
   document.cookie = `${key}=${value}; expires=${expires}; path=/`;
 }
 
+
 function removeCookie(key) {
   document.cookie = `${key}=true;expires=Thu, 01 Jan 1970 00:00:01 GMT; path=/;`
+}
+
+
+function clearAllAffiliateCookies(){
+  affiliate_cookie_options.forEach((affiliate, index) => removeCookie(affiliate));
 }
 
 
@@ -45,8 +51,12 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
 function landingPageAction(current_page) {
   switch(current_page) {
       case 'clear-affiliate-cookies':
-        affiliate_cookie_options.forEach((affiliate, index) => removeCookie(affiliate));
+        clearAllAffiliateCookies()
         break;
+      case 'utm_gen':
+        clearAllAffiliateCookies()
+        setCookie('redirect_ut', 'true')
+        
       case 'redirect_ut_direct':
         subPrice = '$9'
         break
