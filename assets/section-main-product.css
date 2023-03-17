@@ -263,5 +263,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-  
+  .discount--wrapper .discount-input--wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
