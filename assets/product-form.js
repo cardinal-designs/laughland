@@ -77,8 +77,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       if(document.querySelector(`[data-sticky-formula]`)) document.querySelector(`[data-sticky-formula]`).innerHTML = document.querySelector(`[data-formula-type] [data-variant-title="${inputValue}"]`).innerHTML.split(":")[0]
     }
 
-    if(variantIngredients){
-      let variantIngredientList = variantIngredients.find((v) => v.id == inputValue)
+    if(window.variantIngredients){
+      let variantIngredientList = window.variantIngredients.find((v) => v.id == inputValue)
 
       let ingredientCards = document.querySelectorAll("[data-ingredient]")
       ingredientCards.forEach((ingredient, i) => {
