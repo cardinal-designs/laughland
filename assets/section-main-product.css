@@ -226,8 +226,8 @@
 .discount--wrapper .discount-input--wrapper {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  border: 1px solid #000;
+  width: 435px;
+  border: 1px solid #0D2244;
   padding: 9px 26px;
   border-radius: 40px;
 }
