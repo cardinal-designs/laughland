@@ -47,6 +47,16 @@
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ED2C9KNXNY"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-ED2C9KNXNY');
+    </script>
+  
     <script src='https://www.dwin1.com/19038.js' type='text/javascript' defer='defer'></script>
     <script src="{{ 'in-house-tracking.js' | asset_url }}" defer="defer"></script>
   </head>
