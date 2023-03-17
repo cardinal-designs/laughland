@@ -119,8 +119,8 @@
   }
 
   const direct_checkout = getCookie('directcheckout');
-  console.log(getCookie('productDiscountCode'))
-  // console.log(direct_checkout);
+  console.log(direct_checkout);
+  console.log("productDiscountCode :: ",getCookie('productDiscountCode')
   // if (direct_checkout == 'true') {
   //   document.cookie = 'directcheckout=expires=Thu, 01 Jan 1970 00:00:01 GMT';
   //   try {
@@ -156,9 +156,9 @@
   //     console.log(err);
   //     window.location.href = '/checkout?discount=SUB-N-SAVE';
   //   }
-  } else {
-    document.querySelector('.page-transition').classList.toggle('visible');
-  }
+  // } else {
+  //   document.querySelector('.page-transition').classList.toggle('visible');
+  // }
 </script>
 
 <script>
