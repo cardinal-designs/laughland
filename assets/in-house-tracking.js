@@ -28,7 +28,7 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
 in_house_first_land = getCookie('in_house_first_land')
 if (in_house_first_land == 'true') {
   console.log(window.location.href)
-  console.log(window.location.href.split('?')[0])
+  console.log(window.location.href.split('?')[0].split('/'))
   current_page = window.location.href.split('?')[0].split('/')[-1]
   console.log(current_page)
 }
