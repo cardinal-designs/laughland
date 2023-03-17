@@ -37,9 +37,6 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
   }
 
   setName() {
-    // // REMOVE BEFORE PRODUCTION
-    // document.cookie = "firstname=Jackie"
-    // document.cookie = "lastname=Valori"
     const first_name = getCookie('firstname') || ""
     const last_name = getCookie('lastname') || ""
     const storedProductName = this.container?.querySelector('#product__title_id')?.innerHTML
