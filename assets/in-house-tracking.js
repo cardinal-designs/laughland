@@ -66,6 +66,7 @@ function landingPageAction(current_page) {
 
 in_house_first_land = getCookie('in_house_first_land')
 if (in_house_first_land == 'true') {
+  setCookie('in_house_first_land', 'true')
   
   broken_url = window.location.href.split('?')[0].split('/')
   current_page = broken_url[broken_url.length - 1]
