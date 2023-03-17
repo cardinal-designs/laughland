@@ -269,8 +269,10 @@
               {% endif %}
               <div class="product-form__buttons">
                 <button
+                  {% comment %}
                   type="submit"
                   name="add"
+                  {% endcomment %}
                   class="product-form__submit button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
@@ -278,6 +280,7 @@
                   {% if section.settings.discount_code != blank %}
                     data-dsicount-code="{{ section.settings.discount_code }}"
                   {% endif %}
+                  data-open-quiz
                 >
                   <span>
                     {% if product.selected_or_first_available_variant.available %}
