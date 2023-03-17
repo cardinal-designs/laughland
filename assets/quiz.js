@@ -11,6 +11,14 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
     this.quizCards = this.querySelectorAll(".form__step-wrapper")
 
     this.currentStep = this.dataset.state
+    this.allInputs = this.querySelectorAll(`.form__step-wrapper input`)
+
+    // this.inputs = this.querySelectorAll(`.form__step-wrapper[data-step='${this.currentStep}'] input`)
+    // this.inputNames = []
+    // Array.from(this.inputs).forEach((i) => {if (!this.inputNames.includes(i.name)) this.inputNames.push(i.name)})
+    // console.log(this.inputNames)
+
+    this.setInputs(this.currentStep)
 
     this.back = this.querySelector("[data-form-back]")
     this.next = this.querySelector("[data-form-next]")
@@ -19,6 +27,17 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
     this.form = this.querySelector(".quiz__form")
 
     this.addEventListener('keyup', (evt) => evt.code === 'Escape' && this.closeQuiz.bind(this))
+
+    this.allInputs.forEach((input) => {
+      input.addEventListener('change', function(e){
+        if(this.validateFormStep(this.inputs) == true) {
+          this.next.removeAttribute('disabled')
+        } else {
+          this.next.setAttribute('disabled', 'true')
+        }
+      }.bind(this))
+    })
+
     this.bindEvents();
   }
 
@@ -73,17 +92,48 @@ customElements.define('formula-quiz', class FormulaQuiz extends HTMLElement {
 
   changeFormStep(x) {
     let currentState = this.dataset.state
+    let newState = currentState
     if ( x === 1  && currentState < 5 ){
-      let newState = ++currentState
-      this.setAttribute('data-state', newState )
+      newState = ++currentState
     } else if ( x === -1 && currentState > 1) {
-      let newState = --currentState
-      this.setAttribute('data-state', newState )
+      newState = --currentState
+    }
+
+    this.setAttribute('data-state', newState )
+
+    this.setInputs(newState)
+    if(this.validateFormStep(this.inputs) == true) {
+      this.next.removeAttribute('disabled')
+    } else {
+      this.next.setAttribute('disabled', 'true')
     }
   }
 
-  validateFormStep() {
+  setInputs(step) {
+    this.inputs = this.querySelectorAll(`.form__step-wrapper[data-step='${step}'] input`)
+    this.inputNames = []
+    Array.from(this.inputs).forEach((i) => {if (!this.inputNames.includes(i.name)) this.inputNames.push(i.name)})
+  }
 
+  validateFormStep(inputs) {
+    let validationCheck = true
+    for( const value of this.inputNames.values()){
+      const i = this.querySelector(`[name='${value}']`)
+      if( i.getAttribute('type') == 'checkbox' || i.getAttribute('type') == 'radio' ) {
+
+        if(this.querySelector(`[name='${value}']:checked`)?.value == "" || this.querySelector(`[name='${value}']:checked`)?.value == undefined ){
+          validationCheck = false
+          break
+        }
+      } else {
+
+        if(this.querySelector(`[name='${value}']`)?.value == "" || this.querySelector(`[name='${value}']`)?.value == undefined ){
+          validationCheck = false
+          break
+        }
+      }
+    }
+    return validationCheck
   }
 
   submitForm(e) {

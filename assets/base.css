@@ -551,11 +551,10 @@ blockquote {
 }
 
 /* Button - hover */
-.button:not(.loading):not(.button--secondary):hover
-.button:not([disabled]):not(.button--secondary):hover,
-.button:hover,
+.button:not(.loading):not(.button--secondary):not([disabled]):hover,
 .shopify-challenge__button:hover,
-.button:not([disabled]):not(.button--secondary):active,
+.button:not([disabled]):active,
+.button:not(.button--secondary).active,
 .shopify-challenge__button:active {
   color: var(--blue);
   background: var(--cream);
