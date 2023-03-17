@@ -58,7 +58,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   line-height: normal;
   min-height: 27.5px;
@@ -72,6 +72,7 @@
 
 .subscription-wrapper .rc_widget__option__label > span.updated-price {
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .subscription-wrapper [data-label-subsave] {
