@@ -86,5 +86,6 @@ if (in_house_first_land != 'true') {
   current_page = broken_url[broken_url.length - 1]
   landingPageAction(current_page)
 } else if ('clear-affiliate-cookies' in window.location.href) {
+  console.log('hi there sir')
   clearAllAffiliateCookies()
 }
