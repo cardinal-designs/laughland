@@ -269,8 +269,10 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       sections_url: window.location.pathname
     });
 
-    console.log(body)
-    return
+    if(submitButton.dataset.dsicountCode){
+      if(submitButton.dataset.dsicountCode != "") document.cookie = `productDiscountCode=${submitButton.dataset.dsicountCode}`;
+    }
+    
 
     fetch(`${routes.cart_add_url}`, { ...fetchConfig('javascript'), body })
       .then((response) => response.json())
