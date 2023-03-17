@@ -18,6 +18,15 @@ function getCookie(cname) {
   return null;
 }
 
+
+function setCookie(key, value) {
+  var date = new Date();
+  date.setFullYear(date.getFullYear() + 1);
+  var expires = date.toUTCString();
+  document.cookie = `${key}=${value}; expires=${expires}; path=/`;
+}
+
+
 function setGoogleTag(affiliate_source, effective_landing_page) {
   gtag('set', 'user_properties', {
     affiliate_source: affiliate_source,
@@ -53,12 +62,8 @@ function landingPageAction(current_page) {
 
 in_house_first_land = getCookie('in_house_first_land')
 if (in_house_first_land == 'true') {
+  
   broken_url = window.location.href.split('?')[0].split('/')
   current_page = broken_url[broken_url.length - 1]
   landingPageAction(current_page)
 }
-
-var date = new Date();
-date.setFullYear(date.getFullYear() + 1);
-var expires = "; expires="+date.toUTCString();
-document.cookie = "in_house_first_land=true" + expires + "; path=/";
