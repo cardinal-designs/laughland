@@ -14,6 +14,10 @@
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {% assign product = section.settings.product %}
+{% assign productPrice = product.price %}
+{% if section.settings.discounted_price != blank and section.settings.discounted_price != 0 %}
+  {% assign productPrice = section.settings.discounted_price | times:100 %}
+{% endif %}
 
 <section class="Featured_Product">
   <div class="product">
@@ -265,7 +269,7 @@
                 >
                   <span>
                     {% if product.selected_or_first_available_variant.available %}
-                      {{ section.settings.atc }} — {{ product.price | money }}
+                      {{ section.settings.atc }} — {{ productPrice | money }}
                     {% else %}
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
