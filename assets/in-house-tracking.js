@@ -25,6 +25,13 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
   });
 }
 
+
+in_house_first_land = getCookie('in_house_first_land')
+if (in_house_first_land == 'true') {
+  current_page = window.location.href.split('?')[0].split('/')[-1]
+  console.log(current_page)
+}
+
 // var date = new Date();
 // date.setTime(date.getTime()+(3600*24*1000));
 // var expires = "; expires="+date.toUTCString();
