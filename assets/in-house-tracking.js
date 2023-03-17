@@ -38,6 +38,7 @@ function removeCookie(key) {
 
 function clearAllAffiliateCookies(){
   affiliate_cookie_options.forEach((affiliate, index) => removeCookie(affiliate));
+  removeCookie('in_house_first_land')
 }
 
 
@@ -84,4 +85,6 @@ if (in_house_first_land != 'true') {
   broken_url = window.location.href.split('?')[0].split('/')
   current_page = broken_url[broken_url.length - 1]
   landingPageAction(current_page)
+} else if ('clear-affiliate-cookies' in window.location.href) {
+  clearAllAffiliateCookies()
 }
