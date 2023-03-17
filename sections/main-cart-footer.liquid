@@ -144,7 +144,7 @@
         url_params = url_params.concat(['discount=SUB-N-SAVE']);
       }
 
-      if(productDiscountCode != "") url_params = url_params.concat([`discount=${productDiscountCode}`]);
+      if(productDiscountCode != "") url_params = [`discount=${productDiscountCode}`];
 
       
       console.log(url_params);
