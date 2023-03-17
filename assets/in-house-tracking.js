@@ -1,3 +1,6 @@
+cookies = ['redirect_ut', 'redirect_ut_direct', 'redirect_paceline', 'redirect_sweatcoin', 
+          'redirect_miles', 'redirect_studentbeans']
+
 function getCookie(cname) {
   // const value = `; ${document.cookie}`;
   // const parts = value.split(`; ${name}=`);
@@ -64,7 +67,7 @@ function landingPageAction(current_page) {
     }
 }
 
-in_house_first_land = getCookie('in_house_first_land')
+in_house_first_land = getCookie('in_house_first_land') // This should only be non true if this is a newly active GA session
 if (in_house_first_land == 'true') {
   setCookie('in_house_first_land', 'true')
   
