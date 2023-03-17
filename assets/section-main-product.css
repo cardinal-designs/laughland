@@ -303,5 +303,13 @@
     line-height: 21px;
   }
 
+  .discount--wrapper .discount-input--wrapper .discount-code, 
+  .discount--wrapper .disacount-apply-text {
+    font-size: 14px;
+  }
+  
+  .discount--wrapper .discount-input--wrapper .discount-text {
+    font-size: 12px;
+  }
 }
 
