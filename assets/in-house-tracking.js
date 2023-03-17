@@ -44,7 +44,7 @@ function setGoogleTag(affiliate_source, effective_landing_page) {
 
 function landingPageAction(current_page) {
   switch(current_page) {
-      case 'redirect_ut':
+      case 'clear-affiliate-cookies':
         subPrice = '$9'
         break;
       case 'redirect_ut_direct':
