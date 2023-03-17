@@ -38,6 +38,7 @@ function removeCookie(key) {
 
 function clearAllAffiliateCookies(){
   affiliate_cookie_options.forEach((affiliate, index) => removeCookie(affiliate));
+  removeCookie('in_house_first_land')
 }
 
 
