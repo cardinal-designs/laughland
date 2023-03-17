@@ -275,6 +275,9 @@
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
                   {% endif %}
+                  {% if section.settings.discount_code != blank %}
+                    data-dsicount-code="{{ section.settings.discount_code }}"
+                  {% endif %}
                 >
                   <span>
                     {% if product.selected_or_first_available_variant.available %}
