@@ -33,11 +33,13 @@
           url_params = url_params.concat(['discount=UTM_GEN_AUTOMATIC']);
         } else if (redirect_miles == 'true') {
           url_params = url_params.concat(['discount=MILES_AUTOMATIC']);
-        } else if(productDiscountCode != ""){
-          url_params = url_params.concat([`discount=${productDiscountCode}`]);
         } else {
           url_params = url_params.concat(['discount=SUB-N-SAVE']);
         }
+
+        if(productDiscountCode != "") url_params = url_params.concat([`discount=${productDiscountCode}`]);
+
+        
         console.log('heres params');
         console.log(url_params);
 
