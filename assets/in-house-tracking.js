@@ -1,6 +1,7 @@
 cookies = ['redirect_ut', 'redirect_ut_direct', 'redirect_paceline', 'redirect_sweatcoin', 
           'redirect_miles', 'redirect_studentbeans']
 
+
 function getCookie(cname) {
   // const value = `; ${document.cookie}`;
   // const parts = value.split(`; ${name}=`);
