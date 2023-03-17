@@ -251,4 +251,13 @@
 
 @media screen and (max-width: 1439px) {
   
+  .discount--wrapper .disacount-apply-text {
+    padding-left: 20px;
+  }
+  
+  .discount--wrapper .discount-input--wrapper {
+    width: 325px;
+    padding: 9px 16px;
+  }
+  
 }
