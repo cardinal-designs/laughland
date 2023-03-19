@@ -107,6 +107,7 @@ function landingPageAction(current_page, query_params) {
         default:
           setGoogleTag('NA', 'homepage')
           break
+      } 
     } else if (current_page == 'clear-affiliate-cookies') {
         clearAllAffiliateCookies()
         removeCookie('in_house_first_land')
