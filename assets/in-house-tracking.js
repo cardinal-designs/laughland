@@ -86,34 +86,34 @@ function clearAndSetCookiesAffiliates(cookie, affiliate) {
 
 function landingPageAction(current_page, query_params) {
   if (current_page == '') {
-      console.log(current_page)
-      console.log(query_params)
-      switch(query_params.utm_affiliate_specific) {
-        case 'cactus_media':
-          clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
-          redirectToLandingIfFirstTime()
-        case 'sweatcoin':
-          clearAndSetCookiesAffiliates('redirect_sweatcoin', 'Sweatcoin')
-          redirectToLandingIfFirstTime()
-        case 'product-direct':
-          clearAndSetCookiesAffiliates('redirect_ut_direct', 'Direct To Product (misc)')
-          redirectToLandingIfFirstTime()
-        case 'paceline':
-          clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
-          redirectToLandingIfFirstTime()
-        case 'miles':
-          clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
-          redirectToLandingIfFirstTime()
-        default:
-          setGoogleTag('NA', 'homepage')
-          break
-      } 
-    } else if (current_page == 'clear-affiliate-cookies') {
-        clearAllAffiliateCookies()
-        removeCookie('in_house_first_land')
-    }
+    console.log(current_page)
+    console.log(query_params)
+    switch(query_params.utm_affiliate_specific) {
+      case 'cactus_media':
+        clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
+        redirectToLandingIfFirstTime()
+      case 'sweatcoin':
+        clearAndSetCookiesAffiliates('redirect_sweatcoin', 'Sweatcoin')
+        redirectToLandingIfFirstTime()
+      case 'product-direct':
+        clearAndSetCookiesAffiliates('redirect_ut_direct', 'Direct To Product (misc)')
+        redirectToLandingIfFirstTime()
+      case 'paceline':
+        clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
+        redirectToLandingIfFirstTime()
+      case 'miles':
+        clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
+        redirectToLandingIfFirstTime()
+      default:
+        setGoogleTag('NA', 'homepage')
+        break
+    } 
+  } else if (current_page == 'clear-affiliate-cookies') {
+      clearAllAffiliateCookies()
+      removeCookie('in_house_first_land')
   }
 }
+
 
 var broken_url = window.location.href.split('?')[0].split('/')
 var current_page = broken_url[broken_url.length - 1] // last page in URL before query parameters
