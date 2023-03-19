@@ -86,7 +86,7 @@ function clearAndSetCookiesAffiliates(cookie, affiliate) {
 
 function landingPageAction(current_page, query_params) {
   if (current_page == '') {
-      switch(query.utm_affiliate_specific) {
+      switch(query_params.utm_affiliate_specific) {
         case 'cactus_media':
           clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
           redirectToLandingIfFirstTime()
