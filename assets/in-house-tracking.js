@@ -1,7 +1,9 @@
 affiliate_cookie_options = ['redirect_ut', 'redirect_ut_direct', 'redirect_paceline', 'redirect_sweatcoin', 
           'redirect_miles', 'redirect_studentbeans']
 
-
+// if user arrives at mylaughland.com?utm_affiliate_specific=cactus_media
+// set cookie to cactus media, and google referral tag to cactus media
+// if first time, set redirect to whatever it is.
 
 
 function getCookie(cname) {
@@ -43,23 +45,33 @@ function clearAllAffiliateCookies(){
 }
 
 
-function chooseLandingPage() {
-  var d = Math.random();
+function redirectToLandingIfFirstTime() {
+  if (getCookie("in_house_already_redirected") != 'true') {
+    setCookie('in_house_already_redirected', 'true')
+    var d = Math.random();
 
-  if (d <= .5) {
-    return ['homepage', 'https://www.mylaughland.com']
-  } else {
-    return ['landing-page', 'https://www.mylaughland.com/pages/landing-page']
+    if (d <= .5) {
+      return ['homepage', 'https://www.mylaughland.com']
+    } else {
+      return ['landing-page', 'https://www.mylaughland.com/pages/landing-page']
+    }  
   }
 }
 
 
-function setGoogleTag(affiliate_source, effective_landing_page) {
+function setGoogleSource(affiliate_source) {
   gtag('set', 'user_properties', {
-    affiliate_source: affiliate_source,
+    affiliate_source: affiliate_source
+  });
+}
+
+
+function setGoogleLanding(effective_landing_page) {
+  gtag('set', 'user_properties', {
     effective_landing_page: effective_landing_page
   });
 }
+
 
 function landingPageAction(current_page, query_params) {
   if (current_page == '') {
@@ -67,14 +79,15 @@ function landingPageAction(current_page, query_params) {
         case 'cactus_media':
           clearAllAffiliateCookies()
           setCookie('redirect_ut', 'true')
-          landing = chooseLandingPage()
-          setGoogleTag('Cactus Media', landing[0])
-          window.location = landing[1]
+          setGoogleSource('Cactus Media')
+          
+          redirectToLandingIfFirstTime()
         default:
           setGoogleTag('NA', 'homepage')
           break
     } else if (current_page == 'clear-affiliate-cookies') {
         clearAllAffiliateCookies()
+        removeCookie('in_house_first_land')
     }
   }
 }
