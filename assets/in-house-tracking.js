@@ -2,6 +2,8 @@ affiliate_cookie_options = ['redirect_ut', 'redirect_ut_direct', 'redirect_pacel
           'redirect_miles', 'redirect_studentbeans']
 
 
+
+
 function getCookie(cname) {
   // const value = `; ${document.cookie}`;
   // const parts = value.split(`; ${name}=`);
@@ -85,6 +87,11 @@ function landingPageAction(current_page) {
     }
 }
 
-broken_url = window.location.href.split('?')[0].split('/')
-current_page = broken_url[broken_url.length - 1]
+var broken_url = window.location.href.split('?')[0].split('/')
+var current_page = broken_url[broken_url.length - 1] // last page in URL before query parameters
+
+const query_params = new Proxy(new URLSearchParams(window.location.search), { // get query parameters
+  get: (searchParams, prop) => searchParams.get(prop),
+});
+
 landingPageAction(current_page)
