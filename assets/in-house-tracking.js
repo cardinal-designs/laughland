@@ -55,36 +55,28 @@ function chooseLandingPage() {
 
 
 function setGoogleTag(affiliate_source, effective_landing_page) {
-  in_house_first_land = getCookie('in_house_first_land') // This should only be non true if this is a newly active GA session
-  if (in_house_first_land != 'true') {
-    console.log('setting gtags')
-    console.log(affiliate_source)
-    console.log(effective_landing_page)
-    
-    setCookie('in_house_first_land', 'true')
-    gtag('set', 'user_properties', {
-      affiliate_source: affiliate_source,
-      effective_landing_page: effective_landing_page
-    });
-  }
+  gtag('set', 'user_properties', {
+    affiliate_source: affiliate_source,
+    effective_landing_page: effective_landing_page
+  });
 }
 
-function landingPageAction(current_page) {
-  switch(current_page) {
-      case 'clear-affiliate-cookies':
+function landingPageAction(current_page, query_params) {
+  if (current_page == '') {
+      switch(query.utm_affiliate_specific) {
+        case 'cactus_media':
+          clearAllAffiliateCookies()
+          setCookie('redirect_ut', 'true')
+          landing = chooseLandingPage()
+          setGoogleTag('Cactus Media', landing[0])
+          window.location = landing[1]
+        default:
+          setGoogleTag('NA', 'homepage')
+          break
+    } else if (current_page == 'clear-affiliate-cookies') {
         clearAllAffiliateCookies()
-        removeCookie('in_house_first_land')
-        break;
-      case 'utm_gen':
-        clearAllAffiliateCookies()
-        setCookie('redirect_ut', 'true')
-        landing = chooseLandingPage()
-        setGoogleTag('Cactus Media', landing[0])
-        window.location = landing[1]
-      default:
-        setGoogleTag('NA', 'homepage')
-        break
     }
+  }
 }
 
 var broken_url = window.location.href.split('?')[0].split('/')
@@ -94,4 +86,4 @@ const query_params = new Proxy(new URLSearchParams(window.location.search), { //
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
-landingPageAction(current_page)
+landingPageAction(current_page, query_params)
