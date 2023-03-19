@@ -86,6 +86,8 @@ function clearAndSetCookiesAffiliates(cookie, affiliate) {
 
 function landingPageAction(current_page, query_params) {
   if (current_page == '') {
+      console.log(current_page)
+      console.log(query_params)
       switch(query_params.utm_affiliate_specific) {
         case 'cactus_media':
           clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
