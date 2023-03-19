@@ -77,14 +77,30 @@ function setGoogleLanding(effective_landing_page) {
 }
 
 
+function clearAndSetCookiesAffiliates(cookie, affiliate) {
+  clearAllAffiliateCookies()
+  setCookie(cookie, 'true')
+  setGoogleSource(affiliate)
+}
+
+
 function landingPageAction(current_page, query_params) {
   if (current_page == '') {
       switch(query.utm_affiliate_specific) {
         case 'cactus_media':
-          clearAllAffiliateCookies()
-          setCookie('redirect_ut', 'true')
-          setGoogleSource('Cactus Media')
-          
+          clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
+          redirectToLandingIfFirstTime()
+        case 'sweatcoin':
+          clearAndSetCookiesAffiliates('redirect_sweatcoin', 'Sweatcoin')
+          redirectToLandingIfFirstTime()
+        case 'product-direct':
+          clearAndSetCookiesAffiliates('redirect_ut_direct', 'Direct To Product (misc)')
+          redirectToLandingIfFirstTime()
+        case 'paceline':
+          clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
+          redirectToLandingIfFirstTime()
+        case 'miles':
+          clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
           redirectToLandingIfFirstTime()
         default:
           setGoogleTag('NA', 'homepage')
