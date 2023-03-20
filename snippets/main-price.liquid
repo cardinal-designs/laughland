@@ -49,11 +49,15 @@
         {{ money_price }}
       </span>
     </div>
-    {% if custom_peice != 0 %}
+    {% if compare_at_price > price or custom_peice != 0 %}
       <div class="price__sale">
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <s class="price-item price-item--regular 456">
-            {{ money_price }}
+            {% if compare_at_price > price %}
+              {{ compare_at_price | money }}
+            {% else %}
+              {{ money_price }}
+            {% endif %}
           </s>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
         <span class="price-item price-item--sale price-item--last">
