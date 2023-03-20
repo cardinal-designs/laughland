@@ -45,14 +45,14 @@
     
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-      <span class="price-item price-item--regular">
+      <span class="price-item price-item--regular 123">
         {{ money_price }}
       </span>
     </div>
     {% if custom_peice != blank %}
       <div class="price__sale">
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <s class="price-item price-item--regular">
+          <s class="price-item price-item--regular 456">
             {{ money_price }}
           </s>
         <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
@@ -64,7 +64,7 @@
       <div class="price__sale">
         {% unless product.price_varies == false and product.compare_at_price_varies %}
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
-          <s class="price-item price-item--regular">
+          <s class="price-item price-item--regular 789">
             {% if settings.currency_code_enabled %}
               {{ compare_at_price | money }}
             {% else %}
