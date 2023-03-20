@@ -19,6 +19,8 @@
   {% assign productPrice = section.settings.discounted_price | times:100 %}
 {% endif %}
 
+productPrice:: {{ productPrice }}
+
 <section class="Featured_Product">
   <div class="product">
     <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
