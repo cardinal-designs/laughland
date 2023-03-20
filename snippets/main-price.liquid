@@ -30,10 +30,9 @@
   endif
   assign product_custom_price = blank
   if custom_price != blank and custom_price != 0
-    assign product_custom_price = custom_price | times:100 | money
+    assign product_custom_price = custom_price | times:100
   endif
 %}
---{{ product_custom_price }} -- {{ custom_price | times:100 | money }}
 <div class="price
   {% if price_class %} {{ price_class }}{% endif %}
   {% if available == false %} price--sold-out {% endif %}
