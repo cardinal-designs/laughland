@@ -15,7 +15,7 @@
 
 {% assign product = section.settings.product %}
 {% assign productPrice = product.price %}
-{% if section.settings.discounted_price != blank and section.settings.discounted_price != 0 %}11
+{% if section.settings.discounted_price != blank and section.settings.discounted_price != 0 %}
   {% assign productPrice = section.settings.discounted_price | times:100 %}
 {% endif %}
 
