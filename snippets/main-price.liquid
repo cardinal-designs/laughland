@@ -52,7 +52,7 @@
         {{ money_price }}
       </span>
     </div>
-    {% if product_custom_price != 0 %}
+    {% if product_custom_price != blank %}
       <div class="price__sale">
           <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
           <s class="price-item price-item--regular 456">
