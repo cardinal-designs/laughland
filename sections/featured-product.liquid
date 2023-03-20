@@ -268,12 +268,15 @@
                 </div>
               {% endif %}
               <div class="product-form__buttons">
-              <button type="button" class="button button--full button--primary" data-open-quiz>Start Now</button>
-                <button
+              <button type="button" class="button button--full button--primary" data-open-quiz>
+                <span>  
+              {{ section.settings.atc }} — {{ productPrice | money }}
+                </span>
+              </button>
                   {% comment %}
+                <button
                   type="submit"
                   name="add"
-                  {% endcomment %}
                   class=" button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
@@ -303,6 +306,7 @@
                     </svg> 
                   </div>
                 </button>
+              {% endcomment %}
                 {% if block.settings.show_dynamic_checkout %}
                   {{ form | payment_button }}
                 {% endif %}
