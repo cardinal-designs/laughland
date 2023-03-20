@@ -19,8 +19,6 @@
   {% assign productPrice = section.settings.discounted_price | times:100 %}
 {% endif %}
 
-productPrice:: {{ productPrice }}
-
 <section class="Featured_Product">
   <div class="product">
     <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
@@ -65,7 +63,7 @@ productPrice:: {{ productPrice }}
         </h3>
 
         <div class="no-js-hidden" id="price-{{ section.id }}" role="status">
-          {% render 'main-price', product: product, use_variant: true, show_badges: true, price_class: '', custom_peice: productPrice %}
+          {% render 'main-price', product: product, use_variant: true, show_badges: true, price_class: '', custom_price: section.settings.discounted_price %}
         </div>
 
         <div class="subscription-wrapper">
