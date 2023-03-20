@@ -248,6 +248,7 @@
 .discount--wrapper .disacount-apply-text{
   color: #46bdf0;
   padding-left: 30px;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 1439px) {
