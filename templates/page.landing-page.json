@@ -71,46 +71,46 @@
         "89a41fcd-2300-427b-82fa-c9fb649485da": {
           "type": "review",
           "settings": {
-            "title": "Lorem ipsum dolor sit amet",
-            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
-            "author": "John Doe"
-          }
-        },
-        "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f": {
-          "type": "review",
-          "settings": {
-            "title": "Lorem ipsum dolor sit amet",
-            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
-            "author": "John Doe"
-          }
-        },
-        "f2f45f4e-db0e-473f-9a80-38aabf0a1791": {
-          "type": "review",
-          "settings": {
-            "title": "Lorem ipsum dolor sit amet",
-            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "title": "I Had to say something",
+            "text": "\"I had to come here to say something. Normally I have excruciating pain with crest white strips and this other brand I got from the dentist. Both of which didn’t whiten my teeth very much. So, I had low hopes for laughland. I got the formula made for highest sensitivity, and I left it on for I think 12 minutes. Just after the first day my teeth look 2 shades whiter. I’m actually really shocked.\"",
             "author": "John Doe"
           }
         },
         "14cebb8f-f4fa-4a74-8811-da9796c988c8": {
           "type": "review",
           "settings": {
-            "title": "Lorem ipsum dolor sit amet",
-            "text": "“Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.”",
+            "title": "I didn't like smiling",
+            "text": "\"My teeth had gotten so yellow that I didn't like smiling - especially when I wore lipstick, it made the teeth look more icky. 6 treatments later, it's gotten SO much whiter and I'm wearing lipstick again :)\"",
+            "author": "John Doe"
+          }
+        },
+        "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f": {
+          "type": "review",
+          "settings": {
+            "title": "I'm Obsessed!",
+            "text": "\"I thought hey worth a shot not really expecting anything great. Wow was I wrong! This has absolutely worked wonders on my teeth! Refill kit has been ordered! I’m obsessed!\"",
+            "author": "John Doe"
+          }
+        },
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791": {
+          "type": "review",
+          "settings": {
+            "title": "I. Hate. Whitening. Kits",
+            "text": "\"I. Hate. Whitening. Kits. Except this one. It's easy to use, doesn't create a huge mess, is comfortable (even for small-mouthed folks like me!), and doesn't make your teeth feel slimy and taste weird. Plus, it's SO EFFECTIVE. Worth every penny.\"",
             "author": "John Doe"
           }
         }
       },
       "block_order": [
         "89a41fcd-2300-427b-82fa-c9fb649485da",
+        "14cebb8f-f4fa-4a74-8811-da9796c988c8",
         "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f",
-        "f2f45f4e-db0e-473f-9a80-38aabf0a1791",
-        "14cebb8f-f4fa-4a74-8811-da9796c988c8"
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791"
       ],
       "settings": {
         "section_heading": "What People {love} about Laughland",
         "section_sub_heading": "",
-        "review_count": "5,000",
+        "review_count": "4.6\/5 from 3,500",
         "button_label": "Start Now",
         "button_url": "shopify:\/\/collections\/all"
       }
@@ -357,7 +357,7 @@
         "b4f85b92-4e73-489e-8e59-6fcdabf5d358"
       ],
       "settings": {
-        "section_heading": "Still have<br> questions?",
+        "section_heading": "Still have questions?",
         "section_sub_heading": ""
       }
     },
