@@ -107,6 +107,14 @@
             "text": "\"This is my best purchase ever. This item OVER-Delivers. My teeth are sparkling and I had ZERO pain. Great Job Laughland.\"",
             "author": "Addison J."
           }
+        },
+        "2c52ec03-04aa-4e36-bb46-206b519f147f": {
+          "type": "review",
+          "settings": {
+            "title": "LOVE THIS!",
+            "text": "\"LOVE THIS! My coworkers have been throwing compliments left and right about how my teeth have been shining. THANK YOU!\"",
+            "author": "Audrey C."
+          }
         }
       },
       "block_order": [
@@ -114,7 +122,8 @@
         "14cebb8f-f4fa-4a74-8811-da9796c988c8",
         "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f",
         "f2f45f4e-db0e-473f-9a80-38aabf0a1791",
-        "c727961b-a7cf-4471-87fb-fa8302009ec1"
+        "c727961b-a7cf-4471-87fb-fa8302009ec1",
+        "2c52ec03-04aa-4e36-bb46-206b519f147f"
       ],
       "settings": {
         "section_heading": "What People {love} about Laughland",
