@@ -99,13 +99,22 @@
             "text": "\"I. Hate. Whitening. Kits. Except this one. It's easy to use, doesn't create a huge mess, is comfortable (even for small-mouthed folks like me!), and doesn't make your teeth feel slimy and taste weird. Plus, it's SO EFFECTIVE. Worth every penny.\"",
             "author": "John Doe"
           }
+        },
+        "c727961b-a7cf-4471-87fb-fa8302009ec1": {
+          "type": "review",
+          "settings": {
+            "title": "My teeth are sparkling",
+            "text": "\"This is my best purchase ever. This item OVER-Delivers. My teeth are sparkling and I had ZERO pain. Great Job Laughland.\"",
+            "author": ""
+          }
         }
       },
       "block_order": [
         "89a41fcd-2300-427b-82fa-c9fb649485da",
         "14cebb8f-f4fa-4a74-8811-da9796c988c8",
         "0d0c4cab-c7c5-4776-8a8f-ff7cad80d03f",
-        "f2f45f4e-db0e-473f-9a80-38aabf0a1791"
+        "f2f45f4e-db0e-473f-9a80-38aabf0a1791",
+        "c727961b-a7cf-4471-87fb-fa8302009ec1"
       ],
       "settings": {
         "section_heading": "What People {love} about Laughland",
