@@ -197,7 +197,7 @@
             "after_photo": "shopify:\/\/shop_images\/BrisaAfter.jpg",
             "customer_info": "User Since March 2021",
             "profile": "{😣} High Sensitivity\n{☕} Coffee Addict\n{🦷} Light-Brown Stains",
-            "formula": "Formula 8-17, Hydrogen Peroxide 11%",
+            "formula": "Formula 19-2, Sodium Bicarbonate 23%",
             "review": "I look at my teeth in shock almost daily now. I can’t believe how well this product works, and it’s lasting without daily use. I will forever have this in my closet."
           }
         },
@@ -207,14 +207,15 @@
             "heading": "Neha",
             "before_photo": "shopify:\/\/shop_images\/Neha_Before.jpg",
             "after_photo": "shopify:\/\/shop_images\/NehaAfter.jpg",
-            "customer_info": "",
-            "profile": "",
-            "formula": "",
+            "customer_info": "User Since March 2022",
+            "profile": "{😄} Zero Sensitivity\n{☕} \n{🦷} 2 Dental Procedures in the last year",
+            "formula": "Formula 8-17, Hydrogen Peroxide 11%",
             "review": ""
           }
         },
         "70d296fe-44de-4557-9cda-834702c16668": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "heading": "Abby",
             "customer_info": "",
@@ -232,7 +233,7 @@
       ],
       "settings": {
         "heading": "The {Perfect Smile} Starts Today",
-        "text": "Our dentist approved, clinically backed ingredients work to whiten teeth by 7+ shades in your initial 6 day treatment.  But whitening is like skincare - a continuous, ongoing process. See how others use Laughland in their routine.",
+        "text": "Our dentist approved, clinically backed ingredients work to whiten teeth by 7+ shades in your initial 6 day treatment. But whitening is like skincare - a continuous, ongoing process. See how others use Laughland in their routine.",
         "profile_label": "Customer Profile",
         "formula_label": "Personalized Whitening Formula",
         "review_label": "Review"
