@@ -192,7 +192,9 @@
         "bdf1cbb1-4dc2-4236-acff-575a671a5132": {
           "type": "testimonial",
           "settings": {
-            "heading": "Alana",
+            "heading": "Brisa",
+            "before_photo": "shopify:\/\/shop_images\/BrisaBefore.jpg",
+            "after_photo": "shopify:\/\/shop_images\/BrisaAfter.jpg",
             "customer_info": "",
             "profile": "",
             "formula": "",
@@ -202,7 +204,9 @@
         "0ba257cf-9d91-4d23-8f8e-343095862724": {
           "type": "testimonial",
           "settings": {
-            "heading": "Julia",
+            "heading": "Neha",
+            "before_photo": "shopify:\/\/shop_images\/Neha_Before.jpg",
+            "after_photo": "shopify:\/\/shop_images\/Neha_Before.jpg",
             "customer_info": "",
             "profile": "",
             "formula": "",
