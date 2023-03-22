@@ -214,12 +214,13 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
         return (option.dataset.planOption == "Every 2 Months")
       })[0].value;
       if(value) this.querySelector("[name='selling_plan'").value = value;
+      const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true);
+      if(value) dropdownCopy.valyue = value;
+      dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
+      dropdownCopy.id = dropdownCopy.id + "_sticky"
+      dropdownCopy.setAttribute('name', dropdownCopy.getAttribute("name") + "_sticky")
+      stickyBar.querySelector("[data-sticky-subsave").appendChild(dropdownCopy)
     }
-    const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true);
-    dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
-    dropdownCopy.id = dropdownCopy.id + "_sticky"
-    dropdownCopy.setAttribute('name', dropdownCopy.getAttribute("name") + "_sticky")
-    stickyBar.querySelector("[data-sticky-subsave").appendChild(dropdownCopy)
 
     this.querySelector("[name='selling_plan'").addEventListener("change", function(e){
       this.updateStickySellingPlans(e)
