@@ -103,10 +103,10 @@ function landingPageAction(current_page, query_params) {
       case 'paceline':
         clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
         redirectToLandingIfFirstTime()
-      case 'miles':
-        clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
-        console.log('why')
-        redirectToLandingIfFirstTime()
+      // case 'miles':
+        // clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
+        // console.log('why')
+        // redirectToLandingIfFirstTime()
       default:
         setGoogleTag('NA', 'homepage')
         break
