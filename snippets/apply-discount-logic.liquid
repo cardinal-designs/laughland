@@ -38,7 +38,7 @@
           url_params = url_params.concat(['discount=SUB-N-SAVE']);
         }
 
-        if(productDiscountCode != "" && productDiscountCode != undefined) url_params = url_params.concat([`discount=${productDiscountCode}`]);
+        if(productDiscountCode != "" && productDiscountCode) url_params = url_params.concat([`discount=${productDiscountCode}`]);
 
         
         console.log('heres params');
