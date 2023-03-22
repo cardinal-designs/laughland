@@ -188,10 +188,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
 
       option.querySelector(".rc-selling-plans__label")?.classList.remove("visually-hidden");
 
-      console.log("selling Plan :: ",option.querySelector(".rc-selling-plans"))
       if( option.querySelector(".rc-selling-plans") ) {
         // grab from page then inject subscription details
-        console.log(this.container.querySelector(".subscription-details"))
         const cloneSubDetails = this.container.querySelector(".subscription-details").cloneNode(true)
         const firstEl = cloneSubDetails.querySelectorAll("dl")[0]
         const secondEl = cloneSubDetails.querySelectorAll("dl")[1]
@@ -211,6 +209,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     const stickyBar = document.querySelector(`sticky-product-bar[data-id="${ this.productId }"]`)
     stickyBar.querySelector(".sticky__price").innerHTML = subOfferPrice
 
+    console.log("Selling plan",this.querySelector("[name='selling_plan'"));
     const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true)
     dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
     dropdownCopy.id = dropdownCopy.id + "_sticky"
