@@ -85,14 +85,9 @@ function clearAndSetCookiesAffiliates(cookie, affiliate) {
 
 function landingPageAction(current_page, query_params) {
   if (current_page == '') {
-    console.log('here we are')
-    console.log(current_page)
-    console.log(query_params)
-    console.log(query_params.utm_affiliate_specific)
     switch(query_params.utm_affiliate_specific) {
       case 'cactus_media':
         clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
-        console.log('sup')
         redirectToLandingIfFirstTime()
         break;
       case 'sweatcoin':
@@ -105,13 +100,10 @@ function landingPageAction(current_page, query_params) {
         break;
       case 'paceline':
         clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
-        console.log('ookk')
-        console.log(query_params.utm_affiliate_specific)
         redirectToLandingIfFirstTime()
         break;
       case 'miles':
         clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
-        console.log('why')
         redirectToLandingIfFirstTime()
         break;
       default:
