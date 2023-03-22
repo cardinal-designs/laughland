@@ -188,6 +188,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
 
       option.querySelector(".rc-selling-plans__label")?.classList.remove("visually-hidden");
 
+      console.log("selling Plan :: ",option.querySelector(".rc-selling-plans"))
       if( option.querySelector(".rc-selling-plans") ) {
         // grab from page then inject subscription details
         const cloneSubDetails = this.container.querySelector(".subscription-details").cloneNode(true)
