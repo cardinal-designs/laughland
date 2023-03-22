@@ -106,7 +106,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       this.stickyBar.querySelector("[data-sticky-atc]").removeAttribute('disabled')
 
       // observe input selection to update sticky bar
-      this.rechargeOptions = this.querySelector(".rc-template")
+      this.rechargeOptions = this.querySelector(".rc-template");
+      console.log(this.rechargeOptions)
       const observer = new MutationObserver(this.observeForm.bind(this))
       observer.observe(this.rechargeOptions, {attributes: true, childList: true, subtree: true})
     })
