@@ -30,7 +30,7 @@
       {% endfor %}
     </div>
     <div class="Button_Area">
-      <a href="{{ section.settings.button_url }}" class="button large-btn">{{ section.settings.button_label }}</a>
+      <a href="{{ section.settings.button_url }}" class="button large-btn" {% if section.settings.open_quiz %}data-open-quiz{% endif %}>{{ section.settings.button_label }}</a>
     </div>
   </div>
 </div>
@@ -58,6 +58,11 @@
       "type": "url",
       "id": "button_url",
       "label": "Button Url"        
+    },
+    {
+      "type": "checkbox",
+      "id": "open_quiz",
+      "label": "Select to trigger quiz"
     }
   ],
   "max_blocks": 3,
