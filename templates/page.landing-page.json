@@ -182,7 +182,8 @@
       "settings": {
         "heading": "Getting Started is simple",
         "button_label": "Start Now",
-        "button_url": "shopify:\/\/collections\/all"
+        "button_url": "shopify:\/\/collections\/all",
+        "open_quiz": true
       }
     },
     "d3414607-66d0-46b2-a396-e6a4263c1ca4": {
