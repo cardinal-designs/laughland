@@ -106,6 +106,7 @@ function landingPageAction(current_page, query_params) {
         redirectToLandingIfFirstTime()
       case 'miles':
         clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
+        console.log('why')
         redirectToLandingIfFirstTime()
       default:
         setGoogleTag('NA', 'homepage')
