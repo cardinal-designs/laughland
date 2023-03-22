@@ -90,29 +90,34 @@ function landingPageAction(current_page, query_params) {
     console.log(query_params)
     console.log(query_params.utm_affiliate_specific)
     switch(query_params.utm_affiliate_specific) {
-      case "cactus_media":
+      case 'cactus_media':
         clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
         console.log('sup')
         redirectToLandingIfFirstTime()
+        break;
       case 'sweatcoin':
         clearAndSetCookiesAffiliates('redirect_sweatcoin', 'Sweatcoin')
         redirectToLandingIfFirstTime()
+        break;
       case 'product-direct':
         clearAndSetCookiesAffiliates('redirect_ut_direct', 'Direct To Product (misc)')
         redirectToLandingIfFirstTime()
+        break;
       case 'paceline':
         clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
         console.log('ookk')
         console.log(query_params.utm_affiliate_specific)
         redirectToLandingIfFirstTime()
+        break;
       case 'miles':
         clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
         console.log('why')
         redirectToLandingIfFirstTime()
+        break;
       default:
         setGoogleSource('NA')
         setGoogleLanding("homepage")
-        break
+        break;
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
       clearAllAffiliateCookies()
