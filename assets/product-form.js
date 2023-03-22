@@ -209,7 +209,12 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     const stickyBar = document.querySelector(`sticky-product-bar[data-id="${ this.productId }"]`)
     stickyBar.querySelector(".sticky__price").innerHTML = subOfferPrice
 
-    console.log("Selling plan",this.querySelector("[name='selling_plan'"));
+    if(this.querySelector("[name='selling_plan'")){
+      let value = this.querySelector("[name='selling_plan'").options.filter(option =>{
+        return (option.dataset.planOption == "Every 2 Months")
+      }).value;
+      console.log("Valye :: ",value)
+    }
     const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true)
     dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
     dropdownCopy.id = dropdownCopy.id + "_sticky"
