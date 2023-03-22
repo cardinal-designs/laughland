@@ -135,13 +135,13 @@
       } else if (sweatcoin_automatic == 'true') {
         url_params = url_params.concat(['discount=SWEATCOIN_AUTOMATIC']);
       } else if (redirect_ut_direct == 'true') {
-        url_params = url_params.concat(['discount=SUB-N-SAVE']);
+        // url_params = url_params.concat(['discount=SUB-N-SAVE']);
       } else if (redirect_ut == 'true') {
         url_params = url_params.concat(['discount=UTM_GEN_AUTOMATIC']);
       } else if (redirect_miles == 'true') {
         url_params = url_params.concat(['discount=MILES_AUTOMATIC']);
       } else {
-        url_params = url_params.concat(['discount=SUB-N-SAVE']);
+        // url_params = url_params.concat(['discount=SUB-N-SAVE']);
       }
 
       if(productDiscountCode != ""){
@@ -155,7 +155,7 @@
       window.location.href = '/checkout?' + url_params.join('&');
     } catch (err) {
       console.log(err);
-      window.location.href = '/checkout?discount=SUB-N-SAVE';
+      window.location.href = '/checkout';
     }
   } else {
     document.querySelector('.page-transition').classList.toggle('visible');
