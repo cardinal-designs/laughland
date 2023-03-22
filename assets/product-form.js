@@ -149,7 +149,6 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       }
 
       const observer = new MutationObserver(mutations => {
-        console.log(document.querySelector(selector));
           if (document.querySelector(selector)) {
               resolve(document.querySelector(selector));
               observer.disconnect();
