@@ -131,6 +131,7 @@
 }
 
 .subscription-wrapper .rc-option dl:last-of-type {
+  display: none;
   border-radius: 0 0 17px 17px;
 }
 
