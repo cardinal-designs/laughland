@@ -102,6 +102,8 @@ function landingPageAction(current_page, url_query_params) {
         redirectToLandingIfFirstTime()
       case 'paceline':
         clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
+        console.log('ookk')
+        console.log(url_query_params.utm_affiliate_specific)
         redirectToLandingIfFirstTime()
       // case 'miles':
         // clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
