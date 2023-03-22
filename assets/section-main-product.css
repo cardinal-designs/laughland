@@ -130,6 +130,13 @@
 .product-form__buttons {
   margin-top: 16px;
 }
+
+.product-form .satisfaction-guarantee {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .product__details {
   margin-top: 60px;
 }
