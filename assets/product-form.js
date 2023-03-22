@@ -166,7 +166,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     const widget = document.querySelector(widgetSelector)
     const subOfferPrice = this.getSubPrice()
 
-    const widgetOptions = widget.querySelectorAll(".rc_widget__option")
+    const widgetOptions = widget.querySelectorAll(".rc_widget__option");
+    console.log(widgetOptions)
 
     widgetOptions.forEach((option) => {
 
