@@ -132,9 +132,14 @@
 }
 
 .product-form .satisfaction-guarantee {
+  margin-top: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.product-form .satisfaction-guarantee svg {
+  margin-right: 10px;
 }
 
 .product__details {
