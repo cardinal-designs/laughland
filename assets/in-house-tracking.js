@@ -90,7 +90,7 @@ function landingPageAction(current_page, query_params) {
     console.log(query_params)
     console.log(query_params.utm_affiliate_specific)
     switch(query_params.utm_affiliate_specific) {
-      case 'cactus_media':
+      case "cactus_media":
         clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
         console.log('sup')
         redirectToLandingIfFirstTime()
