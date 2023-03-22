@@ -106,7 +106,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       this.stickyBar.querySelector("[data-sticky-atc]").removeAttribute('disabled')
 
       // observe input selection to update sticky bar
-      this.rechargeOptions = this.querySelector(".rc-template")
+      this.rechargeOptions = this.querySelector(".rc-template");
+      console.log(this.rechargeOptions)
       const observer = new MutationObserver(this.observeForm.bind(this))
       observer.observe(this.rechargeOptions, {attributes: true, childList: true, subtree: true})
     })
@@ -165,7 +166,8 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     const widget = document.querySelector(widgetSelector)
     const subOfferPrice = this.getSubPrice()
 
-    const widgetOptions = widget.querySelectorAll(".rc_widget__option")
+    const widgetOptions = widget.querySelectorAll(".rc_widget__option");
+    console.log(widgetOptions)
 
     widgetOptions.forEach((option) => {
 
@@ -207,11 +209,18 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     const stickyBar = document.querySelector(`sticky-product-bar[data-id="${ this.productId }"]`)
     stickyBar.querySelector(".sticky__price").innerHTML = subOfferPrice
 
-    const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true)
-    dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
-    dropdownCopy.id = dropdownCopy.id + "_sticky"
-    dropdownCopy.setAttribute('name', dropdownCopy.getAttribute("name") + "_sticky")
-    stickyBar.querySelector("[data-sticky-subsave").appendChild(dropdownCopy)
+    if(this.querySelector("[name='selling_plan'")){
+      let value = Array.from(this.querySelector("[name='selling_plan'").options).filter(option =>{
+        return (option.dataset.planOption == "Every 2 Months")
+      })[0].value;
+      if(value) this.querySelector("[name='selling_plan'").value = value;
+      const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true);
+      if(value) dropdownCopy.value = value;
+      dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
+      dropdownCopy.id = dropdownCopy.id + "_sticky"
+      dropdownCopy.setAttribute('name', dropdownCopy.getAttribute("name") + "_sticky")
+      stickyBar.querySelector("[data-sticky-subsave").appendChild(dropdownCopy)
+    }
 
     this.querySelector("[name='selling_plan'").addEventListener("change", function(e){
       this.updateStickySellingPlans(e)
