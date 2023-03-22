@@ -215,7 +215,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       })[0].value;
       if(value) this.querySelector("[name='selling_plan'").value = value;
       const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true);
-      if(value) dropdownCopy.valyue = value;
+      if(value) dropdownCopy.value = value;
       dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
       dropdownCopy.id = dropdownCopy.id + "_sticky"
       dropdownCopy.setAttribute('name', dropdownCopy.getAttribute("name") + "_sticky")
