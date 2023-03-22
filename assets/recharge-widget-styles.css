@@ -81,7 +81,8 @@
 
 .subscription-wrapper .rc-selling-plans {
   background: var(--blue-tint-20);
-  padding: 0 12px;
+  padding: 0 12px 14px;
+  border-radius: 0 0 17px 17px;
   display: flex !important;
   flex-direction: row;
   justify-content: space-between;
