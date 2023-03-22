@@ -17,7 +17,7 @@
         "sub_title": "Get a customized whitening solution for just {<sup>$<\/sup>19} today.",
         "hero_badges": "shopify:\/\/shop_images\/Women_sHealthBeautyAward_2022_Transparent_1.png",
         "button_label": "Start Now",
-        "button_link": "shopify:\/\/collections\/all",
+        "button_link": "#get-started",
         "button_style": "primary"
       }
     },
@@ -130,7 +130,7 @@
         "section_sub_heading": "",
         "review_count": "4.6\/5 from 3,500",
         "button_label": "Start Now",
-        "button_url": "shopify:\/\/collections\/all"
+        "button_url": "#get-started"
       }
     },
     "0bba9f22-7698-459e-80ea-c2869211daea": {
