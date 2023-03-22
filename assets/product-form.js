@@ -148,6 +148,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
       }
 
       const observer = new MutationObserver(mutations => {
+        console.log(document.querySelector(selector));
           if (document.querySelector(selector)) {
               resolve(document.querySelector(selector));
               observer.disconnect();
@@ -394,7 +395,6 @@ customElements.define('sticky-product-bar', class StickyProductBar extends HTMLE
 
   waitForEl(selector) {
     return new Promise(resolve => {
-      console.log('--->> ',resolve)
       if (document.querySelector(selector)) {
           return resolve(document.querySelector(selector));
       }
