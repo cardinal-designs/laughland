@@ -83,13 +83,13 @@ function clearAndSetCookiesAffiliates(cookie, affiliate) {
 }
 
 
-function landingPageAction(current_page, query_params) {
+function landingPageAction(current_page, url_query_params) {
   if (current_page == '') {
     console.log('here we are')
     console.log(current_page)
-    console.log(query_params)
-    console.log(query_params.utm_affiliate_specific)
-    switch(query_params.utm_affiliate_specific) {
+    console.log(url_query_params)
+    console.log(url_query_params.utm_affiliate_specific)
+    switch(url_query_params.utm_affiliate_specific) {
       case 'cactus_media':
         clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
         console.log('sup')
@@ -121,8 +121,6 @@ function landingPageAction(current_page, query_params) {
 var broken_url = window.location.href.split('?')[0].split('/')
 var current_page = broken_url[broken_url.length - 1] // last page in URL before query parameters
 
-const query_params = new Proxy(new URLSearchParams(window.location.search), { // get query parameters
-  get: (searchParams, prop) => searchParams.get(prop),
-});
+var query_params = new URLSearchParams(window.location.search);
 
 landingPageAction(current_page, query_params)
