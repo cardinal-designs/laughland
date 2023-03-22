@@ -198,6 +198,7 @@
         redirect_ut = getCookie('redirect_ut');
         redirect_miles = getCookie('redirect_miles');
         url_params = [];
+        console.log('hello ther is this happenign?????')
         if (paceline_automatic == 'true') {
           url_params = url_params.concat(['discount=PACELINE_AUTOMATIC']);
         } else if (sweatcoin_automatic == 'true') {
@@ -213,6 +214,7 @@
         }
         console.log('heres params');
         console.log(url_params);
+        return;
 
         window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
         //document.querySelector('#cart').submit();
