@@ -394,6 +394,7 @@ customElements.define('sticky-product-bar', class StickyProductBar extends HTMLE
 
   waitForEl(selector) {
     return new Promise(resolve => {
+      console.log('--->> ',resolve)
       if (document.querySelector(selector)) {
           return resolve(document.querySelector(selector));
       }
