@@ -210,10 +210,10 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     stickyBar.querySelector(".sticky__price").innerHTML = subOfferPrice
 
     if(this.querySelector("[name='selling_plan'")){
-      let value = this.querySelector("[name='selling_plan'").options.filter(option =>{
-        return (option.dataset.planOption == "Every 2 Months")
-      }).value;
-      console.log("Valye :: ",value)
+      // let value = this.querySelector("[name='selling_plan'").options.filter(option =>{
+      //   return (option.dataset.planOption == "Every 2 Months")
+      // }).value;
+      console.log("Valye :: ",this.querySelector("[name='selling_plan'"))
     }
     const dropdownCopy = this.querySelector("[name='selling_plan'").cloneNode(true)
     dropdownCopy.setAttribute("data-control-id", dropdownCopy.id)
