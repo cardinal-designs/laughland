@@ -131,7 +131,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
   }
 
   observeForm(mutationList, observer) {
-    console.log('ObservForm')
+    console.log('ObservForm',mutationList, observer)
     mutationList.forEach((mutation) => {
       if( mutation.type == 'attributes' && mutation.attributeName == 'class' && mutation.target.classList.contains('rc-option--active')) {
         
