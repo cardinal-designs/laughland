@@ -323,56 +323,56 @@
     "49f3d9ac-7509-4919-89f3-3c6825a727c8": {
       "type": "faq-section",
       "blocks": {
-        "211060df-f259-4c34-bf3a-8ff6f7ebc051": {
-          "type": "faq",
-          "settings": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
-          }
-        },
-        "7d5a83c8-daae-4afc-826a-7e2c8303468a": {
-          "type": "faq",
-          "settings": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
-          }
-        },
-        "3f5fff35-bec5-4563-b68f-af7d8b7b045f": {
-          "type": "faq",
-          "settings": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
-          }
-        },
         "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae": {
           "type": "faq",
           "settings": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
-          }
-        },
-        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148": {
-          "type": "faq",
-          "settings": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+            "title": "Other Whitening Kits haven't worked for me.. What's different?",
+            "sub_title": "<p>Laughland is the only whitening brand to create custom whitening formulas based on your quiz profile. Just as a dentist would prescribe a specific whitening treatment for you, we can optimize the strength of the whitening serum to your unique sensitivity levels, dental history and diet. Hence, our formulas are 3x more effective and clinically tested to show a 74% improvement in whiteness. <br\/><br\/>It's the closest you'll get to a dentist, without having to go to one! <\/p>"
           }
         },
         "b4f85b92-4e73-489e-8e59-6fcdabf5d358": {
           "type": "faq",
           "settings": {
-            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-            "sub_title": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit<\/p>"
+            "title": "When will I see the effects?",
+            "sub_title": "<p>While you'll begin to see differences after your first 10+ minute treatment, but the most noticeable changes will come after 6 days of consecutive whitening treatments. You'll be pleasantly surprised :)<\/p>"
+          }
+        },
+        "211060df-f259-4c34-bf3a-8ff6f7ebc051": {
+          "type": "faq",
+          "settings": {
+            "title": "How long does the Kit last for?",
+            "sub_title": "<p><em>Each kit contains 3 syringes that last for 6 treatments. Results can be immediately noticeable, and lasts months depending on your diet and brushing habits. We recommend users to re-whiten every 2-3 months or as-needed to maintain a shine all year round.<\/em><\/p>"
+          }
+        },
+        "7d5a83c8-daae-4afc-826a-7e2c8303468a": {
+          "type": "faq",
+          "settings": {
+            "title": "Can I use Laughland with veneers, caps, implants, bridges, or bonded teeth?",
+            "sub_title": "<p><em>Veneers, caps, implants, bonding or bridges aren’t designed to be whitened, however Laughland can whiten the surrounding teeth to maintain the same shade as your dental work.<br\/><\/em><\/p>"
+          }
+        },
+        "3f5fff35-bec5-4563-b68f-af7d8b7b045f": {
+          "type": "faq",
+          "settings": {
+            "title": "How does the subscription work?",
+            "sub_title": "<p><em>We offer a flexible subscription to save you the trouble of re-ordering manually.<\/em><\/p><p><em>You can manage your subscription via your account or by emailing us at team@mylaughland.com anytime.<\/em><\/p>"
+          }
+        },
+        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148": {
+          "type": "faq",
+          "settings": {
+            "title": "What does the LED Blue Light do?",
+            "sub_title": "<p>Our NanoLight technology LED light helps with teeth whitening by activating the ingredients in the whitening gel used during the treatment. Your custom gel contains a variety of bleaching agents that breaks down the stains on the surface of the teeth. When the light is shone on the teeth, it activates the whitening gel, speeding up the chemical reaction and helping the bleaching agent penetrate deeper into the enamel. This results in a more effective and efficient teeth whitening treatment, giving you a brighter and more confident smile. It is important to note that the LED light alone will not change the color of your teeth, but rather enhances the effectiveness of the whitening gel.<\/p>"
           }
         }
       },
       "block_order": [
+        "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae",
+        "b4f85b92-4e73-489e-8e59-6fcdabf5d358",
         "211060df-f259-4c34-bf3a-8ff6f7ebc051",
         "7d5a83c8-daae-4afc-826a-7e2c8303468a",
         "3f5fff35-bec5-4563-b68f-af7d8b7b045f",
-        "8ae8e7dc-9492-46f3-a0a8-330fa3f118ae",
-        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148",
-        "b4f85b92-4e73-489e-8e59-6fcdabf5d358"
+        "4e2a5fd9-e9b2-4712-ae48-1344c2cf3148"
       ],
       "settings": {
         "section_heading": "Still have questions?",
