@@ -110,7 +110,8 @@ function landingPageAction(current_page, url_query_params) {
         // console.log('why')
         // redirectToLandingIfFirstTime()
       default:
-        setGoogleTag('NA', 'homepage')
+        setGoogleSource('NA')
+        setGoogleLanding("homepage")
         break
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
