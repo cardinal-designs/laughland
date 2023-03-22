@@ -30,7 +30,11 @@
       {% endfor %}
     </div>
     <div class="Button_Area">
-      <a href="{{ section.settings.button_url }}" class="button large-btn" {% if section.settings.open_quiz %}data-open-quiz{% endif %}>{{ section.settings.button_label }}</a>
+      {% if section.settings.open_quiz %}
+        <button class="button large-btn" data-open-quiz>{{ section.settings.button_label }}</button>
+      {% else %}
+        <a href="{{ section.settings.button_url }}" class="button large-btn">{{ section.settings.button_label }}</a>
+      {% endif %}
     </div>
   </div>
 </div>
