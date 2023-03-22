@@ -283,7 +283,9 @@
               </div>
             {% endform %}
 
-           <p class="satisfaction-guarantee"><img src="">30 Day Satisfaction Guarantee</p>
+            {% if section.settings.satisfaction != blank %}
+            <p class="satisfaction-guarantee">{{ section.settings.satisfaction_svg }}&nbsp;30 Day Satisfaction Guarantee</p>
+            {% endif %}
 
             <div class="visually-hidden subscription-details__wrapper">
               <div class="subscription-details">
