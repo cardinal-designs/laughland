@@ -448,24 +448,38 @@
       switch(subscriptionCookie[0]) {
         case 'redirect_ut':
           subPrice = '9'
+          discount_name = 'UTM_GEN_AUTOMATIC'
+          discount_desc = '88% Off First Month'
           break;
         case 'redirect_ut_direct':
           subPrice = '9'
+          discount_name = ''
+          discount_desc = ''
           break
         case 'redirect_paceline':
           subPrice = '29'
+          discount_name = ''
+          discount_desc = ''
           break
         case 'redirect_sweatcoin':
           subPrice = '9.95'
+          discount_name = 'SWEATCOIN_AUTOMATIC'
+          discount_desc = '88% Off First Month'
           break
         case 'redirect_miles':
           subPrice = '9'
+          discount_name = 'MILES_AUTOMATIC'
+          discount_desc = '88% Off First Month'
           break
         case 'redirect_studentbeans':
           subPrice = '9'
+          discount_name = ''
+          discount_desc = ''
           break
         default:
           subPrice = '19'
+          discount_name = 'SUB-N-SAVE'
+          discount_desc = '75% Off First Month'
           break
       }
   
