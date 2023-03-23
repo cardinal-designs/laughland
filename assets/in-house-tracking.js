@@ -53,7 +53,7 @@ function redirectToLandingIfFirstTime() {
     var d = Math.random();
     if (d <= .5) {
       setGoogleLanding('homepage')
-      window.location.href = 'https://www.mylaughland.com'
+      // window.location.href = 'https://www.mylaughland.com'
     } else {
       setGoogleLanding('landing-page')
       window.location.href = 'https://www.mylaughland.com/pages/landing-page'
