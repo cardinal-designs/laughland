@@ -43,26 +43,13 @@
 </div>
 
 <script>
-  setTimeout(
-  function() 
-  {
+  setTimeout(function(){
     $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
   }, 100);
+  
   $(window).load(function(){
     $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
   })
-
-  $(window).bind("load", function () {
-    $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-  });
-  $(document).ready(function() {
-       $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-    });
-
-  window.addEventListener('load', function () {
-  $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-})
-  $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
 </script>
 
 {% schema %}
