@@ -491,11 +491,15 @@
   setTimeout(function(){
     $('.price-item--sale').first().html("$" + sub_specs[0])
     $('.button--full').first().find('span').first().html('Start Now — $'+sub_specs[0]+'')
+    $('.discount-code').first().html(sub_specs[1])
+    $('.discount-text').first().html(sub_specs[2])
   }, 100);
   
   $(window).load(function(){
     $('.price-item--sale').first().html("$" + sub_specs[0])
     $('.button--full').first().find('span').first().html('Start Now — $'+sub_specs[0]+'')
+    $('.discount-code').first().html(sub_specs[1])
+    $('.discount-text').first().html(sub_specs[2])
   })
   
 </script>
