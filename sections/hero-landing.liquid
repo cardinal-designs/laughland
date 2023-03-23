@@ -46,7 +46,7 @@
     function getSubPrice() {
       const cookies = ['redirect_ut', 'redirect_ut_direct', 'shareasaleShopifySSCID', 'redirect_paceline', 'redirect_sweatcoin', 'redirect_miles', 'redirect_studentbeans']
   
-      let subscriptionCookie = cookies.filter( cookieName => this.getCookie(cookieName) != null )
+      let subscriptionCookie = cookies.filter( cookieName => getCookie(cookieName) != null )
       let subPrice = ''
   
       switch(subscriptionCookie[0]) {
