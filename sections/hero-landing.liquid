@@ -10,26 +10,6 @@
   | replace: '}', '</span>'
 %}
 
-<script>
-  // setTimeout(
-  // function() 
-  // {
-  //   $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-  // }, 500);
-  $(window).load(function(){
-    $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-  })
-
-  $(window).bind("load", function () {
-    $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-  });
-  $(document).ready(function() {
-       $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-    });
-  $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
-</script>
-
-
 <div class="Landing_Hero">
   {% if section.settings.mobile_image != blank %}
     {% render 'lazy-image', image: section.settings.image, fade: true, fill: true, classes: 'hide-mobile' %}
@@ -61,6 +41,25 @@
     </div>
   </div>
 </div>
+
+<script>
+  // setTimeout(
+  // function() 
+  // {
+  //   $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
+  // }, 500);
+  $(window).load(function(){
+    $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
+  })
+
+  $(window).bind("load", function () {
+    $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
+  });
+  $(document).ready(function() {
+       $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
+    });
+  $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>9")
+</script>
 
 {% schema %}
 {
