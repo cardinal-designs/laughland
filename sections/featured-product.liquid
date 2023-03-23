@@ -475,11 +475,11 @@
   console.log(subPrice)
   
   setTimeout(function(){
-    $('.price-item--sale').first().html(subPrice)
+    $('.price-item--sale').first().html("$" + subPrice)
   }, 100);
   
   $(window).load(function(){
-    $('.price-item--sale').first().html(subPrice)
+    $('.price-item--sale').first().html("$" + subPrice)
   })
   
 </script>
