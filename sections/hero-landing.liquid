@@ -43,38 +43,40 @@
 </div>
 
 <script>
-    getSubPrice() {
-    const cookies = ['redirect_ut', 'redirect_ut_direct', 'shareasaleShopifySSCID', 'redirect_paceline', 'redirect_sweatcoin', 'redirect_miles', 'redirect_studentbeans']
-
-    let subscriptionCookie = cookies.filter( cookieName => this.getCookie(cookieName) != null )
-    let subPrice = ''
-
-    switch(subscriptionCookie[0]) {
-      case 'redirect_ut':
-        subPrice = '9'
-        break;
-      case 'redirect_ut_direct':
-        subPrice = '9'
-        break
-      case 'redirect_paceline':
-        subPrice = '29'
-        break
-      case 'redirect_sweatcoin':
-        subPrice = '9.95'
-        break
-      case 'redirect_miles':
-        subPrice = '9'
-        break
-      case 'redirect_studentbeans':
-        subPrice = '9'
-        break
-      default:
-        subPrice = '19'
-        break
-    }
-
-    return subPrice
+    function getSubPrice() {
+      const cookies = ['redirect_ut', 'redirect_ut_direct', 'shareasaleShopifySSCID', 'redirect_paceline', 'redirect_sweatcoin', 'redirect_miles', 'redirect_studentbeans']
+  
+      let subscriptionCookie = cookies.filter( cookieName => this.getCookie(cookieName) != null )
+      let subPrice = ''
+  
+      switch(subscriptionCookie[0]) {
+        case 'redirect_ut':
+          subPrice = '9'
+          break;
+        case 'redirect_ut_direct':
+          subPrice = '9'
+          break
+        case 'redirect_paceline':
+          subPrice = '29'
+          break
+        case 'redirect_sweatcoin':
+          subPrice = '9.95'
+          break
+        case 'redirect_miles':
+          subPrice = '9'
+          break
+        case 'redirect_studentbeans':
+          subPrice = '9'
+          break
+        default:
+          subPrice = '19'
+          break
+      }
+  
+      return subPrice
   }
+  subPrice = getSubPrice()
+  console.log(subPrice)
   
   setTimeout(function(){
     $('.Hero_Subtitle').first().find('.stylized').first().html("<sup>$</sup>"+subPrice+"")
