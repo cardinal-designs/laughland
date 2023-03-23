@@ -476,10 +476,12 @@
   
   setTimeout(function(){
     $('.price-item--sale').first().html("$" + subPrice)
+    $('.button--full').first().find('span').first().html('Start Now — $'+subPrice+'')
   }, 100);
   
   $(window).load(function(){
     $('.price-item--sale').first().html("$" + subPrice)
+    $('.button--full').first().find('span').first().html('Start Now — $'+subPrice+'')
   })
   
 </script>
