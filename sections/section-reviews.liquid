@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="Button_Area">
-        <a href="{{ section.settings.button_url }}" {% if section.settings.button_action == "quiz" %}data-open-quiz{% endif %} class="button large-btn">{{ section.settings.button_label }}</a>
+        <a href="{{ section.settings.button_url }}" {% if section.settings.button_action == "quiz" %}data-open-quiz{% endif %} {% if settings.discount_code != blank %}onclick="window.localStorage.setItem('landing_page_product_discount','{{ settings.discount_code }}')" {% endif %} class="button large-btn">{{ section.settings.button_label }}</a>
       </div>
     </div>
   </div>
