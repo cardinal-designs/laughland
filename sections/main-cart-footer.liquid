@@ -149,20 +149,14 @@
         document.cookie = 'productDiscountCode=;expires=Thu, 01 Jan 1970 00:00:01 GMT';
       }
 
-
-      // if(window.localStorage.getItem('landing_page_product_discount')){
-      //   url_params = url_params.concat([`discount=${window.localStorage.getItem('landing_page_product_discount'}`]);
-      //   window.localStorage.removeItem('landing_page_product_discount');
-      // }
-
       
       console.log(url_params);
 
-      // window.location.href = '/checkout?' + url_params.join('&');
+      window.location.href = '/checkout?' + url_params.join('&');
     } catch (err) {
       console.log(err);
       // window.location.href = '/checkout?discount=SUB-N-SAVE';
-      // window.location.href = '/checkout';
+      window.location.href = '/checkout';
     }
   } else {
     document.querySelector('.page-transition').classList.toggle('visible');
@@ -217,10 +211,10 @@
         } else {
           url_params = url_params.concat(['discount=SUB-N-SAVE']);
         }
-        if(window.localStorage.getItem('landing_page_product_discount')){
-          url_params = url_params.concat([`discount=${window.localStorage.getItem('landing_page_product_discount'}`]);
-          window.localStorage.removeItem('landing_page_product_discount');
-        }
+        // if(window.localStorage.getItem('landing_page_product_discount')){
+        //   url_params = url_params.concat([`discount=${window.localStorage.getItem('landing_page_product_discount'}`]);
+        //   window.localStorage.removeItem('landing_page_product_discount');
+        // }
           
         console.log('heres params');
         console.log(url_params);
