@@ -47,18 +47,18 @@ function clearAllAffiliateCookies(){
 function redirectToLandingIfFirstTime() {
   // If I haven't redirected, redirect to random page and set landing page cookie.
   // Mark redirect in cookies so we don't redirect again if a user somehow goes back with the same utm params.
-  if (getCookie("in_house_already_redirected") != 'true') {
-    setCookie('in_house_already_redirected', 'true')
+  // if (getCookie("in_house_already_redirected") != 'true') {
+  //   setCookie('in_house_already_redirected', 'true')
               
-    var d = Math.random();
-    if (d <= .5) {
-      setGoogleLanding('homepage')
-      // window.location.href = 'https://www.mylaughland.com'
-    } else {
-      setGoogleLanding('landing-page')
-      window.location.href = 'https://www.mylaughland.com/pages/landing-page'
-    }  
-  }
+  var d = Math.random();
+  if (d <= .5) {
+    setGoogleLanding('homepage')
+    // window.location.href = 'https://www.mylaughland.com'
+  } else {
+    setGoogleLanding('landing-page')
+    window.location.href = 'https://www.mylaughland.com/pages/landing-page'
+  }  
+  // }
 }
 
 
