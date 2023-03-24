@@ -268,19 +268,20 @@
                 </div>
               {% endif %}
               <div class="product-form__buttons">
-                <button
+                <a
                   {% comment %}
                   type="submit"
                   name="add"
                   {% endcomment %}
-                  class=" button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                  href="{{ product.url }}" class=" button button--full {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
                   {% endif %}
                   {% if settings.discount_code != blank %}
                     data-dsicount-code="{{ settings.discount_code }}"
                   {% endif %}
-                  data-open-quiz
+                  {% if section.settings.button_action == "quiz" %}data-open-quiz{% endif %}
+              {% if settings.discount_code != blank %}onclick="window.localStorage.setItem('landing_page_product_discount','{{ settings.discount_code }}')" {% endif %}
                 >
                   <span>
                     {% if product.selected_or_first_available_variant.available %}
@@ -289,19 +290,7 @@
                       {{ 'products.product.sold_out' | t }}
                     {% endif %}
                   </span>
-                  <div class="loading-overlay__spinner hidden">
-                    <svg
-                      aria-hidden="true"
-                      focusable="false"
-                      role="presentation"
-                      class="spinner"
-                      viewBox="0 0 66 66"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                    </svg> 
-                  </div>
-                </button>
+                </a>
                 {% if block.settings.show_dynamic_checkout %}
                   {{ form | payment_button }}
                 {% endif %}
@@ -546,6 +535,22 @@
       "id": "how_to_use",
       "label": "How to use",
       "info": "Connect product How To Use metafield"
+    },
+    {
+      "type":"select",
+      "id":"button_action",
+      "label":"Button Actons",
+      "options":[
+          {
+          "label":"Redirect on URL",
+          "value":"url"
+          },
+          {
+          "label":"Open Quiz",
+          "value":"quiz"
+          }
+      ],
+      "default":"quiz"
     }
   ],
   "presets": [
