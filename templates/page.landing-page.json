@@ -130,7 +130,8 @@
         "section_sub_heading": "",
         "review_count": "4.6\/5 from 3,500",
         "button_label": "Start Now",
-        "button_url": "#get-started"
+        "button_url": "#get-started",
+        "trigger_quiz": true
       }
     },
     "0bba9f22-7698-459e-80ea-c2869211daea": {
