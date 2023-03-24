@@ -211,10 +211,8 @@
         } else {
           url_params = url_params.concat(['discount=SUB-N-SAVE']);
         }
-        if(window.localStorage.getItem('landing_page_product_discount')){
-          url_params = url_params.concat([`discount=${window.localStorage.getItem('landing_page_product_discount'}`]);
-          window.localStorage.removeItem('landing_page_product_discount');
-        }
+        
+        console.log(window.localStorage.getItem('landing_page_product_discount'))
           
         console.log('heres params');
         console.log(url_params);
