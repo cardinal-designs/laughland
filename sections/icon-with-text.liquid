@@ -30,7 +30,7 @@
       {% endfor %}
     </div>
     <div class="Button_Area">
-      <a href="{{ section.settings.button_url }}" class="button large-btn" {% if section.settings.trigger_quiz %}data-open-quiz{% endif %}>{{ section.settings.button_label }}</a>
+        <a href="{{ section.settings.button_url }}" class="button large-btn" {% if settings.discount_code != blank %}onclick="window.localStorage.setItem('landing_page_product_discount','{{ settings.discount_code }}')" {% endif %} {% if section.settings.button_action == "quiz" %}data-open-quiz{% endif %}>{{ section.settings.button_label }}</a>
     </div>
   </div>
 </div>
@@ -60,9 +60,20 @@
       "label": "Button Url"        
     },
     {
-      "type": "checkbox",
-      "id": "trigger_quiz",
-      "label": "Button trigger on quiz?"
+      "type":"select",
+      "id":"button_action",
+      "label":"Button Actons",
+      "options":[
+          {
+          "label":"Redirect on URL",
+          "value":"url"
+          },
+          {
+          "label":"Open Quiz",
+          "value":"quiz"
+          }
+      ],
+      "default":"quiz"
     }
   ],
   "max_blocks": 3,
