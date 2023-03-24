@@ -27,11 +27,11 @@
         <h5 class="Hero_Subtitle h5">{{- formatted_sub_title -}}</h5>
       {% endif %}
       {% if section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}" data-open-quiz class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
+        <a href="{{ section.settings.button_link }}"  {% if section.settings.button_action == "quiz" %}data-open-quiz{% endif %}  {% if settings.discount_code != blank %}onclick="window.localStorage.setItem('landing_page_product_discount','{{ settings.discount_code }}')" {% endif %} class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
           {{- section.settings.button_label -}}
         </a>
       {% else %}
-        <button class="button button--secondary" data-open-quiz>{{ section.settings.button_label }}</button>
+        <button class="button button--secondary"  {% if section.settings.button_action == "quiz" %}data-open-quiz{% endif %}  {% if settings.discount_code != blank %}onclick="window.localStorage.setItem('landing_page_product_discount','{{ settings.discount_code }}')" {% endif %}>{{ section.settings.button_label }}</button>
       {% endif %}
       {% if section.settings.hero_badges != blank %}
         <div class="Hero_Badges">
@@ -184,6 +184,22 @@
       ],
       "default": "secondary",
       "label": "Button Style"
+    },
+    {
+      "type":"select",
+      "id":"button_action",
+      "label":"Button Actons",
+      "options":[
+        {
+          "label":"Redirect on URL",
+          "value":"url"
+        },
+        {
+          "label":"Open Quiz",
+          "value":"quiz"
+        }
+      ],
+      "default":"quiz"
     }
   ],
   "presets": [
