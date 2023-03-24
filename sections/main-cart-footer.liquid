@@ -154,15 +154,14 @@
         window.localStorage.removeItem('landing_page_product_discount');
       }
 
-      console.log("landing_page_product_discount :::",window.localStorage.getItem('landing_page_product_discount'))
       
       console.log(url_params);
 
-    //   window.location.href = '/checkout?' + url_params.join('&');
+      window.location.href = '/checkout?' + url_params.join('&');
     } catch (err) {
-    //   console.log(err);
-    //   // window.location.href = '/checkout?discount=SUB-N-SAVE';
-    //   window.location.href = '/checkout';
+      console.log(err);
+      // window.location.href = '/checkout?discount=SUB-N-SAVE';
+      window.location.href = '/checkout';
     }
   } else {
     document.querySelector('.page-transition').classList.toggle('visible');
@@ -223,15 +222,14 @@
           window.localStorage.removeItem('landing_page_product_discount');
         }
 
-        console.log("222 landing_page_product_discount :::",window.localStorage.getItem('landing_page_product_discount'));
           
         console.log('heres params');
         console.log(url_params);
 
-        // window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
+        window.location.href = 'https://mylaughland.com/checkout?' + url_params.join('&');
         //document.querySelector('#cart').submit();
       } catch (err) {
-        // window.location.href = 'https://mylaughland.com/checkout?discount=SUB-N-SAVE';
+        window.location.href = 'https://mylaughland.com/checkout?discount=SUB-N-SAVE';
       }
     });
   });
