@@ -161,5 +161,25 @@
         "label": "SVG Logo"
       }
     ]
+  },
+  {
+    "name": "Landing Page",
+    "settings": [
+      {
+        "type": "number",
+        "id": "discounted_price",
+        "label": "Discounted Price"
+      },
+      {
+        "type": "text",
+        "id": "discount_code",
+        "label": "Discount Code"
+      },
+      {
+        "type": "text",
+        "id": "discount_text",
+        "label": "Discount Text"
+      }
+    ]
   }
 ]
