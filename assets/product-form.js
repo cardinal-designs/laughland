@@ -267,7 +267,7 @@ customElements.define('product-form', class ProductForm extends HTMLElement {
     document.cookie = "directcheckout=true;path=/";
 
     if(window.localStorage.getItem('landing_page_product_discount')){
-      document.cookie = `landing_page_product_discount=${(window.localStorage.getItem('landing_page_product_discount')};path=/`
+      document.cookie = `landing_page_product_discount=${window.localStorage.getItem('landing_page_product_discount')};path=/`
       window.localStorage.removeItem('landing_page_product_discount');
     }
 
