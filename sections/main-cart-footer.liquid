@@ -149,6 +149,10 @@
         document.cookie = 'productDiscountCode=;expires=Thu, 01 Jan 1970 00:00:01 GMT';
       }
 
+      if(window.localStorage.getItem('landing_page_product_discount')){
+        url_params = url_params.concat([`discount=${window.localStorage.getItem('landing_page_product_discount')}`]);
+        window.localStorage.removeItem('landing_page_product_discount');
+      }
       
       console.log(url_params);
 
