@@ -258,10 +258,10 @@
                 </quantity-input>
               </div>
 
-              {% if section.settings.discount_code != blank and section.settings.discount_text != blank %}
+              {% if settings.discount_code != blank and section.settings.discount_text != blank %}
                 <div class="discount--wrapper">
                   <div class="discount-input--wrapper">
-                    <p class="discount-code">{{ section.settings.discount_code }}</p>
+                    <p class="discount-code">{{ settings.discount_code }}</p>
                     <p class="discount-text">{{ section.settings.discount_text }}</p>
                   </div>
                   <p class="disacount-apply-text hide-mobile">Discount Applied!</p>
@@ -277,8 +277,8 @@
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
                   {% endif %}
-                  {% if section.settings.discount_code != blank %}
-                    data-dsicount-code="{{ section.settings.discount_code }}"
+                  {% if settings.discount_code != blank %}
+                    data-dsicount-code="{{ settings.discount_code }}"
                   {% endif %}
                   data-open-quiz
                 >
