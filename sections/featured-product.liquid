@@ -258,10 +258,10 @@
                 </quantity-input>
               </div>
 
-              {% if settings.discount_code != blank and settings.discount_text != blank %}111 -- {{ settings.discount_code }}
+              {% if settings.discount_code != blank and settings.discount_text != blank %}
                 <div class="discount--wrapper">
-                  <div class="discount-input--wrapper">====
-                    <p class="discount-code">===={{ settings.discount_code }}</p>
+                  <div class="discount-input--wrapper">
+                    <p class="discount-code">{{ settings.discount_code }}</p>
                     <p class="discount-text">{{ settings.discount_text }}</p>
                   </div>
                   <p class="disacount-apply-text hide-mobile">Discount Applied!</p>
