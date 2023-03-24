@@ -27,7 +27,7 @@
         <h5 class="Hero_Subtitle h5">{{- formatted_sub_title -}}</h5>
       {% endif %}
       {% if section.settings.button_link != blank %}
-        <a href="{{ section.settings.button_link }}" class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
+        <a href="{{ section.settings.button_link }}" data-open-quiz class="button {% if section.settings.button_style == 'secondary' %}button--secondary{% else %}button--primary{% endif %}">
           {{- section.settings.button_label -}}
         </a>
       {% else %}

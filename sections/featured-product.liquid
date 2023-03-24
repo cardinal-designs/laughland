@@ -15,8 +15,8 @@
 
 {% assign product = section.settings.product %}
 {% assign productPrice = product.price %}
-{% if section.settings.discounted_price != blank and section.settings.discounted_price != 0 %}
-  {% assign productPrice = section.settings.discounted_price | times:100 %}
+{% if settings.discounted_price != blank and settings.discounted_price != 0 %}
+  {% assign productPrice = settings.discounted_price | times:100 %}
 {% endif %}
 
 <section class="Featured_Product">
@@ -258,11 +258,11 @@
                 </quantity-input>
               </div>
 
-              {% if section.settings.discount_code != blank and section.settings.discount_text != blank %}
+              {% if settings.discount_code != blank and settings.discount_text != blank %}
                 <div class="discount--wrapper">
                   <div class="discount-input--wrapper">
-                    <p class="discount-code">{{ section.settings.discount_code }}</p>
-                    <p class="discount-text">{{ section.settings.discount_text }}</p>
+                    <p class="discount-code">{{ settings.discount_code }}</p>
+                    <p class="discount-text">{{ settings.discount_text }}</p>
                   </div>
                   <p class="disacount-apply-text hide-mobile">Discount Applied!</p>
                 </div>
@@ -277,8 +277,8 @@
                   {% if product.selected_or_first_available_variant.available == false %}
                     disabled
                   {% endif %}
-                  {% if section.settings.discount_code != blank %}
-                    data-dsicount-code="{{ section.settings.discount_code }}"
+                  {% if settings.discount_code != blank %}
+                    data-dsicount-code="{{ settings.discount_code }}"
                   {% endif %}
                   data-open-quiz
                 >
@@ -417,7 +417,7 @@
   });
 </script>
 
-
+{% comment %}
 <script>
   function getCookie(cname) {
     // const value = `; ${document.cookie}`;
@@ -503,6 +503,7 @@
   })
   
 </script>
+{% endcomment %}
                   
 {% liquid
   if product.selected_or_first_available_variant.featured_media
@@ -545,23 +546,7 @@
       "id": "how_to_use",
       "label": "How to use",
       "info": "Connect product How To Use metafield"
-    },
-    {
-      "type": "number",
-      "id": "discounted_price",
-      "label": "Discounted Price"
-    },
-    {
-      "type": "text",
-      "id": "discount_code",
-      "label": "Discount Code"
-    },
-    {
-      "type": "text",
-      "id": "discount_text",
-      "label": "Discount Text"
     }
-    
   ],
   "presets": [
     {
