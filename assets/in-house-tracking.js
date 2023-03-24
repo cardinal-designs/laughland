@@ -106,6 +106,14 @@ function landingPageAction(current_page, query_params) {
         clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
         redirectToLandingIfFirstTime()
         break;
+      case 'utm_partner':
+        clearAndSetCookiesAffiliates('utm_partner', 'UTM Partner')
+        redirectToLandingIfFirstTime()
+        break;
+      case 'utm_gen_direct':
+        clearAndSetCookiesAffiliates('utm_gen_direct', 'UTM Gen Direct')
+        redirectToLandingIfFirstTime()
+        break;
       default:
         setGoogleSource('NA')
         setGoogleLanding("homepage")
