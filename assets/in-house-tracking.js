@@ -57,7 +57,7 @@ function redirectToLandingIfFirstTime() {
   } else {
     setGoogleLanding('landing-page')
     window.location.href = 'https://www.mylaughland.com/pages/landing-page'
-  }  
+  }
   // }
 }
 
