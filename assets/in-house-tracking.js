@@ -117,11 +117,6 @@ function setFirstTimeGtags(landing_page_flag, affiliate) {
 function landingPageAction(current_page, query_params) {
   if (current_page == '/') {
     switch(query_params.utm_affiliate_specific) {
-      case 'cactus_media':
-        clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
-        setFirstTimeGtags('true', 'Cactus Media')
-        redirectToLandingIfFirstTime()
-        break;
       case 'sweatcoin':
         clearAndSetCookiesAffiliates('redirect_sweatcoin', 'Sweatcoin')
         setFirstTimeGtags('true', 'Sweatcoin')
@@ -150,6 +145,11 @@ function landingPageAction(current_page, query_params) {
       case 'utm_gen_direct':
         clearAndSetCookiesAffiliates('utm_gen_direct', 'UTM Gen Direct')
         setFirstTimeGtags('true', 'UTM Gen Direct')
+        redirectToLandingIfFirstTime()
+        break;
+      case 'cactus_media':
+        clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
+        setFirstTimeGtags('true', 'Cactus Media')
         redirectToLandingIfFirstTime()
         break;
       default:
