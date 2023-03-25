@@ -62,6 +62,27 @@ function redirectToLandingIfFirstTime() {
 }
 
 
+function setInHouseTracked() {
+  gtag('set', 'user_properties', {
+    in_house_tracked: "true"
+  });
+}
+
+
+function setLandingPageFlag(flag_value) {
+  gtag('set', 'user_properties', {
+    landing_page_flag: flag_value
+  });
+}
+
+
+function setGoogleSourceDev(affiliate_source_dev) {
+  gtag('set', 'user_properties', {
+    affiliate_source_dev: affiliate_source_dev
+  });
+}
+
+
 function setGoogleSource(affiliate_source) {
   gtag('set', 'user_properties', {
     affiliate_source: affiliate_source
@@ -80,6 +101,16 @@ function clearAndSetCookiesAffiliates(cookie, affiliate) {
   clearAllAffiliateCookies()
   setCookie(cookie, 'true')
   setGoogleSource(affiliate)
+}
+
+
+function setFirstTimeGtags(landing_page_flag, affiliate) {
+  if (getCookie("in_house_tracked") != 'true') {
+    setCookie('in_house_tracked', 'true')
+    setInHouseTracked()
+    setLandingPageFlag(landing_page_flag)
+    setGoogleSourceDev(affiliate)
+  }
 }
 
 
