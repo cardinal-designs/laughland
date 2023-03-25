@@ -115,8 +115,6 @@ function landingPageAction(current_page, query_params) {
         redirectToLandingIfFirstTime()
         break;
       default:
-        setGoogleSource('NA')
-        setGoogleLanding("homepage")
         break;
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
