@@ -3,7 +3,7 @@ affiliate_cookie_options = ['redirect_ut', 'redirect_ut_direct', 'redirect_pacel
 // if user arrives at mylaughland.com?utm_affiliate_specific=cactus_media
 // set cookie to cactus media, and google referral tag to cactus media
 // if first time, set redirect to whatever it is.
-
+// shareasaleShopifySSCID
 
 function getCookie(cname) {
   // const value = `; ${document.cookie}`;
