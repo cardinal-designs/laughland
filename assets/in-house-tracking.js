@@ -119,33 +119,41 @@ function landingPageAction(current_page, query_params) {
     switch(query_params.utm_affiliate_specific) {
       case 'cactus_media':
         clearAndSetCookiesAffiliates('redirect_ut', 'Cactus Media')
+        setFirstTimeGtags('true', 'Cactus Media')
         redirectToLandingIfFirstTime()
         break;
       case 'sweatcoin':
         clearAndSetCookiesAffiliates('redirect_sweatcoin', 'Sweatcoin')
+        setFirstTimeGtags('true', 'Sweatcoin')
         redirectToLandingIfFirstTime()
         break;
       case 'product-direct':
         clearAndSetCookiesAffiliates('redirect_ut_direct', 'Direct To Product (misc)')
+        setFirstTimeGtags('true', 'Direct To Product (misc)')
         redirectToLandingIfFirstTime()
         break;
       case 'paceline':
         clearAndSetCookiesAffiliates('redirect_paceline', 'Paceline')
+        setFirstTimeGtags('true', 'Paceline')
         redirectToLandingIfFirstTime()
         break;
       case 'miles':
         clearAndSetCookiesAffiliates('redirect_miles', 'Miles')
+        setFirstTimeGtags('true', 'Miles')
         redirectToLandingIfFirstTime()
         break;
       case 'utm_partner':
         clearAndSetCookiesAffiliates('utm_partner', 'UTM Partner')
+        setFirstTimeGtags('true', 'UTM Partner')
         redirectToLandingIfFirstTime()
         break;
       case 'utm_gen_direct':
         clearAndSetCookiesAffiliates('utm_gen_direct', 'UTM Gen Direct')
+        setFirstTimeGtags('true', 'UTM Gen Direct')
         redirectToLandingIfFirstTime()
         break;
       default:
+        setFirstTimeGtags('true', 'NA')
         break;
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
