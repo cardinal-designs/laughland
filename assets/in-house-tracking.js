@@ -97,7 +97,7 @@ function setGoogleLanding(effective_landing_page) {
 }
 
 
-function clearAndSetCookiesAffiliates(cookie, affiliate) {
+function clearAndSetCookiesAffiliates(cookie) {
   clearAllAffiliateCookies()
   setCookie(cookie, 'true')
 }
