@@ -125,37 +125,37 @@ function landingPageAction(current_page, query_params) {
       case 'sweatcoin':
         setCookieAffiliate('redirect_sweatcoin', 'Sweatcoin')
         setFirstTimeGtags('true', 'Sweatcoin')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('redirect_sweatcoin')
         break;
       case 'product-direct':
         setCookieAffiliate('redirect_ut_direct', 'Direct To Product (misc)')
         setFirstTimeGtags('true', 'Direct To Product (misc)')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('redirect_ut_direct')
         break;
       case 'paceline':
         setCookieAffiliate('redirect_paceline', 'Paceline')
         setFirstTimeGtags('true', 'Paceline')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('redirect_paceline')
         break;
       case 'miles':
         setCookieAffiliate('redirect_miles', 'Miles')
         setFirstTimeGtags('true', 'Miles')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('redirect_miles')
         break;
       case 'utm_partner':
         setCookieAffiliate('utm_partner', 'UTM Partner')
         setFirstTimeGtags('true', 'UTM Partner')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('utm_partner')
         break;
       case 'utm_gen_direct':
         setCookieAffiliate('utm_gen_direct', 'UTM Gen Direct')
         setFirstTimeGtags('true', 'UTM Gen Direct')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('utm_gen_direct')
         break;
       case 'cactus_media':
         setCookieAffiliate('redirect_ut', 'Cactus Media')
         setFirstTimeGtags('true', 'Cactus Media')
-        redirectToLandingIfFirstTime()
+        redirectToLandingIfFirstTime('redirect_ut')
         break;
       default:
         setFirstTimeGtags('true', 'NA')
