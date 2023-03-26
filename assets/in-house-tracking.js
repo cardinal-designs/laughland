@@ -55,6 +55,7 @@ function redirectToLandingIfFirstTime(cookie) {
     setGoogleLanding('homepage')
     // window.location.href = 'https://www.mylaughland.com'
   } else {
+    clearAndSetCookiesAffiliates(cookie)
     setGoogleLanding('landing-page')
     window.location.href = 'https://www.mylaughland.com/pages/landing-page'
   }
