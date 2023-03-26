@@ -100,7 +100,6 @@ function setGoogleLanding(effective_landing_page) {
 function clearAndSetCookiesAffiliates(cookie, affiliate) {
   clearAllAffiliateCookies()
   setCookie(cookie, 'true')
-  setGoogleSource(affiliate)
 }
 
 
