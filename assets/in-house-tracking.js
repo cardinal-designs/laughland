@@ -113,8 +113,8 @@ function clearAndSetCookiesAffiliates(cookie) {
 
 
 function setCookieAffiliate(cookie, affiliate) {
-  setCookie(cookie, 'true')
   setGoogleSource(affiliate)
+  setCookie(cookie, 'true')
 }
 
 
