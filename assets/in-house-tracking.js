@@ -126,51 +126,51 @@ function landingPageAction(current_page, query_params) {
     switch(query_params.utm_affiliate_specific) {
       case 'sweatcoin':
         setCookieAffiliate('redirect_sweatcoin', 'Sweatcoin')
-        setFirstTimeGtags('true', 'Sweatcoin')
+        setFirstTimeGtags('homepage', 'Sweatcoin')
         redirectToLandingIfFirstTime('redirect_sweatcoin')
         break;
       case 'product-direct':
         setCookieAffiliate('redirect_ut_direct', 'Direct To Product (misc)')
-        setFirstTimeGtags('true', 'Direct To Product (misc)')
+        setFirstTimeGtags('homepage', 'Direct To Product (misc)')
         redirectToLandingIfFirstTime('redirect_ut_direct')
         break;
       case 'paceline':
         setCookieAffiliate('redirect_paceline', 'Paceline')
-        setFirstTimeGtags('true', 'Paceline')
+        setFirstTimeGtags('homepage', 'Paceline')
         redirectToLandingIfFirstTime('redirect_paceline')
         break;
       case 'miles':
         setCookieAffiliate('redirect_miles', 'Miles')
-        setFirstTimeGtags('true', 'Miles')
+        setFirstTimeGtags('homepage', 'Miles')
         redirectToLandingIfFirstTime('redirect_miles')
         break;
       case 'utm_partner':
         setCookieAffiliate('utm_partner', 'UTM Partner')
-        setFirstTimeGtags('true', 'UTM Partner')
+        setFirstTimeGtags('homepage', 'UTM Partner')
         redirectToLandingIfFirstTime('utm_partner')
         break;
       case 'utm_gen_direct':
         setCookieAffiliate('utm_gen_direct', 'UTM Gen Direct')
-        setFirstTimeGtags('true', 'UTM Gen Direct')
+        setFirstTimeGtags('homepage', 'UTM Gen Direct')
         redirectToLandingIfFirstTime('utm_gen_direct')
         break;
       case 'cactus_media':
         setCookieAffiliate('redirect_ut', 'Cactus Media')
-        setFirstTimeGtags('true', 'Cactus Media')
+        setFirstTimeGtags('homepage', 'Cactus Media')
         redirectToLandingIfFirstTime('redirect_ut')
         break;
       default:
-        setFirstTimeGtags('true', 'NA')
+        setFirstTimeGtags('homepage', 'NA')
         break;
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
       clearAllAffiliateCookies()
       removeCookie('in_house_already_redirected')
   } else if (current_page == 'landing-page') {
-      setFirstTimeGtags('false', current_page)
+      setFirstTimeGtags('landing-page', current_page)
       setGoogleLanding('landing-page')
   } else {
-      setFirstTimeGtags('false', current_page)
+      setFirstTimeGtags(current_page, current_page)
   }
 }
 
