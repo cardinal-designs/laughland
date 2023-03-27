@@ -71,13 +71,6 @@ function setInHouseTracked() {
 }
 
 
-function setInHouseTracked2() {
-  gtag('set', 'user_properties', {
-    in_house_tracked_2: "true"
-  });
-}
-
-
 function setLandingPageFlag(flag_value) {
   gtag('set', 'user_properties', {
     landing_page_flag: flag_value
