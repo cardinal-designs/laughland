@@ -165,7 +165,7 @@ function landingPageAction(current_page, query_params) {
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
       clearAllAffiliateCookies()
-      removeCookie('in_house_already_redirected')
+      removeCookie('in_house_tracked')
   } else if (current_page == 'landing-page') {
       setFirstTimeGtags('landing-page', current_page)
       setGoogleLanding('landing-page')
