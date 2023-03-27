@@ -166,8 +166,11 @@ function landingPageAction(current_page, query_params) {
   } else if (current_page == 'clear-affiliate-cookies') {
       clearAllAffiliateCookies()
       removeCookie('in_house_already_redirected')
+  } else if (current_page == 'landing-page') {
+      setFirstTimeGtags('false', current_page)
+      setGoogleLanding('landing-page')
   } else {
-    setFirstTimeGtags('false', current_page)
+      setFirstTimeGtags('false', current_page)
   }
 }
 
