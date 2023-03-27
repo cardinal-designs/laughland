@@ -20,6 +20,9 @@
       gtag('js', new Date());
     
       gtag('config', 'G-ED2C9KNXNY', { 'debug_mode':true });
+      gtag('set', 'user_properties', {
+        in_house_tracked: "test"
+      });
     </script>
 
     <script src="{{ 'in-house-tracking.js' | asset_url }}"></script>
