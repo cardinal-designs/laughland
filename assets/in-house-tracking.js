@@ -166,9 +166,9 @@ function landingPageAction(current_page, query_params) {
       clearAllAffiliateCookies()
       removeCookie('in_house_tracked')
   } else if (current_page == 'landing-page') {
+      setLandingPageFlag('true')
       setFirstTimeGtags('landing-page', current_page)
       setGoogleLanding('landing-page')
-      setLandingPageFlag('true')
   } else {
       setFirstTimeGtags(current_page, current_page)
   }
