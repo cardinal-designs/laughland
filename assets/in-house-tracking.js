@@ -51,7 +51,7 @@ function redirectToLandingIfFirstTime(cookie) {
               
   var d = Math.random();
   if (d <= .5) {
-    // setGoogleLanding('homepage')
+    setGoogleLanding('homepage')
     // window.location.href = 'https://www.mylaughland.com'
   } else {
     clearAndSetCookiesAffiliates(cookie)
@@ -165,7 +165,7 @@ function landingPageAction(current_page, query_params) {
   } else if (current_page == 'clear-affiliate-cookies') {
       clearAllAffiliateCookies()
       removeCookie('in_house_tracked')
-  } else if (current_page == 'landing-page') {
+  } else if (current_page == '/pages/landing-page') {
       setLandingPageFlag('true')
       setFirstTimeGtags('landing-page', current_page)
       setGoogleLanding('landing-page')
