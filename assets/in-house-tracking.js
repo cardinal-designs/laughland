@@ -118,7 +118,7 @@ function setCookieAffiliate(cookie, affiliate) {
 }
 
 
-function setFirstTimeGtags(landing_page_flag, affiliate) {
+function setFirstTimeGtags(affiliate) {
   if (getCookie("in_house_tracked") != 'true') {
     setCookie('in_house_tracked', 'true')
     setInHouseTracked()
@@ -132,41 +132,41 @@ function landingPageAction(current_page, query_params) {
     switch(query_params.utm_affiliate_specific) {
       case 'sweatcoin':
         setCookieAffiliate('redirect_sweatcoin', 'Sweatcoin')
-        setFirstTimeGtags('homepage', 'Sweatcoin')
+        setFirstTimeGtags('Sweatcoin')
         redirectToLandingIfFirstTime('redirect_sweatcoin')
         break;
       case 'product-direct':
         setCookieAffiliate('redirect_ut_direct', 'Direct To Product (misc)')
-        setFirstTimeGtags('homepage', 'Direct To Product (misc)')
+        setFirstTimeGtags('Direct To Product (misc)')
         redirectToLandingIfFirstTime('redirect_ut_direct')
         break;
       case 'paceline':
         setCookieAffiliate('redirect_paceline', 'Paceline')
-        setFirstTimeGtags('homepage', 'Paceline')
+        setFirstTimeGtags('Paceline')
         redirectToLandingIfFirstTime('redirect_paceline')
         break;
       case 'miles':
         setCookieAffiliate('redirect_miles', 'Miles')
-        setFirstTimeGtags('homepage', 'Miles')
+        setFirstTimeGtags('Miles')
         redirectToLandingIfFirstTime('redirect_miles')
         break;
       case 'utm_partner':
         setCookieAffiliate('utm_partner', 'UTM Partner')
-        setFirstTimeGtags('homepage', 'UTM Partner')
+        setFirstTimeGtags('UTM Partner')
         redirectToLandingIfFirstTime('utm_partner')
         break;
       case 'utm_gen_direct':
         setCookieAffiliate('utm_gen_direct', 'UTM Gen Direct')
-        setFirstTimeGtags('homepage', 'UTM Gen Direct')
+        setFirstTimeGtags('UTM Gen Direct')
         redirectToLandingIfFirstTime('utm_gen_direct')
         break;
       case 'cactus_media':
         setCookieAffiliate('redirect_ut', 'Cactus Media')
-        setFirstTimeGtags('homepage', 'Cactus Media')
+        setFirstTimeGtags('Cactus Media')
         redirectToLandingIfFirstTime('redirect_ut')
         break;
       default:
-        setFirstTimeGtags('homepage', 'NA')
+        setFirstTimeGtags('NA')
         break;
     } 
   } else if (current_page == 'clear-affiliate-cookies') {
