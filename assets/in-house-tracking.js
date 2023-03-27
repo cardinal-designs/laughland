@@ -119,7 +119,6 @@ function setCookieAffiliate(cookie, affiliate) {
 
 
 function setFirstTimeGtags(landing_page_flag, affiliate) {
-  setInHouseTracked2('true')
   if (getCookie("in_house_tracked") != 'true') {
     setCookie('in_house_tracked', 'true')
     setInHouseTracked()
