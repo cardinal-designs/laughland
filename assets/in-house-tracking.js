@@ -188,4 +188,10 @@ const query_params = new Proxy(new URLSearchParams(window.location.search), {
   get: (searchParams, prop) => searchParams.get(prop),
 });
 
+gtag('set', {currency: 'USD'});
+
+gtag('get', 'G-ED2C9KNXNY', 'landing_page_flag', (landing_page_flag) => {
+  console.log('landing page flag is :' + landing_page_flag)
+})
+
 landingPageAction(current_page, query_params)
